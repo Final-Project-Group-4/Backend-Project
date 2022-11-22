@@ -15,4 +15,4 @@ deleteGallery: Delete : http://localhost:4000/api/gallery/:id
 
 
 User :
-Login: Post: http://localhost:4000/api/user -->
+Login: Post: http://localhost:4000/api/admin -->

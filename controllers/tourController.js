@@ -23,16 +23,6 @@ export const getSingleTour = async (req, res, next) => {
 };
 export const createTour = async (req, res, next) => {};
 
-export const updateTour = async (req, res, next) => {
-  try {
-    const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-    });
-    res.status(200).json(tour);
-  } catch (e) {
-    next(e);
-  }
-};
 export const deleteTour = async (req, res, next) => {
   try {
     const tour = await Tour.findByIdAndRemove(req.params.id);
@@ -41,3 +31,22 @@ export const deleteTour = async (req, res, next) => {
     next(e);
   }
 };
+
+//Update Tour added by Rekha
+export const updateTour = async (req, res, next) => {
+  try {
+    const tour_id = req.params.id;
+    const tour = req.body;
+    const updatedTour = await Tour.findByIdAndUpdate(tour_id, tour, {
+      new: true,
+    });
+    res.status(201).json({
+      status: "success",
+      data: updatedTour,
+    });
+  } catch (error) {
+    // 409 => indicates a request conflict with the current state of target.
+    res.status(409).send(error.message);
+  }
+};
+

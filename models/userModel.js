@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 import validator from "validator";
 
 const userSchema = mongoose.Schema({
-
   username: { type: String, required: [true, "Please provide a username"] },
   email: {
     type: String,
@@ -17,11 +16,13 @@ const userSchema = mongoose.Schema({
     minlength: 5,
     //select: false,
   },
+  passwordConfirm: {
+    type: String,
+    required: [true, "Please confirm your password."],
+  },
   photo: { type: String },
-
 });
 
-const UserMessages = mongoose.model("user", userSchema);
+const UserModel = mongoose.model("userModel", userSchema);
 
-export default UserMessages;
-
+export default UserModel;

@@ -10,13 +10,12 @@ app.use(cors());
 app.use(express.json({ extended: true, limit: "10kb" }));
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(morgan("dev"));
-// app.use(express.static());
+//app.use(express.static());
 
 const port = process.env.PORT || 4000;
-const DB = process.env.DATABASE;
 
 mongoose
-  .connect(DB)
+  .connect(process.env.DATABASE)
   .then(() => {
     app.listen(port, () => {
       console.log(`App running on port ${port}...`);
@@ -25,3 +24,4 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
+

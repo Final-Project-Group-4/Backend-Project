@@ -8,9 +8,11 @@ export const protectController = (req, res, next) => {
     if (!token) return res.status(401).json({ message: "Not Authorized" });
 
     const authorized = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(authorized);
 
     if (authorized) {
-      req.userEmail = authorized.email;
+      // we are attaching id to the request object in order tobe able to use it in controller
+      req.userId = authorized.id;
       next();
     } else {
       res.status(401).json({ message: "Not Authorized" });

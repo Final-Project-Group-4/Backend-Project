@@ -10,7 +10,14 @@ app.use(cors());
 app.use(express.json({ extended: true, limit: "10kb" }));
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(morgan("dev"));
-//app.use(express.static());
+
+// const __dirname = dirname(fileURLToPath(import.meta.url));
+// app.use(express.static(`${__dirname}/public`));
+//console.log(__dirname);
+
+// routes:
+// app.use("/api/tours", tourRoute);
+// app.use("/api/gallery", galleryRoute);
 
 const port = process.env.PORT || 4000;
 

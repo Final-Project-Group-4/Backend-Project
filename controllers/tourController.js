@@ -22,6 +22,7 @@ export const getSingleTour = async (req, res, next) => {
   }
 };
 export const createTour = async (req, res, next) => {};
+
 export const updateTour = async (req, res, next) => {
   try {
     const tour = await Tour.findByIdAndUpdate(req.params.id, req.body, {

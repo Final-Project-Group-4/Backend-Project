@@ -19,7 +19,7 @@ export const addPhoto = (req, res, next) => {
 
 export const getSinglePhoto = async (req,res,next) => {
   try {
-    const photo = await ImageModel.findById(req.params.id).populate("photo");
+    const photo = await ImageModel.findById(req.params.id);
     res.status(200).json(photo);
   } catch (error) {
     next(error);

@@ -5,10 +5,11 @@ import {
   getSinglePhoto,
   deletePhoto,
 } from "../controllers/galleryController.js";
+import { protectController } from "../middleware/protectController.js";
 
 const router = express.Router();
 
-router.route("/").get(getAllPhotos).post(addPhoto);
-router.route("/:id").get(getSinglePhoto).delete(deletePhoto);
+router.route("/").get(getAllPhotos).post(protectController, addPhoto);
+router.route("/:id").get(getSinglePhoto).delete(protectController, deletePhoto);
 
 export default router;

@@ -17,10 +17,22 @@ export const addPhoto = (req, res, next) => {
   console.log("add Image");
 };
 
-export const getSinglePhoto = () => {
-  console.log("get one image");
+export const getSinglePhoto = async (req,res,next) => {
+  try {
+    const photo = await ImageModel.findById(req.params.id).populate("photo");
+    res.status(200).json(photo);
+  } catch (error) {
+    next(error);
+  }
+  
 };
 
-export const deletePhoto = () => {
-  console.log("delete image");
+export const deletePhoto = async (req,res,next) => {
+  try {
+    const image = await ImageModel.findByIdAndRemove(req.params.id);
+    res.status(200).json({ msg: `${image} is deleted!` });
+  } catch (e) {
+    next(e);
+  }
+  
 };

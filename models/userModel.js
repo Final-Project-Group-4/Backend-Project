@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import validator from "validator";
 
 const userSchema = mongoose.Schema({
+
   username: { type: String, required: [true, "Please provide a username"] },
   email: {
     type: String,
@@ -17,8 +18,10 @@ const userSchema = mongoose.Schema({
     //select: false,
   },
   photo: { type: String },
+
 });
 
 const UserMessages = mongoose.model("user", userSchema);
 
 export default UserMessages;
+

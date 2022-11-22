@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
 import morgan from "morgan";
+import tourRouter from "./routes/tourRouter.js";
+import adminRouter from "./routes/adminRouter.js";
+import galleryRouter from "./routes/galleryRouter.js";
 
 const app = express();
 dotenv.config();
@@ -16,8 +19,9 @@ app.use(morgan("dev"));
 //console.log(__dirname);
 
 // routes:
-// app.use("/api/tours", tourRoute);
-// app.use("/api/gallery", galleryRoute);
+app.use("/api/tours", tourRouter);
+app.use("/api/admin", adminRouter);
+app.use("/api/gallery", galleryRouter);
 
 const port = process.env.PORT || 4000;
 
@@ -31,4 +35,3 @@ mongoose
   .catch((err) => {
     console.log(err);
   });
-

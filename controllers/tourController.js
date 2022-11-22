@@ -12,3 +12,7 @@ export const getAllTours = async (req, res, next) => {
     console.log(error);
   }
 };
+export const getSingleTour = async (req, res, next) => {};
+export const createTour = async (req, res, next) => {};
+export const updateTour = async (req, res, next) => {};
+export const deleteTour = async (req, res, next) => {};

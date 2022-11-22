@@ -16,7 +16,7 @@ const tourSchema = new mongoose.Schema({
     type: String,
     required: [true, "A tour must have a difficulty"],
   },
-  duration: { type: Number, required: [true, "A tour must have a duration"] },
+  duration: { type: String, required: [true, "A tour must have a duration"] },
 });
 
 export default mongoose.model("TourModel", tourSchema);

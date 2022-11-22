@@ -15,7 +15,7 @@ export const protectController = (req, res, next) => {
       req.userId = authorized.id;
       next();
     } else {
-      res.status(401).json({ message: "Not Authorized" });
+      res.status(401).json({ status: "Fail", message: "Not Authorized" });
     }
     //we will call next only when if it is a valid
   } catch (err) {

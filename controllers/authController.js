@@ -77,7 +77,29 @@ export const login = async (req, res) => {
     token,
   });
 };
-
-export const logout = async (req, res) => {};
-
-export const updateUser = async (req, res, next) => {};
+/* 
+export const logout = async (req, res) => {
+  res.cookie("jwt", "loggedout", {
+    expires: new Date(Date.now() + 10 * 1000),
+    httpOnly: true,
+  });
+  res.status(200).json({
+    status: "success",
+  });
+};
+ */
+export const updateUser = async (req, res, next) => {
+  try {
+    const user_id = req.params.id;
+    const user = req.body;
+    const updatedUser = await User.findByIdAndUpdate(user_id, user, {
+      new: true,
+    });
+    res.status(201).json({
+      status: "success",
+      data: updatedUser,
+    });
+  } catch (error) {
+    res.status(409).send(error.message);
+  }
+};

@@ -6,7 +6,9 @@ const tourSchema = new mongoose.Schema({
     required: [true, "A tour must have a name"],
     unique: true,
   },
-  image: { type: String, required: [true, "A tour must have an image"] },
+  //! image => it should be array of strings since a tour might have more than one images.
+  // image: { type: String, required: [true, "A tour must have an image"] },
+  images: [String],
   description: {
     type: String,
     required: [true, "A tour must have a description"],

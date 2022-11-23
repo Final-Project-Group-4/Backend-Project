@@ -32,12 +32,12 @@ const userSchema = mongoose.Schema({
 });
 
 //pre save middleware from mongoose, for encrypting the passwords before saving it into db
-userSchema.pre("save", function (next) {
+userSchema.pre("save", async function (next) {
   // Only run this function if password was actually modified
   if (!this.isModified("password")) return next();
 
   //hash the password with cost of 12
-  this.password = bcrypt.hash(this.password, 12);
+  this.password = await bcrypt.hash(this.password, 12);
 
   // we set passwordconfirm to undefined because we dont want to have passwordConfirm in our database, it is only for confirmation of the password after it is modified
   this.passwordConfirm = undefined;

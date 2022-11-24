@@ -1,14 +1,16 @@
 import mongoose from "mongoose";
 
 const tourSchema = new mongoose.Schema({
+  
   name: {
     type: String,
     required: [true, "A tour must have a name"],
     unique: true,
   },
-  //! image => it should be array of strings since a tour might have more than one images.
-  // image: { type: String, required: [true, "A tour must have an image"] },
-  images: [String],
+ //you dont need square brackets to make it an array, by using populate 
+  //it will automatically making it an array
+ gallery: [{ type: mongoose.Schema.Types.ObjectId, ref: "ImageModel" }],
+  
   description: {
     type: String,
     required: [true, "A tour must have a description"],

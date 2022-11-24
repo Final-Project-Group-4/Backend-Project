@@ -1,4 +1,5 @@
 import express from "express";
+import { getTourPhotos } from "../controllers/galleryController.js";
 import {
   deleteTour,
   getAllTours,
@@ -23,7 +24,5 @@ router.get("/:id", getSingleTour); // To get a single tour by sending the tourId
 
 router.put("/:id",  updateTour); // To update a single tour by sending the tourId
 router.delete("/:id",  deleteTour); // To delete a single tour by sending the tourId
-
-
 
 export default router;

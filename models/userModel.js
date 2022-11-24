@@ -30,12 +30,17 @@ const userSchema = mongoose.Schema({
     },
   },
   photo: { type: String },
+
+  // added for protectController
   passwordChangedAt: Date,
+
+  // added for reseting the password
   passwordResetToken: String,
   passwordResetExpires: Date,
 });
 
 //pre save middleware from mongoose, for encrypting the passwords before saving it into db
+
 userSchema.pre("save", async function (next) {
   // Only run this function if password was actually modified
   if (!this.isModified("password")) return next();
@@ -47,6 +52,7 @@ userSchema.pre("save", async function (next) {
   this.passwordConfirm = undefined;
   next();
 });
+
 userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
   if (this.passwordChangedAt) {
     const changedTimestamp = parseInt(
@@ -79,6 +85,43 @@ userSchema.pre("save", function (next) {
   this.passwordChangedAt = Date.now() - 1000;
   next();
 });
+
+//! adding instance method for using in protectController
+userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
+  // this keyword here points to current document, so we have access to all properties
+  if (this.passwordChangedAt) {
+    const changedTimestamp = parseInt(
+      this.passwordChangedAt.getTime() / 1000,
+      10
+    );
+    //console.log(changedTimestamp, JWTTimestamp);
+    return JWTTimestamp < changedTimestamp;
+  }
+
+  return false;
+  // by default we are returning false, means user has not changed his password after it was issued
+};
+
+userSchema.methods.createPasswordResetToken = function () {
+  // since it doesnt need to be too strong so we use bytes function from the built in crypto module.
+  const resetToken = crypto.randomBytes(32).toString("hex");
+
+  // here like our password, we are encrypting this resetToken before saving it into our DB
+  this.passwordResetToken = crypto
+    .createHash("sha256")
+    .update(resetToken)
+    .digest("hex");
+
+  console.log({ resetToken }, this.passwordResetToken);
+
+  //in order to save it to DB we created new field in our Model as "passwordResetToken" and assigned the encrypted token to that field.
+
+  this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
+  // we set the expiration time as 10 minutes
+
+  // after setting values to that fields in our DB, we are sending plain token too the user, so we return resetToken.
+  return resetToken;
+};
 
 const UserModel = mongoose.model("userModel", userSchema);
 

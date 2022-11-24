@@ -1,8 +1,10 @@
 import express from "express";
 import {
+  forgotPassword,
   getAllUsers,
   login,
   logout,
+  resetPassword,
   signup,
   updateUser,
   forgotPassword,
@@ -14,9 +16,15 @@ const router = express.Router();
 
 router.post("/signup", signup);
 router.post("/login", login);
-router.delete("/logout", logout);
-router.get("/", protectController, getAllUsers);
-router.patch("/:id", updateUser);
+router.post("/logout", logout);
+
+router.post("/forgotPassword", forgotPassword);
+router.patch("/resetPassword/:token", resetPassword);
+
+router.route("/").get(protectController, getAllUsers);
+
+router.route("/:id").patch(updateUser);
+
 
 router.post("/forgotpassword", forgotPassword);
 router.patch("/resetpassword/:token", resetPassword);

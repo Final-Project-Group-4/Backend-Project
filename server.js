@@ -6,6 +6,9 @@ import morgan from "morgan";
 import tourRouter from "./routes/tourRouter.js";
 import adminRouter from "./routes/adminRouter.js";
 import galleryRouter from "./routes/galleryRouter.js";
+import AppError from "./utils/appError.js";
+import ErrorHandler from "./middleware/errorHandler.js";
+
 
 const app = express();
 dotenv.config();
@@ -13,6 +16,8 @@ app.use(cors());
 app.use(express.json({ extended: true, limit: "10kb" }));
 app.use(express.urlencoded({ extended: true, limit: "10kb" }));
 app.use(morgan("dev"));
+
+
 
 // const __dirname = dirname(fileURLToPath(import.meta.url));
 // app.use(express.static(`${__dirname}/public`));
@@ -29,16 +34,15 @@ app.use("/api/tours", tourRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/gallery", galleryRouter);
 
-//To handle all the unhandled routes
-app.all("*", (req, res, next) => {
-  res.status(404).json({
-    status: "fail",
-    message: `Can't find the route ${req.originalUrl} on this server!`,
-  });
+
+app.all('*',(req, res, next) => {
+  next(new AppError("Page Not Found!",404));
 });
 
-//Global error handler
-app.use((err, req, res, next) => {});
+
+// // global error handler
+app.use(ErrorHandler);
+
 
 const port = process.env.PORT || 4000;
 

@@ -29,6 +29,17 @@ app.use("/api/tours", tourRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/gallery", galleryRouter);
 
+//To handle all the unhandled routes
+app.all("*", (req, res, next) => {
+  res.status(404).json({
+    status: "fail",
+    message: `Can't find the route ${req.originalUrl} on this server!`,
+  });
+});
+
+//Global error handler
+app.use((err, req, res, next) => {});
+
 const port = process.env.PORT || 4000;
 
 mongoose

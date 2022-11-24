@@ -1,8 +1,10 @@
 import express from "express";
 import {
+  forgotPassword,
   getAllUsers,
   login,
   logout,
+  resetPassword,
   signup,
   updateUser,
 } from "../controllers/authController.js";
@@ -12,8 +14,13 @@ const router = express.Router();
 
 router.post("/signup", signup);
 router.post("/login", login);
-router.post("/", logout);
-router.get("/", protectController, getAllUsers);
-router.patch("/:id", updateUser);
+router.post("/logout", logout);
+
+router.post("/forgotPassword", forgotPassword);
+router.patch("/resetPassword/:token", resetPassword);
+
+router.route("/").get(protectController, getAllUsers);
+
+router.route("/:id").patch(updateUser);
 
 export default router;

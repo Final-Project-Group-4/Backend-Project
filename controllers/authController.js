@@ -163,9 +163,9 @@ export const resetPassword = async (req, res, next) => {
   user.passwordConfirm = req.body.passwordConfirm;
   user.passwordResetToken = undefined;
   user.passwordResetExpires = undefined;
-  await user.save();
 
   //3) Updated changedPasswordAt property for the current user
+  await user.save();
   //4) Log the user in , send the jwt to the client
   const token = signToken(user._id);
 

@@ -18,6 +18,12 @@ app.use(morgan("dev"));
 // app.use(express.static(`${__dirname}/public`));
 //console.log(__dirname);
 
+// app.use((req, res, next) => {
+//   req.requestTime = new Date().toISOString();
+//   console.log(req.headers);
+//   next();
+// });
+
 // routes:
 app.use("/api/tours", tourRouter);
 app.use("/api/admin", adminRouter);

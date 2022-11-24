@@ -2,7 +2,7 @@ import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import UserModel from "../models/userModel.js";
-import sendEmail from "./email.js";
+import sendEmail from "../utils/email.js";
 import crypto from "crypto";
 
 //refactoring the code for jwt.sign() and creating the token
@@ -166,6 +166,7 @@ export const resetPassword = async (req, res, next) => {
 
   //3) Updated changedPasswordAt property for the current user
   await user.save();
+
   //4) Log the user in , send the jwt to the client
   const token = signToken(user._id);
 

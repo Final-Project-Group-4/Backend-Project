@@ -2,6 +2,7 @@ import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import sendEmail from "../utils/email.js";
+import crypto from "crypto";
 
 export const signup = async (req, res, next) => {
   try {
@@ -163,4 +164,38 @@ export const forgotPassword = async (req, res, next) => {
   }
 };
 
-export const resetPassword = (req, res, next) => {};
+export const resetPassword = async (req, res, next) => {
+  // 1) Get user based on the token
+  // We have in database encrypted token not plain one, so we need to encrypt original one again so we can compare it with the one in database.
+  try {
+    const hashedToken = crypto
+      .createHash("sha256")
+      .update(req.params.token)
+      .digest("hex");
+
+    // if tokenexpiration date is bigger than date now, it means it didnt expired yet so we can use it. So we add this in this filter as query.
+    const user = await User.findOne({
+      passwordResetToken: hashedToken,
+      passwordResetExpires: { $gt: Date.now() },
+    });
+
+    // 2) If token has not expired, and there is user, set new password
+    if (!user) {
+      return next(new Error("Token is invalid or has expired", 400));
+    }
+    //400: bad request
+
+    user.password = req.body.password;
+    user.passwordConfirm = req.body.passwordConfirm;
+    user.passwordResetExpires = undefined;
+    user.passwordResetToken = undefined;
+    //we modified it we need to also save it, we dont need to turn off validators anymore. We provided all required fields.
+    await user.save();
+
+    // 3) Update changedPasswordAt property for the user in
+
+    // 4) Log the user in, send JWT to the user
+  } catch (err) {
+    console.log(err);
+  }
+};

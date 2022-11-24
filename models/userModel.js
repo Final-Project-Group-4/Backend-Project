@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import validator from "validator";
 import bcrypt from "bcrypt";
+import crypto from "crypto";
 
 const userSchema = mongoose.Schema({
   username: { type: String, required: [true, "Please provide a username"] },
@@ -29,6 +30,9 @@ const userSchema = mongoose.Schema({
     },
   },
   photo: { type: String },
+  passwordChangedAt: Date,
+  passwordResetToken: String,
+  passwordResetExpires: Date,
 });
 
 //pre save middleware from mongoose, for encrypting the passwords before saving it into db
@@ -41,6 +45,38 @@ userSchema.pre("save", async function (next) {
 
   // we set passwordconfirm to undefined because we dont want to have passwordConfirm in our database, it is only for confirmation of the password after it is modified
   this.passwordConfirm = undefined;
+  next();
+});
+userSchema.methods.changedPasswordAfter = function (JWTTimestamp) {
+  if (this.passwordChangedAt) {
+    const changedTimestamp = parseInt(
+      this.passwordChangedAt.getTime() / 1000,
+      10
+    );
+    console.log(changedTimestamp, JWTTimestamp);
+    return JWTTimestamp < changedTimestamp; //100<200
+  }
+  //False means NOT changed
+  return false;
+};
+
+//forgotpassword
+userSchema.methods.createPasswordResetToken = function () {
+  //This makes the hackers to reset the password easily, so encrypt it.
+  const resetToken = crypto.randomBytes(32).toString("hex");
+  //encrypt the reset password and store it in database
+  this.passwordResetToken = crypto
+    .createHash("sha256")
+    .update(resetToken)
+    .digest("hex");
+  console.log({ resetToken }, this.passwordResetToken);
+  this.passwordResetExpires = Date.now() + 10 * 60 * 1000;
+  return resetToken;
+};
+
+userSchema.pre("save", function (next) {
+  if (!this.isModified("password") || this.isNew) return next();
+  this.passwordChangedAt = Date.now() - 1000;
   next();
 });
 

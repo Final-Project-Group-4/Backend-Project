@@ -7,6 +7,8 @@ import {
   resetPassword,
   signup,
   updateUser,
+  forgotPassword,
+  resetPassword,
 } from "../controllers/authController.js";
 import { protectController } from "../middleware/protectController.js";
 
@@ -22,5 +24,9 @@ router.patch("/resetPassword/:token", resetPassword);
 router.route("/").get(protectController, getAllUsers);
 
 router.route("/:id").patch(updateUser);
+
+
+router.post("/forgotpassword", forgotPassword);
+router.patch("/resetpassword/:token", resetPassword);
 
 export default router;

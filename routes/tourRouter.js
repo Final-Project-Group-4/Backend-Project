@@ -1,4 +1,5 @@
 import express from "express";
+import { getTourPhotos } from "../controllers/galleryController.js";
 import {
   deleteTour,
   getAllTours,
@@ -6,14 +7,14 @@ import {
   createTour,
   updateTour,
 } from "../controllers/tourController.js";
-
-//import { protectController } from "../middleware/protectController.js";
+import { protectController } from "../middleware/protectController.js";
 
 const router = express.Router();
 
-router.route("/").get(getAllTours).post(createTour);
 
-router.route("/:id").get(getSingleTour).put(updateTour).delete(deleteTour);
-//protectController removed as it is not allowing to test in postman
+router.route("/").get(getAllTours).post(protectController, createTour);
+
+router.route("/:id").get(getSingleTour).put(protectController,updateTour).delete(protectController,deleteTour);
+
 
 export default router;

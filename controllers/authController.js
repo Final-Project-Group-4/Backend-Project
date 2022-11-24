@@ -4,14 +4,20 @@ import jwt from "jsonwebtoken";
 import sendEmail from "../utils/email.js";
 import crypto from "crypto";
 
+//refactoring the code for jwt.sign() and creating the token
+const signToken = (id) => {
+  return jwt.sign({ id: id }, process.env.JWT_SECRET, {
+    expiresIn: "90d",
+  });
+};
+
+
 export const signup = async (req, res, next) => {
   try {
     const newUser = await User.create(req.body);
 
     // we used id data as payload
-    const token = jwt.sign({ id: newUser._id }, process.env.JWT_SECRET, {
-      expiresIn: "90d",
-    });
+    const token = signToken(newUser._id);
 
     res.status(201).json({
       status: "success",
@@ -68,9 +74,8 @@ export const login = async (req, res) => {
     });
 
   // we used id data as payload
-  const token = jwt.sign({ id: currentUser._id }, process.env.JWT_SECRET, {
-    expiresIn: "90d",
-  });
+
+  const token = signToken(currentUser._id);
   res.status(200).json({
     status: "success",
     token,
@@ -88,6 +93,7 @@ export const logout = async (req, res) => {
   });
 };
 
+
 export const updateUser = async (req, res, next) => {
   try {
     const user_id = req.params.id;
@@ -104,10 +110,9 @@ export const updateUser = async (req, res, next) => {
   }
 };
 
+
 // when user will enter his email, then he will get an email with a link where you can click, then thats gonna take it to the page where you can enter new password.
-
 // 1st => user sends a post request to the /forgotpassword route only with his email address. This will create a reset token(a random token not jason web token) and send it to his email address.
-
 // 2nd => Then user will send the token from email along with new password in order to update his password.
 
 export const forgotPassword = async (req, res, next) => {
@@ -164,38 +169,36 @@ export const forgotPassword = async (req, res, next) => {
   }
 };
 
+//Reset Password functionality by rekha
+
 export const resetPassword = async (req, res, next) => {
-  // 1) Get user based on the token
-  // We have in database encrypted token not plain one, so we need to encrypt original one again so we can compare it with the one in database.
-  try {
-    const hashedToken = crypto
-      .createHash("sha256")
-      .update(req.params.token)
-      .digest("hex");
+  //1) get user based on the token
+  const hashedToken = crypto
+    .createHash("sha256")
+    .update(req.params.token)
+    .digest("hex");
 
-    // if tokenexpiration date is bigger than date now, it means it didnt expired yet so we can use it. So we add this in this filter as query.
-    const user = await User.findOne({
-      passwordResetToken: hashedToken,
-      passwordResetExpires: { $gt: Date.now() },
-    });
-
-    // 2) If token has not expired, and there is user, set new password
-    if (!user) {
-      return next(new Error("Token is invalid or has expired", 400));
-    }
-    //400: bad request
-
-    user.password = req.body.password;
-    user.passwordConfirm = req.body.passwordConfirm;
-    user.passwordResetExpires = undefined;
-    user.passwordResetToken = undefined;
-    //we modified it we need to also save it, we dont need to turn off validators anymore. We provided all required fields.
-    await user.save();
-
-    // 3) Update changedPasswordAt property for the user in
-
-    // 4) Log the user in, send JWT to the user
-  } catch (err) {
-    console.log(err);
+  const user = await UserModel.findOne({
+    passwordResetToken: hashedToken,
+    passwordResetExpires: { $gt: Date.now() },
+  });
+  //2) set new password only if the token has not expired and there is user set the new password
+  if (!user) {
+    return res.status(400).json({ message: "Token is invalid of has expired" });
   }
+  user.password = req.body.password;
+  user.passwordConfirm = req.body.passwordConfirm;
+  user.passwordResetToken = undefined;
+  user.passwordResetExpires = undefined;
+
+  //3) Updated changedPasswordAt property for the current user
+  await user.save();
+
+  //4) Log the user in , send the jwt to the client
+  const token = signToken(user._id);
+
+  res.status(200).json({
+    status: "success",
+    token,
+  });
 };

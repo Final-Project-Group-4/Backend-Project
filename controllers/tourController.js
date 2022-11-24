@@ -2,7 +2,7 @@ import Tour from "../models/tourModel.js";
 
 export const getAllTours = async (req, res, next) => {
   try {
-    const data = await Tour.find();
+    const data = await Tour.find().populate("gallery");
     res.status(200).json({
       status: "success",
       results: data.length,
@@ -28,7 +28,7 @@ export const createTour = async (req, res, next) => {
 
 export const getSingleTour = async (req, res, next) => {
   try {
-    const tour = await Tour.findById(req.params.id);
+    const tour = await Tour.findById(req.params.id).populate("gallery");
     res.status(200).json(tour);
   } catch (error) {
     next(error);
@@ -37,6 +37,7 @@ export const getSingleTour = async (req, res, next) => {
 
 
 export const deleteTour = async (req, res, next) => {
+  console.log(req.params.id);
   try {
     const tour = await Tour.findByIdAndRemove(req.params.id);
     res.status(200).json({ msg: `${tour} is deleted!` });

@@ -11,7 +11,6 @@ const signToken = (id) => {
   });
 };
 
-
 export const signup = async (req, res, next) => {
   try {
     const newUser = await User.create(req.body);
@@ -93,7 +92,6 @@ export const logout = async (req, res) => {
   });
 };
 
-
 export const updateUser = async (req, res, next) => {
   try {
     const user_id = req.params.id;
@@ -109,7 +107,6 @@ export const updateUser = async (req, res, next) => {
     res.status(409).send(error.message);
   }
 };
-
 
 // when user will enter his email, then he will get an email with a link where you can click, then thats gonna take it to the page where you can enter new password.
 // 1st => user sends a post request to the /forgotpassword route only with his email address. This will create a reset token(a random token not jason web token) and send it to his email address.
@@ -178,7 +175,7 @@ export const resetPassword = async (req, res, next) => {
     .update(req.params.token)
     .digest("hex");
 
-  const user = await UserModel.findOne({
+  const user = await User.findOne({
     passwordResetToken: hashedToken,
     passwordResetExpires: { $gt: Date.now() },
   });

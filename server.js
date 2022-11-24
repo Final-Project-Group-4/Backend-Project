@@ -34,6 +34,7 @@ app.use("/api/tours", tourRouter);
 app.use("/api/admin", adminRouter);
 app.use("/api/gallery", galleryRouter);
 
+
 app.all('*',(req, res, next) => {
   next(new AppError("Page Not Found!",404));
 });
@@ -41,6 +42,7 @@ app.all('*',(req, res, next) => {
 
 // // global error handler
 app.use(ErrorHandler);
+
 
 const port = process.env.PORT || 4000;
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.8b5f74a0.css","mappings":"AAAA,MACA,sBACA,UACI","sources":["components/MainUp/_MainUp.scss"],"sourcesContent":[".div1 {\nbackground-color: aqua;\ndiv {\n    background-color: red;\n}\n}"],"names":[],"sourceRoot":""}

@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 function MainDown() {
   return (
     <div className="maindown">
+      <h1>Hi Here!</h1>
       <div className="tours">
         <div className="hiking">Hiking</div>
         <div className="safari">Safari</div>

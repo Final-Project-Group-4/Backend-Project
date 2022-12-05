@@ -4,8 +4,7 @@ import ReactPlayer from "react-player";
 
 function MainDown() {
   return (
-    <div className="maindown">
-      <h1>Hi Here!</h1>
+    <div className="container">
       <div className="tours">
         <div className="hiking">Hiking</div>
         <div className="safari">Safari</div>
@@ -14,14 +13,13 @@ function MainDown() {
       </div>
 
       <div className="videos">
-        Videos about Kilimanjaro
-        <ReactPlayer url="https://youtu.be/7MZoIN9I8oU" />
-        {/* <ReactPlayer url="https://youtu.be/XRwrpXf5V6c" />
-        <ReactPlayer url="https://youtu.be/TsnAxKIYvmQ" />
-        <ReactPlayer url="https://youtu.be/h5sG-A7Sk-c" /> */}
+        <p>WHY TRAVEL WITH US?</p>
+        <div className="player">
+          <ReactPlayer url="https://youtu.be/7MZoIN9I8oU" />
+        </div>
       </div>
     </div>
   );
-
+}
 
 export default MainDown;

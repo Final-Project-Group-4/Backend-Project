@@ -1,36 +1,41 @@
+@use "../../../scss/_config.scss" as *;
+
 .tours {
-  background-color: rgb(238, 236, 232);
+  background-color: $main-light;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 20px;
   width: 80vw;
   margin: auto;
 }
 .videos {
-  background-color: rgb(238, 236, 232);
-  padding: 20px;
+  background-color: $main-light;
+  padding: 4em;
   width: 80vw;
   margin: auto;
+  font-family: $font-heading;
 }
-.maindown {
-  padding: 20px;
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin: auto;
 }
 .hiking,
 .safari,
 .coffee,
 .custom {
-  display: flex-row;
-  align-items: flex-end;
-  justify-content: flex-end;
   padding: 10px;
   margin: 10px;
-  width: 200px;
+  width: 100%;
   height: 200px;
   line-height: -300px;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ffff;
+  color: $font-white;
+  font-family: $font-paragraph;
 }
 .hiking {
   background-image: url("https://media.istockphoto.com/id/1189969126/photo/group-of-hikers-walks-in-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=YlJOZLmELRF0HaEr1Xv4-Uae_VN4vnB8XnE99hGD3gQ=");

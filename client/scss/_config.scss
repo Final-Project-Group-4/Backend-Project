@@ -2,6 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
 // Colors commonly used
 $main-green: #467373;
 $main-yellow: #d99923;
@@ -50,4 +58,47 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin paragraph {
   @include font-paragraph;
   font-size: 1.7rem;
+  font-weight: 300;
 }
+//for the titles we we are offering and contact us
+@mixin titles {
+  font-size: 5.3rem;
+  font-weight: 600;
+  @include font-heading;
+}
+
+//the titles in forms (Name, Email, Message) capitalized only for the titles in the footer
+@mixin formTitles {
+  font-size: 1.7rem;
+  font-weight: 500;
+  @include font-paragraph;
+}
+
+//for the text in the footer
+@mixin footerText {
+  font-size: 1.3rem;
+  font-weight: 300;
+  @include font-paragraph;
+}
+
+.container {
+  width: 80%;
+  padding:4em;
+  
+}
+
+$padding-small:1em;
+$padding-medium:2em;
+$padding-large:4em;
+
+$border-small:2px;
+$border-medium:4px;
+
+$border-radius-small:2px;
+$border-radius-medium:4px;
+$border-radius-large:10px;
+
+
+
+
+

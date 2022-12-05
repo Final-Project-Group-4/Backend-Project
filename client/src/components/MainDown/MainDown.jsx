@@ -1,4 +1,5 @@
 import "./_MainDown.scss";
+
 import ReactPlayer from "react-player";
 
 function MainDown() {
@@ -21,6 +22,6 @@ function MainDown() {
       </div>
     </div>
   );
-}
+
 
 export default MainDown;

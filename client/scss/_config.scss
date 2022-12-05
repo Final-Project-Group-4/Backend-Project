@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+// Colors commonly used
+$main-green: #467373;
+$main-yellow: #d99923;
+$main-light: #f2f2f2;
+$main-grey1: #cccccc;
+$main-grey2: #999999;
+$main-grey3: #666666;
+$main-grey4: #333333;
+$main-black: #262626;
+
+//Font Colors
+$font-white: #ffffff;
+
+//Fonts
+$font-heading: "Roboto", sans-serif;
+$font-paragraph: "Raleway", sans-serif;
+
+//Use this subtitles mixin for mainDown and mainUp subtitles
+@mixin subtitles {
+  font-size: 2.6rem;
+  font-weight: 500;
+  @include font-heading;
+}
+
+//Use this mixin for buttons and capitalized(Our Tours and Submit button in landing page)
+@mixin navlinks {
+  font-size: 1.7rem;
+  font-weight: 400;
+  @include font-paragraph;
+}
+
+//This should be capitalized (Welcome to )
+@mixin header {
+  font-size: 3rem;
+  font-weight: 300;
+  @include font-paragraph;
+}
+
+//Header for (Kili Excursions)
+@mixin company {
+  font-family: "Road Rage", cursive;
+  font-size: 8rem;
+  @include main-yellow;
+}
+//For paragraph
+@mixin paragraph {
+  @include font-paragraph;
+  font-size: 1.7rem;
+}

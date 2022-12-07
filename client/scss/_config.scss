@@ -2,13 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
-}
-
 
 // Colors commonly used
 $main-green: #467373;
@@ -31,7 +24,11 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin subtitles {
   font-size: 2.6rem;
   font-weight: 500;
+
+
   font-family:$font-heading;
+
+
 }
 
 //Use this mixin for buttons and capitalized(Our Tours and Submit button in landing page)
@@ -39,6 +36,7 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 1.7rem;
   font-weight: 400;
   font-family:$font-paragraph;
+
 }
 
 //This should be capitalized (Welcome to )
@@ -82,18 +80,55 @@ $font-paragraph: "Raleway", sans-serif;
 }
 
 
-$padding-small:1em;
-$padding-medium:2em;
-$padding-large:4em;
 
-$border-small:2px;
-$border-medium:4px;
+$padding-small: 1em;
+$padding-medium: 2em;
+$padding-large: 4em;
 
-$border-radius-small:2px;
-$border-radius-medium:4px;
-$border-radius-large:10px;
+$border-small: 2px;
+$border-medium: 4px;
 
+$border-radius-small: 2px;
+$border-radius-medium: 4px;
+$border-radius-large: 10px;
 
+// Responsiveness
+
+$breakpoints: (
+  "s": 480px,
+  //mobile from 0 to 480px s mobile
+  "m": 1024px,
+  //tablet from 481px to 1024px m tablet
+  "l": 1025px,
+
+  //desktop from 1025px l desktop
+);
+
+@mixin s {
+  @media (max-width: map-get($breakpoints, "s")) {
+    @content;
+  }
+}
+
+@mixin m {
+  @media (max-width: map-get($breakpoints, "m")) {
+    @content;
+  }
+}
+
+@mixin l {
+  @media (min-width: map-get($breakpoints, "l")) {
+    @content;
+  }
+}
+
+// This is flexible breakpoint, we can specify whatever extra
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+
+}
 
 // Responsiveness
 

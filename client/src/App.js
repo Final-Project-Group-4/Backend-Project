@@ -1,5 +1,6 @@
+
 import React from 'react';
-import {Navbar,Header,MainUp,MainDown,Contact,Footer,Gallery,SinglePhoto} from "./components/export";
+import {Navbar,Header,MainUp,MainDown,Contacts,Footer,Gallery} from "./components/export";
 import { Routes, Route } from "react-router-dom";
 
  
@@ -32,18 +33,25 @@ const galleryImages = [
   ]
 
 
+
+import Container from '@mui/material/Container';
+
+
+import TourCard from "./components/shared/TourCard/TourCard";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Header/>
-     
-      <MainUp/>
-      {/* <MainDown/> */}
+    <Container>
+      <Navbar />
+      <Header />
+      <MainUp />
+      {/* <TourCard /> */}
+      <MainDown />
+      <Contacts />
       <Gallery galleryImages={galleryImages}/>
-      <Contact/>
-      <Footer/>
-
+      <Footer />
+ 
+   </Container>
 
     </div>
   );

@@ -1,9 +1,13 @@
-import "./_ValueCard.scss"
+import "./_ValueCard.scss";
 
-function ValueCard() {
+function ValueCard({ title, text, icon }) {
   return (
-    <div>ValueCard</div>
-  )
+    <div className="value-card">
+      <div className="icon">{icon}</div>
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </div>
+  );
 }
 
-export default ValueCard
+export default ValueCard;

@@ -2,7 +2,7 @@ import "./_MainDown.scss";
 
 import ReactPlayer from "react-player";
 
-function MainDown() {
+export default function MainDown() {
   return (
     <div className="maindown">
       <h1>Hi Here!</h1>
@@ -21,7 +21,7 @@ function MainDown() {
         <ReactPlayer url="https://youtu.be/h5sG-A7Sk-c" /> */}
       </div>
     </div>
-  );
+  )};
 
 
-export default MainDown;
+

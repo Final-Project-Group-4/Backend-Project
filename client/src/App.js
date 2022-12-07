@@ -6,10 +6,8 @@ function App() {
       <Navbar/>
       <Header/>
       <MainUp/>
-      <MainDown/>
+      {/* <MainDown/> */}
       <Contact/>
-      <Footer/>
-      <Footer/>
       <Footer/>
 
 

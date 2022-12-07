@@ -1,10 +1,9 @@
-@import "../scss/config";
+@import "../scss/_config.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //font-size: calc(12px + 0.390625vw);
 }
 
 .container {

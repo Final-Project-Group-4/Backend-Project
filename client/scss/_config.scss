@@ -2,13 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 // Colors commonly used
 $main-green: #467373;
@@ -31,28 +29,28 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin subtitles {
   font-size: 2.6rem;
   font-weight: 500;
-  @include font-heading;
+  font-family: $font-heading;
 }
 
 //Use this mixin for buttons and capitalized(Our Tours and Submit button in landing page)
 @mixin navlinks {
   font-size: 1.7rem;
   font-weight: 400;
-  @include font-paragraph;
+  font-family: $font-paragraph;
 }
 
 //This should be capitalized (Welcome to )
 @mixin header {
   font-size: 3rem;
   font-weight: 300;
-  @include font-paragraph;
+  font-family: $font-paragraph;
 }
 
 //Header for (Kili Excursions)
 @mixin company {
   font-family: "Road Rage", cursive;
   font-size: 8rem;
-  @include main-yellow;
+  color: $main-yellow;
 }
 //For paragraph
 @mixin paragraph {
@@ -64,41 +62,66 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin titles {
   font-size: 5.3rem;
   font-weight: 600;
-  @include font-heading;
+  font-family: $font-heading;
 }
 
 //the titles in forms (Name, Email, Message) capitalized only for the titles in the footer
 @mixin formTitles {
   font-size: 1.7rem;
   font-weight: 500;
-  @include font-paragraph;
+  font-family: $font-paragraph;
 }
 
 //for the text in the footer
 @mixin footerText {
   font-size: 1.3rem;
   font-weight: 300;
-  @include font-paragraph;
+  font-family: $font-paragraph;
 }
 
-.container {
-  width: 80%;
-  padding:4em;
-  
+$padding-small: 1em;
+$padding-medium: 2em;
+$padding-large: 4em;
+
+$border-small: 2px;
+$border-medium: 4px;
+
+$border-radius-small: 2px;
+$border-radius-medium: 4px;
+$border-radius-large: 10px;
+
+// Responsiveness
+
+$breakpoints: (
+  "s": 480px,
+  //mobile from 0 to 480px s mobile
+  "m": 1024px,
+  //tablet from 481px to 1024px m tablet
+  "l": 1025px,
+  //desktop from 1025px to 1200px l desktop
+);
+
+@mixin s {
+  @media (max-width: map-get($breakpoints, "s")) {
+    @content;
+  }
 }
 
-$padding-small:1em;
-$padding-medium:2em;
-$padding-large:4em;
+@mixin m {
+  @media (max-width: map-get($breakpoints, "m")) {
+    @content;
+  }
+}
 
-$border-small:2px;
-$border-medium:4px;
+@mixin l {
+  @media (min-width: map-get($breakpoints, "l")) {
+    @content;
+  }
+}
 
-$border-radius-small:2px;
-$border-radius-medium:4px;
-$border-radius-large:10px;
-
-
-
-
-
+// This is flexible breakpoint, we can specify whatever extra
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

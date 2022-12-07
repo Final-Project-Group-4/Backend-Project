@@ -25,7 +25,9 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 2.6rem;
   font-weight: 500;
 
+
   font-family:$font-heading;
+
 
 }
 
@@ -41,8 +43,7 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin header {
   font-size: 3rem;
   font-weight: 300;
-  font-family: $font-paragraph;
-
+  font-family:$font-paragraph;
 }
 
 //Header for (Kili Excursions)
@@ -53,8 +54,7 @@ $font-paragraph: "Raleway", sans-serif;
 }
 //For paragraph
 @mixin paragraph {
-  font-family: $font-paragraph;
-
+  font-family:$font-paragraph;
   font-size: 1.7rem;
   font-weight: 300;
 }
@@ -62,29 +62,28 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin titles {
   font-size: 5.3rem;
   font-weight: 600;
-  font-family: $font-heading;
-
+  font-family:$font-heading;
 }
 
 //the titles in forms (Name, Email, Message) capitalized only for the titles in the footer
 @mixin formTitles {
   font-size: 1.7rem;
   font-weight: 500;
-  font-family: $font-paragraph;
-
+  font-family:$font-paragraph;
 }
 
 //for the text in the footer
 @mixin footerText {
   font-size: 1.3rem;
   font-weight: 300;
-  font-family: $font-paragraph;
+  font-family:$font-paragraph;
 }
+
+
 
 $padding-small: 1em;
 $padding-medium: 2em;
 $padding-large: 4em;
-
 
 $border-small: 2px;
 $border-medium: 4px;
@@ -131,5 +130,36 @@ $breakpoints: (
 
 }
 
+// Responsiveness
 
+$breakpoints: (
+"s":0, //mobile from 0 to 480px s mobile
+"m": 480px, //tablet from 481px to 1024px m tablet
+"l": 1024px, //desktop from 1025px to 1200px l desktop
+);
+
+@mixin s {
+@media (min-width: map-get($breakpoints, "s")) {
+@content;
+}
+}
+
+@mixin m {
+@media (min-width: map-get($breakpoints, "m")) {
+@content;
+}
+}
+
+@mixin l {
+@media (min-width: map-get($breakpoints, "l")) {
+@content;
+}
+}
+
+// This is flexible breakpoint, we can specify whatever extra
+@mixin breakpoint($bp: 0) {
+@media (min-width: $bp) {
+@content;
+}
+} 
 

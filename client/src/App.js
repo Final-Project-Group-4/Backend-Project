@@ -1,16 +1,21 @@
 import React from 'react';
-import {Navbar,Header,MainUp,MainDown,Contact,Footer} from "./components/export"
+import Container from '@mui/material/Container';
+import {Navbar,Header, MainUp,MainDown, Footer, Contacts} from "./components/export"
+
 function App() {
   return (
     <div className="App">
+      <Container>
       <Navbar/>
       <Header/>
       <MainUp/>
-      <MainDown/>
-      <Contact/>
+     <MainDown/> 
+      <Contacts/>
       <Footer/>
-      <Footer/>
-      <Footer/>
+
+      </Container>
+
+
 
 
     </div>

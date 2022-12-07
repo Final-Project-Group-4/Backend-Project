@@ -2,7 +2,8 @@
  export {default as Navbar } from "./shared/Navbar/Navbar"
  export {default as Peter } from "./shared/Peter/Peter"
  export {default as Footer } from "./shared/Footer/Footer"
- export {default as Contact } from "./shared/Contact/Contact"
+ export {default as ContactForm } from "./shared/Contact/ContactForm"
+ export {default as Contacts } from "./shared/Contact/Contacts"
  // export component
  export {default as FilterCard} from "./FilterCard/FilterCard"
  export {default as Header} from "./Header/Header"

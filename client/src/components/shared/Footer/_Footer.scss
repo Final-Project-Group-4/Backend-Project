@@ -1,0 +1,84 @@
+@import "../../../../scss/_config.scss";
+
+.main-footer {
+  color: $font-white;
+  font-family: "Raleway", sans-serif;
+  background-color: #999999;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height:auto;
+  .footer-container {
+    padding: 1em;
+    .last-row {
+        display:flex;
+        justify-content: space-between;
+        margin-top: 0.5em;
+        
+        .social-icons {
+            display:flex;
+            margin-right: 46.5%;
+            
+            
+            
+            .icons {
+                margin:0 0.5em;
+                
+            }
+            
+        }
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height:100%;
+
+      .col {
+        flex:33.3%;
+         padding: 1em;
+        // border: 1px solid black ;
+
+        h4 {
+            // text-align: center;
+            font-family: "Roboto", sans-serif;
+        };
+
+        .list-unstyled {
+          list-style-type: none;
+          @include footerText;
+
+          li {
+            padding:0.2em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Media queries
+
+// // for mobile
+// @include s {
+//   .main-footer{
+//   background-color: red;
+//   flex-direction: column;
+// }
+  
+// } 
+// // for tablet
+// @include m {
+//   .main-footer{
+//     background-color: green;
+//     flex-direction: column;
+//   }
+// } 
+// // for desktop
+// @include l {
+//   .main-footer{
+//   background-color: black;
+//   flex-direction: column;
+//   }
+// } 

@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/Final-Project-Group-4/Backend-Project#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "bcrypt": "^5.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -28,6 +31,7 @@
     "morgan": "^1.10.0",
     "nodemailer": "^6.8.0",
     "path": "^0.12.7",
+    "react-imgix": "^9.5.4",
     "url": "^0.11.0",
     "validator": "^13.7.0"
   },

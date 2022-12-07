@@ -79,7 +79,8 @@ function MainDown() {
         </div>
       </div>
     </div>
-  );
+  )};
+
 
       }
 
@@ -87,4 +88,3 @@ function MainDown() {
 
 
 
-export default MainDown;

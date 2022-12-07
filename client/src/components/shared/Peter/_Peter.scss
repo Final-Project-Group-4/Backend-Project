@@ -1,0 +1,33 @@
+@import "../../../../scss/_config.scss";
+
+.peter {
+  padding: $padding-small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .peter-img {
+    height: 300px;
+    padding: auto;
+    img {
+      border-radius: 50%;
+      border: $border-medium $main-yellow solid;
+      height: 100%;
+    }
+  }
+
+  .peter-text {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-small;
+    width: 60%;
+    justify-content: center;
+    h3 {
+      @include subtitles;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      @include paragraph;
+    }
+  }
+}

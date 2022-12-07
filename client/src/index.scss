@@ -1,17 +1,15 @@
-@import "../scss/config";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
+@import "../scss/_config.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
 .container {
-    width: 80%;
-    padding:4em;
-    font-size: calc(12px + 0.390625vw);
-   
-  }
+  width: 80%;
+  padding: 4em;
+  font-size: calc(12px + 0.390625vw);
+}
+

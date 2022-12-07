@@ -2,12 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 // Colors commonly used
 $main-green: #467373;
 $main-yellow: #d99923;
@@ -54,7 +48,7 @@ $font-paragraph: "Raleway", sans-serif;
 }
 //For paragraph
 @mixin paragraph {
-  @include font-paragraph;
+  font-family: $font-paragraph;
   font-size: 1.7rem;
   font-weight: 300;
 }

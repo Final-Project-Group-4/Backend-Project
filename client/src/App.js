@@ -1,18 +1,23 @@
-import React from 'react';
-import {Navbar,Header,MainUp,MainDown,Contact,Footer} from "./components/export"
+import React from "react";
+import {
+  Navbar,
+  Header,
+  MainUp,
+  MainDown,
+  Contact,
+  Footer,
+} from "./components/export";
+import TourCard from "./components/shared/TourCard/TourCard";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Header/>
-      <MainUp/>
-      <MainDown/>
-      <Contact/>
-      <Footer/>
-      <Footer/>
-      <Footer/>
-
-
+      <Navbar />
+      <Header />
+      <MainUp />
+      {/* <TourCard /> */}
+      <MainDown />
+      <Contact />
+      <Footer />
     </div>
   );
 }

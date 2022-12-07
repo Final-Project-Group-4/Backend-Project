@@ -2,12 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   
-}
 
 
 // Colors commonly used
@@ -81,12 +75,6 @@ $font-paragraph: "Raleway", sans-serif;
   font-family:$font-paragraph;
 }
 
-.container {
-  width: 80%;
-  padding:4em;
- 
- 
-}
 
 $padding-small:1em;
 $padding-medium:2em;
@@ -99,37 +87,36 @@ $border-radius-small:2px;
 $border-radius-medium:4px;
 $border-radius-large:10px;
 
-
 $breakpoints: (
-"s":0, //mobile from 0 to 480px s mobile
-"m": 480px, //tablet from 481px to 1024px m tablet
-"l": 1024px, //desktop from 1025px to 1200px l desktop
+  "s": 480px,
+  //mobile from 0 to 480px s mobile
+  "m": 1024px,
+  //tablet from 481px to 1024px m tablet
+  "l": 1025px,
+  //desktop from 1025px l desktop
 );
 
 @mixin s {
-@media (min-width: map-get(§$breakpoints, "s")) {
-@content;
-}
+  @media (max-width: map-get($breakpoints, "s")) {
+    @content;
+  }
 }
 
 @mixin m {
-@media (min-width: map-get(§$breakpoints, "m")) {
-@content;
-}
+  @media (max-width: map-get($breakpoints, "m")) {
+    @content;
+  }
 }
 
 @mixin l {
-@media (min-width: map-get(§$breakpoints, "l")) {
-@content;
-}
+  @media (min-width: map-get($breakpoints, "l")) {
+    @content;
+  }
 }
 
 // This is flexible breakpoint, we can specify whatever extra
 @mixin breakpoint($bp: 0) {
-@media (min-width: $bp) {
-@content;
+  @media (min-width: $bp) {
+    @content;
+  }
 }
-} 
-
-
-

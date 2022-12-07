@@ -1,4 +1,4 @@
-# Backend-Project
+# Peter's Website Project
 
 <!-- Tour:
 GetAllTours: Get : http://localhost:4000/api/tours
@@ -16,5 +16,3 @@ deleteGallery: Delete : http://localhost:4000/api/gallery/:id
 
 User :
 Login: Post: http://localhost:4000/api/admin -->
-
-anything can happen

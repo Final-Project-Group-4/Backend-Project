@@ -9,3 +9,5 @@
  export {default as MainDown} from "./MainDown/MainDown"
  export {default as MainUp} from "./MainUp/MainUp"
  export {default as ValueCard} from "./ValueCard/ValueCard"
+ export {default as Gallery} from "./Gallery/Gallery"
+//  export {default as SinglePhoto} from "./Gallery/Gallery"

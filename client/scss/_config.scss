@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
+
 // Colors commonly used
 $main-green: #467373;
 $main-yellow: #d99923;
@@ -23,14 +24,17 @@ $font-paragraph: "Raleway", sans-serif;
 @mixin subtitles {
   font-size: 2.6rem;
   font-weight: 500;
-  font-family: $font-heading;
+
+  font-family:$font-heading;
+
 }
 
 //Use this mixin for buttons and capitalized(Our Tours and Submit button in landing page)
 @mixin navlinks {
   font-size: 1.7rem;
   font-weight: 400;
-  font-family: $font-paragraph;
+  font-family:$font-paragraph;
+
 }
 
 //This should be capitalized (Welcome to )
@@ -38,6 +42,7 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 3rem;
   font-weight: 300;
   font-family: $font-paragraph;
+
 }
 
 //Header for (Kili Excursions)
@@ -49,6 +54,7 @@ $font-paragraph: "Raleway", sans-serif;
 //For paragraph
 @mixin paragraph {
   font-family: $font-paragraph;
+
   font-size: 1.7rem;
   font-weight: 300;
 }
@@ -57,6 +63,7 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 5.3rem;
   font-weight: 600;
   font-family: $font-heading;
+
 }
 
 //the titles in forms (Name, Email, Message) capitalized only for the titles in the footer
@@ -64,6 +71,7 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 1.7rem;
   font-weight: 500;
   font-family: $font-paragraph;
+
 }
 
 //for the text in the footer
@@ -76,6 +84,7 @@ $font-paragraph: "Raleway", sans-serif;
 $padding-small: 1em;
 $padding-medium: 2em;
 $padding-large: 4em;
+
 
 $border-small: 2px;
 $border-medium: 4px;
@@ -92,7 +101,8 @@ $breakpoints: (
   "m": 1024px,
   //tablet from 481px to 1024px m tablet
   "l": 1025px,
-  //desktop from 1025px to 1200px l desktop
+
+  //desktop from 1025px l desktop
 );
 
 @mixin s {
@@ -118,4 +128,8 @@ $breakpoints: (
   @media (min-width: $bp) {
     @content;
   }
+
 }
+
+
+

@@ -1,23 +1,29 @@
-import React from "react";
+
+import React from 'react';
+import Container from '@mui/material/Container';
+
 import {
   Navbar,
   Header,
   MainUp,
   MainDown,
-  Contact,
+  Contacts,
   Footer,
 } from "./components/export";
 import TourCard from "./components/shared/TourCard/TourCard";
 function App() {
   return (
     <div className="App">
+    <Container>
       <Navbar />
       <Header />
       <MainUp />
       {/* <TourCard /> */}
       <MainDown />
-      <Contact />
+      <Contacts />
       <Footer />
+ 
+   </Container>
     </div>
   );
 }

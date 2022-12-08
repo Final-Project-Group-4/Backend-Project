@@ -54,7 +54,6 @@ $font-paragraph: "Raleway", sans-serif;
 //For paragraph
 @mixin paragraph {
   font-family: $font-paragraph;
-
   font-size: 1.7rem;
   font-weight: 300;
 }

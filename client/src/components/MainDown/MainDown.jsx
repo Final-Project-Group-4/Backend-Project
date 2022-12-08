@@ -40,7 +40,7 @@ function MainDown() {
   };
 
   return (
-    <div className="container">
+    <div className="container mainDown">
       <div className="tours">
         <div
           className="hiking col-12-s col-4-m col-2-l"

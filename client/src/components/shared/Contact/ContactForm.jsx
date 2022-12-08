@@ -14,20 +14,22 @@ function ContactForm() {
 
   return (
     <>
-      <Grid item xs={12} sm={6} className="leftGridI" padding={6}>
+      <Grid item xs={12} sm={6} className="leftGridI" padding={1}>
         <Typography>
           <h2>Contact Us</h2>
+          </Typography>
           <p>
             Need help starting out? Please contact Us, <br /> we are glad to
             help you plan your awesome trip!
           </p>
-        </Typography>
+        
         <div className="space"></div>
 
         <TextField
           fullWidth
           id="input-with-icon-textfield"
           label="FullName"
+          name="FulName"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -36,12 +38,15 @@ function ContactForm() {
             ),
           }}
           variant="standard"
+          required
         />
         <div className="space" />
         <TextField
           fullWidth
           id="input-with-icon-textfield"
           label="Email"
+          type="email"
+          name="email"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -50,13 +55,16 @@ function ContactForm() {
             ),
           }}
           variant="standard"
+          required
         />
       </Grid>
-      <Grid Item xs={12} sm={6} textAlign="end" padding={3}>
+      <Grid Item xs={12} sm={6} textAlign="end" padding={2}>
         <TextField
           fullWidth
           id="filled-multiline-flexible"
           label="Message"
+          type="message"
+          name="message"
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -69,9 +77,16 @@ function ContactForm() {
           value={value}
           onChange={handleChange}
           variant="outlined"
+          required
         />
         <div className="space"></div>
-        <Button justify-content="flex-end" variant="contained" color="success">
+        <Button
+          value="Send"
+          type="submit"
+          justify-content="flex-end"
+          variant="contained"
+          color="success"
+        >
           Submit
         </Button>
       </Grid>

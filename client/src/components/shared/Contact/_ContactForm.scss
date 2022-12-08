@@ -10,9 +10,26 @@
     text-align: center;
 
 }
-
+/* 
 .MuiGrid-root {
     background-color: $main-grey1;
    
+} */
+
+h2{
+    @include titles;
+    font-size:3rem;
+    //!change this font size in the titles mixin in the config file
 }
 
+p{
+    @include paragraph;
+    font-size:1.2rem;
+    //!change this font size in the paragraph mixin in the config file
+}
+
+Button {
+    @include navlinks; 
+    
+
+}

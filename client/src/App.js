@@ -2,12 +2,13 @@ import React from "react";
 import {
   Navbar,
   Header,
-  MainUp,
-  MainDown,
+   MainUp,
+  MainDown, 
   Contacts,
   Footer,
   Gallery,
 } from "./components/export";
+
 import { Routes, Route } from "react-router-dom";
 import Container from "@mui/material/Container";
 import TourCard from "./components/shared/TourCard/TourCard";

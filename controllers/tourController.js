@@ -25,7 +25,6 @@ export const createTour = async (req, res, next) => {
   }
 };
 
-
 export const getSingleTour = async (req, res, next) => {
   try {
     const tour = await Tour.findById(req.params.id).populate("gallery");
@@ -35,6 +34,14 @@ export const getSingleTour = async (req, res, next) => {
   }
 };
 
+export const getToursByType = async (req, res, next) => {
+  try {
+    const tour = await Tour.find({ type: req.query.type });
+    res.status(200).json(tour);
+  } catch (error) {
+    next(error);
+  }
+};
 
 export const deleteTour = async (req, res, next) => {
   console.log(req.params.id);
@@ -63,4 +70,3 @@ export const updateTour = async (req, res, next) => {
     res.status(409).send(error.message);
   }
 };
-

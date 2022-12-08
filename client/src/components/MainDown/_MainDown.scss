@@ -2,30 +2,31 @@
 @use "sass:math";
 $flex-columns: 12;
 
-.container {
+.mainDown {
+  background-color: $main-light;
+  margin: auto;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  //margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .tours {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
-  padding: 1em;
-  width: 100%;
+  justify-content: space-around;
+  //padding: 1em;
+  width: 90%;
   margin: auto;
-  background-color: $main-grey1;
+  background-color: $main-light;
 }
 .hiking,
 .safari,
 .coffee,
 .custom {
-  padding: 10px;
-  margin: 10px 10px;
+  padding: 5px;
+  margin: 5px 5px;
   min-width: 200px;
   width: 100%;
   height: 200px;
@@ -74,28 +75,31 @@ $flex-columns: 12;
 }
 
 .videos {
-  background-color: $main-grey1;
-  padding: 1em;
-  width: 100%;
+  background-color: $main-light;
+  //padding: 1em;
+  padding-bottom: 0.5rem;
+  width: 90%;
   margin: auto;
   font-family: $font-heading;
-  height: 45vh;
+  //height: 45vh;
 
   .videoTitle {
-    padding: 10px;
-    margin: 0px 10px;
+    padding: 1rem;
+    margin: 0;
     text-align: center;
   }
   .player {
     overflow: hidden;
-    padding-bottom: 556.25%;
-    //height: 5vh;
+    padding-bottom: 300px;
+    width: 100%;
+    height: 450px;
+    margin: auto;
     position: relative;
 
     iframe {
       left: 0;
       top: 0;
-      height: 300px;
+      height: 450px;
       width: 100%;
       position: absolute;
     }

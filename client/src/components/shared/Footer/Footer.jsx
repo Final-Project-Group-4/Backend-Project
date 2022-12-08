@@ -31,23 +31,15 @@ function Footer() {
             <h4>FAQ</h4>
             <ul className="list-unstyled">
               <li>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum
-                ad rem necessitatibus dolor molestiae aliquid sequi officia .
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                blanditiis aspernatur, voluptas!
-              </li>
-              <li>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Voluptatibus adipisci!
+                If you have any other questions please don't hesitate to contact
+                us!
               </li>
             </ul>
           </div>
         </div>
         <hr />
         <div className="last-row">
-          <p className="col-sm">copyright 2009 | All rights reserved</p>
+          <p className="col-sm">copyright 2009 © All rights reserved</p>
           <div className="social-icons">
             <div className="icons">
               <a href="https://facebook.com">

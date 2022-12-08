@@ -17,7 +17,7 @@ $flex-columns: 12;
   align-items: center;
   justify-content: space-around;
   //padding: 1em;
-  width: 90%;
+  width: 100%;
   margin: auto;
   background-color: $main-light;
 }
@@ -78,12 +78,14 @@ $flex-columns: 12;
   background-color: $main-light;
   //padding: 1em;
   padding-bottom: 0.5rem;
-  width: 90%;
+  width: 100%;
   margin: auto;
   font-family: $font-heading;
   //height: 45vh;
 
   .videoTitle {
+    font-size: 2rem;
+    font-weight: 500;
     padding: 1rem;
     margin: 0;
     text-align: center;
@@ -115,6 +117,9 @@ $flex-columns: 12;
       width: math.div($i * 100%, $flex-columns);
     }
   }
+  // iframe {
+  //   width: 70%;
+  // }
 }
 @include m {
   @for $i from 1 through $flex-columns {

@@ -1,14 +1,11 @@
-
-
 @use "../../../../scss/_config.scss" as *;
 
 .space {
-    height:20px;
+  height: 20px;
 }
 
 .leftGridI {
-    text-align: center;
-
+  text-align: center;
 }
 /* 
 .MuiGrid-root {
@@ -16,20 +13,18 @@
    
 } */
 
-h2{
-    @include titles;
-    font-size:3rem;
-    //!change this font size in the titles mixin in the config file
+h2 {
+  @include titles;
+  font-size: 3rem;
+  //!change this font size in the titles mixin in the config file
 }
 
-p{
-    @include paragraph;
-    font-size:1.2rem;
-    //!change this font size in the paragraph mixin in the config file
+p {
+  @include paragraph;
+  font-size: 1.2rem;
+  //!change this font size in the paragraph mixin in the config file
 }
 
 Button {
-    @include navlinks; 
-    
-
+  @include navlinks;
 }

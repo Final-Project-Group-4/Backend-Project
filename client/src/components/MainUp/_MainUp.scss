@@ -20,13 +20,13 @@
       h2 {
         @include titles;
         //! changed size to 4 & weight to 500?
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 500;
       }
       p {
         @include paragraph;
         //! changes here
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding: $padding-small $padding-small 0;
       }
     }
@@ -69,7 +69,7 @@
 // for mobile until 480px
 @include s {
   .container {
-    width: 90%;
+    width: 100%;
   }
   .mainup {
     padding: 0.2rem;
@@ -149,7 +149,7 @@
 // for tablet until 1024px
 @include m {
   .container {
-    width: 90%;
+    width: 100%;
   }
   .mainup {
     // padding: 0.2rem;

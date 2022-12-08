@@ -21,7 +21,7 @@ $font-paragraph: "Raleway", sans-serif;
 
 //Use this subtitles mixin for mainDown and mainUp subtitles
 @mixin subtitles {
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 500;
   font-family: $font-heading;
 }
@@ -49,7 +49,7 @@ $font-paragraph: "Raleway", sans-serif;
 //For paragraph
 @mixin paragraph {
   font-family: $font-paragraph;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 //for the titles we we are offering and contact us
@@ -68,7 +68,7 @@ $font-paragraph: "Raleway", sans-serif;
 
 //for the text in the footer
 @mixin footerText {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 300;
   font-family: $font-paragraph;
 }

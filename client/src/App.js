@@ -91,7 +91,7 @@ function App() {
         {/* <TourCard /> */}
         <MainDown />
         <Contacts />
-        <Gallery galleryImages={galleryImages} />
+        {/* <Gallery galleryImages={galleryImages} /> */}
         <Footer />
       </Container>
     </div>

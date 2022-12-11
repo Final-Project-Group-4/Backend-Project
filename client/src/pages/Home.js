@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Contacts,
   Footer,
@@ -6,7 +6,7 @@ import {
   MainDown,
   MainUp,
   Navbar,
-} from "../components/export";
+} from '../components/export';
 
 export default function Home() {
   return (

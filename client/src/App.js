@@ -1,16 +1,14 @@
 import React from "react";
-import {
-  Navbar,
-  Header,
-   MainUp,
-  MainDown, 
-  Contacts,
-  Footer,
-  Gallery,
-} from "./components/export";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.js";
+import Tours from "./pages/Tours.js";
+import Gallery from "./pages/Gallery.js";
+import AboutUs from "./pages/AboutUs.js";
+import PlanTrip from "./pages/PlanTrip.js";
+
 import Container from "@mui/material/Container";
+
 import TourCard from "./components/shared/TourCard/TourCard";
 
 const galleryImages = [
@@ -86,14 +84,15 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Navbar />
-        <Header />
-        <MainUp />
-        {/* <TourCard /> */}
-        <MainDown />
-        <Contacts />
-        {/* <Gallery galleryImages={galleryImages} /> */}
-        <Footer />
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tours" element={<Tours />} />
+            <Route path="/tours" element={<Gallery />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/plantrip" element={<PlanTrip />} />
+          </Routes>
+        </Router>
       </Container>
     </div>
   );

@@ -1,13 +1,13 @@
-@import "../scss/config";
+@import "../scss/_config.scss";
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .container {
-width: 80%;
-padding: 4em;
-font-size: calc(12px + 0.390625vw); 
-} 
+  width: 100%;
+  padding: 2em;
+  font-size: calc(12px + 0.390625vw);
+}

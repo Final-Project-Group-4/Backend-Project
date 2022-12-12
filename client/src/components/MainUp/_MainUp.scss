@@ -1,6 +1,214 @@
-.div1 {
-background-color: aqua;
-div {
-    background-color: red;
+@import "../../../scss/_config.scss";
+
+.mainup {
+  background-color: $main-light;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.mainup {
+  .first {
+    padding: $padding-small;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    .text {
+      width: 60%;
+      h2 {
+        @include titles;
+        //! changed size to 4 & weight to 500?
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      p {
+        @include paragraph;
+        //! changes here
+        font-size: 1.2rem;
+        padding: $padding-small $padding-small 0;
+      }
+    }
+    img {
+      min-width: 300px;
+      width: 40%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .values-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div {
+      padding: 1rem;
+      p {
+        padding: 0.5rem;
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  .icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      margin: 0.5rem;
+    }
+  }
+}
+
+// Media Queries-----------------------------
+
+// for mobile until 480px
+@include s {
+  .container {
+    width: 100%;
+  }
+  .mainup {
+    padding: 0.2rem;
+    .first {
+      padding: 0.2rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      .text {
+        width: 90%;
+        margin: 0.5rem;
+        h2 {
+          margin: 0.5rem;
+        }
+        p {
+          margin: 0.2rem;
+        }
+      }
+      img {
+        min-width: 0;
+        margin: 0.5rem;
+        padding: 0.2rem;
+        width: 90%;
+      }
+    }
+
+    .values-container {
+      padding: 1rem;
+      justify-content: center;
+      flex-direction: column;
+
+      div {
+        max-width: 350px;
+        padding: 0.2rem;
+        flex-flow: row wrap;
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .peter {
+      .peter-img {
+        height: auto;
+        img {
+          max-width: 200px;
+          height: auto;
+        }
+      }
+      .peter-text {
+        width: auto;
+        text-align: center;
+        h3 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .icons {
+      width: auto;
+      justify-content: center;
+
+      a {
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+// for tablet until 1024px
+@include m {
+  .container {
+    width: 100%;
+  }
+  .mainup {
+    // padding: 0.2rem;
+    .first {
+      padding: 0.2rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      .text {
+        width: 90%;
+        margin: 0.5rem;
+        h2 {
+          margin: 0.5rem;
+        }
+        p {
+          margin: 0.2rem;
+        }
+      }
+      img {
+        min-width: 0;
+        margin: 0.5rem;
+        padding: 0.2rem;
+        width: 90%;
+      }
+    }
+
+    .values-container {
+      padding: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      div {
+        padding: 0.2rem;
+      }
+    }
+
+    .values-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .peter {
+      //width: 90%;
+      .peter-img {
+        display: flex;
+        height: auto;
+        align-items: center;
+        img {
+          max-width: 250px;
+          height: auto;
+        }
+      }
+      .peter-text {
+        width: auto;
+        max-width: 500px;
+        text-align: center;
+      }
+    }
+  }
 }

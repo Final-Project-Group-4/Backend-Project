@@ -1,1 +1,14 @@
 @import "../../../../scss/_config.scss";
+
+
+.img {
+    width:100%;
+    height:5rem
+}
+
+.nameOfRoute { 
+  @include formTitles;   
+  color:red
+  
+
+}

@@ -4,6 +4,7 @@
  export {default as Footer } from "./shared/Footer/Footer"
  export {default as ContactForm } from "./shared/Contact/ContactForm"
  export {default as Contacts } from "./shared/Contact/Contacts"
+ export {default as TourCard } from "./shared/TourCard/TourCard"
  // export component
  export {default as FilterCard} from "./FilterCard/FilterCard"
  export {default as Header} from "./Header/Header"

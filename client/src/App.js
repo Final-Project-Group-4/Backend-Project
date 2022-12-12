@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Navbar,
   Header,
-   MainUp,
-  MainDown, 
+  // MainUp,
+  //MainDown, 
   Contacts,
   Footer,
   Gallery,
+  TourCard
 } from "./components/export";
 
 import { Routes, Route } from "react-router-dom";
-import Container from "@mui/material/Container";
-import TourCard from "./components/shared/TourCard/TourCard";
+import { Grid} from "@mui/material";
+import { Container } from "@mui/material";
+import tourdata from "./datajson/tourdata.json";
+import TourCards from "./components/shared/TourCard/TourCards";
 
 const galleryImages = [
   {
@@ -82,18 +85,29 @@ const galleryImages = [
   },
 ];
 
+
+
+
 function App() {
+
+  console.log("DATA",tourdata);
+
+  
   return (
     <div className="App">
       <Container>
         <Navbar />
         <Header />
-        <MainUp />
+        {/* <MainUp /> */}
         {/* <TourCard /> */}
-        <MainDown />
-        <Contacts />
+       {/* <MainDown /> */}
+        
+        <TourCards tourdata={tourdata}/>
+        
+        
+        {/* <Contacts /> */}
         {/* <Gallery galleryImages={galleryImages} /> */}
-        <Footer />
+       {/*  <Footer /> */}
       </Container>
     </div>
   );

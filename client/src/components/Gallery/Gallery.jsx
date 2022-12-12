@@ -34,8 +34,24 @@ export default function Gallery({ galleryImages }) {
   };
 
   return (
-    <div>
-      <h1>Gallery</h1>
+    <div className="container">
+      <h3>Photo gallery</h3>
+      
+      <div className="gallery-wrap">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                className="single"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+      </div>
+
       {openModal && (
         <div className="sliderWrap">
           <FontAwesomeIcon
@@ -58,43 +74,9 @@ export default function Gallery({ galleryImages }) {
           </div>
         </div>
       )}
-      <div className="gallery-wrap">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                className="single"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-      </div>
+
     </div>
   );
 }
 
-// const buildURL = imagePath =>
-//   `https://assets.imgix.net/tutorials/${imagePath}.webp`;
 
-// export default function Gallery() {
-//     return (
-//         <div className="gallery">
-//             {images.map(image => (
-//       <Imgix
-//         sizes="(min-width: 960px) 33vw, (min-width: 640px) 50vw, 100vw"
-//         src={buildURL(image)}
-//         key={image}
-//         imgixParams={{
-//           fit: "crop",
-//           fm: "jpg"
-//         }}
-//         width="600"
-//         height="600"
-//       />
-//     ))}
-//         </div>
-//     )
-// }

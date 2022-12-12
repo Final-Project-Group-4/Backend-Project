@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Contacts,
-  Footer,
-  Header,
-  MainDown,
-  MainUp,
-  Navbar,
-} from '../components/export';
+import { Contacts, Footer, Header, MainDown, MainUp, Navbar } from '../../components/export';
 
 export default function Home() {
   return (

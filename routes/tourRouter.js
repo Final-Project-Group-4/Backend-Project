@@ -6,6 +6,7 @@ import {
   getSingleTour,
   createTour,
   updateTour,
+  getToursByType,
 } from "../controllers/tourController.js";
 import { protectController } from "../middleware/protectController.js";
 

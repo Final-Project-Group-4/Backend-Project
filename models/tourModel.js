@@ -5,28 +5,85 @@ const tourSchema = new mongoose.Schema({
     type: String,
     required: [true, "A tour must have a name"],
     unique: true,
+    trim: true,
+    maxlength: [40, "A tour name must have less or equal then 40 characters"],
+    minlength: [10, "A tour name must have equal or more then 10 characters"],
   },
-  type: {
-    type: String,
-    required: [
-      true,
-      "A tour type must be added (hiking, safari, coffee or custom tour)",
-    ],
-  },
-  //you dont need square brackets to make it an array, by using populate
-  //it will automatically making it an array
-  //gallery: [{ type: mongoose.Schema.Types.ObjectId, ref: "ImageModel" }],
-
-  description: {
-    type: String,
-    required: [true, "A tour must have a description"],
-  },
-  price: { type: Number, required: [true, "A tour must have a price"] },
+  duration: { type: String, required: [true, "A tour must have a duration"] },
   difficulty: {
     type: String,
     required: [true, "A tour must have a difficulty"],
+    enum: {
+      values: ["easy", "medium", "difficult"],
+      message: "Difficulty value is not valid",
+    },
   },
-  duration: { type: String, required: [true, "A tour must have a duration"] },
+  description: {
+    type: String,
+    trim: true,
+    required: [true, "A tour must have a description"],
+  },
+  subNote: String,
+  subtitle: {
+    type: String,
+    trim: true,
+  },
+  imgCover: {
+    type: String,
+    default: "someImage.jpg",
+  },
+  otherImages: {
+    type: [String],
+    maxlength: 3,
+  },
+  type: {
+    type: String,
+    required: [true, "A tour must have a difficulty"],
+    enum: {
+      values: ["coffee", "safari", "hiking"],
+      message: "Type value is not valid",
+    },
+  },
+  scenery: {
+    type: String,
+    required: [true, "A tour must have a scenery value"],
+    enum: {
+      values: ["good", "very good", "excellent"],
+      message: "Type value is not valid",
+    },
+  },
+  locations: [
+    {
+      type: {
+        type: String,
+        default: "Point",
+        enum: ["Point"],
+      },
+      coordinates: [Number],
+      description: String,
+      day: Number,
+    },
+  ],
+  days: [
+    {
+      number: Number,
+      title: {
+        type: String,
+        required: [true, "A day must have a title"],
+        trim: true,
+      },
+      description: {
+        type: String,
+        trim: true,
+        required: [true, "Each day must have a description"],
+      },
+      elevation: String,
+      altitudeGained: String,
+      altitudeLost: String,
+      descentTo: String,
+      note: String,
+    },
+  ],
 });
 
 export default mongoose.model("TourModel", tourSchema);

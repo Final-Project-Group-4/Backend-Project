@@ -1,18 +1,9 @@
 import mongoose from "mongoose";
 
 const gallerySchema = new mongoose.Schema({
-  tourId: {
-    type: mongoose.Schema.Types.ObjectId,ref:"TourModel"
-  },
- 
   name: {
     type: String,
     required: [true, "an image must have a name."],
-    unique: [true],
-  },
-  email: {
-    type: String,
-    required: [true, "Please provide an email"],
     unique: [true],
   },
   photo: { type: String, required: [true, "an image must be provided."] },

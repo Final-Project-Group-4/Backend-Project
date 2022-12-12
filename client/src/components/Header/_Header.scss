@@ -2,11 +2,10 @@
 @import url("https://fonts.cdnfonts.com/css/road-rage");
 .main__div {
   position: relative;
-  text-align: center; 
+  text-align: center;
 
   img {
     width: 100%;
-
   }
   .main__header {
     position: absolute;
@@ -15,56 +14,46 @@
     transform: translate(-50%, -50%);
     @include s {
       position: absolute;
-      top:50%;
-      
-  }
-   @include m {
-    position: absolute;
-    top:50%;
-    
-}
+      top: 50%;
+    }
+    @include m {
+      position: absolute;
+      top: 50%;
+    }
     h2 {
       @include header;
       color: white;
       text-transform: uppercase;
-   
+
       @include s {
         display: none;
-
-    }
-    @include m {
-      font-size: calc(20px + 0.390625vw);
-  }
-      }
-    }
-    h1 {
-      font-size: calc(60px + 0.390625vw); 
-      color: #f99923;
-      font-family: "Road Rage";
-      @include s {
-        font-size: calc(25px + 0.390625vw); 
-        margin-bottom: 4px;
-
-    
       }
       @include m {
-        font-size: calc(35px + 0.390625vw); 
-
-  
-    }
-
+        font-size: calc(20px + 0.390625vw);
+      }
     }
   }
-  p {
-    font-size: calc(16px + 0.390625vw); 
-    color: white;
+  h1 {
+    font-size: calc(60px + 0.390625vw);
+    color: #f99923;
+    font-family: "Road Rage";
     @include s {
-      font-size: calc(12px + 0.390625vw); 
-     
+      font-size: calc(25px + 0.390625vw);
+      margin-bottom: 4px;
     }
     @include m {
-      font-size: calc(12px + 0.390625vw); 
-     
+      font-size: calc(35px + 0.390625vw);
+    }
+  }
+
+  p {
+    font-size: calc(16px + 0.390625vw);
+    color: white;
+    @include s {
+      font-size: calc(12px + 0.390625vw);
+    }
+    @include m {
+      font-size: calc(12px + 0.390625vw);
     }
   }
   button {
@@ -76,22 +65,18 @@
     transition: all 0.3s ease-in-out;
     margin: 3rem;
     @include s {
-      font-size: calc(10px + 0.390625vw); 
+      font-size: calc(10px + 0.390625vw);
       border: 2px solid white;
       margin: 0.25rem;
-
-      
     }
     @include m {
-      font-size: calc(10px + 0.390625vw); 
+      font-size: calc(10px + 0.390625vw);
       border: 2px solid white;
       margin: 0.25rem;
-
-      
     }
     &:hover {
       background-color: $main-yellow;
       cursor: pointer;
-
     }
   }
+}

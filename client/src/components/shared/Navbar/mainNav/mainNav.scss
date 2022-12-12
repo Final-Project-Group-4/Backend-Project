@@ -1,7 +1,6 @@
 @import "../../../../../scss/_config.scss";
 
 .app__navbar__links {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +23,7 @@
     }
 
     a {
-      font-size: calc(12px + 0.390625vw); 
+      font-size: calc(12px + 0.390625vw);
       color: $font-white;
       text-decoration: none;
 
@@ -37,19 +36,15 @@
       }
     }
   }
-
 }
 
 @include s {
   .app__navbar__links {
     display: none;
- 
   }
-  
+}
+@include m {
+  .app__navbar__links {
+    display: none;
   }
-  @include m {
-    .app__navbar__links {
-      display: none;
-    }
-    
-    }
+}

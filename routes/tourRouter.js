@@ -10,6 +10,7 @@ import {
 } from '../controllers/tourController.js';
 import { protectController } from '../middleware/protectController.js';
 
+
 const router = express.Router();
 
 router.route('/').get(getAllTours).post(protectController, createTour);

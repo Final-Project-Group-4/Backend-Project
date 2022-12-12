@@ -1,10 +1,10 @@
-import Tour from "../models/tourModel.js";
+import Tour from '../models/tourModel.js';
 
 export const getAllTours = async (req, res, next) => {
   try {
-    const data = await Tour.find().populate("gallery");
+    const data = await Tour.find();
     res.status(200).json({
-      status: "success",
+      status: 'success',
       results: data.length,
       data,
     });
@@ -17,7 +17,7 @@ export const createTour = async (req, res, next) => {
   try {
     const newTour = await Tour.create(req.body);
     res.status(201).json({
-      status: "success",
+      status: 'success',
       data: newTour,
     });
   } catch (error) {
@@ -27,7 +27,7 @@ export const createTour = async (req, res, next) => {
 
 export const getSingleTour = async (req, res, next) => {
   try {
-    const tour = await Tour.findById(req.params.id).populate("gallery");
+    const tour = await Tour.findById(req.params.id).populate('gallery');
     res.status(200).json(tour);
   } catch (error) {
     next(error);
@@ -62,7 +62,7 @@ export const updateTour = async (req, res, next) => {
       new: true,
     });
     res.status(201).json({
-      status: "success",
+      status: 'success',
       data: updatedTour,
     });
   } catch (error) {

@@ -27,7 +27,7 @@ export const createTour = async (req, res, next) => {
 
 export const getSingleTour = async (req, res, next) => {
   try {
-    const tour = await Tour.findById(req.params.id).populate('gallery');
+    const tour = await Tour.findById(req.params.id);
     res.status(200).json(tour);
   } catch (error) {
     next(error);

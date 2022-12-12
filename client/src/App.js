@@ -9,6 +9,7 @@ import PlanTrip from './pages/PlanTrip/PlanTrip.jsx';
 import SingleTour from './pages/Tours/SingleTour.jsx';
 import Admin from './pages/Admin/Admin.jsx';
 import FAQ from './pages/FAQ/FAQ.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
 
 import Container from '@mui/material/Container';
 
@@ -97,6 +98,11 @@ function App() {
             <Route path="/plantrip" element={<PlanTrip />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/admin" element={<Admin />} />
+            {/* <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/forgotpassword" element={<ForgotPassword />} />
+            <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </Container>

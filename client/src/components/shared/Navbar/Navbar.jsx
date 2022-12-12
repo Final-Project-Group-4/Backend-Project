@@ -1,12 +1,23 @@
 import "./_Navbar.scss";
-
-function Navbar() {
+import { useState } from "react";
+import Toggle from "./toggle/toggle"
+import MediaIcons from "./MediaIcons/MediaIcons"
+import MainNav from "./mainNav/MainNav"
+const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   return (
-    
-    <div className="first">
-      Navbar
-    </div>
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
+        <img src="logo" alt="logo" />
+      </div>
+
+      <MainNav/>
+      <MediaIcons/>
+<Toggle setToggle = {setToggle} toggle={toggle}/> 
+
+
+    </nav>
   );
-}
+};
 
 export default Navbar;

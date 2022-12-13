@@ -7,7 +7,7 @@ import logo from "./../../../assets/small-logo.png";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="container app__navbar ">
+    <nav className="app__navbar ">
       <div className="app__navbar-logo">
         <img src={logo} alt="logo" />
       </div>

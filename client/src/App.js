@@ -11,8 +11,9 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import PlanTrip from './pages/PlanTrip/PlanTrip.jsx';
 import SingleTour from './pages/Tours/SingleTour.jsx';
 import Admin from './pages/Admin/Admin.jsx';
-import FAQ from './pages/FAQ/FAQ.jsx';
+import FAQ from './pages/FAQ/Faq.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
+import {Navbar, Footer} from "./components/export"
 import TourCard from './components/shared/TourCard/TourCard';
 
 const galleryImages = [
@@ -99,6 +100,7 @@ function App() {
         </Grid>*/}
         
         <Router>
+          <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tours" element={<Tours />} />
@@ -113,7 +115,9 @@ function App() {
             <Route path="/forgotpassword" element={<ForgotPassword />} />
             <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
             <Route path="*" element={<NotFound />} />
+
           </Routes>
+          <Footer/>
         </Router>
     </div>
   );

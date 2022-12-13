@@ -2,8 +2,8 @@
 
 .main-footer {
   color: $font-white;
-  font-family: 'Raleway', sans-serif;
-  background-color: $main-black;
+  font-family: "Raleway", sans-serif;
+  background-color: $main-grey4;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -42,6 +42,19 @@
       .col {
         flex: 33.3%;
         padding: 1em;
+
+        .faq {
+          text-decoration: none;
+          // color: $font-white;
+        }
+
+        .faq:hover {
+          cursor: pointer;
+        }
+        // .faq:active {
+        //   text-decoration: none;
+        // }
+
         h4 {
           // text-align: center;
           font-family: 'Roboto', sans-serif;
@@ -49,12 +62,7 @@
           text-decoration: none;
         }
         // border: 1px solid black ;
-        .faq:hover {
-          cursor: pointer;
-        }
-        .faq:active {
-          text-decoration: none;
-        }
+        
 
         .list-unstyled {
           list-style-type: none;

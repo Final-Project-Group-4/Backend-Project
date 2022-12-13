@@ -11,7 +11,7 @@ import { Contacts, Footer, Navbar } from "../../components/export";
 
 export default function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   // Modal handler
   const handleOpenModal = (index) => {
@@ -36,9 +36,11 @@ export default function Gallery({ galleryImages }) {
   };
 
   return (
+    <>
+    <Navbar />
     <div className="container">
-      <Navbar />
-      <h3>Photo gallery</h3>
+      
+      <h2>Photo gallery</h2>
       
       <div className="gallery-wrap">
         {galleryImages &&
@@ -54,6 +56,85 @@ export default function Gallery({ galleryImages }) {
             );
           })}
       </div>
+
+
+{/* <div className="row">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                className="column"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+      </div> */}
+
+
+
+ {/* <div className="row">
+  <div className="column">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                // className="column"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+          </div>
+          <div className="column">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                // className="column"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+          </div>
+          <div className="column">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                // className="column"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+          </div>
+          <div className="column">
+        {galleryImages &&
+          galleryImages.map((slide, index) => {
+            return (
+              <div
+                // className="column"
+                key={index}
+                onClick={() => handleOpenModal(index)}
+              >
+                <img src={slide.img} alt="" />
+              </div>
+            );
+          })}
+          </div>
+      </div>  */}
+
+
 
       {openModal && (
         <div className="sliderWrap">
@@ -77,9 +158,11 @@ export default function Gallery({ galleryImages }) {
           </div>
         </div>
       )}
+      </div>
         <Contacts />
           <Footer />
-    </div>
+    
+    </>
   );
 }
 

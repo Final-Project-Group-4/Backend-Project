@@ -2,8 +2,8 @@ import React from "react";
 import {
   Navbar,
   Header,
-   MainUp,
-  MainDown, 
+  MainUp,
+  MainDown,
   Contacts,
   Footer,
   Gallery,
@@ -85,20 +85,16 @@ const galleryImages = [
 function App() {
   return (
     <div className="App">
-      <Container>
-        <Navbar />
-        <Header />
-        <MainUp />
-        {/* <TourCard /> */}
-        <MainDown />
-        <Contacts />
-        {/* <Gallery galleryImages={galleryImages} /> */}
-        <Footer />
-      </Container>
+      <Navbar />
+      <Header />
+      <MainUp />
+      {/* <TourCard /> */}
+      <MainDown />
+      <Contacts />
+      {/* <Gallery galleryImages={galleryImages} /> */}
+      <Footer />
     </div>
   );
 }
-
-
 
 export default App;

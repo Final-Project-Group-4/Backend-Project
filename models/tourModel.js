@@ -82,6 +82,7 @@ const tourSchema = new mongoose.Schema({
       altitudeLost: String,
       descentTo: String,
       note: String,
+      hikingTime: String,
     },
   ],
 });

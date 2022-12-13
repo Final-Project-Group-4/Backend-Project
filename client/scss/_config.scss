@@ -119,10 +119,3 @@ $breakpoints: (
     @content;
   }
 }
-
-// This is flexible breakpoint, we can specify whatever extra
-@mixin breakpoint($bp: 0) {
-  @media (min-width: $bp) {
-    @content;
-  }
-}

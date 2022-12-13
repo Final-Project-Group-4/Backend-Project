@@ -1,33 +1,26 @@
-import "./MediaIcons.scss"
-import { BsFacebook } from "react-icons/bs";
+import "./MediaIcons.scss";
+import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 function MediaIcons() {
   return (
- 
-        <ul className="app__navbar__right">
-           
-        {[<BsFacebook />, <FaInstagram />].map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
-    <ul className="app__navbar_langauge">
-         {["DE", "|", "FR", "|", "EN"].map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
-        </ul>
-        </ul>
-   
+    <div className="app__navbar__right">
+      <ul className="app__navbar__icons">
+        {[<FaFacebook size={20} />, <FaInstagram size={20} />].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
 
-  )
+      <ul className="app__navbar_langauge">
+        {["DE", "|", "FR", "|", "EN"].map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default MediaIcons
+export default MediaIcons;

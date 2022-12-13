@@ -13,7 +13,6 @@ import SingleTour from './pages/Tours/SingleTour.jsx';
 import Admin from './pages/Admin/Admin.jsx';
 import FAQ from './pages/FAQ/FAQ.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
-
 import TourCard from './components/shared/TourCard/TourCard';
 
 const galleryImages = [
@@ -90,7 +89,6 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
         {/* <Grid container 
         spacing={4}
         direction="row"
@@ -99,7 +97,7 @@ function App() {
         textAlign="center" > 
         <TourCards tourdata={tourdata}/>
         </Grid>*/}
-
+        
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -117,7 +115,6 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
-      </Container>
     </div>
   );
 }

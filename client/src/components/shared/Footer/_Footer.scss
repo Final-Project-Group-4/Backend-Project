@@ -1,4 +1,4 @@
-@import "../../../../scss/_config.scss";
+@import '../../../../scss/_config.scss';
 
 .main-footer {
   color: $font-white;
@@ -42,12 +42,18 @@
       .col {
         flex: 33.3%;
         padding: 1em;
-
-        // border: 1px solid black ;
-
         h4 {
           // text-align: center;
-          font-family: "Roboto", sans-serif;
+          font-family: 'Roboto', sans-serif;
+          color: $font-white;
+          text-decoration: none;
+        }
+        // border: 1px solid black ;
+        .faq:hover {
+          cursor: pointer;
+        }
+        .faq:active {
+          text-decoration: none;
         }
 
         .list-unstyled {

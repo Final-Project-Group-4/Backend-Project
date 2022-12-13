@@ -1,6 +1,9 @@
-import "./_Header.scss";
-import image from "./mountain.jpg";
+import './_Header.scss';
+import image from './mountain.jpg';
+import { useNavigate } from 'react-router-dom';
+
 function Header() {
+  const navigate = useNavigate();
   return (
     <div className="main__div">
       <img src={image} alt="elephant" />
@@ -8,7 +11,7 @@ function Header() {
         <h2>-Welcome To-</h2>
         <h1>Kili Excursions</h1>
         <p>Our goal is set to provide a unique adventure for everyone.</p>
-        <button>OUR TOURS</button>
+        <button onClick={() => navigate('/tours')}>OUR TOURS</button>
       </header>
     </div>
   );

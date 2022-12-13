@@ -1,14 +1,21 @@
-import React from "react";
-import "./mainNav.scss";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './mainNav.scss';
 function mainNav() {
   return (
     <ul className="app__navbar__links">
-      {["Home", "Tours", "Galery", "About Us", "Plan Trip"].map((item) => (
-        <li className="app__flex p-text" key={`link-${item}`}>
-          <div />
-          <a href={`#${item}`}>{item}</a>
-        </li>
-      ))}
+      <li className="app__flex p-text">
+        <Link to={'/tours'}>Tours</Link>
+      </li>
+      <li className="app__flex p-text">
+        <Link to={'/gallery'}> Gallery </Link>
+      </li>
+      <li className="app__flex p-text">
+        <Link to={'/about'}>About Us</Link>
+      </li>
+      <li className="app__flex p-text">
+        <Link to={'/plantrip'}>Plan Trip</Link>
+      </li>
     </ul>
   );
 }

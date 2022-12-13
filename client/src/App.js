@@ -1,6 +1,11 @@
+
+import { Routes, Route } from "react-router-dom";
+import { Grid} from "@mui/material";
+import { Container } from "@mui/material";
+import tourdata from "./datajson/tourdata.json";
+import TourCards from "./components/shared/TourCard/TourCards";
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import Home from './pages/LandingPage/Home.jsx';
 import Tours from './pages/Tours/Tours.jsx';
 import Gallery from './pages/Gallery/Gallery.jsx';
@@ -14,6 +19,7 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 import Container from '@mui/material/Container';
 
 import TourCard from './components/shared/TourCard/TourCard';
+
 
 const galleryImages = [
   {
@@ -84,10 +90,27 @@ const galleryImages = [
   },
 ];
 
+
+
+
 function App() {
+
+  console.log("DATA",tourdata);
+
+  
   return (
     <div className="App">
-      <Container>
+      <Container> 
+      {/* <Grid container 
+        spacing={4}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center" > 
+        <TourCards tourdata={tourdata}/>
+        </Grid>*/}
+        
+
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -105,6 +128,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
+
       </Container>
     </div>
   );

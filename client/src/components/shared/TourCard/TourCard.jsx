@@ -1,42 +1,65 @@
-import './_TourCard.scss';
-import tour from './../../../assets/tour-1-1.jpg';
 
-function TourCard() {
+import "./_TourCard.scss";
+import { Grid, Paper, Typography } from "@mui/material";
+import Box from "@mui/material/Box";
+
+function TourCard(props) {
+  const { tour, description, difficulty, days} = props;
+  console.log("days", days);
+
   return (
-    <div>TourCards</div>
-    //     <div className="card">
-    //       <div className="card__header">
-    //         <div className="card__picture">
-    //           <div className="card__picture-overlay &nbsp;"></div>
-    //           <img src={tour} alt="" className="card__picture-img" />
-    //           {/* src=`/img/tours/${tour.imageCover}`, alt=`${tour.name}`*/}
-    //         </div>
-    //         <h3 className="heading-tertirary">
-    //           <span>Tour Name</span>
-    //         </h3>
-    //       </div>
-    //       <div className="card__details">
-    //         <h4>Subtitle of tour</h4>
-    //         {/* `${tour.difficulty} ${tour.duration}-day tour` */}
-    //         <p className="card__text">tour summary</p>
-    //         <div className="card__data">
-    //           <div className="card__icon">days</div>
-    //         </div>
-    //         <div className="card__data">
-    //           <div className="card__icon">difficulty</div>
-    //         </div>
-    //         <div className="card__data">
-    //           <div className="card__icon">traffic</div>
-    //         </div>
-    //         <div className="card__data">
-    //           <div className="card__icon">scenery</div>
-    //         </div>
-    //       </div>
-    //       <a href="#" className="btn btn--green-btn--small">
-    //         Details
-    //       </a>
-    //       {/* href=`/tour/${tour.slug}` */}
-    //     </div>
+    <Paper elevation={3} textAlign="center">
+      <img src={require("../../../assets/tour-1-1.jpg")} className="img" />
+      <Box paddingX={1}>
+        <Typography component="subtitle1" variant="h2" className="nameOfRoute">
+          {tour}
+        </Typography>
+      </Box>
+      <hr />
+      <Box paddingX={2}>
+        {/* the sx is used to style the component */}
+        <Typography
+          component="h2"
+          variant="subtitle1"
+          className="CardBodyText"
+          sx={{ fontFamily: "raleway", fontSize: "1", fontWeight: "400" }}
+          textAlign="left"
+        >
+          <b className="subtitles">Difficulty</b>:<span />
+          {difficulty}
+        </Typography>
+      </Box>
+
+      <hr />
+
+      <Box paddingX={2}>
+        {/* the sx is used to style the component */}
+        <Typography
+          component="h2"
+          variant="subtitle1"
+          className="CardBodyText"
+          sx={{ fontFamily: "raleway", fontSize: "1rem", fontWeight: "400" }}
+          textAlign="left"
+        >
+          <b className="subtitles">Description</b>:<span />
+          {description}
+        </Typography>
+      </Box>
+      <hr />
+      <Box paddingX={2}>
+        {/* the sx is used to style the component */}
+        <Typography
+          component="h2"
+          variant="subtitle1"
+          className="CardBodyText"
+          sx={{ fontFamily: "raleway", fontSize: "1", fontWeight: "400" }}
+          textAlign="left"
+        >
+          <b className="subtitles">Days</b>:<span />
+          {days.length}
+        </Typography>
+      </Box>
+    </Paper>
   );
 }
 

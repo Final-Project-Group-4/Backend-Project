@@ -1,0 +1,164 @@
+[
+    {
+      "name": "Marangu Route",
+      "duration": "5 or 6 days",
+      "difficulty": "medium",
+      "description": "Marangu Route, commonly known as the Coca Cola route is more popular because it can be done in fewer days and has permanent sleep huts at the campsites. Summit night from Kibo Hut is steep and passes Gilman’s Point to Uhuru Peak.",
+      "subNote": "Upon arrival at Kilimanjaro International Airport, you will be met and   transferred for overnight accommodation at Nakara hotel  B&B. Your head guide will meet you for your briefing, gear check and arrange for you to hire any equipment you may need.",
+      "subtitle": "Climbing Mount Kilimanjaro via The Marangu Route",
+      "type": "hiking",
+      "scenery": "good",
+      "locations": [
+        {
+          "type": "Point",
+          "coordinates": [37.5134, -3.1816],
+          "description": "Mandara Huts",
+          "day": 1
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.4387, -3.1392],
+          "description": "Horombo Huts",
+          "day": 2
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.389, -3.0814],
+          "description": "Kibo Huts",
+          "day": 3
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.3507, -3.0666],
+          "description": "Uhuru Peak",
+          "day": 4
+        }
+      ],
+      "days": [
+        {
+          "number": 1,
+          "title": "Marangu Gate",
+          "description": "Departing from hotel several minutes drive will take you through the Village of Marangu to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
+          "elevation": "1905m/6250ft to 2723m/8934ft",
+          "altitudeGained": "818m"
+        },
+        {
+          "number": 2,
+          "title": "Mandara Huts",
+          "description": "After a good nights sleep and a hearty breakfast, we emerge from the rain forest and continue on an ascending path, through heathland, looking for giant lobelias and groundsels. Continue up into open moorlands where small shrubs are the main vegetation. Stop halfway for lunch, to enjoy  amazing views of Mawenzi. Arrive at the Horombo Huts late afternoon beneath the spectacular Kibo Summit viewpoint. Temperatures begin to drop.",
+          "elevation": "2723m/8934ft to 3721m/12,208ft",
+          "altitudeGained": "998m"
+        },
+        {
+          "number": 3,
+          "title": "Horombo Huts",
+          "description": "You can spend a full day and a second night at Horombo. On this day, you can either rest at the huts or take a stroll up to the Mawenzi base camp then return to the Horombo Huts. This extra day will help your acclimatization, and further your understanding of the mountains weather and altitude. After your pause, you will continue up to the Kibo Huts on your fourth day for your midnight start to the summit."
+        },
+        {
+          "number": 4,
+          "title": "Horombo Huts - Kibo Huts",
+          "description": "After breakfast, we continue on through the dwindling heathland that blends into a moonscape as you enter the sweeping saddle connecting Mawenzi and Kibo. Here while we stop for lunch, and later when you cross this surprisingly large saddle, you can examine the summit climb up Kibo that you will be starting in just a few hours.",
+          "elevation": "3721m/12,208ft to 4714m/15,466ft",
+          "altitudeGained": "993m"
+        },
+        {
+          "number": 5,
+          "title": "Kibo Huts – Summit, Horombo Huts - Capped Summit",
+          "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit in a switchback formation through trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion, we ascend through heavy scree and possibly snow towards Gillman’s Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+          "elevation": "4714m/15,466ft to 5895m/19,341ft",
+          "altitudeGained": "1181m",
+          "altitudeLost": "2174m",
+          "descentTo": "3721m/12,208ft"
+        },
+        {
+          "number": 6,
+          "title": "Horombo Huts - Marangu Gate - Moshi",
+          "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it’s time to say goodbye. We continue the descent down  stopping at the Mandara Huts for lunch. Remember to tip your guides, cooks, and porters, since you will be leaving them here. You return back to the Marangu Park Gate and receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you to drive you back to your hotel in Moshi (about 5 minutes). Enjoy a long overdue hot shower, dinner and celebrations!!",
+          "elevation": "3721m/12,208 to 1905m/6250ft",
+          "altitudeLost": "1816m",
+          "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar."
+        }
+      ]
+    },
+    {
+      "name": "Marangu Route",
+      "duration": "5 or 6 days",
+      "difficulty": "medium",
+      "description": "Marangu Route, commonly known as the Coca Cola route is more popular because it can be done in fewer days and has permanent sleep huts at the campsites. Summit night from Kibo Hut is steep and passes Gilman’s Point to Uhuru Peak. It is a shorter route with a steeper incline and less time for  acclimatization it tends to have a lower summit success rate. This is the only route where the ascent and descent route is shared, thus creating more traffic.",
+      "subNote": "Upon arrival at Kilimanjaro International Airport, you will be met and   transferred for overnight accommodation at Nakara hotel  B&B. Your head guide will meet you for your briefing, gear check and arrange for you to hire any equipment you may need.",
+      "subtitle": "Climbing Mount Kilimanjaro via The Marangu Route",
+      "type": "hiking",
+      "scenery": "good",
+      "locations": [
+        {
+          "type": "Point",
+          "coordinates": [37.5134, -3.1816],
+          "description": "Mandara Huts",
+          "day": 1
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.4387, -3.1392],
+          "description": "Horombo Huts",
+          "day": 2
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.389, -3.0814],
+          "description": "Kibo Huts",
+          "day": 3
+        },
+        {
+          "type": "Point",
+          "coordinates": [37.3507, -3.0666],
+          "description": "Uhuru Peak",
+          "day": 4
+        }
+      ],
+      "days": [
+        {
+          "number": 1,
+          "title": "Marangu Gate",
+          "description": "Departing from hotel several minutes drive will take you through the Village of Marangu to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
+          "elevation": "1905m/6250ft to 2723m/8934ft",
+          "altitudeGained": "818m"
+        },
+        {
+          "number": 2,
+          "title": "Mandara Huts",
+          "description": "After a good nights sleep and a hearty breakfast, we emerge from the rain forest and continue on an ascending path, through heathland, looking for giant lobelias and groundsels. Continue up into open moorlands where small shrubs are the main vegetation. Stop halfway for lunch, to enjoy  amazing views of Mawenzi. Arrive at the Horombo Huts late afternoon beneath the spectacular Kibo Summit viewpoint. Temperatures begin to drop.",
+          "elevation": "2723m/8934ft to 3721m/12,208ft",
+          "altitudeGained": "998m"
+        },
+        {
+          "number": 3,
+          "title": "Horombo Huts",
+          "description": "You can spend a full day and a second night at Horombo. On this day, you can either rest at the huts or take a stroll up to the Mawenzi base camp then return to the Horombo Huts. This extra day will help your acclimatization, and further your understanding of the mountains weather and altitude. After your pause, you will continue up to the Kibo Huts on your fourth day for your midnight start to the summit."
+        },
+        {
+          "number": 4,
+          "title": "Horombo Huts - Kibo Huts",
+          "description": "After breakfast, we continue on through the dwindling heathland that blends into a moonscape as you enter the sweeping saddle connecting Mawenzi and Kibo. Here while we stop for lunch, and later when you cross this surprisingly large saddle, you can examine the summit climb up Kibo that you will be starting in just a few hours.",
+          "elevation": "3721m/12,208ft to 4714m/15,466ft",
+          "altitudeGained": "993m"
+        },
+        {
+          "number": 5,
+          "title": "Kibo Huts – Summit, Horombo Huts - Capped Summit",
+          "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit in a switchback formation through trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion, we ascend through heavy scree and possibly snow towards Gillman’s Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+          "elevation": "4714m/15,466ft to 5895m/19,341ft",
+          "altitudeGained": "1181m",
+          "altitudeLost": "2174m",
+          "descentTo": "3721m/12,208ft"
+        },
+        {
+          "number": 6,
+          "title": "Horombo Huts - Marangu Gate - Moshi",
+          "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it’s time to say goodbye. We continue the descent down  stopping at the Mandara Huts for lunch. Remember to tip your guides, cooks, and porters, since you will be leaving them here. You return back to the Marangu Park Gate and receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you to drive you back to your hotel in Moshi (about 5 minutes). Enjoy a long overdue hot shower, dinner and celebrations!!",
+          "elevation": "3721m/12,208 to 1905m/6250ft",
+          "altitudeLost": "1816m",
+          "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar."
+        }
+      ]
+    }
+  ]

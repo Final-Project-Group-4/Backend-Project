@@ -1,9 +1,7 @@
-
-import { Routes, Route } from "react-router-dom";
-import { Grid} from "@mui/material";
-import { Container } from "@mui/material";
-import tourdata from "./datajson/tourdata.json";
-import TourCards from "./components/shared/TourCard/TourCards";
+import { Grid } from '@mui/material';
+import { Container } from '@mui/material';
+import tourdata from './datajson/tourdata.json';
+import TourCards from './components/shared/TourCard/TourCards';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/LandingPage/Home.jsx';
@@ -16,10 +14,7 @@ import Admin from './pages/Admin/Admin.jsx';
 import FAQ from './pages/FAQ/FAQ.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 
-import Container from '@mui/material/Container';
-
 import TourCard from './components/shared/TourCard/TourCard';
-
 
 const galleryImages = [
   {
@@ -90,18 +85,13 @@ const galleryImages = [
   },
 ];
 
-
-
-
 function App() {
+  console.log('DATA', tourdata);
 
-  console.log("DATA",tourdata);
-
-  
   return (
     <div className="App">
-      <Container> 
-      {/* <Grid container 
+      <Container>
+        {/* <Grid container 
         spacing={4}
         direction="row"
         justifyContent="center"
@@ -109,7 +99,6 @@ function App() {
         textAlign="center" > 
         <TourCards tourdata={tourdata}/>
         </Grid>*/}
-        
 
         <Router>
           <Routes>
@@ -128,12 +117,9 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
-
       </Container>
     </div>
   );
 }
-
-
 
 export default App;

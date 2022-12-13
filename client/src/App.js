@@ -101,10 +101,17 @@ function App() {
         {/* <MainUp /> */}
         {/* <TourCard /> */}
        {/* <MainDown /> */}
+       <Grid container 
+        spacing={4}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center"
         
+        >
         <TourCards tourdata={tourdata}/>
         
-        
+        </Grid>
         {/* <Contacts /> */}
         {/* <Gallery galleryImages={galleryImages} /> */}
        {/*  <Footer /> */}

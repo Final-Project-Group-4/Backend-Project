@@ -6,26 +6,18 @@ import TourCard from './TourCard'
 export default function TourCards({tourdata}) {
   console.log("TOURCARDS", tourdata)
 
-
-
   return (
-    <Grid container 
-        spacing={4}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        textAlign="center"
-        
-        >
-      
+   
+     <>
      {tourdata.map((tour) => {      
       return (
-        <div  key={tour._id}>          
-          <TourCard tour={tour}/>
-        </div>
+        <Grid  Item xs={3} margin="0.7em"> 
+          <TourCard days={tour.days} tour={tour.name} description={tour.description} difficulty={tour.difficulty}/>
+          </Grid>
+        
       )
      })}
-
-        </Grid>
+    </>
+     
       )
 }

@@ -1,0 +1,50 @@
+@import "../../../../../scss/_config.scss";
+
+.app__navbar__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  list-style: none;
+
+  li {
+    @include navlinks;
+    margin: 0 2rem;
+    cursor: pointer;
+
+    div {
+      width: 5px;
+      height: 5px;
+      background: transparent;
+      border-radius: 50%;
+
+      margin-bottom: 5px;
+    }
+
+    a {
+      font-size: calc(12px + 0.390625vw);
+      color: $font-white;
+      text-decoration: none;
+
+      text-transform: uppercase;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $main-yellow;
+      }
+    }
+  }
+}
+
+@include s {
+  .app__navbar__links {
+    display: none;
+  }
+}
+@include m {
+  .app__navbar__links {
+    display: none;
+  }
+}

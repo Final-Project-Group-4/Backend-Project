@@ -1,3 +1,4 @@
+
 import "./_TourCard.scss";
 import { Grid, Paper, Typography } from "@mui/material";
 import Box from "@mui/material/Box";

@@ -1,0 +1,36 @@
+@import "../../../../scss/_config.scss";
+.app__navbar {
+  width: 64%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.25);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  z-index: 1;
+  @include s {
+    height: 60px;
+    background: transparent;
+    border: none;
+  }
+  @include m {
+    height: 60px;
+    background: transparent;
+    border: none;
+  }
+}
+
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  img {
+    width: 180px;
+    height: 160px;
+    margin-top: 9rem;
+  }
+}

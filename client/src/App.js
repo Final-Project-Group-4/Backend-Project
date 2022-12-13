@@ -32,9 +32,9 @@ const galleryImages = [
   {
     img: 'https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F194a32c7-a3e5-4c9f-bb0f-5db99fc9d4c1%2Fpeak-of-kilimanjaro2.jpg?id=81bf3d21-6a1e-43ad-baf9-92df416d7658&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2',
   },
-  // {
-  //   img: "https://www.notion.https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1e33d36e-b4d7-48c3-bde1-34a99b397c24%2Fkilimanjaro-peak4.jpg?id=9e2f5258-a1b5-4022-ae4b-990783329e94&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2/Images-314b7e007a094250a2a787e959c1ec42#9e2f5258a1b54022ae4b990783329e94",
-  // },
+  {
+    img: "https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7d7b7733-769f-4c74-a55a-fde5e4869f46%2FShira-tourIMG-0629.jpg?id=0a6a6a84-8d90-4481-abf6-e3fd9d5a7c95&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2",
+  },
   {
     img: 'https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4b5d58c1-b14f-4554-99cb-a617cb073928%2Fkilimanjaro-peak5.jpg?id=1aa18720-d005-4e8d-8abc-470da9783302&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2',
   },

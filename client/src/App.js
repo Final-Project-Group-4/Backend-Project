@@ -105,7 +105,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/tours/:id" element={<SingleTour />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/gallery" element={<Gallery galleryImages={galleryImages}/>} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/plantrip" element={<PlanTrip />} />
             <Route path="/faq" element={<FAQ />} />

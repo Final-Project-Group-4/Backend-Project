@@ -15,6 +15,7 @@ import FAQ from './pages/FAQ/FAQ.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 
 import TourCard from './components/shared/TourCard/TourCard';
+import { Footer, Navbar } from './components/export';
 
 const galleryImages = [
   {
@@ -101,11 +102,12 @@ function App() {
         </Grid>*/}
 
         <Router>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/tours/:id" element={<SingleTour />} />
-            <Route path="/gallery" element={<Gallery galleryImages={galleryImages}/>} />
+            <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/plantrip" element={<PlanTrip />} />
             <Route path="/faq" element={<FAQ />} />
@@ -116,6 +118,7 @@ function App() {
             <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer />
         </Router>
       </Container>
     </div>

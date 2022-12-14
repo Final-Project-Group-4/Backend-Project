@@ -1,0 +1,72 @@
+.planTrip {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+.peter {
+  img {
+    border-radius: 2%;
+  }
+}
+
+form {
+  width: 95%;
+  max-width: 600px;
+  margin: 1rem;
+  border: 2px solid lightgrey;
+  padding: 15px;
+}
+form label {
+  font-size: 1rem;
+  display: block;
+  text-align: left;
+  margin: 1rem 0 0.2rem;
+  color: grey;
+}
+form p {
+  font-size: 0.8rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: grey;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  outline: none;
+}
+textarea {
+  margin-top: 1rem;
+  max-width: 600px;
+}
+input:focus {
+  border-color: #4299e1;
+}
+
+input::placeholder {
+  color: #a0aec0;
+}
+
+button {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.35rem 0.5rem;
+  background-color: #4299e1;
+  color: #1a202c;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input.input-error,
+select.input-error {
+  border-color: #fc8181;
+}
+
+button:disabled {
+  opacity: 0.35;
+}

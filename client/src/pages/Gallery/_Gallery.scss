@@ -3,21 +3,18 @@
 
 
 .container {
-    // background-color: #999999;
+     background-color: $main-grey1;
     h2 {
         text-align: center;
-        margin:0.5em;
-        color: #111;
+        margin:0.5rem;
+        margin-top: 6rem;
+        color: $main-black;
+        font-family: $font-heading;
+
+        span {font-weight: 300;}
     }
 
 .gallery-wrap {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 10px;
-//   align-items: center;
-//   justify-content: center;
-//   width: 100%;
-//   margin: 0 auto;
 -webkit-column-count: 5;
 -moz-column-count: 5;
 column-count: 5;
@@ -70,7 +67,7 @@ padding: 0.8em 0.8em;
 
 
     img {
-        border-radius: 5px;
+        border-radius: $border-medium;
     }
     img:hover {
         transform: scale(1.02);
@@ -98,6 +95,15 @@ padding: 0.8em 0.8em;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include s {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+           
+        }
 
         // img {
         //    max-width: 100%;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Gallery.scss";
+import "./_Gallery.scss";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,7 +7,7 @@ import {
   faCircleChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { Contacts, Footer, Navbar } from "../../components/export";
+import { Contacts } from "../../components/export";
 
 export default function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -37,10 +37,9 @@ export default function Gallery({ galleryImages }) {
 
   return (
     <>
-    <Navbar />
     <div className="container">
       
-      <h2>Photo gallery</h2>
+      <h2>Photo <span>Gallery</span></h2>
       
       <div className="gallery-wrap">
         {galleryImages &&
@@ -56,84 +55,6 @@ export default function Gallery({ galleryImages }) {
             );
           })}
       </div>
-
-
-{/* <div className="row">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                className="column"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-      </div> */}
-
-
-
- {/* <div className="row">
-  <div className="column">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                // className="column"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-          </div>
-          <div className="column">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                // className="column"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-          </div>
-          <div className="column">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                // className="column"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-          </div>
-          <div className="column">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                // className="column"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-          </div>
-      </div>  */}
-
 
 
       {openModal && (
@@ -160,7 +81,7 @@ export default function Gallery({ galleryImages }) {
       )}
       </div>
         <Contacts />
-          <Footer />
+          
     
     </>
   );

@@ -1,30 +1,41 @@
 
+
 import React from 'react';
 import { Contacts, Footer, Navbar} from '../../components/export';
 import tourdata from "../../datajson/tourdata.json";
 import {  Grid } from '@mui/material';
-import TourCard from '../../components/shared/TourCard/TourCard';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect} from 'react';
+import TourContext from '../../context/TourContext';
+import React, { useEffect, useContext } from 'react';
 
 export default function Tours() {
-  console.log("TOURCARDStorender", tourdata)
-  const [tours, setTours] = React.useState(tourdata);
+ 
+  
+  const { loadToursData, tourData } = useContext(TourContext);
+  const [tours, setTours] = React.useState(tourData);
   const { type } = useParams();
+  
+
+  //During the first load of the page, load all the tours data
+  useEffect(() => {
+    loadToursData();
+  }, []);
+  
   useEffect (() => {
   
     if ( type ) {
-      const filteredTours = tourdata.filter( tour => tour.type === type );
+      const filteredTours = tourData.filter( tour => tour.type === type );
       setTours( filteredTours );
       console.log("theFiltered",filteredTours);
     }
   })
 
   console.log("type", type);
-
+  
+ 
     return (
       <div className="tours container">
-        <Navbar />
         
         <Grid container 
         spacing={4}
@@ -43,29 +54,6 @@ export default function Tours() {
         </Grid>
       
         <Contacts />
-        <Footer />
+       
       </div>
     );
-  };
-
-
-
-
-/* 
-  return (
-    <div className="tours container">
-      <Navbar />
-      <Container> 
-      <Grid container 
-      spacing={4}
-      direction="row"
-      justifyContent="center"
-      alignItems="center"
-      textAlign="center" > 
-      <TourCards tourdata={tourdata}/>
-      </Grid>
-      </Container>
-      <Contacts />
-      <Footer />
-    </div>
-  ); */

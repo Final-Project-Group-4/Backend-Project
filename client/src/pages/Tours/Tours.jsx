@@ -1,42 +1,71 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Contacts, Footer, Navbar, TourCard } from '../../components/export';
+
+import React from 'react';
+import { Contacts, Footer, Navbar} from '../../components/export';
+import tourdata from "../../datajson/tourdata.json";
+import {  Grid } from '@mui/material';
+import TourCard from '../../components/shared/TourCard/TourCard';
+import { useParams } from 'react-router-dom';
+import { useState, useEffect} from 'react';
 
 export default function Tours() {
-  const [tourData, setTourData] = useState([]);
-
-  //During the first load of the page, load all the tours data
-  useEffect(() => {
-    loadToursData();
-  }, []);
-
-  //Get all the Tours data and check for the status
-  const loadToursData = async () => {
-    const AllTours = await axios.get(`${process.env.REACT_APP_BE_URL}/api/tours`);
-    console.log(AllTours.data);
-
-    if (AllTours.status === 200) {
-      setTourData(AllTours.data);
-    } else {
-      console.error('Something went wrong');
+  console.log("TOURCARDStorender", tourdata)
+  const [tours, setTours] = React.useState(tourdata);
+  const { type } = useParams();
+  useEffect (() => {
+  
+    if ( type ) {
+      const filteredTours = tourdata.filter( tour => tour.type === type );
+      setTours( filteredTours );
+      console.log("theFiltered",filteredTours);
     }
+  })
+
+  console.log("type", type);
 
     return (
       <div className="tours container">
         <Navbar />
-        {tourData.length === 0 && <h1>No Tour Found!</h1>}
-        {tourData &&
-          tourData.map((item, index) => {
-            return (
-              //here we define the tour cards, how should it look like
-              // card image, card title, card body, delete and
-              //edit icons
-              <TourCard key={index} {...item} />
-            );
-          })}
+        
+        <Grid container 
+        spacing={4}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center" > 
+     {tours.map((tour) => {      
+      return (
+        <Grid  Item xs={3} margin="0.7em"> 
+          <TourCard days={tour.days} name={tour.name} tour={tour.name} subtitle={tour.subtitle} difficulty={tour.difficulty} scenery={tour.scenery} id={tour.id}/>
+          </Grid>
+        
+      )
+     })}
+        </Grid>
+      
         <Contacts />
         <Footer />
       </div>
     );
   };
-}
+
+
+
+
+/* 
+  return (
+    <div className="tours container">
+      <Navbar />
+      <Container> 
+      <Grid container 
+      spacing={4}
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      textAlign="center" > 
+      <TourCards tourdata={tourdata}/>
+      </Grid>
+      </Container>
+      <Contacts />
+      <Footer />
+    </div>
+  ); */

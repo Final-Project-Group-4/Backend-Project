@@ -8,7 +8,10 @@
 
 .nameOfRoute { 
   @include formTitles;   
-  color:red
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+
+
   
 
 }
@@ -16,5 +19,14 @@
 .subtitles {
   @include subtitles;
   font-size: 1.2rem;
+
+}
+
+Button {
+  @include navlinks;
+}
+
+.MuiButton-root {
+  margin:0.5rem !important
 
 }

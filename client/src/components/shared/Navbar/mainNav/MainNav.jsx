@@ -5,6 +5,9 @@ function mainNav() {
   return (
     <ul className="app__navbar__links">
       <li className="app__flex p-text">
+        <Link to={'/'}>Home</Link>
+      </li>
+      <li className="app__flex p-text">
         <Link to={'/tours'}>Tours</Link>
       </li>
       <li className="app__flex p-text">

@@ -36,9 +36,12 @@ $flex-columns: 12;
   background-size: cover;
   color: $font-white;
   font-family: $font-paragraph;
+}
+a {
   text-decoration: none;
   text-decoration-line: none;
 }
+
 .hiking {
   background-image: url('https://media.istockphoto.com/id/1189969126/photo/group-of-hikers-walks-in-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=YlJOZLmELRF0HaEr1Xv4-Uae_VN4vnB8XnE99hGD3gQ=');
   &:hover {

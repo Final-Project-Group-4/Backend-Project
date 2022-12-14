@@ -1,6 +1,3 @@
-// 
-
-
 import React from "react";
 import "./_Gallery.scss";
 import { useState } from "react";

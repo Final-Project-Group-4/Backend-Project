@@ -1,7 +1,4 @@
-import { Grid } from '@mui/material';
-import { Container } from '@mui/material';
-import tourdata from './datajson/tourdata.json';
-import TourCards from './components/shared/TourCard/TourCards';
+import TourCard from './components/shared/TourCard/TourCard';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/LandingPage/Home.jsx';
@@ -11,11 +8,10 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import PlanTrip from './pages/PlanTrip/PlanTrip.jsx';
 import SingleTour from './pages/Tours/SingleTour.jsx';
 import Admin from './pages/Admin/Admin.jsx';
-import FAQ from './pages/FAQ/FAQ.jsx';
+import FAQ from './pages/FAQ/Faq.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
-
-import TourCard from './components/shared/TourCard/TourCard';
-import { Footer, Navbar } from './components/export';
+import { Navbar, Footer } from './components/export';
+import { TourProvider } from './context/TourContext';
 
 const galleryImages = [
   {
@@ -33,9 +29,9 @@ const galleryImages = [
   {
     img: 'https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F194a32c7-a3e5-4c9f-bb0f-5db99fc9d4c1%2Fpeak-of-kilimanjaro2.jpg?id=81bf3d21-6a1e-43ad-baf9-92df416d7658&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2',
   },
-  // {
-  //   img: "https://www.notion.https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F1e33d36e-b4d7-48c3-bde1-34a99b397c24%2Fkilimanjaro-peak4.jpg?id=9e2f5258-a1b5-4022-ae4b-990783329e94&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2/Images-314b7e007a094250a2a787e959c1ec42#9e2f5258a1b54022ae4b990783329e94",
-  // },
+  {
+    img: 'https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7d7b7733-769f-4c74-a55a-fde5e4869f46%2FShira-tourIMG-0629.jpg?id=0a6a6a84-8d90-4481-abf6-e3fd9d5a7c95&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2',
+  },
   {
     img: 'https://carnelian-august-e33.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4b5d58c1-b14f-4554-99cb-a617cb073928%2Fkilimanjaro-peak5.jpg?id=1aa18720-d005-4e8d-8abc-470da9783302&table=block&spaceId=74d07a78-32bb-4842-b661-ec4168abe5da&width=2000&userId=&cache=v2',
   },
@@ -87,41 +83,29 @@ const galleryImages = [
 ];
 
 function App() {
-  console.log('DATA', tourdata);
-
   return (
-    <div className="App">
-      <Container>
-        {/* <Grid container 
-        spacing={4}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        textAlign="center" > 
-        <TourCards tourdata={tourdata}/>
-        </Grid>*/}
-
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/tours" element={<Tours />} />
-            <Route path="/tours/:id" element={<SingleTour />} />
-            <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
-            <Route path="/about" element={<AboutUs />} />
-            <Route path="/plantrip" element={<PlanTrip />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/admin" element={<Admin />} />
-            {/* <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgotpassword" element={<ForgotPassword />} />
-            <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </Router>
-      </Container>
-    </div>
+    <TourProvider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/tours/:singleTourName" element={<SingleTour />} />
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/tours/category/:type" element={<Tours />} />
+          <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/plantrip" element={<PlanTrip />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/admin" element={<Admin />} />
+          {/* <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/forgotpassword" element={<ForgotPassword />} />
+              <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </TourProvider>
   );
 }
 

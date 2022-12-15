@@ -1,63 +1,45 @@
 @import "../../../../../scss/_config.scss";
 .app__navbar__right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  li {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    list-style: none;
-    li {
-      font-size: 1rem;
-      color: white;
-      cursor: pointer;
-      margin: 0 0.25rem;
-   
-  
-      div {
-        width: 5px;
-        height: 5px;
-        background: transparent;
-        border-radius: 50%;
-  
-        margin-bottom: 5px;
-      }
-      a {
-        @include navlinks;
-        color: $font-white;
-        text-decoration: none;
-        flex-direction: column;
-        font-size: calc(12px + 0.390625vw); 
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 0 0.25rem;
+    height: fit-content;
+    display: inline-block;
 
-        text-transform: uppercase;
-        font-weight: 500;
-  
-        transition: all 0.3s ease-in-out;
-  
-        &:hover {
-          background-color: $main-yellow;
-        }
+    a {
+      @include navlinks;
+      color: $font-white;
+      text-decoration: none;
+      font-size: calc(12px + 0.390625vw);
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $main-yellow;
       }
-  
-   
     }
-
-  
-  
-  
   }
-
   .app__navbar_langauge {
-    display: flex;
     list-style: none;
-    flex-direction: row;
+    margin-left: 0.5rem;
   }
-   @include s {
-     .app__navbar__right {
-       display: none;
-     }
+}
 
-     }
-     @include m {
-       .app__navbar__right {
-         display: none;
-       }
-  
-       }
+@include s {
+  .app__navbar__right {
+    display: none;
+  }
+}
+@include m {
+  .app__navbar__right {
+    display: none;
+  }
+}

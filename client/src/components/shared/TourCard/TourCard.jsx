@@ -1,5 +1,5 @@
 import './_TourCard.scss';
-import { Paper, Typography/* , Button  */} from '@mui/material';
+import { Paper, Typography, Button} from '@mui/material';
 import Box from '@mui/material/Box';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -90,7 +90,8 @@ function TourCard(props) {
       <box SX={{ alignContent: 'flex-end', display: 'flex' }}>
         
        
-        <Link to={`/tours/${name}`}> Go to tour
+        <Link to={`/tours/${name}`}> <Button> Go to tour
+          </Button>
 
         </Link>
        

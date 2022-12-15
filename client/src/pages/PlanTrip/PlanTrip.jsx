@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useFormik } from 'formik';
 import './_PlanTrip.scss';
 import { planTripSchema } from './schema/PlanTripSchema';
@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 
 export default function PlanTrip() {
   const form = useRef();
+  const [message, setMessage] = useState(false);
 
   //handleSubmit function for clearing the form after submit and sending the details through email
   const onSubmit = async (values, actions) => {
@@ -23,7 +24,7 @@ export default function PlanTrip() {
     emailjs.sendForm('service_o88vdfp', 'template_dw6d4qk', form.current, 'CU-Fpo2wtJ0EYhcL6').then(
       (response) => {
         console.log(response.text);
-        console.log('message sent');
+        setMessage(true);
       },
       (error) => {
         console.log(error.text);
@@ -145,6 +146,7 @@ export default function PlanTrip() {
             <button disabled={isSubmitting} type="submit">
               Get a free quote
             </button>
+            {message && <p>Request sent and you will receive an email soon with the details.</p>}
           </form>
         </div>
         <div className="peter">

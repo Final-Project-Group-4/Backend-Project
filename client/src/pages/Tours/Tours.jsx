@@ -7,8 +7,7 @@ import "./_Tours.scss";
 
 
 export default function Tours() {
-  const { loadToursData, tourData } = useContext(TourContext);
-  const [tours, setTours] = React.useState(tourData);
+  const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const { type } = useParams();
 
   //During the first load of the page, load all the tours data
@@ -19,12 +18,12 @@ export default function Tours() {
   useEffect(() => {
     if (type) {
       const filteredTours = tourData.filter((tour) => tour.type === type);
-      setTours(filteredTours);
+      setTourData(filteredTours);
       console.log('theFiltered', filteredTours);
     }
   });
 
-  console.log('type', type);
+  console.log(tourData);
 
   return (
     <Container   sx={{position:"relative", marginBottom:"8em", minHeight:"90vh"}} > 
@@ -41,7 +40,7 @@ export default function Tours() {
         alignItems="center"
         textAlign="center"
       >
-        {tours.map((tour) => {
+        {tourData.map((tour) => {
           if(tour.type === "coffee") {
             console.log("coffee")
           }

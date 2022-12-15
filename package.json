@@ -34,8 +34,7 @@
     "path": "^0.12.7",
     "react-imgix": "^9.5.4",
     "url": "^0.11.0",
-    "validator": "^13.7.0",
-    "yup": "^0.32.11"
+    "validator": "^13.7.0"
   },
   "keywords": []
 }

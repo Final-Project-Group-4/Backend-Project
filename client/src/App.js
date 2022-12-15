@@ -129,9 +129,9 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/admin" element={<Admin />} />
           {/* <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgotpassword" element={<ForgotPassword />} />
-          <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
+                <Route path="/register" element={<Register />} />
+                <Route path="/forgotpassword" element={<ForgotPassword />} />
+              <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

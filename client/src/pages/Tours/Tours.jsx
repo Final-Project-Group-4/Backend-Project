@@ -1,32 +1,34 @@
 import { Contacts, TourCard } from '../../components/export';
-import { Grid } from '@mui/material';
+import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import TourContext from '../../context/TourContext';
 import React, { useEffect, useContext } from 'react';
+import './_Tours.scss';
 
 export default function Tours() {
-  const { loadToursData, tourData } = useContext(TourContext);
-  const [tours, setTours] = React.useState(tourData);
+  const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const { type } = useParams();
 
   //During the first load of the page, load all the tours data
   useEffect(() => {
     loadToursData();
-  }, []);
-
-  useEffect(() => {
     if (type) {
       const filteredTours = tourData.filter((tour) => tour.type === type);
-      setTours(filteredTours);
+      setTourData(filteredTours);
       console.log('theFiltered', filteredTours);
     }
-  });
+  }, []);
 
-  console.log('type', type);
+  console.log(tourData);
 
   return (
-    <div className="tours container">
+    <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>
+      {/* you have to put a position relative to the component, add padding bottom so that
+    the footer will be at the bottom of the page , this tip needs to be applied to all the other pages, 
+  the ones that have a footer, for example the custom tour page, the about page, the contact page, etc. */}
+
       <Grid
+        sx={{ position: 'relative', top: '7em' }}
         container
         spacing={4}
         direction="row"
@@ -34,7 +36,10 @@ export default function Tours() {
         alignItems="center"
         textAlign="center"
       >
-        {tours.map((tour) => {
+        {tourData.map((tour) => {
+          if (tour.type === 'coffee') {
+            console.log('coffee');
+          }
           return (
             <Grid Item xs={3} margin="0.7em">
               <TourCard
@@ -50,8 +55,6 @@ export default function Tours() {
           );
         })}
       </Grid>
-
-      <Contacts />
-    </div>
+    </Container>
   );
 }

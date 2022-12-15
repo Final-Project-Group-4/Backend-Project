@@ -1,14 +1,16 @@
-import React from "react";
-import "./_Gallery.scss";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import './_Gallery.scss';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleChevronLeft,
   faCircleChevronRight,
   faCircleXmark,
+
 } from "@fortawesome/free-solid-svg-icons";
 import { Contacts } from "../../components/export";
 import UploadImage from "./UploadImage";
+
 
 export default function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -25,68 +27,45 @@ export default function Gallery({ galleryImages }) {
   };
   // Previous image
   const prevSlide = () => {
-    slideNumber === 0
-      ? setSlideNumber(galleryImages.length - 1)
-      : setSlideNumber(slideNumber - 1);
+    slideNumber === 0 ? setSlideNumber(galleryImages.length - 1) : setSlideNumber(slideNumber - 1);
   };
   // Next image
   const nextSlide = () => {
-    slideNumber + 1 === galleryImages.length
-      ? setSlideNumber(0)
-      : setSlideNumber(slideNumber + 1);
+    slideNumber + 1 === galleryImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1);
   };
 
   return (
     <>
-    <div className="container">
-      
-      <h2>Photo <span>Gallery</span></h2>
-      
-      <div className="gallery-wrap">
-        {galleryImages &&
-          galleryImages.map((slide, index) => {
-            return (
-              <div
-                className="single"
-                key={index}
-                onClick={() => handleOpenModal(index)}
-              >
-                <img src={slide.img} alt="" />
-              </div>
-            );
-          })}
-      </div>
+      <div className="container">
+        <h2>
+          Photo <span>Gallery</span>
+        </h2>
 
-
-      {openModal && (
-        <div className="sliderWrap">
-          <FontAwesomeIcon
-            icon={faCircleXmark}
-            className="btnClose"
-            onClick={handleCloseModal}
-          />
-          <FontAwesomeIcon
-            icon={faCircleChevronLeft}
-            className="btnPrev"
-            onClick={prevSlide}
-          />
-          <FontAwesomeIcon
-            icon={faCircleChevronRight}
-            className="btnNext"
-            onClick={nextSlide}
-          />
-          <div className="fullScreenImage">
-            <img src={galleryImages[slideNumber].img} alt="safari" />
-          </div>
+        <div className="gallery-wrap">
+          {galleryImages &&
+            galleryImages.map((slide, index) => {
+              return (
+                <div className="single" key={index} onClick={() => handleOpenModal(index)}>
+                  <img src={slide.img} alt="" />
+                </div>
+              );
+            })}
         </div>
-      )}
+
+        {openModal && (
+          <div className="sliderWrap">
+            <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={handleCloseModal} />
+            <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} />
+            <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} />
+            <div className="fullScreenImage">
+              <img src={galleryImages[slideNumber].img} alt="safari" />
+            </div>
+          </div>
+        )}
       </div>
+
       <UploadImage />
         <Contacts />
-          
-    
     </>
   );
 }
-
-

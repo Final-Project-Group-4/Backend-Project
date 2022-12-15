@@ -2,18 +2,35 @@ import { Contacts, TourCard } from '../../components/export';
 import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
 import TourContext from '../../context/TourContext';
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import './_Tours.scss';
+import axios from 'axios';
 
 export default function Tours() {
-  const { setTourData, loadToursData, tourData } = useContext(TourContext);
-  const { type } = useParams();
+  //const { setTourData, loadToursData, tourData } = useContext(TourContext);
 
+  const { type } = useParams();
+  console.log(type);
+  const [tourData, setTourData] = useState([]);
+
+  //Get all the Tours data and check for the status
+  const loadToursData = async () => {
+    const allTours = await axios.get(`http://localhost:4000/api/tours`);
+
+    if (allTours.status === 200) {
+      setTourData(allTours.data.data);
+    } else {
+      console.error('Something went wrong');
+    }
+  };
   //During the first load of the page, load all the tours data
   useEffect(() => {
     loadToursData();
+    console.log('coming inside');
+    //console.log(tourData);
     if (type) {
       const filteredTours = tourData.filter((tour) => tour.type === type);
+      console.log(filteredTours);
       setTourData(filteredTours);
       console.log('theFiltered', filteredTours);
     }

@@ -1,9 +1,8 @@
-import {useState} from "react";
-import {Navbar, Footer , ContactForm} from "../../components/export"
-import FaqQuestions from "./FaqQuestion";
-import "./FAQ.scss"
+import { useState } from 'react';
+import { ContactForm } from '../../components/export';
+import FaqQuestions from './FaqQuestion';
+import './FAQ.scss';
 const FAQ = () => {
-
   const [faqs, setFaqs] = useState([
         {
             question: "What is INCLUDED IN YOUR SAFARI PACKAGE?",
@@ -147,35 +146,36 @@ const FAQ = () => {
    
     ]);
 
-    const toggleFAQ = index => {
-    setFaqs(faqs.map((faq, i) => {
-      if (i === index) {
-        faq.open = !faq.open
-      } else {
-        faq.open = false;
-      }
+  
 
-      return faq;
-    }))
-  }
+
+  const toggleFAQ = (index) => {
+    setFaqs(
+      faqs.map((faq, i) => {
+        if (i === index) {
+          faq.open = !faq.open;
+        } else {
+          faq.open = false;
+        }
+
+        return faq;
+      })
+    );
+  };
 
   return (
-    
-<div className="container">
-    <div id='faq' className="biggest faq-big">
+    <div className="container">
+      <div id="faq" className="biggest faq-big">
         <div className="main faqs">
           <h2>Frequently Asked Questions</h2>
-        {faqs.map((faq, i) => (
-          <FaqQuestions 
-          faq={faq} 
-          index={i}
-          toggleFAQ={toggleFAQ}/>
-        ))}
+          {faqs.map((faq, i) => (
+            <FaqQuestions faq={faq} index={i} toggleFAQ={toggleFAQ} />
+          ))}
+        </div>
       </div>
-      </div>
-      <ContactForm/>
-      </div>
-  )
-}
+      <ContactForm />
+    </div>
+  );
+};
 
 export default FAQ;

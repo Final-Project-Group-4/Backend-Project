@@ -1,5 +1,5 @@
 import React from "react";
-import "./Gallery.scss";
+import "./_Gallery.scss";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,11 +7,11 @@ import {
   faCircleChevronRight,
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { Contacts, Footer, Navbar } from "../../components/export";
+import { Contacts } from "../../components/export";
 
 export default function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   // Modal handler
   const handleOpenModal = (index) => {
@@ -36,9 +36,10 @@ export default function Gallery({ galleryImages }) {
   };
 
   return (
+    <>
     <div className="container">
-      <Navbar />
-      <h3>Photo gallery</h3>
+      
+      <h2>Photo <span>Gallery</span></h2>
       
       <div className="gallery-wrap">
         {galleryImages &&
@@ -54,6 +55,7 @@ export default function Gallery({ galleryImages }) {
             );
           })}
       </div>
+
 
       {openModal && (
         <div className="sliderWrap">
@@ -77,9 +79,11 @@ export default function Gallery({ galleryImages }) {
           </div>
         </div>
       )}
+      </div>
         <Contacts />
-          <Footer />
-    </div>
+          
+    
+    </>
   );
 }
 

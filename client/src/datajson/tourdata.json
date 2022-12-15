@@ -1,5 +1,6 @@
 [
     {
+      "id":2,
       "name": "Marangu Route",
       "duration": "5 or 6 days",
       "difficulty": "medium",
@@ -81,6 +82,7 @@
       ]
     },
     {
+      "id": "3",
       "name": "Marangu Route",
       "duration": "5 or 6 days",
       "difficulty": "medium",

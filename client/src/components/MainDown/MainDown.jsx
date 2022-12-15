@@ -2,58 +2,35 @@ import './_MainDown.scss';
 import React from 'react';
 import axios from 'axios';
 import YouTubeEmbed from './YouTubeEmbed.jsx';
+import { Link } from 'react-router-dom';
 
 function MainDown() {
-  //Get the axios response when clicked on the type of the tour.
-  //Get all the tours depending upon the type of the tour
-  const handleHiking = async () => {
-    const divText = document.getElementById('hiking');
-    console.log(divText.innerText);
-    const response = await axios.get(
-      `${process.env.REACT_APP_BE_URL}/api/tours/?type=${divText.innerText}`
-    );
-    console.log(response.data);
-  };
-  const handleSafari = async () => {
-    const divText = document.getElementById('safari');
-    console.log(divText.innerText);
-    const response = await axios.get(
-      `${process.env.REACT_APP_BE_URL}/api/tours/?type=${divText.innerText}`
-    );
-    console.log(response.data);
-  };
-  const handleCoffee = async () => {
-    const divText = document.getElementById('coffee');
-    console.log(divText.innerText);
-    const response = await axios.get(
-      `${process.env.REACT_APP_BE_URL}/api/tours/?type=${divText.innerText}`
-    );
-    console.log(response.data);
-  };
-  const handleCustomTour = async () => {
-    const divText = document.getElementById('customTour');
-    console.log(divText.innerText);
-    const response = await axios.get(
-      `${process.env.REACT_APP_BE_URL}/api/tours/?type=${divText.innerText}`
-    );
-    console.log(response.data);
-  };
-
   return (
     <div className="container mainDown">
       <div className="tours">
-        <div className="hiking col-12-s col-4-m col-2-l" id="hiking" onClick={handleHiking}>
-          Hiking
-        </div>
-        <div className="safari col-12-s col-4-m col-2-l" id="safari" onClick={handleSafari}>
-          Safari
-        </div>
-        <div className="coffee col-12-s col-4-m col-2-l" id="coffee" onClick={handleCoffee}>
-          Coffee
-        </div>
-        <div className="custom col-12-s col-4-m col-2-l" id="customTour" onClick={handleCustomTour}>
-          Custom Tour
-        </div>
+        <Link to="/tours/category/hiking">
+          <div className="hiking col-12-s col-4-m col-2-l" id="hiking">
+            Hiking
+          </div>
+        </Link>
+
+        <Link to="/tours/category/safari">
+          <div className="safari col-12-s col-4-m col-2-l" id="safari">
+            Safari
+          </div>
+        </Link>
+
+        <Link to="/tours/category/coffee">
+          <div className="coffee col-12-s col-4-m col-2-l" id="coffee">
+            Coffee
+          </div>
+        </Link>
+
+        <Link to="/plantrip">
+          <div className="custom col-12-s col-4-m col-2-l" id="customTour">
+            Custom Tour
+          </div>
+        </Link>
       </div>
 
       <div className="videos">

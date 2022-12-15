@@ -86,37 +86,26 @@ function App() {
   return (
     <TourProvider>
       <Router>
-        
-        
-        
-          
-            <Navbar />
-            <Routes>
-              <Route path="/tours/:singleTourName" element={<SingleTour />} />
-              <Route path="/tours" element={<Tours />} />
-              <Route path="/tours/category/:type" element={<Tours />} />
-              <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/plantrip" element={<PlanTrip />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/admin" element={<Admin />} />
-              {/* <Route path="/login" element={<Login />} />
+        <Navbar />
+        <Routes>
+          <Route path="/tours/:singleTourName" element={<SingleTour />} />
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/tours/category/:type" element={<Tours />} />
+          <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/plantrip" element={<PlanTrip />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/admin" element={<Admin />} />
+          {/* <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
-              <Route path="/" element={<Home />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          
-          
-            <Footer />
-          
-        
-      
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
       </Router>
-      
     </TourProvider>
-    
   );
 }
 

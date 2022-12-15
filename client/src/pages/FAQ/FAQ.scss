@@ -3,6 +3,7 @@
 #faq {
     display: flex;
     align-items: center;
+
   }
   .faqs {
     width: 100%;
@@ -18,7 +19,7 @@
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    
+ 
   }
   
   .faqs .faq .faq-question {
@@ -29,6 +30,7 @@
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
+    text-transform: lowercase;
   }
   
   .faqs .faq .faq-question::after {
@@ -47,6 +49,8 @@
     cursor:pointer;
 
     transition: all 0.4s ease-out;
+   
+      
   }
   
   .faqs .faq .faq-answer {
@@ -67,7 +71,9 @@
   .faqs .faq.open .faq-answer {
     max-height: 1000px;
     opacity: 1;
+  
   }
+
   
   .faq-big h2 {
     font-weight: 600;
@@ -76,7 +82,7 @@
     text-align: center;
     text-transform: uppercase;
   }
-
+ 
   @include s {
     .faq-big h2 {
 font-size:15px

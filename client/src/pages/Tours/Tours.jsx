@@ -5,8 +5,7 @@ import TourContext from '../../context/TourContext';
 import React, { useEffect, useContext } from 'react';
 
 export default function Tours() {
-  const { loadToursData, tourData } = useContext(TourContext);
-  const [tours, setTours] = React.useState(tourData);
+  const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const { type } = useParams();
 
   //During the first load of the page, load all the tours data
@@ -17,12 +16,12 @@ export default function Tours() {
   useEffect(() => {
     if (type) {
       const filteredTours = tourData.filter((tour) => tour.type === type);
-      setTours(filteredTours);
+      setTourData(filteredTours);
       console.log('theFiltered', filteredTours);
     }
   });
 
-  console.log('type', type);
+  console.log(tourData);
 
   return (
     <div className="tours container">
@@ -34,7 +33,7 @@ export default function Tours() {
         alignItems="center"
         textAlign="center"
       >
-        {tours.map((tour) => {
+        {tourData.map((tour) => {
           return (
             <Grid Item xs={3} margin="0.7em">
               <TourCard

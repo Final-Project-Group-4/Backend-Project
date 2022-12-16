@@ -30,7 +30,7 @@ export default function Contacts() {
   };
 
   return (
-    <Card style={{ margin: "0 auto", padding: "2em 2em" }}>
+    <Card style={{ margin: "0 auto", padding: "0.5em 5em" }}>
       {/* by giving a maxWidth it will not get smaller than that. */}
 
       <cardContent>

@@ -35,8 +35,9 @@ export const getSingleTour = async (req, res, next) => {
 };
 
 export const getToursByType = async (req, res, next) => {
+  console.log(req.params.type);
   try {
-    const tour = await Tour.find({ type: req.query.type });
+    const tour = await Tour.find({ type: req.params.type });
     res.status(200).json(tour);
   } catch (error) {
     next(error);

@@ -11,9 +11,8 @@ import Admin from './pages/Admin/Admin.jsx';
 import FAQ from './pages/FAQ/Faq.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
-import { TourProvider } from './context/TourContext';
+// import { TourProvider } from './context/TourContext';
 import { Cloudinary } from '@cloudinary/url-gen';
-
 
 const galleryImages = [
   {
@@ -116,28 +115,28 @@ const galleryImages = [
 
 function App() {
   return (
-    <TourProvider>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/tours/:singleTourName" element={<SingleTour />} />
-          <Route path="/tours" element={<Tours />} />
-          <Route path="/tours/category/:type" element={<Tours />} />
-          <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/plantrip" element={<PlanTrip />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/admin" element={<Admin />} />
-          {/* <Route path="/login" element={<Login />} />
+    // <TourProvider>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/tours/:singleTourName" element={<SingleTour />} />
+        <Route path="/tours" element={<Tours />} />
+        <Route path="/tours/category/:type" element={<Tours />} />
+        <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/plantrip" element={<PlanTrip />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/admin" element={<Admin />} />
+        {/* <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </TourProvider>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </Router>
+    // </TourProvider>
   );
 }
 

@@ -22,7 +22,8 @@ export default function Tours() {
       console.error('Something went wrong');
     }
   };
-  //Get all the Tours data and check for the status
+
+  //Get the Tours data according to the type of the tour and check for the status
   const loadToursDataByType = async () => {
     const filteredToursByType = await axios.get(`http://localhost:4000/api/tours/category/${type}`);
     console.log(filteredToursByType.data);
@@ -32,7 +33,8 @@ export default function Tours() {
       console.error('Something went wrong');
     }
   };
-  //During the first load of the page, load all the tours data
+
+  //During the first load of the page, load all the tours data or by type
   useEffect(() => {
     if (type) {
       loadToursDataByType();
@@ -57,9 +59,6 @@ export default function Tours() {
         textAlign="center"
       >
         {tourData.map((tour) => {
-          // if (tour.type === 'coffee') {
-          //   console.log('coffee');
-          // }
           return (
             <Grid Item xs={3} margin="0.7em">
               <TourCard

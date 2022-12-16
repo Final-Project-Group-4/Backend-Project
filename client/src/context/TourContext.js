@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 const TourContext = createContext();
@@ -6,19 +6,24 @@ const TourContext = createContext();
 export const TourProvider = ({ children }) => {
   const [tourData, setTourData] = useState([]);
 
-  //Get all the Tours data and check for the status
+
+  useEffect(() => {
+
   const loadToursData = async () => {
     const allTours = await axios.get(`http://localhost:4000/api/tours`);
 
-    if (allTours.status === 200) {
-      setTourData(allTours.data.data);
-    } else {
-      console.error('Something went wrong');
-    }
-  };
+
+    setTourData(allTours.data.data);
+
+
+  };  loadToursData();
+  
+  }, []);
+
+
 
   return (
-    <TourContext.Provider value={{ tourData, loadToursData, setTourData }}>
+    <TourContext.Provider value={{ tourData, setTourData }}>
       {children}
     </TourContext.Provider>
   );

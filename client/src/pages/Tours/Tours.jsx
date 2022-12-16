@@ -8,10 +8,9 @@ import axios from 'axios';
 
 export default function Tours() {
   //const { setTourData, loadToursData, tourData } = useContext(TourContext);
-
+  const [tourData, setTourData] = useState([]);
   const { type } = useParams();
   console.log(type);
-  const [tourData, setTourData] = useState([]);
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
@@ -23,21 +22,24 @@ export default function Tours() {
       console.error('Something went wrong');
     }
   };
+  //Get all the Tours data and check for the status
+  const loadToursDataByType = async () => {
+    const filteredToursByType = await axios.get(`http://localhost:4000/api/tours/category/${type}`);
+    console.log(filteredToursByType.data);
+    if (filteredToursByType.status === 200) {
+      setTourData(filteredToursByType.data);
+    } else {
+      console.error('Something went wrong');
+    }
+  };
   //During the first load of the page, load all the tours data
   useEffect(() => {
-    loadToursData();
-    console.log('comming inside');
-    //console.log(tourData);
     if (type) {
-      const filteredTours = tourData.filter((tour) => tour.type === type);
-      console.log(filteredTours);
-      setTourData(filteredTours);
-      console.log('theFiltered', filteredTours);
+      loadToursDataByType();
+    } else {
+      loadToursData();
     }
   }, []);
-  //useEffect(() => {}, []);
-
-  console.log(tourData);
 
   return (
     <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>
@@ -55,9 +57,9 @@ export default function Tours() {
         textAlign="center"
       >
         {tourData.map((tour) => {
-          if (tour.type === 'coffee') {
-            console.log('coffee');
-          }
+          // if (tour.type === 'coffee') {
+          //   console.log('coffee');
+          // }
           return (
             <Grid Item xs={3} margin="0.7em">
               <TourCard

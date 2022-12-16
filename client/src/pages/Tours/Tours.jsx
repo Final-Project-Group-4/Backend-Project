@@ -1,21 +1,17 @@
 import { Contacts, TourCard } from '../../components/export';
 import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
-import TourContext from '../../context/TourContext';
+//import TourContext from '../../context/TourContext';
 import React, { useEffect, useContext, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
 
-
 export default function Tours() {
-
   //const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const [tourData, setTourData] = useState([]);
 
   const { type } = useParams();
-  console.log(type);  
-
-
+  console.log(type);
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
@@ -47,21 +43,14 @@ export default function Tours() {
     } else {
       loadToursData();
     }
-
-  },[]);
-
-
+  }, []);
 
   return (
-
-  
-  <div className='container1'>
-    
-      <Container   sx={{position:"relative", top:"120px", marginBottom:"8em", minHeight:"95vh"}} >
-      
-    
-          <Grid
-          
+    <div className="container1">
+      <Container
+        sx={{ position: 'relative', top: '120px', marginBottom: '8em', minHeight: '95vh' }}
+      >
+        <Grid
           container
           spacing={4}
           direction="row"
@@ -69,9 +58,10 @@ export default function Tours() {
           alignItems="center"
           textAlign="center"
         >
-          {tours.map((tour) => {
-            if(tour.type === "coffee") {
-              console.log("coffee")}
+          {tourData.map((tour) => {
+            if (tour.type === 'coffee') {
+              console.log('coffee');
+            }
             return (
               <Grid Item xs={3} margin="0.7em">
                 <TourCard
@@ -87,8 +77,8 @@ export default function Tours() {
             );
           })}
         </Grid>
-        </Container>
-        <Contacts/>
-  </div>  
+      </Container>
+      <Contacts />
+    </div>
   );
 }

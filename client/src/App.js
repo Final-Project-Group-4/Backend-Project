@@ -119,7 +119,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/tours/:singleTourName" element={<SingleTour />} />
+        <Route path="/tours/:id" element={<SingleTour />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/tours/category/:type" element={<Tours />} />
         <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />

@@ -59,9 +59,7 @@ export default function Tours() {
           textAlign="center"
         >
           {tourData.map((tour) => {
-            if (tour.type === 'coffee') {
-              console.log('coffee');
-            }
+            console.log(tour.id);
             return (
               <Grid Item xs={3} margin="0.7em">
                 <TourCard
@@ -71,7 +69,7 @@ export default function Tours() {
                   subtitle={tour.subtitle}
                   difficulty={tour.difficulty}
                   scenery={tour.scenery}
-                  id={tour.id}
+                  id={tour._id}
                 />
               </Grid>
             );

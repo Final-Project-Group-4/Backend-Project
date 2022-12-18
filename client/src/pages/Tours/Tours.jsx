@@ -10,7 +10,7 @@ export default function Tours() {
   //const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const [tourData, setTourData] = useState([]);
   const { type } = useParams();
-  console.log(type);
+  console.log(type);  
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
@@ -42,6 +42,7 @@ export default function Tours() {
       loadToursData();
     }
   }, [type]);
+
 
   return (
     <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>

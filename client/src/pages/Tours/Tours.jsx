@@ -41,7 +41,7 @@ export default function Tours() {
     } else {
       loadToursData();
     }
-  }, []);
+  }, [type]);
 
   return (
     <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>
@@ -60,7 +60,7 @@ export default function Tours() {
       >
         {tourData.map((tour) => {
           return (
-            <Grid Item xs={3} margin="0.7em">
+            <Grid item xs={3} margin="0.7em">
               <TourCard
                 days={tour.days}
                 name={tour.name}

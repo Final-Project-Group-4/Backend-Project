@@ -1,12 +1,12 @@
-import "./_ContactForm.scss";
-import * as React from "react";
-import InputAdornment from "@mui/material/InputAdornment";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import { Button, Typography, Grid, TextField } from "@mui/material";
-import InsertCommentIcon from "@mui/icons-material/InsertComment";
+import './_ContactForm.scss';
+import * as React from 'react';
+import InputAdornment from '@mui/material/InputAdornment';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import { Button, Typography, Grid, TextField } from '@mui/material';
+import InsertCommentIcon from '@mui/icons-material/InsertComment';
 
 function ContactForm() {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = React.useState('');
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -17,12 +17,12 @@ function ContactForm() {
       <Grid item xs={12} sm={6} className="leftGridI" padding={1}>
         <Typography>
           <h2>Contact Us</h2>
-          </Typography>
-          <p>
-            Need help starting out? Please contact Us, <br /> we are glad to
-            help you plan your awesome trip!
-          </p>
-        
+        </Typography>
+        <p>
+          Need help starting out? Please contact Us, <br /> we are glad to help you plan your
+          awesome trip!
+        </p>
+
         <div className="space"></div>
 
         <TextField
@@ -58,7 +58,7 @@ function ContactForm() {
           required
         />
       </Grid>
-      <Grid Item xs={12} sm={6} textAlign="end" padding={2}>
+      <Grid item xs={12} sm={6} textAlign="end" padding={2}>
         <TextField
           fullWidth
           id="filled-multiline-flexible"

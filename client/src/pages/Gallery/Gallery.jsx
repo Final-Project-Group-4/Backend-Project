@@ -6,11 +6,9 @@ import {
   faCircleChevronLeft,
   faCircleChevronRight,
   faCircleXmark,
-
-} from "@fortawesome/free-solid-svg-icons";
-import { Contacts } from "../../components/export";
-import UploadImage from "./UploadImage";
-
+} from '@fortawesome/free-solid-svg-icons';
+import { Contacts } from '../../components/export';
+import UploadImage from './UploadImage';
 
 export default function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -36,7 +34,7 @@ export default function Gallery({ galleryImages }) {
 
   return (
     <>
-      <div className="container">
+      <div className="container gallery">
         <h2>
           Photo <span>Gallery</span>
         </h2>
@@ -65,7 +63,7 @@ export default function Gallery({ galleryImages }) {
       </div>
 
       <UploadImage />
-        <Contacts />
+      <Contacts />
     </>
   );
 }

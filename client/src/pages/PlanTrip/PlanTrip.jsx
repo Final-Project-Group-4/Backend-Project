@@ -56,7 +56,7 @@ export default function PlanTrip() {
         <img src={shira} alt="Plan Trip" />
         <p>Ready for Adventure !</p>
       </div>
-      <div className="planTrip">
+      <div className="planTrip container">
         <div>
           <form ref={form} onSubmit={handleSubmit} autoComplete="off" className="PlanTripForm">
             <p>

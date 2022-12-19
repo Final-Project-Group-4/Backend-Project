@@ -43,7 +43,7 @@ export default function Tours() {
     } else {
       loadToursData();
     }
-  }, []);
+  }, [type]);
 
   return (
     <div className="container1">

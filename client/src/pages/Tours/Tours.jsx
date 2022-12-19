@@ -1,7 +1,7 @@
 import { Contacts, TourCard } from '../../components/export';
 import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
-import TourContext from '../../context/TourContext';
+//import TourContext from '../../context/TourContext';
 import React, { useEffect, useContext, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
@@ -9,8 +9,8 @@ import axios from 'axios';
 export default function Tours() {
   //const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const [tourData, setTourData] = useState([]);
+
   const { type } = useParams();
-  //console.log(type);
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
@@ -35,6 +35,7 @@ export default function Tours() {
   };
 
   //During the first load of the page, load all the tours data or by type
+
   useEffect(() => {
     if (type) {
       loadToursDataByType();
@@ -44,19 +45,9 @@ export default function Tours() {
   }, [type]);
 
   return (
-    <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>
-      {/* you have to put a position relative to the component, add padding bottom so that
-    the footer will be at the bottom of the page , this tip needs to be applied to all the other pages, 
-  the ones that have a footer, for example the custom tour page, the about page, the contact page, etc. */}
-
-      <Grid
-        sx={{ position: 'relative', top: '7em' }}
-        container
-        spacing={4}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        textAlign="center"
+    <div className="container1">
+      <Container
+        sx={{ position: 'relative', top: '120px', marginBottom: '8em', minHeight: '95vh' }}
       >
         {tourData.map((tour) => {
           return (
@@ -75,5 +66,7 @@ export default function Tours() {
         })}
       </Grid>
     </Container>
+      <Contacts />
+    </div>
   );
 }

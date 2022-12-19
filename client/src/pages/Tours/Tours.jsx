@@ -49,23 +49,31 @@ export default function Tours() {
       <Container
         sx={{ position: 'relative', top: '120px', marginBottom: '8em', minHeight: '95vh' }}
       >
-        {tourData.map((tour) => {
-          return (
-            <Grid item xs={3} margin="0.7em">
-              <TourCard
-                days={tour.days}
-                name={tour.name}
-                tour={tour.name}
-                subtitle={tour.subtitle}
-                difficulty={tour.difficulty}
-                scenery={tour.scenery}
-                id={tour.id}
-              />
-            </Grid>
-          );
-        })}
-      </Grid>
-    </Container>
+        <Grid
+          container
+          spacing={4}
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
+        >
+          {tourData.map((tour) => {
+            return (
+              <Grid item xs={3} margin="0.7em">
+                <TourCard
+                  days={tour.days}
+                  name={tour.name}
+                  tour={tour.name}
+                  subtitle={tour.subtitle}
+                  difficulty={tour.difficulty}
+                  scenery={tour.scenery}
+                  id={tour.id}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </Container>
       <Contacts />
     </div>
   );

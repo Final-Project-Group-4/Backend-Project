@@ -67,7 +67,7 @@ export default function Tours() {
                   subtitle={tour.subtitle}
                   difficulty={tour.difficulty}
                   scenery={tour.scenery}
-                  id={tour.id}
+                  id={tour._id}
                 />
               </Grid>
             );

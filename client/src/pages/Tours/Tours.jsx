@@ -10,7 +10,7 @@ export default function Tours() {
   //const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const [tourData, setTourData] = useState([]);
   const { type } = useParams();
-  console.log(type);  
+  //console.log(type);
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
@@ -26,7 +26,7 @@ export default function Tours() {
   //Get the Tours data according to the type of the tour and check for the status
   const loadToursDataByType = async () => {
     const filteredToursByType = await axios.get(`http://localhost:4000/api/tours/category/${type}`);
-    console.log(filteredToursByType.data);
+    //console.log(filteredToursByType.data);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
     } else {
@@ -42,7 +42,6 @@ export default function Tours() {
       loadToursData();
     }
   }, [type]);
-
 
   return (
     <Container sx={{ position: 'relative', marginBottom: '8em', minHeight: '90vh' }}>

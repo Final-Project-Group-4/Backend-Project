@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cloudinary/react": "^1.7.0",
+    "@cloudinary/url-gen": "^1.8.7",
     "@emailjs/browser": "^3.4.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -16,6 +18,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.0",
+    "cloudinary": "^1.33.0",
     "formik": "^2.2.9",
     "framer-motion": "^7.6.19",
     "prop-types": "^15.8.1",
@@ -26,9 +29,6 @@
     "react-router-dom": "^6.4.4",
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
-    "@cloudinary/react": "^1.7.0",
-    "@cloudinary/url-gen": "^1.8.7",
-    "cloudinary": "^1.32.0",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },

@@ -1,0 +1,26 @@
+%btn {
+    background-color: transparent;
+    font-size: 1.7rem;
+    color: white;
+    border: 3px solid white;
+    padding: 0.65rem;
+    transition: all 0.3s ease-in-out;
+    margin: 2rem;
+
+&:hover { 
+    background-color: $main-yellow;
+    cursor: pointer;
+}
+}
+
+
+.btn-primary {
+@extend %btn;
+}
+
+.btn-secondary {
+@extend %btn;
+color: black;
+border: 3px solid black;
+}
+

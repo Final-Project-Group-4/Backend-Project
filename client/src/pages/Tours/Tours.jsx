@@ -46,22 +46,34 @@ export default function Tours() {
       window.scrollTo(0, 0);
     } else {
       loadToursData();
-      window.scrollTo(0, 0);// add this line to scroll to the top when you render your components 
+      window.scrollTo(0, 0); // add this line to scroll to the top when you render your components
     }
   }, [type]);
 
   return (
     <div className="container1">
-      <div className='container2'>
-        <div className='leftSide'>
-          <img style={{height:"200px", width:"auto"}} src={require("http://thenewcode.com/assets/images/responsive-design-comparison.jpg")} alt="" />
+      <div className="container2">
+        <div className="leftSide">
+          <img
+            className="coverImg"
+            style={{ height: 'auto' }}
+            src={require('../../../src/assets/Safari4_lmsxry.jpg')}
+            alt=""
+          />
+          <div>
+            <h2>Some Text Goes Here</h2>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut eaque error
+              temporibus quia voluptates provident veniam earum cupiditate illum consectetur animi,
+              quam mollitia. Beatae eum doloribus rem reiciendis molestiae!
+            </p>
+          </div>
         </div>
-        <Container
-        className='rightSide' 
-         >
-        
-          <Grid className='gridRight'
-          sx={{ position: 'relative', top:"80px", marginBottom:"80px", overflowY:"scroll"}}
+        <Container className="rightSide rightSideTours">
+          <Grid
+            className="gridRight"
+            sx={{ position: 'relative', top: '80px', marginBottom: '80px', overflowY: 'scroll' }}
             container
             spacing={1}
             direction="row"
@@ -87,7 +99,6 @@ export default function Tours() {
             })}
           </Grid>
         </Container>
-        
       </div>
       <Contacts />
     </div>

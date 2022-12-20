@@ -1,164 +1,115 @@
 @import '../../../scss/_config.scss';
 
-
 .container1 {
   width: 100vw;
   padding: 0.5rem;
   font-size: calc(12px + 0.390625vw);
   min-height: 100vh;
-  
- 
-  
 }
 
-/* .container2{
-  width: 100%;
-} */
-/* 
-.leftSide {
-  width:50%;
-  position: relative; 
-  top: 85px;
-  height: 60vh;
-  font-size: calc(12px + 0.390625vw);
-  background-color: red;
-  width:50%;
-  
-} */
-/* 
-.rightSide{
-  position: 'relative'; 
-  top: '125px'; 
-  margin-bottom: '5em'; 
-  height: '60vh';
-  width: '50%';  
-  margin-right:"0.3em"; 
-  margin-left:"0.3em";
-
-}  */
-
-
-
-.container2{
+.container2 {
   flex-direction: row;
   display: flex;
   margin-bottom: 0;
-  width:100%;
-  min-height:60vh
- /*  flex-wrap: wrap;  */
+  width: 100%;
+  min-height: 60vh;
 }
 
-.contactusTour {
-  margin-top: 0;
-  background-color: red; 
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  & > h2 {
+    font-size: calc(12px + 0.390625vw);
+    margin-top: 6rem;
+  }
+  & > p {
+    font-size: calc(12px + 0.390625vw);
+    margin: 0;
+    padding: 2rem;
+  }
 }
 
+.coverImg {
+  width: calc(100% - 80px);
+  margin-bottom: 2rem;
+}
 
-
-
-
-@include s{
+@include s {
   .container2 {
     flex-wrap: wrap;
-    background-color: blue;
   }
   .leftSide {
     width: 100%;
-    position: relative; 
+    position: relative;
     top: 85px;
     font-size: calc(12px + 0.390625vw);
-    background-color: red;
     min-height: 90vh;
   }
+
+  .rightSideTours {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
   .rightSide {
     width: 100%;
-    background-color: rgb(255, 141, 47);
     position: relative;
     top: 85px;
     min-height: 90vh;
-    /* padding-left: 0px;
-    padding-right: 0px;  */
-   
+
     & > .MuiGrid-root {
-   
-      min-height:60vh;
+      min-height: 60vh;
       overflow-y: 'unset';
-      background-color:"purple";
+      background-color: 'purple';
     }
   }
-  
 }
 
 @include m {
   .container2 {
-    background-color: rgb(0, 98, 128);
     flex-wrap: wrap;
     margin-bottom: 50px;
-  
-  .leftSide {
-    width: 100%;
-    position: relative;
-    top: 85px;
-    background-color:blueviolet;
-    min-height: 90vh;
-    
-  }
-  .rightSide {
-    width: 100%;
-    background-color: greenyellow;
-    position: relative;
-    top: 85px;
-    min-height: 90vh;
-    
-    //this two paddings is making the card container cinch in the middle of the page
-    //when the screen size is between 600px and 960px
-    //I want the card container to be full width for the smaller screen size but not for the larger screen size
-    //how can I do that for the small screen size? making the padding to 0px?
-  
 
-   
+    .leftSide {
+      width: 100%;
+      position: relative;
+      top: 85px;
+      min-height: 90vh;
+    }
+    .rightSide {
+      width: 100%;
+      position: relative;
+      top: 85px;
+      min-height: 90vh;
+      margin-right: calc(10% + 2em) !important;
+      margin-left: calc(10% + 2em) !important;
 
-    & > .MuiGrid-root {
-      min-height:60vh;
-      overflow-y: 'unset';
-      background-color:"purple";
-      
+      & > .MuiGrid-root {
+        min-height: 60vh;
+        overflow-y: 'unset';
+        background-color: 'purple';
+      }
     }
   }
 }
-} 
-
-
-//from 500px to 960px I need padding left and right 200px for the class rightSide
-//I can do that by adding a new class for the rightSide and add the padding to that class
-//but I still have to figure that out... 
-//I want to do it with the @include m{} but that goes from 960px to 1280px 
-// the @include s goes from 0px to 600px I need to add a custom @include for 600px to 960px
-//I need to add a new class for the rightSide and add the padding to that class
-//but I still have to figure that out...
-
-
-
-
-
-
 
 @include l {
   .container2 {
     flex-wrap: no-wrap;
     margin-bottom: 50px;
-    
+
     .leftSide {
       width: 50%;
-      background-color:blueviolet;
       position: relative;
       top: 85px;
       height: 90vh;
-      
     }
     .rightSide {
       width: 50%;
-       /* background-color: brown;  */
       position: relative;
       top: 85px;
       height: 98vh;
@@ -166,12 +117,10 @@
       & > .MuiGrid-root {
         position: relative;
         top: 0.4em;
-        height:88vh;
+        height: 88vh;
         overflow-y: 'scroll';
-        background-color:"purple";
-      }
-    
+        background-color: 'purple';
       }
     }
-  
+  }
 }

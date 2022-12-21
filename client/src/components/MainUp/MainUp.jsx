@@ -1,8 +1,5 @@
 import { ValueCard, Peter } from '../export';
 import './_MainUp.scss';
-import { CiCoffeeBean } from 'react-icons/ci';
-import { GiElephant } from 'react-icons/gi';
-import { AiOutlineCar } from 'react-icons/ai';
 import {
   FaTwitterSquare,
   FaInstagramSquare,
@@ -19,22 +16,22 @@ function MainUp() {
     {
       title: 'Custom trip',
       text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
-      icon: <HiScissors size={70} />,
+      icon: <HiScissors size={60} />,
     },
     {
       title: 'Local, Coffee',
       text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
-      icon: <FaCoffee size={70} />,
+      icon: <FaCoffee size={60} />,
     },
     {
       title: 'Safari',
       text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
-      icon: <FaBinoculars size={70} />,
+      icon: <FaBinoculars size={60} />,
     },
     {
       title: 'Transportation',
       text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
-      icon: <FaCarSide size={70} />,
+      icon: <FaCarSide size={60} />,
     },
   ];
 

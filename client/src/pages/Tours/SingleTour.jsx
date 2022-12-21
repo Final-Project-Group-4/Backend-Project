@@ -9,12 +9,12 @@ import './_SingleTour.scss';
 export default function SingleTour() {
   const [tour, setTour] = useState('');
   const [days, setDays] = useState([]);
-  const [info, setInfo] = useState();
+  const [info, setInfo] = useState('');
   const [locs, setLocs] = useState([]);
 
   const { id } = useParams();
 
-  const displayMap = (locs) => {
+  const displayMap = async () => {
     mapboxgl.accessToken =
       'pk.eyJ1IjoiYWRhbnVyayIsImEiOiJjbGFoYmd0eDcwNnUxM3VueXV2cGoyd3V0In0.WjdfQXZW6I4SykjLM6t8YA';
 
@@ -36,25 +36,25 @@ export default function SingleTour() {
         element: el,
         anchor: 'bottom',
       })
-        .setLngLat(loc.coordinates)
+        .setLngLat(loc?.coordinates)
         .addTo(map);
 
       //Add popup
       new mapboxgl.Popup({
         offset: 20,
       })
-        .setLngLat(loc.coordinates)
-        .setHTML(`<p className:"map-day-info">Day ${loc.day}: ${loc.description}</p>`)
+        .setLngLat(loc?.coordinates)
+        .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
         .addTo(map);
 
       // Extend map bounds to include current location
-      bounds.extend(loc.coordinates);
+      bounds.extend(loc?.coordinates);
     });
 
     map.fitBounds(bounds, {
       padding: {
-        top: 200,
-        bottom: 150,
+        top: 120,
+        bottom: 120,
         left: 100,
         right: 100,
       },
@@ -65,11 +65,7 @@ export default function SingleTour() {
     const response = await axios.get(`http://localhost:4000/api/tours/${id}`);
     setTour(response.data);
     setDays(response.data.days);
-    console.log('DATA', response.data);
-    console.log('LOCS', response.data.locations);
     setLocs(response.data.locations);
-    console.log('LOCS inside', locs);
-    displayMap(locs);
   };
 
   useEffect(() => {
@@ -77,6 +73,14 @@ export default function SingleTour() {
       getSingleTour();
     }
   }, [id]);
+
+  console.log('OUTSIDE', locs);
+
+  useEffect(() => {
+    if (locs.length >= 0) {
+      displayMap();
+    }
+  }, [locs]);
 
   return (
     <>
@@ -88,10 +92,11 @@ export default function SingleTour() {
         <p className="main-description">{tour.description}</p>
         <div className="main-middle">
           <div className="days-list">
-            {days.map((day) => {
+            {days.map((day, index) => {
               return (
                 <li
                   key={day.number}
+                  default={index === 0}
                   className="day-list-items"
                   onClick={() => {
                     setInfo(day);

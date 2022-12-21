@@ -1,33 +1,28 @@
-@import "../../../scss/_config.scss";
+@import '../../../scss/_config.scss';
 
 .value-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 25%;
+  width: 23%;
   padding: $padding-small;
-  &:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
+  box-shadow: rgba(0, 0, 0, 0.22) 0px 5px 5px;
+  margin: 0.2rem auto;
 
   .icon {
     border: $border-medium solid $main-yellow;
-    //! padding less or is it ok?
-    padding: $padding-small;
+    padding: 0.7rem;
     border-radius: 50%;
     margin-bottom: 0.6rem;
   }
   h3 {
     @include subtitles;
-    //! changed size
     font-size: 1.8rem;
     text-align: center;
   }
   p {
     @include paragraph;
-    //! changes here
     font-size: 1.3rem;
     padding: $padding-small $padding-small 0;
     text-align: center;
@@ -47,5 +42,8 @@
 @include m {
   .value-card {
     min-width: 180px;
+    .icon {
+      padding: 0.5rem;
+    }
   }
 }

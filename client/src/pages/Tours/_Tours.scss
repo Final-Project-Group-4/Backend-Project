@@ -12,7 +12,7 @@
   display: flex;
   margin-bottom: 0;
   width: 100%;
-  min-height: 60vh;
+  margin-top: 6rem;
 }
 
 .leftSide {
@@ -21,15 +21,29 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2rem;
-  & > h2 {
-    font-size: calc(12px + 0.390625vw);
-    margin-top: 6rem;
-  }
-  & > p {
-    font-size: calc(12px + 0.390625vw);
-    margin: 0;
-    padding: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background-image: url('../../assets/Safari4_lmsxry.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .tourTitle {
+      font-size: calc(12px + 0.390625vw);
+      margin-top: 6rem;
+      color: white;
+      margin: auto;
+    }
+    .tourPara {
+      font-size: calc(12px + 0.390625vw);
+      margin: auto;
+      padding: 2rem;
+      color: white;
+    }
   }
 }
 
@@ -43,24 +57,20 @@
     flex-wrap: wrap;
   }
   .leftSide {
-    width: 100%;
-    position: relative;
-    top: 85px;
     font-size: calc(12px + 0.390625vw);
-    min-height: 90vh;
+    height: fit-content;
+    background-image: url('../../assets/Safari4_lmsxry.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .rightSideTours {
     margin-right: 0 !important;
     margin-left: 0 !important;
   }
-
   .rightSide {
     width: 100%;
-    position: relative;
-    top: 85px;
-    min-height: 90vh;
-
     & > .MuiGrid-root {
       min-height: 60vh;
       overflow-y: 'unset';
@@ -73,21 +83,17 @@
   .container2 {
     flex-wrap: wrap;
     margin-bottom: 50px;
-
     .leftSide {
-      width: 100%;
-      position: relative;
-      top: 85px;
-      min-height: 90vh;
+      height: fit-content;
+      background-image: url('../../assets/Safari4_lmsxry.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
     }
     .rightSide {
       width: 100%;
-      position: relative;
-      top: 85px;
-      min-height: 90vh;
       margin-right: calc(10% + 2em) !important;
       margin-left: calc(10% + 2em) !important;
-
       & > .MuiGrid-root {
         min-height: 60vh;
         overflow-y: 'unset';
@@ -101,19 +107,13 @@
   .container2 {
     flex-wrap: no-wrap;
     margin-bottom: 50px;
-
     .leftSide {
       width: 50%;
-      position: relative;
-      top: 85px;
       height: 90vh;
     }
     .rightSide {
       width: 50%;
-      position: relative;
-      top: 85px;
       height: 98vh;
-
       & > .MuiGrid-root {
         position: relative;
         top: 0.4em;

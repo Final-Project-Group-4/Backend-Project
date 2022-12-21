@@ -51,18 +51,12 @@
         .faq:hover {
           cursor: pointer;
         }
-        // .faq:active {
-        //   text-decoration: none;
-        // }
 
         h4 {
-          // text-align: center;
-          font-family: 'Roboto', sans-serif;
+          font-family: $font-heading;
           color: $font-white;
           text-decoration: none;
         }
-        // border: 1px solid black ;
-        
 
         .list-unstyled {
           list-style-type: none;

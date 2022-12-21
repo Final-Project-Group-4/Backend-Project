@@ -9,20 +9,22 @@ export default function AboutUs() {
         <h2>About us</h2>
         <div className="main">
           <div className="img-section">
-            <div className='single-img'><img
-              src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019129/peter%27s%20website/kilimanjaro-peak4_kk3ucv.jpg"
-              alt="about us"
-            /></div>
-            <div className='single-img'><img
-              src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019107/peter%27s%20website/peter-in-orange-bg-mountain_ldmsot.jpg"
-              alt="about us"
-            /></div>
-            
-            
+            <div className="single-img">
+              <img
+                src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019129/peter%27s%20website/kilimanjaro-peak4_kk3ucv.jpg"
+                alt="about us"
+              />
+            </div>
+            <div className="single-img">
+              <img
+                src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019107/peter%27s%20website/peter-in-orange-bg-mountain_ldmsot.jpg"
+                alt="about us"
+              />
+            </div>
           </div>
 
           <div className="about-text">
-            <h3>About the team</h3>
+            <h3>Our team</h3>
             <p>
               We are a fully licensed and insured, locally owned business with years of experience
               and expertise offering custom made safaris and Kilimanjaro climbs to fit your time,
@@ -88,7 +90,7 @@ export default function AboutUs() {
             Mlay was born, and he is now guiding tourists to the roof of Africa.
           </p>
         </div>
-        <div className='img-section'>
+        <div className="img-section">
           <img
             src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019104/peter%27s%20website/native-man-kilimanjaro_vrtygy.jpg"
             alt="about us"

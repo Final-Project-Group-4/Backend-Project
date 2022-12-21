@@ -23,7 +23,6 @@
   text-align: center;
   padding-right: 2rem;
   padding-left: 2rem;
-  background-image: url('../../assets/Safari4_lmsxry.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -45,6 +44,18 @@
       color: white;
     }
   }
+}
+
+.img-hiking {
+  background-image: url('../../assets/Shira-tour.jpg');
+}
+
+.img-safari {
+  background-image: url('../../assets/Safari4_lmsxry.jpg');
+}
+
+.img-coffee {
+  background-image: url('../../assets/Umbwe-2route_h300te.jpg');
 }
 
 .coverImg {

@@ -29,7 +29,7 @@ export default function Tours() {
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
       //this if statement is to redirect to the tour page if there is only one tour of that type
-     /*  if (filteredToursByType.data.length === 1) {
+      /*  if (filteredToursByType.data.length === 1) {
         console.log('its JUST ONE');
         window.location.href = `/tours/${filteredToursByType.data[0]._id}`;
       } */
@@ -53,21 +53,21 @@ export default function Tours() {
   return (
     <div className="container1">
       <div className="container2">
-        <div className="leftSide">
-         {/* <img
+        <div
+          className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
+            type === 'safari' ? 'img-safari' : ''
+          } ${type === 'coffee' ? 'img-coffee' : ''}`}
+        >
+          {/* <img
             className="coverImg"
             style={{ height: 'auto' }}
             src={require('../../../src/assets/Safari4_lmsxry.jpg')}
             alt=""
           />  */}
           <div>
-            <h2 className='tourTitle'>Some Text Goes Here</h2>
+            <h2 className="tourTitle">Some Text Goes Here</h2>
             <br />
-            <p className='tourPara'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut eaque error
-              temporibus quia voluptates provident veniam earum cupiditate illum consectetur animi,
-              quam mollitia. Beatae eum doloribus rem reiciendis molestiae!
-            </p>
+            <p className="tourPara">{type === 'safari' && 'loream etc'}</p>
           </div>
         </div>
         <Container className="rightSide rightSideTours">

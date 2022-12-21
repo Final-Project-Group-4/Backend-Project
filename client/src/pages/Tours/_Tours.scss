@@ -25,6 +25,8 @@
   padding-left: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
+  // default background image
+  background-image: url('../../assets/small-logo.png');
   width: 100%;
   div {
     display: flex;
@@ -70,7 +72,7 @@
   .leftSide {
     font-size: calc(12px + 0.390625vw);
     height: fit-content;
-    background-image: url('../../assets/Safari4_lmsxry.jpg');
+    // background-image: url('../../assets/Safari4_lmsxry.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -96,7 +98,7 @@
     margin-bottom: 50px;
     .leftSide {
       height: fit-content;
-      background-image: url('../../assets/Safari4_lmsxry.jpg');
+      // background-image: url('../../assets/Safari4_lmsxry.jpg');
       background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;

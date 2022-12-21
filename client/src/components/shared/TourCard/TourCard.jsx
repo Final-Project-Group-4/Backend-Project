@@ -11,8 +11,8 @@ function TourCard(props) {
 
   return (
     <>
-      <Paper elevation={3} textAlign="center" sx={{height:"600px"}} >
-        <img src={mainImg} className="img" />
+      <Paper elevation={3} textAlign="center" sx={{ height: '600px' }}>
+        <img src={mainImg} alt="mainImage" className="img" />
         <Box paddingX={1}>
           <Typography component="subtitle1" variant="h2" className="nameOfRoute">
             {tour}
@@ -81,7 +81,7 @@ function TourCard(props) {
         </Box>
         <box SX={{ alignContent: 'flex-end', display: 'flex' }}>
           <Link to={`/tours/${id}`}>
-            <Button className='btn-primary'> Go to tour</Button>
+            <Button className="btn-primary"> Go to tour</Button>
           </Link>
         </box>
       </Paper>

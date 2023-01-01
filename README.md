@@ -41,37 +41,46 @@
     maintance of the website, providing the
     client with the tools to erase, update and
     add meaningful data. For the database
-    we used mongoDB and the connection established
+    we used mongoDB and the connection was established
     with Mongoose.
    </sup></sub>
 </div>
-####Key features 
-
-* Item A
-* Item B
-* Item C
-        
-<h5>Installation Options</h5>
-
-* Run: `$ npm install`
-
-
-
 
 
 **Table of Contents**
-[TOCM]
+
 [TOC]
 
-<img src="./client/src/assets/github.svg" width="30" height="30"></img>
 
+#####Key features 
+
+* Server Side Programming
+* Admin permissions for managing own content
+* Contact forms for inquiries 
+ 
+        
+#####Installation 
+```
+    1. Clone the repo
+    2. Run `npm i`
+    3. Open the terminal 
+    4. Run node server.js
+    5. Open another terminal for the client folder
+    6. Run `npm run start` 
+``` 
+    
+#####Technologies used 
+
+<div style="width:90%; backgroundColor:red">
+<img src="./client/src/assets/github.svg" width="30" height="30"></img>
 <img src="./client/src/assets/cdnlogo.com_node-js.svg" width="80" height="80"></img>
-<img src="./client/src/assets/mongodb-ar21.svg" width="90" height="auto"></img>
-<img src="./client/src/assets/512px-Sass_Logo_Color.svg.png" width="50" height="auto"></img>
-<img src="./client/src/assets/reactjs-ar21.svg" width="90" height="auto"></img>
+<img src="./client/src/assets/mongodb-ar21.svg" width="90" height="50"></img>
+<img src="./client/src/assets/512px-Sass_Logo_Color.svg.png" width="50" height="50"></img>
+<img src="./client/src/assets/reactjs-ar21.svg" width="90" height="50"></img>
 <img src="./client/src/assets/figma-ar21.svg" width="90" height="auto"></img>
 <img src="./client/src/assets/cdnlogo.com_javascript.svg" width="30" height="auto"></img>
 <img src="./client/src/assets/material-ui-seeklogo.com.svg" width="40" height="auto"></img>
+</div>
 
 <!-- Tour:
 GetAllTours: Get : http://localhost:4000/api/tours

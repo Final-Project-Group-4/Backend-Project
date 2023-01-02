@@ -1,9 +1,9 @@
 import { ValueCard, Peter } from '../export';
 import './_MainUp.scss';
 import {
-  FaTwitterSquare,
-  FaInstagramSquare,
-  FaLinkedin,
+  // FaTwitterSquare,
+  // FaInstagramSquare,
+  // FaLinkedin,
   FaCoffee,
   FaBinoculars,
   FaCarSide,
@@ -59,7 +59,7 @@ function MainUp() {
         ))}
       </div>
       <Peter />
-      <div className="icons">
+      {/* <div className="icons">
         <a href="#">
           <FaTwitterSquare color="#262626" size={30} />
         </a>
@@ -69,7 +69,7 @@ function MainUp() {
         <a href="#">
           <FaLinkedin color="#262626" size={30} />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

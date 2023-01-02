@@ -77,9 +77,9 @@ export default function Gallery() {
             </div>
           </div>
         )}
+        <UploadImage />
       </div>
-
-      <UploadImage />
+      
       <Contacts />
     </>
   );

@@ -1,4 +1,86 @@
-# Peter's Website Project
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+
+   
+    
+   .projectTitle2 {
+    font-size:2em;
+    color:#f99923;
+    background-color:black;
+    font-family: "Road Rage", cursive;
+    text-align: center;
+    padding-top:8px;
+   }
+.TitleProject {
+    font-family:Roboto;
+    font-size:0.6em;
+    display:inline-block;
+    margin-left:8px
+}
+
+.introExpl {
+     color:red 
+}
+
+</style>
+
+<h3 class="projectTitle2"> MLAY EXCURSSIONS <p    class="TitleProject">FULLSTACK PROJECT</p></h3>
+
+<img alignContent="center" alt="companyBanner" width="80%px" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
+
+<div style="display: block; margin: 0 auto; width:90%" >
+   <sub> <sup>
+    We used ExpressJS to create a server,and build therestfull APIs to solve our
+    client needs, firstly it fetches information
+    to serve only display purposes on the
+    Frontend, the rendering of all the tour
+    information available on the database and
+    also ones that allow for the proper
+    maintance of the website, providing the
+    client with the tools to erase, update and
+    add meaningful data. For the database
+    we used mongoDB and the connection was established
+    with Mongoose.
+   </sup></sub>
+</div>
+
+
+**Table of Contents**
+
+[TOC]
+
+
+#####Key features 
+
+* Server Side Programming
+* Admin permissions for managing own content
+* Contact forms for inquiries 
+ 
+        
+#####Installation 
+```
+    1. Clone the repo
+    2. Run `npm i`
+    3. Open the terminal 
+    4. Run node server.js
+    5. Open another terminal for the client folder
+    6. Run `npm run start` 
+``` 
+    
+#####Technologies used 
+
+<div style="width:90%; backgroundColor:red">
+<img src="./client/src/assets/github.svg" width="30" height="30"></img>
+<img src="./client/src/assets/cdnlogo.com_node-js.svg" width="80" height="80"></img>
+<img src="./client/src/assets/mongodb-ar21.svg" width="90" height="50"></img>
+<img src="./client/src/assets/512px-Sass_Logo_Color.svg.png" width="50" height="50"></img>
+<img src="./client/src/assets/reactjs-ar21.svg" width="90" height="50"></img>
+<img src="./client/src/assets/figma-ar21.svg" width="90" height="auto"></img>
+<img src="./client/src/assets/cdnlogo.com_javascript.svg" width="30" height="auto"></img>
+<img src="./client/src/assets/material-ui-seeklogo.com.svg" width="40" height="auto"></img>
+</div>
 
 <!-- Tour:
 GetAllTours: Get : http://localhost:4000/api/tours

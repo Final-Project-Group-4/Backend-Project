@@ -26,7 +26,7 @@
 
 </style>
 
-<h3 class="projectTitle2"> MLAY EXCURSSIONS <p    class="TitleProject">FULLSTACK PROJECT</p></h3>
+<h3 class="projectTitle2"> MLAY EXCURSSIONS <p class="TitleProject">FULLSTACK PROJECT</p></h3>
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 

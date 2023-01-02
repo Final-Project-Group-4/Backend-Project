@@ -13,11 +13,18 @@ import cloudinary from 'cloudinary';
 const app = express();
 dotenv.config();
 //Cloudinary Configuration:
-cloudinary.config({
-  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-  api_key: process.env.CLOUDINARY_API_KEY,
-  api_secret: process.env.CLOUDINARY_API_SECRET,
-});
+// cloudinary.config({
+//   cloud_name: process.env.REACT_APP_CLOUDINARY_CLOUD_NAME,
+//   api_key: process.env.REACT_APP_CLOUDINARY_API_KEY,
+//   api_secret: process.env.REACT_APP_CLOUDINARY_API_SECRET,
+// });
+
+// const corsOptions ={
+//   origin:'http://localhost:4000', 
+//   credentials:true,            //access-control-allow-credentials:true
+//   optionSuccessStatus:200
+// }
+// app.use(cors(corsOptions));
 
 app.use(cors());
 app.use(express.json({ extended: true, limit: '10kb' }));

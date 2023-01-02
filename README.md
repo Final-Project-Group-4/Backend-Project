@@ -25,14 +25,14 @@
 [TOC]
 
 
-####Key features 
+##Key features 
 
 * Server Side Programming
 * Admin permissions for managing own content
 * Contact forms for inquiries 
  
         
-####Installation 
+##Installation 
 ```
     1. Clone the repo
     2. Run `npm i`
@@ -42,7 +42,7 @@
     6. Run `npm run start` 
 ``` 
     
-####Technologies used 
+##Technologies used 
 
 <div style="width:90%; backgroundColor:red">
 <img src="./client/src/assets/github.svg" width="30" height="30"></img>

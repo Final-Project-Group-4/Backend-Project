@@ -18,12 +18,12 @@
     we used mongoDB and the connection was established
     with Mongoose.
 
-
+<!-- 
 
 **Table of Contents**
 
 [TOC]
-
+-->
 
 ## Key features 
 

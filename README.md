@@ -1,32 +1,6 @@
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 
-   
-    
-   .projectTitle2 {
-    font-size:2em;
-    color:#f99923;
-    background-color:black;
-    font-family: "Road Rage", cursive;
-    text-align: center;
-    padding-top:8px;
-   }
-.TitleProject {
-    font-family:Roboto;
-    font-size:0.6em;
-    display:inline-block;
-    margin-left:8px
-}
 
-.introExpl {
-     color:red 
-}
-
-</style>
-
-<h3 class="projectTitle2"> MLAY EXCURSSIONS <p class="TitleProject">FULLSTACK PROJECT</p></h3>
+<h3 class="projectTitle2"> MLAY EXCURSSIONS FULLSTACK PROJECT</h3>
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 

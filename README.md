@@ -31,7 +31,7 @@
 <img alignContent="center" alt="companyBanner" width="80%px" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 
 <div style="display: block; margin: 0 auto; width:90%" >
-   <sub> <sup>
+   
     We used ExpressJS to create a server,and build therestfull APIs to solve our
     client needs, firstly it fetches information
     to serve only display purposes on the
@@ -43,7 +43,7 @@
     add meaningful data. For the database
     we used mongoDB and the connection was established
     with Mongoose.
-   </sup></sub>
+ 
 </div>
 
 
@@ -52,14 +52,14 @@
 [TOC]
 
 
-#####Key features 
+####Key features 
 
 * Server Side Programming
 * Admin permissions for managing own content
 * Contact forms for inquiries 
  
         
-#####Installation 
+####Installation 
 ```
     1. Clone the repo
     2. Run `npm i`
@@ -69,7 +69,7 @@
     6. Run `npm run start` 
 ``` 
     
-#####Technologies used 
+####Technologies used 
 
 <div style="width:90%; backgroundColor:red">
 <img src="./client/src/assets/github.svg" width="30" height="30"></img>

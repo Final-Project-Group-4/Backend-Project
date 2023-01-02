@@ -4,9 +4,9 @@
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 
-<div style="display: block; margin: 0 auto; width:90%" >
+
    
-    We used ExpressJS to create a server,and build therestfull APIs to solve our
+   > We used ExpressJS to create a server,and build therestfull APIs to solve our
     client needs, firstly it fetches information
     to serve only display purposes on the
     Frontend, the rendering of all the tour
@@ -17,8 +17,7 @@
     add meaningful data. For the database
     we used mongoDB and the connection was established
     with Mongoose.
- 
-</div>
+
 
 
 **Table of Contents**

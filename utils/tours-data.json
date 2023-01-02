@@ -717,7 +717,7 @@
       },
       {
         "type": "Point",
-        "coordinates": [-35.809307097851985, 3.4455795237283793],
+        "coordinates": [35.809307097851985, -3.4455795237283793],
         "description": "Lake Manyara National Park",
         "day": 2,
         "_id": "63b28863066f59368ebabbd9"

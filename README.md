@@ -28,7 +28,7 @@
 
 <h3 class="projectTitle2"> MLAY EXCURSSIONS <p    class="TitleProject">FULLSTACK PROJECT</p></h3>
 
-<img alignContent="center" alt="companyBanner" width="80%px" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 
 <div style="display: block; margin: 0 auto; width:90%" >
    

@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import img from './../../assets/tour-1-1.jpg';
 import { Contacts } from '../../components/export';
 import mapboxgl from 'mapbox-gl';
 import './_SingleTour.scss';
@@ -74,8 +73,6 @@ export default function SingleTour() {
     }
   }, [id]);
 
-  console.log('OUTSIDE', locs);
-
   useEffect(() => {
     if (locs.length >= 0) {
       displayMap();
@@ -123,7 +120,6 @@ export default function SingleTour() {
         </div>
         <div className="map-container" id="map" style={{ height: '50vh' }}></div>
       </div>
-
       <Contacts />
     </>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './_Gallery.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,10 +9,27 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Contacts } from '../../components/export';
 import UploadImage from './UploadImage';
+import axios from 'axios';
 
-export default function Gallery({ galleryImages }) {
+export default function Gallery() {
+  const [gallery, setGallery] = useState([]);
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
+
+  const getGallery = async () => {
+    const allImages = await axios.get(
+      `https://${process.env.REACT_APP_CLOUDINARY_API_KEY}:${process.env.REACT_APP_CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/resources/image?max_results=50`
+    );
+    if (allImages.status === 200) {
+      setGallery(allImages);
+    } else {
+      console.error('Something went wrong');
+    }
+  };
+
+  useEffect(() => {
+    getGallery();
+  }, []);
 
   // Modal handler
   const handleOpenModal = (index) => {
@@ -25,11 +42,11 @@ export default function Gallery({ galleryImages }) {
   };
   // Previous image
   const prevSlide = () => {
-    slideNumber === 0 ? setSlideNumber(galleryImages.length - 1) : setSlideNumber(slideNumber - 1);
+    slideNumber === 0 ? setSlideNumber(gallery.length - 1) : setSlideNumber(slideNumber - 1);
   };
   // Next image
   const nextSlide = () => {
-    slideNumber + 1 === galleryImages.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1);
+    slideNumber + 1 === gallery.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1);
   };
 
   return (
@@ -40,8 +57,8 @@ export default function Gallery({ galleryImages }) {
         </h2>
 
         <div className="gallery-wrap">
-          {galleryImages &&
-            galleryImages.map((slide, index) => {
+          {gallery &&
+            gallery.map((slide, index) => {
               return (
                 <div className="single" key={index} onClick={() => handleOpenModal(index)}>
                   <img src={slide.img} alt="" />
@@ -56,7 +73,7 @@ export default function Gallery({ galleryImages }) {
             <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} />
             <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} />
             <div className="fullScreenImage">
-              <img src={galleryImages[slideNumber].img} alt="safari" />
+              <img src={gallery[slideNumber].img} alt="safari" />
             </div>
           </div>
         )}

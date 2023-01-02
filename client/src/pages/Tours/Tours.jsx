@@ -2,12 +2,11 @@ import { Contacts, TourCard } from '../../components/export';
 import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
 //import TourContext from '../../context/TourContext';
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
 
 export default function Tours() {
-  //const { setTourData, loadToursData, tourData } = useContext(TourContext);
   const [tourData, setTourData] = useState([]);
 
   const { type } = useParams();

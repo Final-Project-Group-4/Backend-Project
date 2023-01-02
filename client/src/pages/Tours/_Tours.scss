@@ -15,6 +15,12 @@
   margin-top: 6rem;
 }
 
+.tourTitle {
+ color: $main-yellow !important;
+ 
+
+}
+
 .leftSide {
   display: flex;
   flex-direction: column;
@@ -36,7 +42,7 @@
    // justify-content: center;
     align-items: center;
     .tourTitle {
-      
+    
       //font-size: calc(12px + 0.390625vw);
       margin-top: 6rem;
       color: white;

@@ -1,6 +1,6 @@
 
 
-<h3 class="projectTitle2"> MLAY EXCURSSIONS FULLSTACK PROJECT</h3>
+# MLAY EXCURSSIONS FULLSTACK PROJECT
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
 

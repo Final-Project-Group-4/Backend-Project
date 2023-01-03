@@ -11,9 +11,8 @@ function Footer() {
           <div className="col">
             <h4>ADDRESS</h4>
             <ul className="list-unstyled">
-              <li>unknown</li>
-              <li>TP.O.BOX 8228</li>
-              <li>Nairobi 00200</li>
+              <li>P.O. BOX 228</li>
+              <li>Marangu Tanzania</li>
             </ul>
           </div>
           <div className="col">

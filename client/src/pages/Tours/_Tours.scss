@@ -16,9 +16,7 @@
 }
 
 .tourTitle {
- color: $main-yellow !important;
- 
-
+  color: $main-yellow !important;
 }
 
 .leftSide {
@@ -31,27 +29,32 @@
   padding-left: 2rem;
   background-size: 100% 120%;
   background-repeat: no-repeat;
-  // default background image
+  height: 90vh;
   background-image: url('../../assets/hiking_tours.jpg');
   width: 100%;
-  
-  
+  .insideLeft {
+    .tourPara {
+      padding: 0;
+    }
+
+    h2 {
+      font-size: calc(1.75rem + 0.390625vw);
+      color: white;
+      margin-bottom: 0.35em;
+    }
+  }
+
   div {
     display: flex;
     flex-direction: column;
-   // justify-content: center;
     align-items: center;
     .tourTitle {
-    
-      //font-size: calc(12px + 0.390625vw);
       margin-top: 6rem;
       color: white;
       margin: auto;
     }
     .tourPara {
       font-size: calc(12px + 0.390625vw);
-      //margin: auto;
-      //padding: 2rem;
       color: white;
     }
   }
@@ -74,32 +77,27 @@
   margin-bottom: 2rem;
 }
 
-.h2 {
-  font-size: clamp(2rem,1rem + 10vw, 7rem);
-}
-
 .overlay {
-  background:rgba(186, 189, 186, 0.369);
-  margin:0 auto;
-  max-width:min(700px, 80%);
+  background: rgba(186, 189, 186, 0.369);
+  margin: 0 auto;
+  max-width: min(700px, 80%);
   padding: 1em;
-  margin-bottom:4em;
-  
+  margin-bottom: 4em;
 }
 
 .moreOpaque {
-  background:rgba(114, 116, 88, 0.709);
+  background: rgba(114, 116, 88, 0.709);
 }
 
 .moreOpaque2 {
-  background:rgba(208, 150, 92, 0.584);
+  background: rgba(208, 150, 92, 0.584);
 }
 
 .conditionalText {
   position: relative;
   font-weight: 500;
-  color:rgb(249, 249, 249);
-  font-size:calc(12px + 0.390625vw);
+  color: rgb(249, 249, 249);
+  font-size: calc(12px + 0.390625vw);
 }
 
 @include s {
@@ -108,8 +106,6 @@
   }
   .leftSide {
     font-size: calc(12px + 0.390625vw);
-    height: fit-content;
-    // background-image: url('../../assets/Safari4_lmsxry.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,12 +130,9 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
     .leftSide {
-      min-height: 45vh;
-      // background-image: url('../../assets/Safari4_lmsxry.jpg');
-      
+      height: 40vh;
       background-size: 100%;
-      //background-repeat: no-repeat;
-      background-position:center;
+      background-position: center;
     }
     .rightSide {
       width: 100%;
@@ -148,32 +141,6 @@
       & > .MuiGrid-root {
         min-height: 60vh;
         overflow-y: 'unset';
-        background-color: 'purple';
-      }
-    }
-  }
-}
-
-@include l {
-  .container2 {
-    flex-wrap: no-wrap;
-    margin-bottom: 50px;
-    .leftSide {
-      width: 50%;
-     height: 90vh;
-     background-size: 100%;
-     background-repeat: no-repeat;
-     background-position: center;
-
-    }
-    .rightSide {
-      width: 50%;
-      height: 98vh;
-      & > .MuiGrid-root {
-        position: relative;
-        top: 0.4em;
-        height: 88vh;
-        overflow-y: 'scroll';
         background-color: 'purple';
       }
     }

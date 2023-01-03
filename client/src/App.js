@@ -13,7 +13,7 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
 // import { TourProvider } from './context/TourContext';
 // import { Cloudinary } from '@cloudinary/url-gen';
-
+/* 
  const galleryImages = [
    {
     img: 'https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019141/peter%27s%20website/going-up-the-path_bpeuah.jpg',
@@ -112,7 +112,7 @@ import { Navbar, Footer } from './components/export';
      img: 'https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019075/peter%27s%20website/safari-zebras3_rkqbkx.jpg',
    },
  ];
-
+ */
 function App() {
   return (
     // <TourProvider>
@@ -122,7 +122,7 @@ function App() {
         <Route path="/tours/:id" element={<SingleTour />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/tours/category/:type" element={<Tours />} />
-        <Route path="/gallery" element={<Gallery galleryImages={galleryImages} />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/plantrip" element={<PlanTrip />} />
         <Route path="/faq" element={<FAQ />} />

@@ -6,12 +6,12 @@ function MediaIcons() {
     <div className="app__navbar__right">
       <ul className="app__navbar__icons">
         <li className="app__flex p-text">
-          <a href={`#`}>
+          <a href={`https://www.facebook.com/profile.php?id=100069632993371`}>
             <FaFacebook size={20} />
           </a>
         </li>
         <li className="app__flex p-text">
-          <a href={`#`}>
+          <a href={`https://instagram.com/mlay_tours?r=nametag`}>
             <FaInstagram size={20} />
           </a>
         </li>

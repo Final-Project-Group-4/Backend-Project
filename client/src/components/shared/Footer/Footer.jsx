@@ -1,6 +1,6 @@
 import './_Footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -38,20 +38,20 @@ function Footer() {
           <p className="col-sm">copyright 2009 © All rights reserved</p>
           <div className="social-icons">
             <div className="icons">
-              <a href="https://facebook.com">
+              <a href="https://www.facebook.com/profile.php?id=100069632993371">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
             <div className="icons">
-              <a href="https://instagram.com">
+              <a href="https://instagram.com/mlay_tours?r=nametag">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
-            <div className="icons">
+            {/* <div className="icons">
               <a href="https://twitter.com">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -15,22 +15,22 @@ function MainUp() {
   const values = [
     {
       title: 'Custom trip',
-      text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
+      text: 'We offer best of Tanzania adventures: Kilimanjaro trekking, Meru trekking, day hike, safaris to different tanzanian parks.',
       icon: <HiScissors size={60} />,
     },
     {
       title: 'Local, Coffee',
-      text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
+      text: 'We make coffee in a traditional way from a coffee seed to a cup of coffee, while doing this process we also sing and dance.',
       icon: <FaCoffee size={60} />,
     },
     {
       title: 'Safari',
-      text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
+      text: 'We offer best of Tanzania safari: Great migration, Ngorongoro crater, Tarangire national park and other Tanzanian parks.',
       icon: <FaBinoculars size={60} />,
     },
     {
       title: 'Transportation',
-      text: 'We offered custom tailored trips based on your needs and interests. Contact us to design a plan and get a free quote.',
+      text: 'We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel.',
       icon: <FaCarSide size={60} />,
     },
   ];
@@ -41,13 +41,7 @@ function MainUp() {
         <div className="text">
           <h2>We are offering</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris.
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris
+          Mlay Tours leads tourists on incredible adventures  in Tanzania. Leading treks to Mt. Kilimanjaro Mt. Meru, Tanzania's game parks and cultural tours.All these activities will make your journey unforgettable.
           </p>
         </div>
 

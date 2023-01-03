@@ -16,6 +16,7 @@
     align-items: flex-end;
     text-align: center;
     .text {
+      padding: 1rem;
       width: 60%;
       h2 {
         @include titles;

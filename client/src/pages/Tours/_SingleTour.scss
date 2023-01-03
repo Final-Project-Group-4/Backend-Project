@@ -37,7 +37,6 @@
 
   .main-middle {
     display: flex;
-    padding: 0.5rem;
     justify-content: space-between;
     border: 1px solid $main-yellow;
     margin-bottom: 1rem;
@@ -61,6 +60,11 @@
         }
       }
       .day-details {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
         h3 {
           font-weight: 500;
           font-family: 'Roboto', sans-serif;
@@ -75,6 +79,9 @@
           font-style: italic;
         }
       }
+    }
+    .middle-img {
+      width: 50%;
     }
   }
 }

@@ -10,6 +10,7 @@ export default function SingleTour() {
   const [days, setDays] = useState([]);
   const [info, setInfo] = useState('');
   const [locs, setLocs] = useState([]);
+  const [images, setImages] = useState([]);
 
   const { id } = useParams();
 
@@ -65,6 +66,7 @@ export default function SingleTour() {
     setTour(response.data);
     setDays(response.data.days);
     setLocs(response.data.locations);
+    setImages(response.data.otherImages);
   };
 
   useEffect(() => {
@@ -83,10 +85,12 @@ export default function SingleTour() {
   return (
     <>
       <div className="container single-tour">
-        <h1>{tour.name}</h1>
         <div className="main-img-div">
           <img src={tour.imgCover} alt="big-tour-img" />
-          <p className="main-description">{tour.description}</p>
+          <div>
+            <h1>{tour.name}</h1>
+            <p className="main-description">{tour.description}</p>
+          </div>
         </div>
         <div className="main-middle">
           <div className="days-container">
@@ -117,6 +121,7 @@ export default function SingleTour() {
               </div>
             )}
           </div>
+          <img src={images[0]} alt="img" className="middle-img" />
         </div>
         <div className="map-container" id="map" style={{ height: '50vh' }}></div>
       </div>

@@ -1,7 +1,6 @@
 import { Contacts, TourCard } from '../../components/export';
 import { Grid, Container } from '@mui/material';
 import { useParams } from 'react-router-dom';
-//import TourContext from '../../context/TourContext';
 import React, { useEffect, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
@@ -24,7 +23,7 @@ export default function Tours() {
   //Get the Tours data according to the type of the tour and check for the status
   const loadToursDataByType = async () => {
     const filteredToursByType = await axios.get(`http://localhost:4000/api/tours/category/${type}`);
-    console.log(filteredToursByType.data);
+    //console.log(filteredToursByType.data);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
       //this if statement is to redirect to the tour page if there is only one tour of that type

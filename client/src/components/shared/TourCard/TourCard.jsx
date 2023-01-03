@@ -1,5 +1,5 @@
 import './_TourCard.scss';
-import { Paper, Typography, Button } from '@mui/material';
+import { Paper, Typography, Button, Divider } from '@mui/material';
 import Box from '@mui/material/Box';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -11,14 +11,14 @@ function TourCard(props) {
 
   return (
     <>
-      <Paper elevation={3} textAlign="center" sx={{ height: '600px' }}>
+      <Paper elevation={3} sx={{ height: '600px', textAlign: 'center' }}>
         <img src={mainImg} alt="mainImage" className="img" />
         <Box paddingX={1}>
-          <Typography component="subtitle1" variant="h2" className="nameOfRoute">
+          <Typography variant="subtitle1" component="h2" className="nameOfRoute">
             {tour}
           </Typography>
         </Box>
-        <hr />
+        <Divider component="li" className="li-divider" />
 
         <Box paddingX={2}>
           <Typography
@@ -28,11 +28,12 @@ function TourCard(props) {
             sx={{ fontFamily: 'raleway', fontSize: '1rem', fontWeight: '400' }}
             textAlign="left"
           >
-            <b className="subtitles">Description</b>: <span />
+            <b className="subtitles"></b>
+            <span />
             {subtitle}
           </Typography>
         </Box>
-        <hr />
+        <Divider component="li" className="li-divider" />
         <Box paddingX={2}>
           <Typography
             component="h2"
@@ -53,7 +54,7 @@ function TourCard(props) {
             <span />
           </Typography>
         </Box>
-        <hr />
+        <Divider component="li" className="li-divider" />
         <Box paddingX={2}>
           <Typography
             component="h2"
@@ -66,7 +67,7 @@ function TourCard(props) {
             {difficulty}
           </Typography>
         </Box>
-        <hr />
+        <Divider component="li" className="li-divider" />
         <Box paddingX={2}>
           <Typography
             component="h2"
@@ -79,11 +80,13 @@ function TourCard(props) {
             {scenery}
           </Typography>
         </Box>
-        <box SX={{ alignContent: 'flex-end', display: 'flex' }}>
-          <Link to={`/tours/${id}`}>
-            <Button className="btn-primary"> Go to tour</Button>
-          </Link>
-        </box>
+        <Box sx={{ alignContent: 'center' }}>
+          <Button className="btn-primary">
+            <Link to={`/tours/${id}`} className="card-link">
+              Go to tour
+            </Link>
+          </Button>
+        </Box>
       </Paper>
     </>
   );

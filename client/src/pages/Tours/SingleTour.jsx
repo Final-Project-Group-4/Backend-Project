@@ -70,6 +70,7 @@ export default function SingleTour() {
   useEffect(() => {
     if (id) {
       getSingleTour();
+      console.log(tour);
     }
   }, [id]);
 
@@ -84,38 +85,37 @@ export default function SingleTour() {
       <div className="container single-tour">
         <h1>{tour.name}</h1>
         <div className="main-img-div">
-          <img src="" alt="big-tour-img" />
+          <img src={tour.imgCover} alt="big-tour-img" />
+          <p className="main-description">{tour.description}</p>
         </div>
-        <p className="main-description">{tour.description}</p>
         <div className="main-middle">
-          <div className="days-list">
-            {days.map((day, index) => {
-              return (
-                <li
-                  key={day.number}
-                  default={index === 0}
-                  className="day-list-items"
-                  onClick={() => {
-                    setInfo(day);
-                  }}
-                >
-                  Day {day.number}
-                </li>
-              );
-            })}
-          </div>
-          {info && (
-            <div className="day-details">
-              <h3>{info && info.title}</h3>
-              {info.elevation && <h5>Elevation: {info.elevation}</h5>}
-              {info.altitudeGained && <h5>Altitude Gained: {info.altitudeGained}</h5>}
-              {info.altitudeLost && <h5>Altitude Lost: {info.altitudeLost}</h5>}
-              <p>{info.description}</p>
-              {info.note && <h6>{info.note}</h6>}
+          <div className="days-container">
+            <div className="days-list">
+              {days.map((day, index) => {
+                return (
+                  <li
+                    key={day.number}
+                    default={index === 0}
+                    className="day-list-items"
+                    onClick={() => {
+                      setInfo(day);
+                    }}
+                  >
+                    Day {day.number}
+                  </li>
+                );
+              })}
             </div>
-          )}
-          <div className="day-img">
-            <img src="" alt="tour-img" />
+            {info && (
+              <div className="day-details">
+                <h3>{info && info.title}</h3>
+                {info.elevation && <h5>Elevation: {info.elevation}</h5>}
+                {info.altitudeGained && <h5>Altitude Gained: {info.altitudeGained}</h5>}
+                {info.altitudeLost && <h5>Altitude Lost: {info.altitudeLost}</h5>}
+                <p>{info.description}</p>
+                {info.note && <h6>{info.note}</h6>}
+              </div>
+            )}
           </div>
         </div>
         <div className="map-container" id="map" style={{ height: '50vh' }}></div>

@@ -11,6 +11,7 @@ import Admin from './pages/Admin/Admin.jsx';
 import FAQ from './pages/FAQ/Faq.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
+
 // import { TourProvider } from './context/TourContext';
 // import { Cloudinary } from '@cloudinary/url-gen';
 

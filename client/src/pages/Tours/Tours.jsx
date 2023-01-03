@@ -82,7 +82,7 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
-                <Grid item xs={12} sm={12} md={12} lg={5} margin="0.2em">
+                <Grid item xs={12} sm={12} md={12} lg={5} margin="0.2em" key={tour._id}>
                   <TourCard
                     mainImg={tour.imgCover}
                     days={tour.days}

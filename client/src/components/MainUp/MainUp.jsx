@@ -1,13 +1,6 @@
 import { ValueCard, Peter } from '../export';
 import './_MainUp.scss';
-import {
-  // FaTwitterSquare,
-  // FaInstagramSquare,
-  // FaLinkedin,
-  FaCoffee,
-  FaBinoculars,
-  FaCarSide,
-} from 'react-icons/fa';
+import { FaCoffee, FaBinoculars, FaCarSide } from 'react-icons/fa';
 import mainUp from './../../assets/lp-img-mainup.jpg';
 import { HiScissors } from 'react-icons/hi';
 
@@ -41,11 +34,12 @@ function MainUp() {
         <div className="text">
           <h2>We are offering</h2>
           <p>
-          Mlay Tours leads tourists on incredible adventures  in Tanzania. Leading treks to Mt. Kilimanjaro Mt. Meru, Tanzania's game parks and cultural tours.All these activities will make your journey unforgettable.
+            Mlay Tours leads tourists on incredible adventures in Tanzania. Leading treks to Mt.
+            Kilimanjaro Mt. Meru, Tanzania's game parks and cultural tours.All these activities will
+            make your journey unforgettable.
           </p>
         </div>
-
-        <img src={mainUp} alt="" />
+        <img src={mainUp} alt="img" />
       </div>
       <div className="values-container">
         {values.map((item, i) => (
@@ -53,17 +47,6 @@ function MainUp() {
         ))}
       </div>
       <Peter />
-      {/* <div className="icons">
-        <a href="#">
-          <FaTwitterSquare color="#262626" size={30} />
-        </a>
-        <a href="#">
-          <FaInstagramSquare color="#262626" size={30} />
-        </a>
-        <a href="#">
-          <FaLinkedin color="#262626" size={30} />
-        </a>
-      </div> */}
     </div>
   );
 }

@@ -25,8 +25,8 @@ function Footer() {
             </ul>
           </div>
           <div className="col">
-            <Link to={'/faq'} className="faq" >
-              <h4 >FAQ</h4>
+            <Link to={'/faq'} className="faq">
+              <h4>FAQ</h4>
             </Link>
             <ul className="list-unstyled">
               <li>If you have any other questions please don't hesitate to contact us!</li>

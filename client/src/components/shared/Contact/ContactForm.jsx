@@ -14,7 +14,7 @@ function ContactForm() {
 
   return (
     <>
-      <Grid item xs={12} sm={6} className="leftGridI" padding={3} >
+      <Grid item xs={12} sm={6} className="leftGridI" padding={3}>
         <Typography variant="h3">Contact Us</Typography>
         <p>
           Need help starting out? Please contact Us, <br /> we are glad to help you plan your

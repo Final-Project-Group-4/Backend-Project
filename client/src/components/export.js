@@ -1,4 +1,3 @@
-
 // here we export the folders inside the shared folder
 export { default as Navbar } from './shared/Navbar/Navbar';
 export { default as Peter } from './shared/Peter/Peter';
@@ -15,4 +14,3 @@ export { default as MainUp } from './MainUp/MainUp';
 export { default as ValueCard } from './ValueCard/ValueCard';
 export { default as Gallery } from './Gallery/Gallery';
 //  export {default as SinglePhoto} from "./Gallery/Gallery"
-

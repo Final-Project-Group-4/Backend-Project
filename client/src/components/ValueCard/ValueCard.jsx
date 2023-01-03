@@ -1,4 +1,4 @@
-import "./_ValueCard.scss";
+import './_ValueCard.scss';
 
 function ValueCard({ title, text, icon }) {
   return (

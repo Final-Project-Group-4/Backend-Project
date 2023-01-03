@@ -1,5 +1,6 @@
 import './_toggle.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BsFacebook } from 'react-icons/bs';
 import { FaInstagram } from 'react-icons/fa';
@@ -13,14 +14,31 @@ function Toggle(props) {
           {/* when the use toggle the function setToggle useState gonna be false so it can disappear */}
           <HiX onClick={() => props.setToggle(false)} />
           <ul className="try">
-            {['Home', 'Tours', 'Gallery', 'About Us', 'Plan Trip'].map((item) => (
-              <li key={{ item }}>
+            {/* {['Home', 'Tours', 'Gallery', 'About Us', 'Plan Trip'].map((item) => (
+              <li key={{ item }}> */}
                 {/* I changed the '#' with '/' on the next line so it can get us to the right Page but still doesn't work properly */}
-                <a href={`/${item}`} onClick={() => props.setToggle(false)}>
+                {/* <a href={`/${item}`} onClick={() => props.setToggle(false)}>
                   {item}
                 </a>
               </li>
-            ))}
+            ))} */}
+
+      <li>
+        <Link to={'/'} onClick={() => props.setToggle(false)}>Home</Link>
+      </li>
+      <li>
+        <Link to={'/tours'} onClick={() => props.setToggle(false)}>Tours</Link>
+      </li>
+      <li>
+        <Link to={'/gallery'} onClick={() => props.setToggle(false)}> Gallery </Link>
+      </li>
+      <li>
+        <Link to={'/about'} onClick={() => props.setToggle(false)}>About Us</Link>
+      </li>
+      <li>
+        <Link to={'/plantrip'} onClick={() => props.setToggle(false)}>Plan Trip</Link>
+      </li>
+
           </ul>
           <ul className="Language">
             {['DE', '|', 'FR', '|', 'EN'].map((item) => (

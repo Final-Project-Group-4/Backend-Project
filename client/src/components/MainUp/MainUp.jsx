@@ -39,7 +39,7 @@ function MainUp() {
             make your journey unforgettable.
           </p>
         </div>
-        <img src={mainUp} alt="img" />
+        <img src={mainUp} alt="kilimanjaro" />
       </div>
       <div className="values-container">
         {values.map((item, i) => (

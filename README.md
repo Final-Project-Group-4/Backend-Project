@@ -12,7 +12,7 @@
     Frontend, the rendering of all the tour
     information available on the database and
     also ones that allow for the proper
-    maintance of the website, providing the
+    maintenance of the website, providing the
     client with the tools to erase, update and
     add meaningful data. For the database
     we used mongoDB and the connection was established

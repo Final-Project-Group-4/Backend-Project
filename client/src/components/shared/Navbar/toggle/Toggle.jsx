@@ -10,12 +10,13 @@ function Toggle(props) {
       <HiMenuAlt4 onClick={() => props.setToggle(true)} />
       {props.toggle && (
         <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85 }}>
-          {/* when the use toggle the function setToggle useState gonna be false so it can disspaer */}
+          {/* when the use toggle the function setToggle useState gonna be false so it can disappear */}
           <HiX onClick={() => props.setToggle(false)} />
           <ul className="try">
             {['Home', 'Tours', 'Gallery', 'About Us', 'Plan Trip'].map((item) => (
               <li key={{ item }}>
-                <a href={`#${item}`} onClick={() => props.setToggle(false)}>
+                {/* I changed the '#' with '/' on the next line so it can get us to the right Page but still doesn't work properly */}
+                <a href={`/${item}`} onClick={() => props.setToggle(false)}>
                   {item}
                 </a>
               </li>

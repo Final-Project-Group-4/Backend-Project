@@ -15,7 +15,7 @@ export default function Gallery() {
   const [gallery, setGallery] = useState([]);
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
-
+ 
   const getGallery = async () => {
     const allImages = await axios.get(
       `https://${process.env.REACT_APP_CLOUDINARY_API_KEY}:${process.env.REACT_APP_CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/resources/image?max_results=50`
@@ -26,11 +26,12 @@ export default function Gallery() {
       console.error('Something went wrong');
     }
   };
+ 
 
-  useEffect(() => {
+   useEffect(() => {
     getGallery();
   }, []);
-
+ 
   // Modal handler
   const handleOpenModal = (index) => {
     setSlideNumber(index);
@@ -77,9 +78,9 @@ export default function Gallery() {
             </div>
           </div>
         )}
+        <UploadImage />
       </div>
-
-      <UploadImage />
+      
       <Contacts />
     </>
   );

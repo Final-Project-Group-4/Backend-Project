@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import './_PlanTrip.scss';
 import { planTripSchema } from './schema/PlanTripSchema';
 import peter from './../../assets/peter1.png';
-import shira from './../../assets/Shira-tour.jpg';
+import bigImg from './../../assets/contact-img-example.jpg';
 import emailjs from '@emailjs/browser';
 
 export default function PlanTrip() {
@@ -52,9 +52,8 @@ export default function PlanTrip() {
   //Template_id=template_dw6d4qk
   return (
     <div>
-      <div className="shira">
-        <img src={shira} alt="Plan Trip" />
-        <p>Ready for Adventure !</p>
+      <div className="plan-trip-banner">
+        <p>Ready for Adventure!</p>
       </div>
       <div className="planTrip container">
         <div>
@@ -143,7 +142,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               className={errors.message && touched.message ? 'input-error' : ''}
             />
-            <button disabled={isSubmitting} type="submit">
+            <button disabled={isSubmitting} type="submit" className="plan-submit-btn">
               Get a free quote
             </button>
             {message && <p>Request sent and you will receive an email soon with the details.</p>}

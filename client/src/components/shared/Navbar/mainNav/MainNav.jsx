@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 import './mainNav.scss';
-function mainNav() {
+function MainNav() {
+  const {t} = useTranslation();
   return (
+
+
     <ul className="app__navbar__links">
       <li className="app__flex p-text">
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'}>{t("home")}</Link>
       </li>
       <li className="app__flex p-text">
         <Link to={'/tours'}>Tours</Link>
@@ -14,7 +19,7 @@ function mainNav() {
         <Link to={'/gallery'}> Gallery </Link>
       </li>
       <li className="app__flex p-text">
-        <Link to={'/about'}>About Us</Link>
+        <Link to={'/about'}>{t("aboutUs")}</Link>
       </li>
       <li className="app__flex p-text">
         <Link to={'/plantrip'}>Plan Trip</Link>
@@ -23,4 +28,4 @@ function mainNav() {
   );
 }
 
-export default mainNav;
+export default MainNav;

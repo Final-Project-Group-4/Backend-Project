@@ -65,6 +65,7 @@ export default function SingleTour() {
     const response = await axios.get(`http://localhost:4000/api/tours/${id}`);
     setTour(response.data);
     setDays(response.data.days);
+    setInfo(response.data.days[0]);
     setLocs(response.data.locations);
     setImages(response.data.otherImages);
   };
@@ -87,42 +88,53 @@ export default function SingleTour() {
       <div className="container single-tour">
         <div className="main-img-div">
           <img src={tour.imgCover} alt="big-tour-img" />
-          <div>
+          <div className="inner-text-container">
             <h1>{tour.name}</h1>
             <p className="main-description">{tour.description}</p>
           </div>
         </div>
-        <div className="main-middle">
-          <div className="days-container">
-            <div className="days-list">
-              {days.map((day, index) => {
-                return (
-                  <li
-                    key={day.number}
-                    default={index === 0}
-                    className="day-list-items"
-                    onClick={() => {
-                      setInfo(day);
-                    }}
-                  >
-                    Day {day.number}
-                  </li>
-                );
-              })}
-            </div>
-            {info && (
-              <div className="day-details">
-                <h3>{info && info.title}</h3>
-                {info.elevation && <h5>Elevation: {info.elevation}</h5>}
-                {info.altitudeGained && <h5>Altitude Gained: {info.altitudeGained}</h5>}
-                {info.altitudeLost && <h5>Altitude Lost: {info.altitudeLost}</h5>}
-                <p>{info.description}</p>
-                {info.note && <h6>{info.note}</h6>}
+        {days.length >= 1 && (
+          <div className="main-middle">
+            <div className="days-container">
+              <div className="days-list">
+                {days.map((day, index) => {
+                  return (
+                    <li
+                      key={`days-${day.number}`}
+                      default={index === 0}
+                      className="day-list-items"
+                      onClick={() => {
+                        setInfo(day);
+                      }}
+                    >
+                      Day <span>{day.number}</span>
+                    </li>
+                  );
+                })}
               </div>
-            )}
+              {info && (
+                <div className="day-details">
+                  <h3>{info && info.title}</h3>
+                  {info.elevation && <h5>Elevation: {info.elevation}</h5>}
+                  {info.altitudeGained && <h5>Altitude Gained: {info.altitudeGained}</h5>}
+                  {info.altitudeLost && <h5>Altitude Lost: {info.altitudeLost}</h5>}
+                  <p>{info.description}</p>
+                  {info.note && <h6>{info.note}</h6>}
+                </div>
+              )}
+            </div>
+            <img src={images[0]} alt="img" className="middle-img" />
           </div>
-          <img src={images[0]} alt="img" className="middle-img" />
-        </div>
+        )}
+        {days.length <= 0 && (
+          <div className="main-middle">
+            <div className="middle-multiple-img">
+              <img src={images[1]} alt="" className="middle-img-small" />
+              <img src={images[2]} alt="" className="middle-img-small" />
+            </div>
+            <img src={images[0]} alt="img" className="middle-img" />
+          </div>
+        )}
         <div className="map-container" id="map" style={{ height: '50vh' }}></div>
       </div>
       <Contacts />

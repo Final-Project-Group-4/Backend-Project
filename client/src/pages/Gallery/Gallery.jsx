@@ -18,7 +18,6 @@ export default function Gallery() {
 
   const getGallery = async () => {
     const allImages = await axios.get(
-      
       `http://localhost:4000/api/gallery`
     );
     console.log(allImages);
@@ -75,7 +74,7 @@ export default function Gallery() {
             <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} />
             <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} />
             <div className="fullScreenImage">
-              <img src={gallery[slideNumber].img} alt="safari" />
+              <img src={gallery[slideNumber].secure_url} alt="safari" />
             </div>
           </div>
         )}

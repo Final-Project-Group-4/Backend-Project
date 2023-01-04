@@ -18,15 +18,16 @@
   }
   h3 {
     @include subtitles;
-    font-size: 1.8rem;
+    font-size: calc(20px + 0.390625vw);
     text-align: center;
   }
   p {
     @include paragraph;
-    font-size: 1.3rem;
+    font-size: calc(16px + 0.390625vw);
     padding: $padding-small $padding-small 0;
     text-align: center;
-    height: 50%;
+    height: 60%;
+    overflow-y: auto;
   }
 }
 

@@ -1,18 +1,29 @@
 import ImageModel from '../models/galleryModel.js';
 import TourModel from '../models/tourModel.js';
 import cloudinary from 'cloudinary';
+import axios from 'axios';
 
-export const getAllPhotos = async (req, res, next) => {
-  try {
-    const data = await ImageModel.find();
-    res.status(200).json({
-      status: 'success',
-      results: data.length,
-      data,
-    });
-  } catch (error) {
+// export const getAllPhotos = async (req, res, next) => {
+//   try {
+//     const data = await ImageModel.find();
+//     res.status(200).json({
+//       status: 'success',
+//       results: data.length,
+//       data,
+//     });
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+
+export const getAllPhotos = async (req,res) => {
+  axios.get(
+    `https://${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.CLOUDINARY_NAME}/resources/image?max_results=50`
+  ).then(response => { res.status(200).json(response.data.resources)})
+   .catch (error=>{
     console.log(error);
-  }
+    console.error('Something went wrong');
+  }) 
 };
 
 //addPhoto created by Rekha

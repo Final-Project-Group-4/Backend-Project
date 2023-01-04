@@ -27,11 +27,7 @@ export default function Tours() {
     console.log(filteredToursByType.data);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
-      //this if statement is to redirect to the tour page if there is only one tour of that type
-      /*  if (filteredToursByType.data.length === 1) {
-        console.log('its JUST ONE');
-        window.location.href = `/tours/${filteredToursByType.data[0]._id}`;
-      } */
+      
     } else {
       console.error('Something went wrong');
     }

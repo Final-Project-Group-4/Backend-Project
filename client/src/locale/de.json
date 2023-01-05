@@ -49,6 +49,23 @@
 
         "/////////////comment": "The is the PeterCards ////////////////",
 
+
+    "//comment5": "Plan trip",
+    "readyForAdventure":"Bereit für Abenteuer!",
+    "readyForAdventureText":"Bitte geben Sie die Größe Ihrer Gruppe und die Reise, an der Sie interessiert sind, sowie ein mögliches Datum an. Wir bieten Ihnen eine maßgeschneiderte Reise basierend auf Ihrem Budget und Ihren persönlichen Vorlieben.",
+    "nameLabel":"Bitte geben Sie Ihren Namen ein",
+    "emailLabel":"Bitte geben Sie ihre E-Mail-Adresse ein",
+    "contactLabel":"Bitte geben Sie Ihre Kontaktnummer ein",
+    "destinationLabel":"Ziel wählen (Name der gewünschten Route)",
+    "dateLabel":"Startdatum",
+    "durationLabel":"Reisedauer in Tagen",
+    "groupSizeLabel":"Wie groß ist Ihre Party?",
+    "freeQuoteLabel":"Erhalten ein kostenfreies Angebot",
+    "requestSentLabel":"Anfrage gesendet und Sie erhalten in Kürze eine E-Mail mit den Details.",
+    "peterName":"Name:",
+    "call":"Anruf:",
+    "yourMessage":"Deine Nachricht",
+
         "peter": "Hallo, ich bin Peter",
         "petersExperience" : "Einer der erfahrensten Guides, die man finden kann. Über 8 Jahre Erfahrung im technischen Klettern und Wandern habe ich viele Male den Kilimandscharo bestiegen. Darüber hinaus bin ich zertifizierter CPR und Bergretter.",
 
@@ -60,6 +77,16 @@
         "WhyTravelWithUs" : "WARUM MIT UNS REISEN?",
 
 
+    "//comment6": "Tours page",
+    "ourToursText":"Wählen Sie aus einer der folgenden erstaunlichen Wanderungen und Treks in Afrika. Bevorzugen Sie kürzere Spaziergänge oder längere Wanderungen? Gemütliche Spaziergänge oder die Eroberung der höchsten Gipfel? Oder vielleicht möchten Sie eine maßgeschneiderte Tour entwerfen, ich lade Sie ein, sich unsere maßgeschneiderten Optionen anzusehen und von dort aus zu entscheiden",
+
+    "hikingTours":"WANDERTOUREN",
+    "safariTours":"SAFARI-TOUREN",
+    "safariToursText":"Lassen Sie sich von Afrikas Tierwelt und dem Safari-Lebensstil zeigen, worum es auf diesem magischen Kontinent geht. Sobald Sie Ihre erste Safari-Reise unternehmen, entwickeln Sie eine tiefe Sehnsucht, auf diesen magischen Kontinent zurückzukehren. Beginnen Sie jetzt und werfen Sie einen Blick auf unser Angebot, genießen Sie Ihren nächsten afrikanischen Safari-Urlaub an der Seite unserer erfahrenen Guides für ein unvergessliches Erlebnis.",
+    "localTours":"LOKALE TOUREN",
+    "localToursText":"Diese eintägige Tour führt Sie zu verschiedenen Natur- und Kulturstätten auf den umliegenden Hängen. Zu den Highlights gehören: Wasserfälle  Springen Sie in das Bergwasser des Kilimanjaro und genießen Sie die atemberaubende Aussicht auf die umliegenden Täler. Chagga Museum Die Kultur und Geschichte der Chagga kann durch einen Besuch im Museum erkundet werden. Es gibt mehrere Ausstellungen, darunter ein rekonstruiertes strohgedecktes Chagga-Haus. Unterirdische Chagga-Tunnel - Diese wurden von den Chagga-Leuten benutzt, um sich während Clankriegen vor den Feinden zu verstecken. Kaffee- und Bananenfarmen - Besuchen Sie Kaffeefarmen und ein lokales Zuhause, wo Sie lokale Gerichte genießen und den traditionellen Prozess der Kaffeezubereitung von der Bohne bis zur Tasse lernen können. Besuchen Sie lokale Chagga-Bars und trinken Sie das traditionelle Bier."
+
+    
 
         "/////////////comment": "The is the Contact US page cards////////////////",
         "ContactUs":"Kontaktiere uns",

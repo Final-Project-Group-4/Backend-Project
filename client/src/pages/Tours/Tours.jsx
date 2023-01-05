@@ -4,8 +4,12 @@ import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+
+
 
 export default function Tours() {
+  const {t} = useTranslation();
   const [tourData, setTourData] = useState([]);
 
   const { type } = useParams();
@@ -56,53 +60,37 @@ export default function Tours() {
             <div className="tourPara">
               {!type && (
                 <div className="overlay moreOpaque">
-                  <h2>OUR TOURS</h2>
+                  <h2>{t("ourTours")}</h2>
                   <p className="conditionalText">
-                    Select from one of the following Amazing Africa Hikes & Treks. Do you prefer
-                    shorter walks or longer treks? Easy strolls or conquering the highest peaks?, or
-                    perharps you would like to design a custom tour, I invite you to look at our
-                    tailored options and decide from there
+                  {t("ourToursText")}
+                    
                   </p>
                 </div>
               )}
 
               {type === 'hiking' && (
                 <div className="overlay moreOpaque">
-                  <h2>HIKING TOURS</h2>
-                  <p className="conditionalText">
-                    Select from one of the following Amazing Africa Hikes & Treks. Do you prefer
-                    shorter walks or longer treks? Easy strolls or conquering the highest peaks?, or
-                    perharps you would like to design a custom tour, I invite you to look at our
-                    tailored options and decide from there
-                  </p>
+                  <h2>{t("hikingTours")}</h2>
+                  <p className="conditionalText">{t("ourToursText")}</p>
                 </div>
               )}
 
               {type === 'safari' && (
                 <div className="overlay">
-                  <h2>SAFARI TOURS</h2>
+                  <h2>{t("safariTours")}</h2>
                   <p className="conditionalText">
-                    Let Africas wildlife and safari lifestyle show you what this magical continent
-                    is about, once you go on your first Safari trip, you develop a deep longing to
-                    return to this magical continent. Start now and have a look at our offer, enjoy
-                    your next African Safari holiday alongside our experienced guides for an
-                    unforgettable experience
+                    {t("safariToursText")}
+                    
                   </p>
                 </div>
               )}
 
               {type === 'coffee' && (
                 <div className="overlay moreOpaque2">
-                  <h2>LOCAL TOURS</h2>
+                  <h2>{t("localTours")}</h2>
                   <p className="conditionalText">
-                  This one-day tour takes in various natural and cultural sites on the surrounding slopes. Highlights include: Waterfalls - Make a splash in the mountain water of Kilimanjaro and enjoy stunning views of the surrounding valleys. Chagga Museum -
-                    The Chagga culture and history can be explored by visiting the museum. There are
-                    several exhibitions including a reconstructed thatched Chagga house. Underground
-                    Chagga Tunnels - These were used by the Chagga people to hide themselves from
-                    the enemies during clan wars. Coffee and Banana Farms - Visit coffee farms and a
-                    local home where you can enjoy local dishes and learn the traditional process of
-                    preparing coffee from bean to cup. Local Chagga bars and drink the traditional
-                    beer.
+                    {t("localToursText")}
+                  
                   </p>
                 </div>
               )}

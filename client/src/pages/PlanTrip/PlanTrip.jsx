@@ -3,7 +3,6 @@ import { useFormik } from 'formik';
 import './_PlanTrip.scss';
 import { planTripSchema } from './schema/PlanTripSchema';
 import peter from './../../assets/peter1.png';
-import bigImg from './../../assets/contact-img-example.jpg';
 import emailjs from '@emailjs/browser';
 
 export default function PlanTrip() {

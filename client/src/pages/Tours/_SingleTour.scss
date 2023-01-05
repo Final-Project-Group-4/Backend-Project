@@ -57,7 +57,6 @@
       .days-list {
         width: 30%;
         padding: 0.5rem;
-        height: fit-content;
         max-height: 445px;
         margin: auto 0;
         overflow-y: auto;
@@ -156,6 +155,10 @@
         width: 100%;
         border-bottom: solid 1px $main-yellow;
         max-height: 355px;
+        .days-list {
+          max-height: 355px;
+          margin: auto 0;
+        }
       }
     }
   }

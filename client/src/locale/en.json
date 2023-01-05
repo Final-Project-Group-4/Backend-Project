@@ -39,7 +39,19 @@
     "requestSentLabel":"Request sent and you will receive an email soon with the details.",
     "peterName":"Name:",
     "call":"Call:",
-    "yourMessage":"Your message"
+    "yourMessage":"Your message",
+
+
+    "//comment6": "Tours page",
+    "ourToursText":"Select from one of the following Amazing Africa Hikes & Treks. Do you prefer shorter walks or longer treks? Easy strolls or conquering the highest peaks? Or perhaps you would like to design a custom tour, I invite you to look at our tailored options and decide from there",
+
+    "hikingTours":"HIKING TOURS",
+    "safariTours":"SAFARI TOURS",
+    "safariToursText":"Let Africa's wildlife and safari lifestyle show you what this magical continent is about, once you go on your first Safari trip, you develop a deep longing to return to this magical continent. Start now and have a look at our offer, enjoy your next African Safari holiday alongside our experienced guides for an unforgettable experience.",
+    "localTours":"LOCAL TOURS",
+    "localToursText":"This one-day tour takes in various natural and cultural sites on the surrounding slopes. Highlights include: Waterfalls - Make a splash in the mountain water of Kilimanjaro and enjoy stunning views of the surrounding valleys. Chagga Museum - The Chagga culture and history can be explored by visiting the museum. There are several exhibitions including a reconstructed thatched Chagga house. Underground Chagga Tunnels - These were used by the Chagga people to hide themselves from the enemies during clan wars. Coffee and Banana Farms - Visit coffee farms and a local home where you can enjoy local dishes and learn the traditional process of preparing coffee from bean to cup. Local Chagga bars and drink the traditional beer."
+
+
 
     
     }

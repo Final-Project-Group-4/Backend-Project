@@ -10,19 +10,19 @@ function MainNav() {
 
     <ul className="app__navbar__links">
       <li className="app__flex p-text">
-        <Link to={'/'}>{t("home")}</Link>
+        <Link to={'/'}>Home</Link>
       </li>
       <li className="app__flex p-text">
-        <Link to={'/tours'}>Tours</Link>
+        <Link to={'/tours'}>{t("tours")}</Link>
       </li>
       <li className="app__flex p-text">
-        <Link to={'/gallery'}> Gallery </Link>
+        <Link to={'/gallery'}>{t("gallery")}</Link>
       </li>
       <li className="app__flex p-text">
         <Link to={'/about'}>{t("aboutUs")}</Link>
       </li>
       <li className="app__flex p-text">
-        <Link to={'/plantrip'}>Plan Trip</Link>
+        <Link to={'/plantrip'}>{t("planTrip")}</Link>
       </li>
     </ul>
   );

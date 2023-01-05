@@ -4,9 +4,11 @@ import InputAdornment from '@mui/material/InputAdornment';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { Button, Typography, Grid, TextField } from '@mui/material';
 import InsertCommentIcon from '@mui/icons-material/InsertComment';
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
   const [value, setValue] = React.useState('');
+  const {t} = useTranslation();
 
   const handleChange = (event) => {
     setValue(event.target.value);
@@ -15,10 +17,9 @@ function ContactForm() {
   return (
     <>
       <Grid item xs={12} sm={6} className="leftGridI" padding={3}>
-        <Typography variant="h3">Contact Us</Typography>
+        <Typography variant="h3">{t("ContactUs")}</Typography>
         <p>
-          Need help starting out? Please contact Us, <br /> we are glad to help you plan your
-          awesome trip!
+          {t("needHelp")}
         </p>
 
         <div className="space"></div>
@@ -85,7 +86,7 @@ function ContactForm() {
           variant="contained"
           color="success"
         >
-          Submit
+          {t("Submit")}
         </Button>
       </Grid>
     </>

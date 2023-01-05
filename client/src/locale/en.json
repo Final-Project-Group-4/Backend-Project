@@ -1,7 +1,11 @@
 
-{    "//comment1": "The is NavBar ",
+{    "/////////////comment": "The is NavBar ////////////////",
+     "tours": "Tours",
+     "gallery" : "Gallery",
      "aboutUs" : "About Us",
-
+     "planTrip" : "Plan Trip",
+    
+        
 
 
     "//comment2": "The is Welcoming landing page ",
@@ -9,6 +13,12 @@
     "ourGoal" : "Our goal is set to provide a unique adventure for everyone.",
     "ourTours": "OUR TOURS" ,
 
+    
+
+    
+    "/////////////comment": "The is the MainUp page////////////////",
+    "whatWeOffer" : "We are offering",
+    "weOffer" : "Mlay Tours leads tourists on incredible adventures in Tanzania. Leading treks to Mt. Kilimanjaro Mt. Meru, Tanzania's game parks and cultural tours.All these activities will make your journey unforgettable.",
 
     "//comment3": "About us page ",
     "ourTeam":"Our team",
@@ -42,6 +52,7 @@
     "yourMessage":"Your message",
 
 
+
     "//comment6": "Tours page",
     "ourToursText":"Select from one of the following Amazing Africa Hikes & Treks. Do you prefer shorter walks or longer treks? Easy strolls or conquering the highest peaks? Or perhaps you would like to design a custom tour, I invite you to look at our tailored options and decide from there",
 
@@ -53,10 +64,57 @@
 
 
 
-    
+
+
+    "/////////////comment": "The is the MainUp cards////////////////",
+
+    "values": [
+        {
+          "title": "Custom trip",
+          "text": "We offer best of Tanzania adventures: Kilimanjaro trekking, Meru trekking, day hike, safaris to different tanzanian parks."
+        
+        },
+      
+        {
+          
+          "title": "Local, Coffee",
+          "text": "We make coffee in a traditional way from a coffee seed to a cup of coffee, while doing this process we also sing and dance."
+         
+        },
+        {
+          "title": "Safari",
+          "text": "We offer best of Tanzania safari: Great migration, Ngorongoro crater, Tarangire national park and other Tanzanian parks."
+        
+        },
+        {
+          "title": "Transportation",
+         "text": "We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel."
+          
+        }],
+        "/////////////comment": "The is the PeterCards ////////////////",
+        "peter":"Hi, I'm Peter",
+        "petersExperience" : "One of the most experienced guides you can ever find. Over 8 years of experience in technical climbing and hiking I have summit Kilimanjaro many times. On top of all I am certified CPR and mountain rescue.",
+
+        "/////////////comment": "The is the MainDown cards////////////////",
+        "Hiking":" Hiking",
+        "Safari":"Safari",
+        "Coffee":"Coffee",
+        "CustomTour":"Custom Tour",
+        "WhyTravelWithUs" : "WHY TRAVEL WITH US?",
+
+
+
+        "/////////////comment": "The is the Contact US page cards////////////////",
+        "ContactUs":"Contact Us",
+        "needHelp" : "Need help starting out ? Please contact Us, we are glad to help you plan your awesome trip",
+        "Submit":"Submit",
+
+
+        "/////////////comment": "The is the Footer page ////////////////",
+        "anyQuestions" : "If you have any other questions please don't hesitate to contact us!"
     }
-
-
+     
+      
 
 
     

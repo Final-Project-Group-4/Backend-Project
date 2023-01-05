@@ -2,8 +2,11 @@ import './_Footer.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+
+  const {t} = useTranslation();
   return (
     <div className="main-footer">
       <div className="footer-container">
@@ -28,7 +31,7 @@ function Footer() {
               <h4>FAQ</h4>
             </Link>
             <ul className="list-unstyled">
-              <li>If you have any other questions please don't hesitate to contact us!</li>
+              <li>{t("anyQuestions")}</li>
             </ul>
           </div>
         </div>

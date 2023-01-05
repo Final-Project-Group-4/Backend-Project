@@ -111,7 +111,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-  }
+    }
 
   .rightSideTours {
     margin-right: 0 !important;
@@ -127,27 +127,6 @@
   }
 }
 
-@include m {
-  .container2 {
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    .leftSide {
-      height: 65vh;
-      background-size: 100%;
-      background-position: center;
-    }
-    .rightSide {
-      width: 100%;
-      margin-right: calc(10% + 2em) !important;
-      margin-left: calc(10% + 2em) !important;
-      & > .MuiGrid-root {
-        min-height: 60vh;
-        overflow-y: 'unset';
-        background-color: 'purple';
-      }
-    }
-  }
-}
 
 @include l {
   .container2 {

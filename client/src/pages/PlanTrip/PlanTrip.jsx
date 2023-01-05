@@ -4,8 +4,11 @@ import './_PlanTrip.scss';
 import { planTripSchema } from './schema/PlanTripSchema';
 import peter from './../../assets/peter1.png';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
+
 
 export default function PlanTrip() {
+  const {t} = useTranslation();
   const form = useRef();
   const [message, setMessage] = useState(false);
 
@@ -52,17 +55,13 @@ export default function PlanTrip() {
   return (
     <div>
       <div className="plan-trip-banner">
-        <p>Ready for Adventure!</p>
+        <p>{t("readyForAdventure")}</p>
       </div>
       <div className="planTrip container">
         <div>
           <form ref={form} onSubmit={handleSubmit} autoComplete="off" className="PlanTripForm">
-            <p>
-              Please add the size of your party, and the trip you are interested in as well as
-              possible date. We offer you a custom trip based on your budget and personal
-              preferences.
-            </p>
-            <label htmlFor="name">Please enter your name</label>
+            <p>{t("readyForAdventureText")}</p>
+            <label htmlFor="name">{t("nameLabel")}</label>
             <input
               value={values.name}
               onChange={handleChange}
@@ -72,7 +71,7 @@ export default function PlanTrip() {
               name="name"
               className={errors.name && touched.name ? 'input-error' : ''}
             />
-            <label htmlFor="email">Please enter your email</label>
+            <label htmlFor="email">{t("emailLabel")}</label>
             <input
               value={values.email}
               onChange={handleChange}
@@ -82,7 +81,7 @@ export default function PlanTrip() {
               name="email"
               className={errors.email && touched.email ? 'input-error' : ''}
             />
-            <label htmlFor="contact">Please enter your contact number</label>
+            <label htmlFor="contact">{t("contactLabel")}</label>
             <input
               value={values.contact}
               onChange={handleChange}
@@ -92,7 +91,7 @@ export default function PlanTrip() {
               name="contact"
               className={errors.contact && touched.contact ? 'input-error' : ''}
             />
-            <label htmlFor="routeName">Choose destination (the name of the desired route) </label>
+            <label htmlFor="routeName">{t("destinationLabel")}</label>
             <input
               value={values.routeName}
               onChange={handleChange}
@@ -102,7 +101,7 @@ export default function PlanTrip() {
               name="routeName"
               className={errors.routeName && touched.routeName ? 'input-error' : ''}
             />
-            <label htmlFor="startDate">Beginning date</label>
+            <label htmlFor="startDate">{t("dateLabel")}</label>
             <input
               value={values.startDate}
               onChange={handleChange}
@@ -112,7 +111,7 @@ export default function PlanTrip() {
               name="startDate"
               className={errors.startDate && touched.startDate ? 'input-error' : ''}
             />
-            <label htmlFor="days">Length of the trip in days</label>
+            <label htmlFor="days">{t("durationLabel")}</label>
             <input
               value={values.days}
               onChange={handleChange}
@@ -122,7 +121,7 @@ export default function PlanTrip() {
               name="days"
               className={errors.days && touched.days ? 'input-error' : ''}
             />
-            <label htmlFor="size">How big is your party?</label>
+            <label htmlFor="size">{t("groupSizeLabel")}</label>
             <input
               value={values.size}
               onChange={handleChange}
@@ -135,25 +134,25 @@ export default function PlanTrip() {
             <textarea
               name="message"
               id="message"
-              placeholder="Your message"
+
+              // dont forget that
+              placeholder={t("yourMessage")}
               onChange={handleChange}
               value={values.message}
               onBlur={handleBlur}
               className={errors.message && touched.message ? 'input-error' : ''}
             />
-            <button disabled={isSubmitting} type="submit" className="plan-submit-btn">
-              Get a free quote
-            </button>
-            {message && <p>Request sent and you will receive an email soon with the details.</p>}
+            <button disabled={isSubmitting} type="submit" className="plan-submit-btn">{t("freeQuoteLabel")}</button>
+            {message && <p>{t("requestSentLabel")}</p>}
           </form>
         </div>
         <div className="peter">
           <img src={peter} alt="Peter" />
           <p>
-            <strong>Name:</strong> Peter Mlay
+            <strong>{t("peterName")}</strong> Peter Mlay
           </p>
           <p>
-            <strong>Call:</strong> +24656877893
+            <strong>{t("call")}</strong> +24656877893
           </p>
           <p>
             <strong>Email:</strong> mlaypeter019@gmail.com

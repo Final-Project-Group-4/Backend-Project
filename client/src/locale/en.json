@@ -23,7 +23,23 @@
 
     "//comment4": "Gallery page ",
     "photo":"Photo ",
-    "gallery":"Gallery"
+    "gallery":"Gallery",
+
+    "//comment5": "Plan trip",
+    "readyForAdventure":"Ready for Adventure!",
+    "readyForAdventureText":"Please add the size of your party, and the trip you are interested in as well as possible date. We offer you a custom trip based on your budget and personal preferences.",
+    "nameLabel":"Please enter your name",
+    "emailLabel":"Please enter your email",
+    "contactLabel":"Please enter your contact number",
+    "destinationLabel":"Choose destination (the name of the desired route)",
+    "dateLabel":"Beginning date",
+    "durationLabel":"Length of the trip in days",
+    "groupSizeLabel":"How big is your party?",
+    "freeQuoteLabel":"Get a free quote",
+    "requestSentLabel":"Request sent and you will receive an email soon with the details.",
+    "peterName":"Name:",
+    "call":"Call:",
+    "yourMessage":"Your message"
 
     
     }

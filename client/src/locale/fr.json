@@ -19,7 +19,24 @@
 
     "//comment4": "Gallery page ",
     "photo":"Galerie ",
-    "gallery":"de photos"
+    "gallery":"de photos",
+
+
+    "//comment5": "Plan trip",
+    "readyForAdventure":"Prêt pour l'aventure!",
+    "readyForAdventureText":"Veuillez ajouter la taille de votre groupe et le voyage qui vous intéresse ainsi que la date possible. Nous vous proposons un voyage sur mesure en fonction de votre budget et de vos préférences personnelles.",
+    "nameLabel":"S'il vous plaît entrez votre nom",
+    "emailLabel":"Veuillez saisir votre e-mail",
+    "contactLabel":"Veuillez entrer votre numéro de contact",
+    "destinationLabel":"Choisissez la destination (le nom de l'itinéraire souhaité)",
+    "dateLabel":"Date de début",
+    "durationLabel":"Durée du voyage en jours",
+    "groupSizeLabel":"Quelle est la taille de votre fête?",
+    "freeQuoteLabel":"Obtenir un devis gratuit",
+    "requestSentLabel":"Demande envoyée et vous recevrez bientôt un e-mail avec les détails.",
+    "peterName":"Nom:",
+    "call":"Téléphoner à:",
+    "yourMessage":"Votre message"
 
     
 

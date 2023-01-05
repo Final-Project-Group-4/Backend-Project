@@ -19,7 +19,24 @@
 
     "//comment4": "Gallery page ",
     "photo":"Foto",
-    "gallery":"gallerie"
+    "gallery":"gallerie",
+
+
+    "//comment5": "Plan trip",
+    "readyForAdventure":"Bereit für Abenteuer!",
+    "readyForAdventureText":"Bitte geben Sie die Größe Ihrer Gruppe und die Reise, an der Sie interessiert sind, sowie ein mögliches Datum an. Wir bieten Ihnen eine maßgeschneiderte Reise basierend auf Ihrem Budget und Ihren persönlichen Vorlieben.",
+    "nameLabel":"Bitte geben Sie Ihren Namen ein",
+    "emailLabel":"Bitte geben Sie ihre E-Mail-Adresse ein",
+    "contactLabel":"Bitte geben Sie Ihre Kontaktnummer ein",
+    "destinationLabel":"Ziel wählen (Name der gewünschten Route)",
+    "dateLabel":"Startdatum",
+    "durationLabel":"Reisedauer in Tagen",
+    "groupSizeLabel":"Wie groß ist Ihre Party?",
+    "freeQuoteLabel":"Erhalten ein kostenfreies Angebot",
+    "requestSentLabel":"Anfrage gesendet und Sie erhalten in Kürze eine E-Mail mit den Details.",
+    "peterName":"Name:",
+    "call":"Anruf:",
+    "yourMessage":"Deine Nachricht"
 
     
 

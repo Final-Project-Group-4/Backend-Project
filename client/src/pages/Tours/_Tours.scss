@@ -28,8 +28,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
- // padding-right: 2rem;
- // padding-left: 2rem;
+  // padding-right: 2rem;
+  // padding-left: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
@@ -102,16 +102,39 @@
   font-size: calc(12px + 0.390625vw);
 }
 
+@include m {
+  .container2 {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    .leftSide {
+      height: 65vh;
+      background-size: 100%;
+      background-position: center;
+    }
+    .rightSide {
+      width: 100%;
+      margin-right: calc(10% + 2em) !important;
+      margin-left: calc(10% + 2em) !important;
+      & > .MuiGrid-root {
+        min-height: 60vh;
+        overflow-y: 'unset';
+        background-color: 'purple';
+      }
+    }
+  }
+}
+
 @include s {
   .container2 {
     flex-wrap: wrap;
-  }
-  .leftSide {
-    font-size: calc(12px + 0.390625vw);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    .leftSide {
+      font-size: calc(12px + 0.390625vw);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 40vh;
     }
+  }
 
   .rightSideTours {
     margin-right: 0 !important;
@@ -127,11 +150,10 @@
   }
 }
 
-
-@include l {
-  .container2 {
-    .gridRight {
-      height: 87vh;
-    }
-  }
-}
+// @include l {
+//   .container2 {
+//     .gridRight {
+//       height: 87vh;
+//     }
+//   }
+// }

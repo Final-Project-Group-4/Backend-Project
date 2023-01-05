@@ -1,7 +1,72 @@
 {
+    "/////////////comment": "The is NavBar ////////////////",
+     "tours": "Touren",
+      "gallery": "Galerie",
+      "aboutUs": "Über uns",
+      "planTrip": "Reise planen",
+
+
+
+
+      "/////////////comment": "The is Welcoming landing page ////////////////",
     "welcomeTo" : "-WILLKOMMEN BEI-",
     "ourGoal" : "Unser Ziel ist es, jedem ein einzigartiges Abenteuer zu bieten.",
     "ourTours": "UNSERE TOUREN",
-    "aboutUs" : "Über uns"
 
+
+    "/////////////comment": "The is the MainUp page////////////////",
+    "whatWeOffer" : "Wir bieten an",
+    "weOffer" : "Mlay Tours führt Touristen zu unglaublichen Abenteuern in Tansania. Führende Wanderungen zum Mt. Kilimanjaro Mt. Meru, Tansanias Wildparks und kulturelle Touren.All diese Aktivitäten werden Ihre Reise unvergesslich machen.",
+    
+
+
+    "/////////////comment": "The is the MainUp cards////////////////",
+
+    "values": [
+        {
+          "title": "Individuelle Reise",
+          "text": "Wir bieten das Beste von Tansania-Abenteuern: Kilimandscharo-Trekking, Meru-Trekking, Tageswanderung, Safaris zu verschiedenen tansanischen Parks."
+        
+        },
+      
+        {
+          
+          "title": "Lokal, Kaffee",
+          "text": "Wir machen Kaffee auf traditionelle Weise von einem Kaffeesamen zu einer Tasse Kaffee, während wir diesen Prozess machen, singen und tanzen wir auch."
+         
+        },
+        {
+          "title": "Safari",
+          "text": "Wir bieten das Beste von Tansania Safari: Great Migration, Ngorongoro-Krater, Tarangire-Nationalpark und andere tansanische Parks."
+        
+        },
+        {
+          "title": "Transport",
+         "text": "Wir nutzen Land Cruiser mit Allradantrieb für Safaris und Minibusse für den Transfer vom Flughafen zum Hotel."
+          
+        }],
+
+
+        "/////////////comment": "The is the PeterCards ////////////////",
+
+        "peter": "Hallo, ich bin Peter",
+        "petersExperience" : "Einer der erfahrensten Guides, die man finden kann. Über 8 Jahre Erfahrung im technischen Klettern und Wandern habe ich viele Male den Kilimandscharo bestiegen. Darüber hinaus bin ich zertifizierter CPR und Bergretter.",
+
+        "/////////////comment": "The is the MainDown cards////////////////",
+        "Hiking":"Wandern",
+        "Safari":"Safari",
+        "Coffee":"Kaffee",
+        "CustomTour":"Benutzerdefinierte Tour",
+        "WhyTravelWithUs" : "WARUM MIT UNS REISEN?",
+
+
+
+        "/////////////comment": "The is the Contact US page cards////////////////",
+        "ContactUs":"Kontaktiere uns",
+        "needHelp" : "Benötigen Sie Starthilfe? Bitte kontaktieren Sie uns, wir helfen Ihnen gerne bei der Planung Ihrer großartigen Reise",
+        "Submit":"einreichen",
+
+        "/////////////comment": "The is the Footer page ////////////////",
+        "anyQuestions" : "Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren!"
+        
 }

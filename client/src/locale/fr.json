@@ -1,7 +1,75 @@
 {
-    "welcomeTo" : "-BIENVENUE À-",
+    "/////////////comment": "The is NavBar ////////////////",
+    "tours": "tournée",
+    "gallery": "Galerie",
+    "aboutUs": "à propos de nous",
+    "planTrip": "Planifier voyage",
+
+
+
+
+     
+    "/////////////comment": "The is Welcoming landing page ////////////////",
+    "welcomeTo" : "-BIENVENUE À",
     "ourGoal" : "Notre objectif est d'offrir une aventure unique à chacun.",
     "ourTours": "NOS CIRCUITS",
-    "aboutUs" : "À PROPOS DE NOUS"
+    "aboutUs" : "À PROPOS DE NOUS",
 
+
+
+    "/////////////comment": "The is the MainUp page////////////////",
+    "whatWeOffer" : "Nous offrons",
+    "weOffer" : "Mlay Tours emmène les touristes dans des aventures incroyables en Tanzanie. Des randonnées vers le mont Kilimandjaro, le mont Meru, les parcs à gibier de Tanzanie et des visites culturelles.Toutes ces activités rendront votre voyage inoubliable.",
+    
+
+
+    "/////////////comment": "The is the MainUp cards////////////////",
+
+    "values": [
+        {
+          "title": "Voyage personnalisé",
+          "text": "Nous offrons le meilleur des aventures en Tanzanie : trekking dans le Kilimandjaro, trekking dans le Meru, randonnée d'une journée, safaris dans différents parcs tanzaniens."
+        
+        },
+      
+        {
+          
+          "title": "Local, Café",
+          "text": "Nous préparons le café de manière traditionnelle, d'une graine de café à une tasse de café, tout en faisant ce processus, nous chantons et dansons également."
+         
+        },
+        {
+          "title": "Safari",
+          "text": "Nous offrons le meilleur du safari en Tanzanie : Grande migration, cratère du Ngorongoro, parc national de Tarangire et autres parcs tanzaniens."
+        
+        },
+        {
+          "title": "Transport",
+          "text": "Nous utilisons des Land Cruisers 4x4 pour les safaris et un minibus pour le transfert de l'aéroport à l'hôtel."
+          
+        }],
+
+
+        "/////////////comment": "The is the PeterCards ////////////////",
+       
+          "peter": "Bonjour, je suis Peter",
+          "petersExperience": "L'un des guides les plus expérimentés que vous puissiez trouver. Plus de 8 ans d'expérience technique en escalade et en randonnée, j'ai escaladé le Kilimandjaro à plusieurs reprises. Je suis également certifié RCR et sauveteur en montagne.",
+
+
+          "/////////////comment": "The is the MainDown cards////////////////",
+        "Hiking":"Randonnée",
+        "Safari":"Safari",
+        "Coffee":"Café",
+        "CustomTour":"Visite personnalisée",
+        "WhyTravelWithUs" : "POURQUOI VOYAGER AVEC NOUS?",
+
+
+
+        "/////////////comment": "The is the Contact US page cards////////////////",
+        "ContactUs":"Nous contacter",
+        "needHelp" : "Besoin d'aide pour démarrer ? S'il vous plaît contactez-nous, nous sommes heureux de vous aider à planifier votre voyage génial",
+        "Submit":"Nous faire parvenir",
+
+        "/////////////comment": "The is the Footer page ////////////////",
+        "anyQuestions" : "Si vous avez d'autres questions, n'hésitez pas à nous contacter !"
 }

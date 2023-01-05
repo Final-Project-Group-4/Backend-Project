@@ -26,11 +26,7 @@ export default function Tours() {
     //console.log(filteredToursByType.data);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
-      //this if statement is to redirect to the tour page if there is only one tour of that type
-      /*  if (filteredToursByType.data.length === 1) {
-        console.log('its JUST ONE');
-        window.location.href = `/tours/${filteredToursByType.data[0]._id}`;
-      } */
+      
     } else {
       console.error('Something went wrong');
     }
@@ -99,8 +95,7 @@ export default function Tours() {
                 <div className="overlay moreOpaque2">
                   <h2>LOCAL TOURS</h2>
                   <p className="conditionalText">
-                    Highlights include: Waterfalls - Make a splash in the mountain water of
-                    Kilimanjaro and enjoy stunning views of the surrounding valleys. Chagga Museum -
+                  This one-day tour takes in various natural and cultural sites on the surrounding slopes. Highlights include: Waterfalls - Make a splash in the mountain water of Kilimanjaro and enjoy stunning views of the surrounding valleys. Chagga Museum -
                     The Chagga culture and history can be explored by visiting the museum. There are
                     several exhibitions including a reconstructed thatched Chagga house. Underground
                     Chagga Tunnels - These were used by the Chagga people to hide themselves from

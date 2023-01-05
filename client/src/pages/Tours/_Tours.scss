@@ -13,6 +13,9 @@
   margin-bottom: 0;
   width: 100%;
   margin-top: 6rem;
+  .gridRight {
+    top: 1.2em;
+  }
 }
 
 .tourTitle {
@@ -25,9 +28,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  background-size: 100% 120%;
+ // padding-right: 2rem;
+ // padding-left: 2rem;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
   background-image: url('../../assets/hiking_tours.jpg');
@@ -55,7 +58,7 @@
     }
     .tourPara {
       font-size: calc(12px + 0.390625vw);
-      color: white;
+      color: rgb(255, 255, 255);
     }
   }
 }
@@ -65,11 +68,11 @@
 }
 
 .img-safari {
-  background-image: url('../../assets/safari_tours3.jpg');
+  background-image: url('../../assets/safari_unsplash.jpg');
 }
 
 .img-coffee {
-  background-image: url('../../assets/coffee_tours3.jpg');
+  background-image: url('../../assets/cofeeMarangu_cover.jpg');
 }
 
 .coverImg {
@@ -78,7 +81,7 @@
 }
 
 .overlay {
-  background: rgba(186, 189, 186, 0.369);
+  background: rgba(169, 136, 52, 0.344);
   margin: 0 auto;
   max-width: min(700px, 80%);
   padding: 1em;
@@ -96,7 +99,6 @@
 .conditionalText {
   position: relative;
   font-weight: 500;
-  color: rgb(249, 249, 249);
   font-size: calc(12px + 0.390625vw);
 }
 
@@ -109,7 +111,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-  }
+    }
 
   .rightSideTours {
     margin-right: 0 !important;
@@ -118,31 +120,18 @@
   .rightSide {
     width: 100%;
     & > .MuiGrid-root {
-      min-height: 60vh;
+      min-height: 100vh;
       overflow-y: 'unset';
       background-color: 'purple';
     }
   }
 }
 
-@include m {
+
+@include l {
   .container2 {
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    .leftSide {
-      height: 40vh;
-      background-size: 100%;
-      background-position: center;
-    }
-    .rightSide {
-      width: 100%;
-      margin-right: calc(10% + 2em) !important;
-      margin-left: calc(10% + 2em) !important;
-      & > .MuiGrid-root {
-        min-height: 60vh;
-        overflow-y: 'unset';
-        background-color: 'purple';
-      }
+    .gridRight {
+      height: 87vh;
     }
   }
 }

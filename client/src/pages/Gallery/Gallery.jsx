@@ -10,16 +10,16 @@ import {
 import { Contacts } from '../../components/export';
 import UploadImage from './UploadImage';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 export default function Gallery() {
+  const { t } = useTranslation();
   const [gallery, setGallery] = useState([]);
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
   const getGallery = async () => {
-    const allImages = await axios.get(
-      `http://localhost:4000/api/gallery`
-    );
+    const allImages = await axios.get(`http://localhost:4000/api/gallery`);
     console.log(allImages);
     if (allImages.status === 200) {
       setGallery(allImages.data);
@@ -54,7 +54,8 @@ export default function Gallery() {
     <>
       <div className="container gallery">
         <h2>
-          Photo <span>Gallery</span>
+          {t('photo')}
+          <span>{t('gallery')}</span>
         </h2>
 
         <div className="gallery-wrap">

@@ -10,28 +10,35 @@ function MainDown() {
   const {t} = useTranslation();
   return (
     <div className="container mainDown">
+      <h3>Choose from our variety of tailored trips under the following categories</h3>
       <div className="tours">
+        
         <Link to="/tours/category/hiking">
-          <div className="hiking col-12-s col-4-m col-2-l" id="hiking">
-            {t("Hiking")}
+          <div className="hiking" id="hiking">
+            <img src="https://media.istockphoto.com/id/1189969126/photo/group-of-hikers-walks-in-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=YlJOZLmELRF0HaEr1Xv4-Uae_VN4vnB8XnE99hGD3gQ=" alt="" />
+            <p className='textCateg'>{t("Hiking")}</p> 
           </div>
         </Link>
 
         <Link to="/tours/category/safari">
-          <div className="safari col-12-s col-4-m col-2-l" id="safari">
-           {t("Safari")}
+          <div className="safari" id="safari">
+            <img src={require("../../assets/safari_tours3.jpg")} alt="" />
+            <p className='textCateg'>{t("Safari")}</p> 
+        
           </div>
         </Link>
 
         <Link to="/tours/category/coffee">
-          <div className="coffee col-12-s col-4-m col-2-l" id="coffee">
-            {t("Coffee")}
+          <div className="coffee" id="coffee">
+            <img src="https://media.istockphoto.com/id/924702024/photo/ground-coffee-in-spoon-coffee-beans.jpg?s=612x612&w=0&k=20&c=dvNz-rl2D8B1DFGDFAHqmWKAOtyMJi9oy2IbOEMIkH0=" alt="" />
+            <p className='textCateg'>{t("Coffee")}</p> 
           </div>
         </Link>
 
         <Link to="/plantrip">
-          <div className="custom col-12-s col-4-m col-2-l" id="customTour">
-            {t("CustomTour")}
+          <div className="custom" id="customTour">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mt._Kilimanjaro_12.2006.JPG/800px-Mt._Kilimanjaro_12.2006.JPG" alt="" />
+           <p className='textCateg'>{t("CustomTour")}</p> 
           </div>
         </Link>
       </div>

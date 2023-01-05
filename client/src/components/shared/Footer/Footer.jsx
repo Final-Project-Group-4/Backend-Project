@@ -40,12 +40,12 @@ function Footer() {
           <p className="col-sm">copyright 2009 © All rights reserved</p>
           <div className="social-icons">
             <div className="icons">
-              <a href="https://www.facebook.com/profile.php?id=100069632993371">
+              <a href="https://www.facebook.com/profile.php?id=100069632993371" target="_blank">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
             <div className="icons">
-              <a href="https://instagram.com/mlay_tours?r=nametag">
+              <a href="https://instagram.com/mlay_tours?r=nametag" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>

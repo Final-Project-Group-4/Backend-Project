@@ -24,6 +24,7 @@ Table of Contents
 * [Backend Project](#Backend-Project)
    * [Key Features](#key-features)
    * [User Registration](#user-registration)
+   * [Technologies Used](#technologies-used)
 
 ## Key features 
 

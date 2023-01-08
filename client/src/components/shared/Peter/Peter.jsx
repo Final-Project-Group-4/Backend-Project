@@ -1,18 +1,18 @@
 import './_Peter.scss';
 import peter from './../../../assets/peter1.png';
+import { useTranslation } from 'react-i18next';
 
 function Peter() {
+  const {t}= useTranslation()
   return (
     <div className="peter">
       <div className="peter-img">
         <img src={peter} alt="" />
       </div>
       <div className="peter-text">
-        <h3>Hi, I'm Peter</h3>
+        <h3>{t("peter")}</h3>
         <p>
-          One of the most experienced guides you can ever find. Over 8 years of experience in
-          technical climbing, hiking; I have summit Kilimanjaro many times. On top of all I am
-          certified CPR and mountain rescue.
+       {t("petersExperience")}
         </p>
       </div>
     </div>

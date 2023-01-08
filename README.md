@@ -17,13 +17,13 @@
     add meaningful data. For the database
     we used mongoDB and the connection was established
     with Mongoose.
+    
+    
+Table of Contents
 
-<!-- 
-
-**Table of Contents**
-
-[TOC]
--->
+* [Backend Project](#Backend-Project)
+   * [Key Features](#key-features)
+   * [User Registration](#user-registration)
 
 ## Key features 
 
@@ -31,7 +31,7 @@
 * Admin permissions for managing own content
 * Contact forms for inquiries 
  
-         
+<!--         
 ## Installation 
 ```
     1. Clone the repo
@@ -40,8 +40,20 @@
     4. Run node server.js
     5. Open another terminal for the client folder
     6. Run `npm run start` 
-``` 
-    
+``` -->
+
+## User Registration
+
+>We Provide the client with a URL where he will have access to protected routes. The client has 
+admin access that allows him to add, remove or update the Tours Page.
+
+We used bcrypt, to generate a hashed password and JWT to create a token to provide to the user
+on registration to be stored on the frontend for accessing the protected routes. Another way we used JWT
+is when we need a token that will be given to the user via email when he decides to change his password.
+
+<img src="./client/src/assets/jwtio-json-web-token.svg" width="80" height="80"></img>
+
+
 ## Technologies used 
 
 <div style="width:90%; backgroundColor:red">

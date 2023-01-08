@@ -43,7 +43,8 @@ Table of Contents
 ``` -->
 
 ##User Registration
-We Provide the client with a URL where he will have access to protected routes. The client has 
+
+>We Provide the client with a URL where he will have access to protected routes. The client has 
 admin access that allow him to add, remove or update the Tours Page.
 
 

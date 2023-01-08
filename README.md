@@ -17,13 +17,12 @@
     add meaningful data. For the database
     we used mongoDB and the connection was established
     with Mongoose.
+    
+    
+Table of Contents
 
-<!-- 
-
-**Table of Contents**
-
-[TOC]
--->
+*[Backend-Project](Backend-Project)
+   *[Key Features](#key-features)
 
 ## Key features 
 

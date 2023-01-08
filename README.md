@@ -51,7 +51,7 @@ admin access that allows him to add, remove or update the Tours Page.
 on registration to be stored on the frontend for accessing the protected routes. Another way we used JWT
 is when we need a token that will be given to the user via email when he decides to change his password.
 
-<img src="./client/src/assets/jwtio-json-web-token.svg" width="80" height="80"></img>
+<img src="./client/src/assets/jwt.svg" width="80" height="80"></img>
 
 
 ## Technologies used 

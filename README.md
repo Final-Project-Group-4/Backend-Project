@@ -21,8 +21,8 @@
     
 Table of Contents
 
-*[Backend-Project](Backend-Project)
-   *[Key Features](#key-features)
+* [Backend Project](#Backend-Project)
+   * [Key Features](#key-features)
 
 ## Key features 
 

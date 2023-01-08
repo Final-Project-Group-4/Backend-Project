@@ -42,7 +42,7 @@ Table of Contents
     6. Run `npm run start` 
 ``` -->
 
-##User Registration
+## User Registration
 
 >We Provide the client with a URL where he will have access to protected routes. The client has 
 admin access that allow him to add, remove or update the Tours Page.

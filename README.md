@@ -31,7 +31,7 @@ Table of Contents
 * Admin permissions for managing own content
 * Contact forms for inquiries 
  
-<---         
+<!--         
 ## Installation 
 ```
     1. Clone the repo
@@ -40,7 +40,7 @@ Table of Contents
     4. Run node server.js
     5. Open another terminal for the client folder
     6. Run `npm run start` 
-``` --->
+``` -->
 
 ##User Registration
 We Provide the client with a URL where he will have access to protected routes. The client has 

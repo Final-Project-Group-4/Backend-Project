@@ -19,23 +19,23 @@ function MainUp() {
       </div>
       <div className="values-container">
         <ValueCard
-          title="Custom trip"
-          text="We offer best of Tanzania adventures: Kilimanjaro trekking, Meru trekking, day hike, safaris to different tanzanian parks."
+          title={t("CustomTrip")}
+          text={t("CustomTripText")}
           icon={<HiScissors size={60} />}
         />
         <ValueCard
-          title="Local, Coffee"
-          text="We make coffee in a traditional way from a coffee seed to a cup of coffee, while doing this process we also sing and dance."
+          title={t("localTrip")}
+          text={t("localTripText")}
           icon={<FaCoffee size={60} />}
         />
         <ValueCard
-          title="Safari"
-          text="We offer best of Tanzania safari: Great migration, Ngorongoro crater, Tarangire national park and other Tanzanian parks."
+          title={t("safariTrip")}
+          text={t("safariTripText")}
           icon={<FaBinoculars size={60} />}
         />
         <ValueCard
-          title="Transportation"
-          text="We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel."
+          title={t("transportation")}
+          text={t("transportationText")}
           icon={<FaCarSide size={60} />}
         />
         {/* {t('values', { returnObjects: true }).map((item, i) => (

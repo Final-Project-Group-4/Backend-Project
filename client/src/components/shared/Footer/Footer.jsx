@@ -21,7 +21,7 @@ function Footer() {
           <div className="col">
             <h4>CONTACT</h4>
             <ul className="list-unstyled">
-              <li>Name: Peter Mlay</li>
+              <li>{t("peterName")} Peter Mlay</li>
               <li>telephone: +255766034379</li>
               <li>Email: mlaypeter019@gmail.com</li>
             </ul>

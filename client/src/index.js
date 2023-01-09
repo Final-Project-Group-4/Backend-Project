@@ -4,9 +4,16 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import "./i18n"
 import App from './App';
-
+import { BrowserRouter } from 'react-router-dom';
+import { AppContextProvider } from './context/AppContext';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
 
+<BrowserRouter>
+<AppContextProvider>
+<App />
+</AppContextProvider>
+</BrowserRouter>, document.getElementById('root')
 
+);

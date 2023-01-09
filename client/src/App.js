@@ -1,6 +1,6 @@
 //import TourCard from './components/shared/TourCard/TourCard';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/LandingPage/Home.jsx';
 import Tours from './pages/Tours/Tours.jsx';
 import Gallery from './pages/Gallery/Gallery.jsx';
@@ -14,11 +14,16 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
 import Settings from './components/Settings/Settings.jsx';
 import ManageTours from './components/ManageTours/ManageTours.jsx';
+import AppContext from './context/AppContext.js';
+import { useContext } from 'react';
 
 function App() {
+  const { user } = useContext(AppContext);
+
   return (
     // <TourProvider>
-    <Router>
+    <>
+    
       <Navbar />
       <Routes>
         <Route path="/tours/:id" element={<SingleTour />} />
@@ -35,6 +40,8 @@ function App() {
           <Route path="/admin/manageTours" element={<ManageTours />} />
           <Route path="*" element={<NotFound />} />
         </Route>
+        
+
         {/*
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
@@ -42,7 +49,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
+  
     // </TourProvider>
   );
 }

@@ -1,14 +1,12 @@
 import { TextField } from '@mui/material';
-import { useState } from 'react';
+import React from 'react';
 import './_Login.scss';
+import UserContext from '../../context/UserContext';
 
 export default function Login() {
-  const [formData, setFormData] = useState({
-    email: '',
-    password: '',
-  });
-  const { email, password } = formData;
-
+ 
+  const { UserData } = useContext(UserContext);  
+/* 
   const handleChange = (e) => {
     setFormData((prevState) => ({
       ...prevState,
@@ -24,7 +22,7 @@ export default function Login() {
       password,
     };
   };
-
+ */
   return (
     <div className="container login">
       <div className="login-wrapper">
@@ -50,7 +48,7 @@ export default function Login() {
               />
             </div>
             <div className="form-group">
-              <button className="btn-primary btn-login">Submit</button>
+              <button className="btn-primary btn-login" type="submit">Submit</button>
             </div>
             <p>If you want to reset your password, please click here.</p>
           </form>
@@ -59,3 +57,4 @@ export default function Login() {
     </div>
   );
 }
+const { UserData } = useContext(UserContext);  

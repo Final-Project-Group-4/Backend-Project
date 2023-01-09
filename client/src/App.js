@@ -14,12 +14,14 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
 import Settings from './components/Settings/Settings.jsx';
 import ManageTours from './components/ManageTours/ManageTours.jsx';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    // <TourProvider>
     <Router>
       <Navbar />
+      <ToastContainer />
       <Routes>
         <Route path="/tours/:id" element={<SingleTour />} />
         <Route path="/tours" element={<Tours />} />
@@ -43,7 +45,6 @@ function App() {
       </Routes>
       <Footer />
     </Router>
-    // </TourProvider>
   );
 }
 

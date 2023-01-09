@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { BsFacebook } from 'react-icons/bs';
 import { FaInstagram } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function Toggle(props) {
+  const [t,i18n] = useTranslation();
+
   return (
     <div className="app__navbar__menu">
+       
       <HiMenuAlt4 onClick={() => props.setToggle(true)} />
       {props.toggle && (
         <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85 }}>
@@ -27,26 +31,42 @@ function Toggle(props) {
         <Link to={'/'} onClick={() => props.setToggle(false)}>Home</Link>
       </li>
       <li>
-        <Link to={'/tours'} onClick={() => props.setToggle(false)}>Tours</Link>
+        <Link to={'/tours'} onClick={() => props.setToggle(false)}>{t("tours")}</Link>
       </li>
       <li>
-        <Link to={'/gallery'} onClick={() => props.setToggle(false)}> Gallery </Link>
+        <Link to={'/gallery'} onClick={() => props.setToggle(false)}> {t("gallery")} </Link>
       </li>
       <li>
-        <Link to={'/about'} onClick={() => props.setToggle(false)}>About Us</Link>
+        <Link to={'/about'} onClick={() => props.setToggle(false)}>{t("aboutUs")}</Link>
       </li>
       <li>
-        <Link to={'/plantrip'} onClick={() => props.setToggle(false)}>Plan Trip</Link>
+        <Link to={'/plantrip'} onClick={() => props.setToggle(false)}>{t("planTrip")}</Link>
       </li>
-
+      <ul className="Language">
+      <li className="app__flex p-text">
+          <a href={`#`} onClick={()=> {
+            i18n.changeLanguage('de')
+          }}>DE</a>
+        </li>
+        <li className="app__flex p-text">
+         |
+        </li>
+        <li className="app__flex p-text">
+     <a href={`#`} onClick={()=> {
+            i18n.changeLanguage('fr')
+          }}>FR</a>
+        </li>
+        <li className="app__flex p-text">
+        |
+        </li>
+        <li className="app__flex p-text">
+        <a href={`#`} onClick={()=> {
+            i18n.changeLanguage('en')
+          }}>EN</a>
+        </li>
           </ul>
-          <ul className="Language">
-            {['DE', '|', 'FR', '|', 'EN'].map((item) => (
-              <li className="app__flex p-text" key={`link-${item}`}>
-                <a href={`#${item}`}>{item}</a>
-              </li>
-            ))}
           </ul>
+         
           <ul className="icon">
             <BsFacebook style={{ width: '20px', height: '20px' }} />,
             <FaInstagram style={{ width: '20px', height: '20px' }} />,

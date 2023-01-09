@@ -23,7 +23,7 @@ Table of Contents
 
 * [Backend Project](#Backend-Project)
    * [Key Features](#key-features)
-   * [User Registration](#user-registration)
+   * [User Registration & Login](#user-registration-&-login)
    * [Technologies Used](#technologies-used)
 
 ## Key features 
@@ -43,7 +43,7 @@ Table of Contents
     6. Run `npm run start` 
 ``` -->
 
-## User Registration
+## User Registration & Login
 
 >We Provide the client with a URL where he will have access to protected routes. The client has admin access that allows him to add, remove or update the Tours Page. We used bcrypt, to generate a hashed password and JWT to create a token to provide to the user on registration to be stored on the frontend for accessing the protected routes. Another way we used JWT is when we need a token that will be given to the user via email when he decides to change his password.
 

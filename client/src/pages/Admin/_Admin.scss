@@ -1,0 +1,24 @@
+@import '../../../scss/config.scss';
+@import '../../../scss/buttons.scss';
+
+.admin {
+  height: 80vh;
+  margin: auto;
+  .admin-wrapper {
+    margin-top: 6rem;
+    display: flex;
+  }
+  .admin-nav {
+    height: 67vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: bisque;
+  }
+
+  .outlet-wrapper {
+    width: 80%;
+    padding: 1rem;
+  }
+}

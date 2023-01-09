@@ -8,9 +8,12 @@ import AboutUs from './pages/AboutUs/AboutUs.jsx';
 import PlanTrip from './pages/PlanTrip/PlanTrip.jsx';
 import SingleTour from './pages/Tours/SingleTour.jsx';
 import Admin from './pages/Admin/Admin.jsx';
+import Login from './pages/Login/Login.jsx';
 import FAQ from './pages/FAQ/Faq.jsx';
 import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
+import Settings from './components/Settings/Settings.jsx';
+import ManageTours from './components/ManageTours/ManageTours.jsx';
 
 function App() {
   return (
@@ -25,9 +28,14 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/plantrip" element={<PlanTrip />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/admin" element={<Admin />} />
-        {/* <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />}>
+          <Route index element={<Settings />} />
+          <Route path="/admin/settings" element={<Settings />} />
+          <Route path="/admin/manageTours" element={<ManageTours />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+        {/*
                 <Route path="/forgotpassword" element={<ForgotPassword />} />
               <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
         <Route path="/" element={<Home />} />

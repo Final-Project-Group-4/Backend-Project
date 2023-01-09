@@ -38,9 +38,9 @@ function MainUp() {
           text="We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel."
           icon={<FaCarSide size={60} />}
         />
-        {t('values', { returnObjects: true }).map((item, i) => (
+        {/* {t('values', { returnObjects: true }).map((item, i) => (
           <ValueCard key={i} title={item.title} text={item.text} icon={item.icon} />
-        ))}
+        ))} */}
       </div>
 
       <Peter />

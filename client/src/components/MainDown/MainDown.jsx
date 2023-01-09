@@ -10,7 +10,7 @@ function MainDown() {
   const {t} = useTranslation();
   return (
     <div className="container mainDown">
-      <h3>Choose from our variety of tailored trips under the following categories</h3>
+      <h3>{t("chooseTripText")}</h3>
       <div className="tours">
         
         <Link to="/tours/category/hiking">

@@ -1,20 +1,20 @@
 {
-  "/////////////comment": "The is NavBar ////////////////",
+  "//comment1": "NavBar",
   "tours": "Touren",
   "gallery": "Galerie",
   "aboutUs": "Über uns",
   "planTrip": "Reise planen",
 
-  "/////////////comment14": "The is Welcoming landing page ////////////////",
+  "//comment2": "Welcoming landing page",
   "welcomeTo": "-WILLKOMMEN BEI-",
   "ourGoal": "Unser Ziel ist es, jedem ein einzigartiges Abenteuer zu bieten.",
   "ourTours": "UNSERE TOUREN",
 
-  "/////////////comment13": "The is the MainUp page////////////////",
+  "//comment3": "MainUp page",
   "whatWeOffer": "Wir bieten an",
   "weOffer": "Mlay Tours führt Touristen zu unglaublichen Abenteuern in Tansania. Führende Wanderungen zum Mt. Kilimanjaro Mt. Meru, Tansanias Wildparks und kulturelle Touren.All diese Aktivitäten werden Ihre Reise unvergesslich machen.",
 
-  "/////////////comment12": "The is the MainUp cards////////////////",
+  "//comment4": "MainUp cards",
 
   "values": [
     {
@@ -36,9 +36,18 @@
     }
   ],
 
-  "/////////////comment11": "The is the PeterCards ////////////////",
+  "//comment5": "PeterCards",
+  "peter": "Hallo, ich bin Peter",
+  "petersExperience": "Einer der erfahrensten Guides, die man finden kann. Über 8 Jahre Erfahrung im technischen Klettern und Wandern habe ich viele Male den Kilimandscharo bestiegen. Darüber hinaus bin ich zertifizierter CPR und Bergretter.",
 
-  "//comment5": "Plan trip",
+  "//comment6": "MainDown cards",
+  "Hiking": "Wandern",
+  "Safari": "Safari",
+  "Coffee": "Kaffee",
+  "CustomTour": "Benutzerdefinierte Tour",
+  "WhyTravelWithUs": "WARUM MIT UNS REISEN?",
+
+  "//comment7": "Plan trip",
   "readyForAdventure": "Bereit für Abenteuer!",
   "readyForAdventureText": "Bitte geben Sie die Größe Ihrer Gruppe und die Reise, an der Sie interessiert sind, sowie ein mögliches Datum an. Wir bieten Ihnen eine maßgeschneiderte Reise basierend auf Ihrem Budget und Ihren persönlichen Vorlieben.",
   "nameLabel": "Bitte geben Sie Ihren Namen ein",
@@ -54,17 +63,7 @@
   "call": "Anruf:",
   "yourMessage": "Deine Nachricht",
 
-  "peter": "Hallo, ich bin Peter",
-  "petersExperience": "Einer der erfahrensten Guides, die man finden kann. Über 8 Jahre Erfahrung im technischen Klettern und Wandern habe ich viele Male den Kilimandscharo bestiegen. Darüber hinaus bin ich zertifizierter CPR und Bergretter.",
-
-  "/////////////comment10": "The is the MainDown cards////////////////",
-  "Hiking": "Wandern",
-  "Safari": "Safari",
-  "Coffee": "Kaffee",
-  "CustomTour": "Benutzerdefinierte Tour",
-  "WhyTravelWithUs": "WARUM MIT UNS REISEN?",
-
-  "//comment6": "Tours page",
+  "//comment8": "Tours page",
   "ourToursText": "Wählen Sie aus einer der folgenden erstaunlichen Wanderungen und Treks in Afrika. Bevorzugen Sie kürzere Spaziergänge oder längere Wanderungen? Gemütliche Spaziergänge oder die Eroberung der höchsten Gipfel? Oder vielleicht möchten Sie eine maßgeschneiderte Tour entwerfen, ich lade Sie ein, sich unsere maßgeschneiderten Optionen anzusehen und von dort aus zu entscheiden",
 
   "hikingTours": "WANDERTOUREN",
@@ -73,11 +72,27 @@
   "localTours": "LOKALE TOUREN",
   "localToursText": "Diese eintägige Tour führt Sie zu verschiedenen Natur- und Kulturstätten auf den umliegenden Hängen. Zu den Highlights gehören: Wasserfälle  Springen Sie in das Bergwasser des Kilimanjaro und genießen Sie die atemberaubende Aussicht auf die umliegenden Täler. Chagga Museum Die Kultur und Geschichte der Chagga kann durch einen Besuch im Museum erkundet werden. Es gibt mehrere Ausstellungen, darunter ein rekonstruiertes strohgedecktes Chagga-Haus. Unterirdische Chagga-Tunnel - Diese wurden von den Chagga-Leuten benutzt, um sich während Clankriegen vor den Feinden zu verstecken. Kaffee- und Bananenfarmen - Besuchen Sie Kaffeefarmen und ein lokales Zuhause, wo Sie lokale Gerichte genießen und den traditionellen Prozess der Kaffeezubereitung von der Bohne bis zur Tasse lernen können. Besuchen Sie lokale Chagga-Bars und trinken Sie das traditionelle Bier.",
 
-  "//////////comment8": "The is the Contact US page cards////////////////",
+  "//comment9": "Contact US page",
   "ContactUs": "Kontaktiere uns",
   "needHelp": "Benötigen Sie Starthilfe? Bitte kontaktieren Sie uns, wir helfen Ihnen gerne bei der Planung Ihrer großartigen Reise",
   "Submit": "einreichen",
 
-  "/////////////comment9": "The is the Footer page ////////////////",
-  "anyQuestions": "Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren!"
+  "//comment10": "Footer page",
+  "anyQuestions": "Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren!",
+
+  "//comment11": "About us page",
+  "ourTeam": "Unser Team",
+
+  "ourTeamText": "Wir sind ein voll lizenziertes und versichertes Unternehmen in lokalem Besitz mit jahrelanger Erfahrung und Expertise, das maßgeschneiderte Safaris und Kilimanjaro-Besteigungen anbietet, die zu Ihrer Zeit, Ihren Interessen und Ihrem Budget passen. Es ist nicht nur kostengünstiger für Sie, bei einem Betreiber vor Ort zu buchen, Sie unterstützen auch die lokale Wirtschaft und Geschäftsinhaber. Im Gegensatz zu vielen anderen Betreibern können wir sicherstellen, dass Sie von unseren Mitarbeitern umfassend betreut werden, da wir unsere Kunden niemals auslagern an andere Unternehmen. Wir setzen uns voll und ganz für verantwortungsvollen Tourismus ein und sind stolz darauf, eines der wenigen Unternehmen zu sein, das 100% zertifizierte ethische Kilimandscharo-Besteigungen anbietet, um die faire und angemessene Behandlung der fleißigen Bergmannschaft zu gewährleisten. Unser Team heißt Sie herzlich willkommen, um die unvergleichliche natürliche Schönheit Ostafrikas zu erkunden. Sie werden einheimische traditionelle Stämme, versteckte Wasserfälle, blendend weiße Sandstrände, Vulkankrater und eisbedeckte Berggipfel sehen, und das alles nur wenige Stunden voneinander entfernt. Wir sind in der Lage, maßgeschneiderte, einzigartige Safari-, Trekking- und Strandparadieserlebnisse anzubieten, die speziell auf Ihre Interessen, Zeit und Ihr Budget abgestimmt sind. Unser erfahrenes Team und unsere Crew sind bestrebt, das perfekte Tansania-Abenteuer für Sie zu planen. Wir laden Sie herzlich ein, mit uns unser wunderschönes Land Karibu Tansania zu erkunden! Wir betreiben Kilimandscharo-Besteigungen seit den 2000er Jahren und haben eine fantastische Bilanz darin, unseren Kunden erfolgreich und sicher zum Gipfel zu verhelfen. Grundlegend für unseren Ansatz und was uns von fast allen Unternehmen unterscheidet, die Kilimandscharo-Besteigungen anbieten, ist, dass wir „Veranstalter“ und keine „Vermittler“ sind. Wir nehmen nicht einfach Buchungen entgegen und vergeben dann Ihren Aufstieg an Unterauftragnehmer. Stattdessen beschäftigen wir unser gesamtes Team direkt, beschaffen unsere gesamte Ausrüstung selbst und kontrollieren jeden Aspekt Ihres Klettererlebnisses, damit wir Ihnen eine gusseiserne Verpflichtung zur Qualität geben können. Als Teil dieser Verpflichtung zur Qualität wenden wir bei allem, was wir tun, Best Practices an. - Wir befolgen die Vorschriften der Tanzania Porters Association, der Kilimanjaro Guides Associations und des Kilimanjaro National Park und arbeiten kontinuierlich daran, die besten Bedingungen für unsere Crew zu gewährleisten - Unterstützen lokale Unternehmer - Wir verpflichten uns uneingeschränkt zu den Prinzipien von Leave no Trace uns: Gipfel sicher erklimmen und eine lebensverändernde Erfahrung machen.",
+
+  "history": "Geschichte",
+
+  "historyText": "Die Worte „Mt.Kilimanjaro“ beschwören romantische Bilder von persönlichem Wachstum, Herausforderung, Niederlage und Erfolg herauf. Wir haben Bilder gesehen und Geschichten gehört. Die Bergsteiger der ersten Mt.Kilimanjaro-Besteigung im Jahr 1889 hatten nur ihren Mut und ihre Leidenschaft, die sie vorantrieben. Auf die Frage „Wer war der Erste, der den Kilimandscharo bestieg?“ ist die häufigste Antwort Hans Meyer aus Deutschland. Hans Meyer wird die Vision hinter der Expedition zugeschrieben, aber wer war sein Führer? Yohani Kinyala Lauwo war erst 18 Jahre alt, als er am 5. Oktober 1889 Hans Meyer und Ludwig Purtscheller zum höchsten Punkt Afrikas führte. Seine Wahl durch den Mangi (Chagga-Häuptling) zum Führer von Hans Meyer war zufällig, aber es hat sein Leben für immer verändert. Kinyala (wie er genannt wurde) wurde geboren und lebte sein ganzes Leben im Dorf Marangu, eingebettet an den Hängen des Kilimandscharo. Bevor die Europäer nach Ostafrika kamen, jagten viele Mitglieder des Lauwo-Clans des Chagga-Stammes die Waldelefanten für Elfenbein und verkauften es an Swahili-Händler von der Küste. Der Wald versorgte sie auch mit Honig, Holz, Medizin und Häuten von Colobus-Affen. Als Hans Meyer in Chaggaland ankam, war Kinyala Lauwo ein hochgewachsener Teenager, der den Wald wie seine Westentasche kannte. Zu diesem Zeitpunkt hatte der Kolonialismus in Kinyalas Heimatland begonnen und junge Männer wurden gezwungen, Straßen zu bauen. Kinyala versuchte, dem „Luftzug“ auszuweichen, wurde aber erwischt. Daraufhin wurde er zum Prozess in Mangi Mareallis Palast vorgeladen. Zufälligerweise war Hans Meyer gerade im Schloss angekommen und hatte um die Erlaubnis gebeten, den Berg zu besteigen, und um Führer und Träger. Die Wachili (Berater) der Mangi entdeckten Kinyala, wussten, dass er zum Lauwo-Clan gehörte, und baten ihn, die Expedition zu leiten. Die Veranstaltung führte dazu, dass Kinyala (später MzeeLauwo genannt) mehr als siebzig Jahre lang die Besteigung des Kilimandscharo leitete! Bei seiner ersten Besteigung war er nur in Decken gehüllt. Im Laufe der Jahre besorgte er sich entsprechende Kleidung und Wanderausrüstung. Hier lebte er mit seinen beiden Frauen bis zu seinem Tod am 10. Mai 1996 nach einem großartigen Leben von 125 Jahren! dann im folgenden Monat (Juni) desselben Jahres wurde Peter Mlay geboren, und er führt jetzt Touristen zum Dach Afrikas.",
+
+  "//comment12": "Gallery page ",
+  "photo": "Foto",
+  "gallery2": "gallerie",
+
+  "//comment13": "FAQ"
+
 }

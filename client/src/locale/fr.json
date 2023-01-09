@@ -1,26 +1,26 @@
 {
-  "/////////////comment": "The is NavBar ////////////////",
+  "//comment1": "NavBar",
   "tours": "tournée",
   "gallery": "Galerie",
   "aboutUs": "à propos de nous",
   "planTrip": "Planifier voyage",
 
-  "/////////////comment13": "The is Welcoming landing page ////////////////",
+  "//comment2": "Welcome landing page",
   "welcomeTo": "-BIENVENUE À",
   "ourGoal": "Notre objectif est d'offrir une aventure unique à chacun.",
   "ourTours": "NOS CIRCUITS",
-  "aboutUs": "À PROPOS DE NOUS",
+  
 
-  "/////////////comment12": "The is the MainUp page////////////////",
+  "//comment3": "MainUp page",
   "whatWeOffer": "Nous offrons",
   "weOffer": "Mlay Tours emmène les touristes dans des aventures incroyables en Tanzanie. Des randonnées vers le mont Kilimandjaro, le mont Meru, les parcs à gibier de Tanzanie et des visites culturelles.Toutes ces activités rendront votre voyage inoubliable.",
 
-  "/////////////comment11": "The is the MainUp cards////////////////",
+  "//comment4": "MainUp cards",
 
   "values": [
     {
       "title": "Voyage personnalisé",
-      "text": "Nous offrons le meilleur des aventures en Tanzanie : trekking dans le Kilimandjaro, trekking dans le Meru, randonnée d'une journée, safaris dans différents parcs tanzaniens."
+      "text": "Nous offrons le meilleur des aventures en Tanzanie: trekking dans le Kilimandjaro, trekking dans le Meru, randonnée d'une journée, safaris dans différents parcs tanzaniens."
     },
 
     {
@@ -29,7 +29,7 @@
     },
     {
       "title": "Safari",
-      "text": "Nous offrons le meilleur du safari en Tanzanie : Grande migration, cratère du Ngorongoro, parc national de Tarangire et autres parcs tanzaniens."
+      "text": "Nous offrons le meilleur du safari en Tanzanie: Grande migration, cratère du Ngorongoro, parc national de Tarangire et autres parcs tanzaniens."
     },
     {
       "title": "Transport",
@@ -37,19 +37,18 @@
     }
   ],
 
-  "/////////////comment10": "The is the PeterCards ////////////////",
-
+  "//comment5": "PeterCards",
   "peter": "Bonjour, je suis Peter",
   "petersExperience": "L'un des guides les plus expérimentés que vous puissiez trouver. Plus de 8 ans d'expérience technique en escalade et en randonnée, j'ai escaladé le Kilimandjaro à plusieurs reprises. Je suis également certifié RCR et sauveteur en montagne.",
 
-  "/////////////comment9": "The is the MainDown cards////////////////",
+  "//comment6": "MainDown cards",
   "Hiking": "Randonnée",
   "Safari": "Safari",
   "Coffee": "Café",
   "CustomTour": "Visite personnalisée",
   "WhyTravelWithUs": "POURQUOI VOYAGER AVEC NOUS?",
 
-  "//comment5": "Plan trip",
+  "//comment7": "Planifier un voyage",
   "readyForAdventure": "Prêt pour l'aventure!",
   "readyForAdventureText": "Veuillez ajouter la taille de votre groupe et le voyage qui vous intéresse ainsi que la date possible. Nous vous proposons un voyage sur mesure en fonction de votre budget et de vos préférences personnelles.",
   "nameLabel": "S'il vous plaît entrez votre nom",
@@ -65,7 +64,7 @@
   "call": "Téléphoner à:",
   "yourMessage": "Votre message",
 
-  "//comment6": "Tours page",
+  "//comment8": "Tours page",
   "ourToursText": "Choisissez parmi l'une des incroyables randonnées et treks suivants en Afrique. Préférez-vous des promenades plus courtes ou des randonnées plus longues ? Balades faciles ou conquête des plus hauts sommets ? Ou peut-être souhaitez-vous concevoir une visite personnalisée, je vous invite à consulter nos options sur mesure et à décider à partir de là",
 
   "hikingTours": "CIRCUITS DE RANDONNÉE",
@@ -74,11 +73,30 @@
   "localTours": "VISITES LOCALES",
   "localToursText": "Cette excursion d'une journée comprend divers sites naturels et culturels sur les pentes environnantes. Les points forts incluent : Chutes d'eau - Plongez dans l'eau des montagnes du Kilimandjaro et profitez d'une vue imprenable sur les vallées environnantes. Musée Chagga - La culture et l'histoire de Chagga peuvent être explorées en visitant le musée. Il y a plusieurs expositions dont une maison Chagga au toit de chaume reconstruite. Tunnels souterrains de Chagga - Ceux-ci étaient utilisés par le peuple Chagga pour se cacher des ennemis pendant les guerres de clans. Fermes de café et de bananes - Visitez des fermes de café et une maison locale où vous pourrez déguster des plats locaux et apprendre le processus traditionnel de préparation du café du grain à la tasse. Bars Chagga locaux et buvez la bière traditionnelle.",
 
-  "/////////////comment7": "The is the Contact US page cards////////////////",
+  "//comment9": "Contact US page cards",
   "ContactUs": "Nous contacter",
   "needHelp": "Besoin d'aide pour démarrer ? S'il vous plaît contactez-nous, nous sommes heureux de vous aider à planifier votre voyage génial",
   "Submit": "Nous faire parvenir",
 
-  "/////////////comment8": "The is the Footer page ////////////////",
-  "anyQuestions": "Si vous avez d'autres questions, n'hésitez pas à nous contacter !"
+  "//comment10": "Footer page",
+  "anyQuestions": "Si vous avez d'autres questions, n'hésitez pas à nous contacter !",
+
+  "//comment11": "About us page ",
+  "ourTeam": "Notre équipe",
+
+  "ourTeamText": "Nous sommes une entreprise locale entièrement sous licence et assurée avec des années d'expérience et d'expertise offrant des safaris sur mesure et des ascensions du Kilimandjaro pour s'adapter à votre temps, vos intérêts et votre budget. Non seulement il est plus rentable pour vous de réserver avec un opérateur sur le terrain, mais vous soutenez également l'économie locale et les propriétaires d'entreprises. Contrairement à de nombreux opérateurs, nous pouvons nous assurer que vous serez entièrement pris en charge par nos employés car nous ne sous-traitons jamais nos clients. à d'autres sociétés. Nous sommes pleinement engagés dans le tourisme responsable et le développement communautaire. Nous sommes fiers d'être l'une des rares entreprises à proposer des ascensions éthiques 100% certifiées du Kilimandjaro garantissant le traitement juste et approprié de l'équipe de montagne qui travaille dur. Notre équipe vous accueille pour explorer la beauté naturelle inégalée de l'Afrique de l'Est. Vous découvrirez des tribus traditionnelles indigènes, des cascades cachées, du sable blanc éblouissant, des cratères volcaniques et des sommets montagneux recouverts de glace à quelques heures d'intervalle. Nous sommes en mesure d'offrir des expériences de safari, de trekking et de plage paradisiaques uniques et personnalisées, spécifiquement adaptées à vos intérêts, à votre temps et à votre budget. Notre équipe et notre équipage expérimentés se consacrent à planifier l'aventure parfaite en Tanzanie pour vous. Nous vous invitons chaleureusement à explorer notre beau pays avec nous, Karibu Tanzanie ! Nous exploitons des ascensions du Kilimandjaro depuis les années 2000 et avons un bilan fantastique d'aide réussie et en toute sécurité à nos clients au sommet. Fondamentalement à notre approche et ce qui nous distingue de presque toutes les entreprises proposant des ascensions du Kilimandjaro, c'est que nous sommes des « opérateurs » et non des « agents ». Nous ne nous contentons pas de prendre des réservations puis de sous-traiter votre ascension. Au lieu de cela, nous employons directement toute notre équipe, achetons nous-mêmes tout notre équipement et contrôlons chaque aspect de votre expérience d'escalade afin que nous puissions vous donner un engagement de qualité en fonte. Dans le cadre de cet engagement envers la qualité, nous adoptons les meilleures pratiques dans tout ce que nous faisons. - Nous suivons les réglementations de la Tanzania Porters Association, des associations de guides du Kilimandjaro et du parc national du Kilimandjaro et travaillons continuellement pour assurer les meilleures conditions pour notre équipage - Soutenons les entrepreneurs locaux - Nous nous engageons pleinement à respecter les principes de Leave no Trace Pour en savoir plus sur notre fonctionnement Grimpez avec nous: faites le sommet en toute sécurité et vivez une expérience qui changera votre vie.",
+
+  "history": "L'histoire",
+
+  "historyText": "Les mots 'Mt.Kilimanjaro' évoquent des images romantiques de croissance personnelle, de défi, de défaite et de succès. Nous avons vu des images et entendu des histoires. Les grimpeurs de la première ascension du mont Kilimandjaro en 1889 n'avaient que leur courage et leur passion pour les pousser. Lorsqu'on lui a demandé 'Qui a été le premier à gravir le mont Kilimandjaro?', la réponse la plus courante est Hans Meyer d'Allemagne. Hans Meyer est crédité de la vision derrière l'expédition, mais qui était son guide ? Yohani Kinyala Lauwo n'avait que dix-huit ans lorsqu'il conduisit Hans Meyer et Ludwig Purtscheller au point culminant de l'Afrique le 5 octobre 1889. Sa sélection par le Mangi (chef Chagga) pour être le guide de HansMeyer était accidentelle, mais cela a changé à jamais sa vie. Kinyala (comme on l'appelait) est né et a vécu toute sa vie dans le village de Marangu, niché sur les pentes du mont Kilimandjaro. Avant l'arrivée des Européens en Afrique de l'Est, de nombreux membres du clan Lauwo de la tribu Chagga chassaient les éléphants de forêt pour l'ivoire et le vendaient aux commerçants swahili de la côte. La forêt leur a également fourni du miel, du bois, des médicaments et des peaux de singe Colobus. Au moment où Hans Meyer est arrivé à Chaggaland, Kinyala Lauwo était un grand adolescent qui connaissait la forêt comme sa poche. À ce moment-là, le colonialisme avait commencé dans la patrie de Kinyala et les jeunes hommes étaient forcés de construire des routes. Kinyala a essayé d'esquiver le 'projet', mais a été attrapé. En conséquence, il a été convoqué pour être jugé au palais de Mangi Marealli. Par coïncidence, Hans Meyer venait d'arriver au palais demandant la permission d'escalader la montagne et des guides et porteurs. Les wachili (conseillers) des Mangi ont repéré Kinyala, savaient qu'il appartenait au clan Lauwo et lui ont demandé de guider l'expédition. L'événement a conduit Kinyala (appelé plus tard MzeeLauwo) à guider les ascensions du mont Kilimandjaro pendant plus de soixante-dix ans! Pour sa première ascension, il n'était enveloppé que dans des couvertures. Au fil des ans, il s'est procuré des vêtements et du matériel de randonnée appropriés. Il y vécut avec ses deux épouses jusqu'à sa mort le 10 mai 1996, après une vie grandiose de cent vingt-cinq ans ! puis le mois suivant (juin) la même année, Peter Mlay est né, et il guide maintenant les touristes sur le toit de l'Afrique.",
+
+  "//comment12": "Gallery page ",
+  "photo": "Galerie",
+  "gallery2": " de photos",
+
+  "//comment13": "FAQ"
+
+
+
+
 }

@@ -55,7 +55,7 @@ export default function Gallery() {
       <div className="container gallery">
         <h2>
           {t('photo')}
-          <span>{t('gallery')}</span>
+          <span>{t('gallery2')}</span>
         </h2>
 
         <div className="gallery-wrap">

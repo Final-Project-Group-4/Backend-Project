@@ -1,13 +1,13 @@
-import User from "../models/userModel.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import sendEmail from "../utils/email.js";
-import crypto from "crypto";
+import User from '../models/userModel.js';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import sendEmail from '../utils/email.js';
+import crypto from 'crypto';
 
 //refactoring the code for jwt.sign() and creating the token
 const signToken = (id) => {
   return jwt.sign({ id: id }, process.env.JWT_SECRET, {
-    expiresIn: "90d",
+    expiresIn: '90d',
   });
 };
 
@@ -19,7 +19,7 @@ export const signup = async (req, res, next) => {
     const token = signToken(newUser._id);
 
     res.status(201).json({
-      status: "success",
+      status: 'success',
       token,
       data: {
         userModel: newUser,
@@ -34,7 +34,7 @@ export const getAllUsers = async (req, res, next) => {
   try {
     const data = await User.find();
     res.status(200).json({
-      status: "success",
+      status: 'success',
       results: data.length,
       data,
     });
@@ -49,8 +49,8 @@ export const login = async (req, res) => {
 
   if (!email || !password) {
     return res.status(400).json({
-      status: "failed",
-      message: "Please provide an email and password.",
+      status: 'failed',
+      message: 'Please provide an email and password.',
     });
   }
 
@@ -59,8 +59,8 @@ export const login = async (req, res) => {
   // Check if user exists
   if (!currentUser)
     return res.status(400).json({
-      status: "failed",
-      message: "The email or the password is wrong",
+      status: 'failed',
+      message: 'The email or the password is wrong',
     });
 
   // check if password is correct with the compare method from bcrypt package
@@ -68,27 +68,27 @@ export const login = async (req, res) => {
 
   if (!verified)
     return res.status(400).json({
-      status: "failed",
-      message: "Password verification failed.",
+      status: 'failed',
+      message: 'Password verification failed.',
     });
 
   // we used id data as payload
 
   const token = signToken(currentUser._id);
   res.status(200).json({
-    status: "success",
+    status: 'success',
     token,
   });
 };
 
 export const logout = async (req, res) => {
   // it clears the jwt token and sets the value as loggedout, so the token is not valid anymore
-  res.cookie("jwt", "loggedout", {
+  res.cookie('jwt', 'loggedout', {
     expires: new Date(Date.now() + 10 * 1000),
     httpOnly: true,
   });
   res.status(200).json({
-    status: "success",
+    status: 'success',
   });
 };
 
@@ -100,7 +100,7 @@ export const updateUser = async (req, res, next) => {
       new: true,
     });
     res.status(201).json({
-      status: "success",
+      status: 'success',
       data: updatedUser,
     });
   } catch (error) {
@@ -118,7 +118,7 @@ export const forgotPassword = async (req, res, next) => {
     const user = await User.findOne({ email: req.body.email });
 
     if (!user) {
-      next(new Error("There is no user with that email address.", 404));
+      next(new Error('There is no user with that email address.', 404));
     }
 
     // 2) Generate the random token:
@@ -132,9 +132,7 @@ export const forgotPassword = async (req, res, next) => {
     // 3) Send it to users email
 
     // normally (when we have frontend) user get a button and click it to go to reset page.
-    const resetURL = `${req.protocol}://${req.get(
-      "host"
-    )}/api/admin/resetPassword/${resetToken}`;
+    const resetURL = `${req.protocol}://${req.get('host')}/api/admin/resetPassword/${resetToken}`;
 
     // console.log(resetURL);
 
@@ -143,13 +141,14 @@ export const forgotPassword = async (req, res, next) => {
     try {
       await sendEmail({
         email: user.email,
-        subject: "Your password reset token (valid for 10 min)",
+        subject: 'Your password reset token (valid for 10 min)',
         message,
+        resetURL,
       });
 
       res.status(200).json({
-        status: "success",
-        message: "Token sent to email!",
+        status: 'success',
+        message: 'Token sent to email!',
       });
     } catch (err) {
       // if there is an error in sending emails, then it will delete these fields in document and throw error.
@@ -157,9 +156,7 @@ export const forgotPassword = async (req, res, next) => {
       user.passwordResetExpires = undefined;
 
       await user.save({ validateBeforeSave: false });
-      return next(
-        new Error("There was an error sending the email. Try again later!", 500)
-      );
+      return next(new Error('There was an error sending the email. Try again later!', 500));
     }
   } catch (err) {
     console.log(err);
@@ -170,10 +167,7 @@ export const forgotPassword = async (req, res, next) => {
 
 export const resetPassword = async (req, res, next) => {
   //1) get user based on the token
-  const hashedToken = crypto
-    .createHash("sha256")
-    .update(req.params.token)
-    .digest("hex");
+  const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
 
   const user = await User.findOne({
     passwordResetToken: hashedToken,
@@ -181,7 +175,7 @@ export const resetPassword = async (req, res, next) => {
   });
   //2) set new password only if the token has not expired and there is user set the new password
   if (!user) {
-    return res.status(400).json({ message: "Token is invalid of has expired" });
+    return res.status(400).json({ message: 'Token is invalid of has expired' });
   }
   user.password = req.body.password;
   user.passwordConfirm = req.body.passwordConfirm;
@@ -195,7 +189,7 @@ export const resetPassword = async (req, res, next) => {
   const token = signToken(user._id);
 
   res.status(200).json({
-    status: "success",
+    status: 'success',
     token,
   });
 };

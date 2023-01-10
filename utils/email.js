@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import nodemailer from 'nodemailer';
 
 const sendEmail = async (options) => {
   // 1) create a transporter(a service that will actually send the email, sth like gmail)
@@ -15,11 +15,11 @@ const sendEmail = async (options) => {
 
   // 2) define the email options
   const mailOptions = {
-    from: "Peter <peter@admin.com",
+    from: 'Peter <peter@admin.com',
     to: options.email,
     subject: options.subject,
     text: options.message,
-    // html:
+    html: '<p>hallo {resetURL}</p>',
   };
 
   // 3) send the email with nodemailer

@@ -1,7 +1,7 @@
 import { TextField } from '@mui/material';
 import { useContext } from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Context } from '../../context/Context';
 import { toast } from 'react-toastify';
 import axios from 'axios';
@@ -64,7 +64,11 @@ export default function Login() {
             <div className="form-group">
               <button className="btn-primary btn-login">Login</button>
             </div>
-            <p>If you want to reset your password, please click here.</p>
+            <p>
+              <Link to="/forgotpassword" className="forgot-link">
+                If you want to reset your password, please click here.
+              </Link>
+            </p>
           </form>
         </section>
       </div>

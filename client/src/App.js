@@ -14,12 +14,12 @@ import NotFound from './pages/NotFound/NotFound.jsx';
 import { Navbar, Footer } from './components/export';
 import Settings from './components/Settings/Settings.jsx';
 import ManageTours from './components/ManageTours/ManageTours.jsx';
-import AppContext from './context/AppContext.js';
+import { AuthContext } from './context/AuthProvider.js';
 import { useContext } from 'react';
 
 function App() {
-  const { user } = useContext(AppContext);
-
+ 
+  const { auth, setAuth } = useContext(AuthContext);
   return (
     // <TourProvider>
     <>

@@ -31,6 +31,15 @@ app.use(express.json({ extended: true, limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(morgan('dev'));
 
+
+
+const corsOptions ={
+  origin:'http://localhost:3000', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200
+}
+app.use(cors(corsOptions));
+
 // app.delete('/:public_id', async (req, res) => {
 //   const { public_id } = req.params;
 //   try {

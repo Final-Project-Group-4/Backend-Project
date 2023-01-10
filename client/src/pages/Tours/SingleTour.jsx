@@ -74,6 +74,7 @@ export default function SingleTour() {
     if (id) {
       getSingleTour();
       console.log(tour);
+      
     }
   }, [id]);
 

@@ -79,6 +79,7 @@ export const login = async (req, res) => {
     status: "success",
     token,
   });
+  
 };
 
 export const logout = async (req, res) => {

@@ -30,6 +30,7 @@ export default function Gallery() {
 
   useEffect(() => {
     getGallery();
+    //window.scrollTo(0, 0);
   }, []);
 
   // Modal handler

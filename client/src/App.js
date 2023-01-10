@@ -16,6 +16,8 @@ import Settings from './components/Settings/Settings.jsx';
 import ManageTours from './components/ManageTours/ManageTours.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword.jsx';
+import ResetPassword from './pages/ResetPassword/ResetPassword.jsx';
 
 function App() {
   return (
@@ -31,15 +33,14 @@ function App() {
         <Route path="/plantrip" element={<PlanTrip />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/resetpassword/:token" element={<ResetPassword />} />
         <Route path="/admin" element={<Admin />}>
           <Route index element={<Settings />} />
           <Route path="/admin/settings" element={<Settings />} />
           <Route path="/admin/manageTours" element={<ManageTours />} />
           <Route path="*" element={<NotFound />} />
         </Route>
-        {/*
-                <Route path="/forgotpassword" element={<ForgotPassword />} />
-              <Route path="/resetpassword/:token" element={<ResetPassword />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

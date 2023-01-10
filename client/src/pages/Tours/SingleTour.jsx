@@ -74,6 +74,7 @@ export default function SingleTour() {
     if (id) {
       getSingleTour();
       console.log(tour);
+      window.scrollTo(0, 0);
       
     }
   }, [id]);
@@ -136,7 +137,9 @@ export default function SingleTour() {
             <img src={images[0]} alt="img" className="middle-img" />
           </div>
         )}
-        <div className="map-container" id="map" style={{ height: '50vh' }}></div>
+   
+          <div className="map-container" id="map" style={{ height: '50vh' }}></div>
+       
       </div>
       <Contacts />
     </>

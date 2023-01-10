@@ -1,5 +1,12 @@
 @import '../../../scss/_config.scss';
 
+
+.map-container {
+transform: none !important;
+
+}
+
+
 .single-tour {
   margin: auto;
   background-color: $main-light;

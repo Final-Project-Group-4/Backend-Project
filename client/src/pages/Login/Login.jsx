@@ -5,7 +5,7 @@ import { AuthContext } from "../../context/AuthProvider";
 import { useRef, useState, useEffect } from 'react';
 import { useContext } from 'react';
 import axios from "../../api/axios";
-const LOGIN_URL= "/api/admin/login"
+const LOGIN_URL= "http://localhost:4000/api/admin/login"
 
 export default function Login() {
 
@@ -45,7 +45,7 @@ export default function Login() {
           }
         );
       console.log (JSON.stringify(response?.data));
-      console.log (JSON.stringify(response));
+      //console.log (JSON.stringify(response));
       const token = response?.data?.token;
       // this is called optional chaining when you put a question mark.
       //the access token is sent with the response because you set the withCredentials to true

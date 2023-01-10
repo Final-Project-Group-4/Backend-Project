@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function AboutUs() {
   const {t} = useTranslation();
+  window.scrollTo(0, 0);
   return (
     <div className="container aboutus">
       <div className="about">

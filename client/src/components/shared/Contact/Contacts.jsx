@@ -11,7 +11,7 @@ export default function Contacts() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_grujl8z', 'template_0fjd638', form.current, 'VXiwbAKrVA2i6AQZj').then(
+    emailjs.sendForm('service_vhsqlog', 'template_f71uyt5', form.current, 'qRUwiJCe6auC3a9U0').then(
       (result) => {
         console.log(result.text);
         console.log('message sent');

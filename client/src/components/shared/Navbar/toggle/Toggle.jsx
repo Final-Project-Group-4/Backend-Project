@@ -46,6 +46,7 @@ function Toggle(props) {
       <li className="app__flex p-text">
           <a href={`#`} onClick={()=> {
             i18n.changeLanguage('de')
+            props.setToggle(false)
           }}>DE</a>
         </li>
         <li className="app__flex p-text">
@@ -54,6 +55,7 @@ function Toggle(props) {
         <li className="app__flex p-text">
      <a href={`#`} onClick={()=> {
             i18n.changeLanguage('fr')
+            props.setToggle(false)
           }}>FR</a>
         </li>
         <li className="app__flex p-text">
@@ -62,6 +64,7 @@ function Toggle(props) {
         <li className="app__flex p-text">
         <a href={`#`} onClick={()=> {
             i18n.changeLanguage('en')
+            props.setToggle(false)
           }}>EN</a>
         </li>
           </ul>

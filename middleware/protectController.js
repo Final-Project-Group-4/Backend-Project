@@ -1,13 +1,13 @@
-import jwt from "jsonwebtoken";
+import jwt from 'jsonwebtoken';
 
-import User from "../models/userModel.js";
+import User from '../models/userModel.js';
 
 export const protectController = async (req, res, next) => {
   //We will take the token from request.headers.authorization and split [1] as token.
   try {
-    const token = req.headers.authorization?.split(" ")[1];
+    const token = req.headers.authorization?.split(' ')[1];
 
-    if (!token) return res.status(401).json({ message: "Not Authorized" });
+    if (!token) return res.status(401).json({ message: 'Not Authorized' });
 
     // Verify token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
@@ -15,11 +15,13 @@ export const protectController = async (req, res, next) => {
 
     const user = await User.findById(decoded.id);
 
+    if (!user) {
+      next(new Error('User could not be found. Please log in again.', 401));
+    }
+
     // Check if user changes password after the token was issued
     if (user.changedPasswordAfter(decoded.iat)) {
-      return next(
-        new Error("User recently changed password! Please log in again.", 401)
-      );
+      return next(new Error('User recently changed password! Please log in again.', 401));
     }
 
     if (decoded) {
@@ -28,12 +30,11 @@ export const protectController = async (req, res, next) => {
       // Grant access to protected route
       next();
     } else {
-      res.status(401).json({ status: "Fail", message: "Not Authorized" });
+      res.status(401).json({ status: 'Fail', message: 'Not Authorized' });
     }
     //we will call next only when if it is a valid
   } catch (err) {
     res.status(402).json({ message: err.message });
   }
-
   //if token is not valid we will send a bad request response back to the front end
 };

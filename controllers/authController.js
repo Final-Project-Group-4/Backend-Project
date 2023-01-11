@@ -144,6 +144,7 @@ export const forgotPassword = async (req, res, next) => {
         subject: 'Your password reset token (valid for 10 min)',
         message,
         resetURL,
+        token: resetToken,
       });
 
       res.status(200).json({

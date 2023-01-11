@@ -11,13 +11,13 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { user, dispatch, isLoading } = useContext(Context);
+  const { dispatch, isLoading } = useContext(Context);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: 'LOGIN_START' });
-    console.log(email, password);
+    //console.log(email, password);
 
     try {
       //API call
@@ -29,6 +29,7 @@ export default function Login() {
       if (res.data) {
         dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
         localStorage.setItem('user', JSON.stringify(res.data.token));
+        toast.success('Login successful');
         navigate('/');
       }
     } catch (err) {
@@ -62,7 +63,9 @@ export default function Login() {
               />
             </div>
             <div className="form-group">
-              <button className="btn-primary btn-login">Login</button>
+              <button className="btn-primary btn-login" disabled={isLoading}>
+                Login
+              </button>
             </div>
             <p>
               <Link to="/forgotpassword" className="forgot-link">

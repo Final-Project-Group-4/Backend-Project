@@ -14,13 +14,13 @@ export default function AboutUs() {
           <div className="img-section">
             <div className="single-img">
               <img
-                src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019129/peter%27s%20website/kilimanjaro-peak4_kk3ucv.jpg"
+                src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673440165/kilimanjaro-peak4_zwr71r.jpg"
                 alt="our team"
               />
             </div>
             <div className="single-img">
               <img
-                src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019107/peter%27s%20website/peter-in-orange-bg-mountain_ldmsot.jpg"
+                src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673445026/peter-in-orange-bg-mountain_edulkj.jpg"
                 alt="Peter Mlay"
               />
             </div>
@@ -43,10 +43,13 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="img-section">
-          <img
-            src="https://res.cloudinary.com/dgbrrpbvw/image/upload/v1671019104/peter%27s%20website/native-man-kilimanjaro_vrtygy.jpg"
+          <div className="single-img">
+            <img
+            src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673444904/native-man-kilimanjaro_aafmo3.jpg"
             alt="Yohani KinyalaLauwo"
           />
+          </div>
+          
         </div>
       </div>
       <Contacts />

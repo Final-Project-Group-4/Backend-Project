@@ -1,9 +1,15 @@
 import React from 'react';
+import './_NotFound.scss';
+import error404 from '../../assets/error-404.jpg' ;
 
 export default function NotFound() {
   return (
-    <div>
-      <img src="/images/404.jpg" alt="Not Found" />
+    <div className='container marginat'>
+      <div className='not-found'>
+      <img src={error404} alt="Page not found" />
+      
+      </div>
+      
     </div>
   );
 }

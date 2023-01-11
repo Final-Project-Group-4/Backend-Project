@@ -109,9 +109,251 @@
 
 
 
-  "//comment13": "FAQ"
+  "//comment13": "FAQ",
+  "questionOne": "Qu'est-ce qui est inclus dans votre forfait Safari?",
+  "answersOne": [
+    {
+      "answer1":"1. Hébergement tel que spécifié dans l'itinéraire."
+  } ,
+  {
+   "answer1":"2. Tous les repas dans les lodges et les camps de tentes."
+  },
+  {
+    "answer1": "3. Kms illimités, véhicule Toyota Landcruiser 4x4 Safari avec toit ouvrant, 6 sièges de fenêtre, adaptateurs électriques et réfrigérateur."
 
+  },
+  {
+    "answer1":"4. Guide anglophone expérimenté."
 
+  },
+  {
+    "answer1":"5. Eau potable."
 
+  },
+  {
+    "answer1": "6. Tous les frais d'entrée au parc et 18 % de TVA."
 
+  }],
+  "questionTwo":"Exclus de votre forfait Safari?",
+  "answersTwo" : [
+    {
+     "answer2":"1. Vols internationaux."
+    },
+    {
+     "answer2":"2. Visa."
+    },
+    {
+     "answer2":"3. Médicaments."
+    },
+    {
+     "answer2":"4. Assurance médicale/voyage."
+    },
+      {
+     "answer2":"5. Balade en montgolfière dans le Serengeti 650 $ par personne."
+    },
+     {
+     "answer2":"6. Boissons alcoolisées et non alcoolisées."
+    },
+    {
+     "answer2":"7. Astuce pour votre chauffeur."
+    }
+ ],
+ "questionThree":"Quels sont les éléments inclus?",
+   "answersThree" : [
+      {
+       "answer3":"1. Tentes de montagne privées de qualité, imperméables et quatre saisons."
+      },
+      {
+       "answer3":"2. Des guides de montagne professionnels et expérimentés."
+      },
+      {
+       "answer3":"3. Tous les frais de parc."
+      },
+      {
+       "answer3":"4. Frais de sauvetage."
+      },
+        {
+       "answer3":"5. Tous les repas sur la montagne."
+      },
+       {
+       "answer3":"6. Guides, porteurs, salaires des cuisiniers et frais de parc."
+      },
+      {
+       "answer3":"7. Tentes mess de qualité avec table et chaises"
+      },
+      {
+      "answer3":"8. De grandes portions d'aliments frais et sains."
+      },
+      {
+     "answer3":"9. De l'eau potable propre et purifiée."
+      },
+      {
+      "answer3":"10. Procédures de gestion de crise et de sécurité."
+      },
+      {
+     "answer3":"11. Traitement juste et éthique des porteurs."
+    }
+   ],
+   "questionFour":"Quels sont les éléments qui ne sont pas inclus ?",
+   "answersFour": [
+      {
+       "answer4":"1. Visa Tanzanie."
+      },
+      {
+       "answer4":"2. Dépenses personnelles (par exemple, blanchisserie, téléphone, boissons, etc.)."
+      },
+      {
+       "answer4":"3. Repas non listés ci-dessus."
+      },
+      {
+       "answer4":"4. Tours optionnels (court safari après votre ascension, etc.)."
+      }
+     ],
+     "questionFive":"Qu'est-ce qui est requis pour le voyage?",
+     "answersFive" : [
+        {
+         "answer5":"1. Sac de sport (51L-100L, sans roulettes ni poignées)."
+        },
+        {
+         "answer5":"2. Emballez la housse de pluie."
+        },
+        {
+         "answer5":"3. Pantalon de pluie (léger, imperméable, respirant)."
+        },
+        {
+         "answer5":"4. Veste isolée."
+        },
+          {
+         "answer5":"5. Veste ou pull en polaire/laine."
+        },
+         {
+         "answer5":"6. Hauts et bas de sous-vêtements longs (épaisseur moyenne, synthétique)."
+        },
+        {
+         "answer5":"7. Chemises à manches longues (synthétique, légère)."
+        },
+        {
+        "answer5":"8. Pantalon de randonnée (convertible, à séchage rapide, léger)."
+        },
+        {
+       "answer5":"9. Chaussettes de randonnée (synthétique ou laine)."
+        },
+        {
+        "answer5":"10. Bottes de randonnée imperméables."
+        },
+        {
+       "answer5":"11. Bonnet en polaire/laine."
+      },
+        {
+         "answer5":"12. Chapeau de soleil."
+        },
+        {
+         "answer5":"13. Lampe frontale avec piles neuves."
+        },
+        {
+         "answer5":"14. Lunettes de soleil et accessoires."
+        },
+        {
+         "answer5":"15. Écran solaire et baume à lèvres."
+        },
+          {
+         "answer5":"16. Hauts et bas de sous-vêtements longs (épais, synthétiques)."
+        },
+         {
+         "answer5":"17. Bandana pour la protection solaire."
+        },
+        {
+         "answer5":"18. Sachet journalier (21L-35L)."
+        },
+        {
+        "answer5":"19. Veste de pluie (à capuche, légère, imperméable, respirante)."
+        },
+        {
+       "answer5":"20. Bouteilles d'eau (trois 1 litre) ou système d'hydratation + deux bouteilles d'eau 1 litre."
+        },
+        {
+        "answer5":"21. Gants (étanches et isolants)."
+        },
+        {
+       "answer5":"22. Sac de couchage (1°-14°, léger, compressible)."
+      }
+     ],
+     "questionSix":"Qu'est-ce qui est recommandé pour le voyage ?",
+     "answersSix": [
+        {
+         "answer6":" 1. Bagages (1 pièce)."
+        },
+        {
+         "answer6":" 2. Étiquettes de bagages et serrures (2)."
+        },
+        {
+         "answer6":" 3. Passeport/porte-monnaie ou pochette."
+        },
+        {
+         "answer6":" 4. Vêtements décontractés pour les voyages et la ville (légers, facilement lavables)."
+        },
+          {
+         "answer6":" 5. Short de randonnée (plus long, à séchage rapide, léger)."
+        },
+         {
+         "answer6":" 6. Chaussettes intérieures (synthétique)."
+        },
+        {
+         "answer6":" 7. Chaussures décontractées pour les voyages et les loisirs."
+        },
+        {
+        "answer6":" 8. Bâtons de trekking."
+        },
+        {
+       "answer6":" 9. Chauffe-mains et orteils."
+        },
+        {
+        "answer6":" 10. Snacks énergétiques et mélanges de boissons."
+        },
+        {
+       "answer6":" 11. Articles de toilette."
+      },
+        {
+         "answer6":" 12. Serviette de camping."
+        },
+        {
+         "answer6":" 13. Kit de salle de bain personnel : papier toilette, sacs à fermeture éclair, lingettes personnelles, nettoyant pour les mains."
+        },
+        {
+         "answer6":" 14. Guêtres (Grandes)."
+        },
+        {
+         "answer6":" 15. T-shirts (coton et synthétique)."
+        },
+          {
+         "answer6":" 16. Cagoule (Synthétique ou Laine)."
+        },
+         {
+         "answer6":" 17. Snacks énergétiques et mélanges de boissons."
+        },
+        {
+         "answer6":" 18. Pantalon polaire."
+        },
+        {
+        "answer6":" 19. Bouchons d'oreille."
+        },
+        {
+       "answer6":" 20. Poncho de pluie."
+        },
+        {
+        "answer6":" 21. Gants en polaire/laine."
+        },
+        {
+       "answer6":" 22. Insectifuge (DEET)."
+      },
+      {
+     "answer6":" 23. Sous-gants (synthétique)."
+    }
+     ],
+     
+     "GearList": "Liste d'équipement.?",
+     "GearListAnswer": "La clé pour rester à l'aise lors d'un voyage actif est la superposition. Pour obtenir un maximum de confort avec un minimum de poids, vous avez besoin de couches polyvalentes qui se mélangent et s'assortissent pour créer la bonne quantité d'isolation, de ventilation et de protection contre les intempéries. Essayez d'apporter seulement ce qui est nécessaire - cela vous aidera, vous et le personnel de terrain!.",
+     "RentalsQuestion":"Locations ?",
+     "RentalsAnswer":"Pourquoi acheter du matériel que vous n'utiliserez qu'une seule fois ? Nous vous fournirons tout le matériel nécessaire à 80 % moins cher que l'achat. Nous nous assurerons que vous êtes équipé pour le sommet et que votre voyage soit relaxant.",
+     "FrequentlyAskedQuestions": "Questions fréquemment posées."
 }

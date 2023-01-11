@@ -19,7 +19,7 @@ import axios from 'axios';
 export const getAllPhotos = async (req,res) => {
   try {
     axios.get(
-    `https://${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.CLOUDINARY_NAME}/resources/image?max_results=50`
+    `https://${process.env.CLOUDINARY_API_KEY}:${process.env.CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.CLOUDINARY_NAME}/resources/image?max_results=40`
   ).then(response => { res.status(200).json(response.data.resources)})
 }
   

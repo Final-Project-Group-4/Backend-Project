@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Contacts } from '../../components/export';
 import FaqQuestions from './FaqQuestion';
 import './_FAQ.scss';
 const FAQ = () => {
-  const [t,i18n ]= useTranslation();
-  const [faqs, setFaqs] = useState([
+  const {t}= useTranslation();
+  const [faqs,setFaqs]= useState([])
+  useEffect(()=> {
+  setFaqs([
     {
       question: t('questionOne'),
       answer: [
@@ -84,7 +86,8 @@ const FAQ = () => {
       answer: t('RentalsAnswer'),
       open: false,
     },
-  ]);
+  ])
+  },[t]);
 
   const toggleFAQ = (index) => {
    setFaqs(
@@ -99,10 +102,11 @@ const FAQ = () => {
       })
     );
   };
- 
+
   return (
     <>
       <div id="faq" className="biggest faq-big">
+
         <div className="container faqs">
           <h2>{t('FrequentlyAskedQuestions')}</h2>
            

@@ -113,7 +113,7 @@
   "questionOne" : "What is included in your Safari Package?",
   "answersOne" : [
     {
-      "answer1" :"1. Accommodation as specified in the itinerary"
+      "answer1" :"1. Accommodation as specified in the itinerary."
   }    ,
   {
    "answer1":"2. All meals at lodges and tented camps."
@@ -123,15 +123,15 @@
 
   },
   {
-    "answer1" :"Experienced English speaking guide."
+    "answer1" :"4. Experienced English speaking guide."
 
   },
   {
-    "answer1" :"Drinking water."
+    "answer1" :"5. Drinking water."
 
   },
   {
-    "answer1" : "All park entry fees and 18% VAT."
+    "answer1" : "6. All park entry fees and 18% VAT."
 
   }
 ],
@@ -153,10 +153,10 @@
       "answer2":"5. Hot Air Balloon Ride in Serengeti $ 650 per person."
      }, 
       {
-      "answer2":"6. Alcoholic and soft drinks.<"
+      "answer2":"6. Alcoholic and soft drinks."
      },
      {
-      "answer2":"7. Tip for Your Driver.<"
+      "answer2":"7. Tip for Your Driver."
      }
   ],
   "questionThree":"What are the items that are included?",
@@ -180,7 +180,7 @@
       "answer3":"6. Guides, Porters, cook salaries and park fees."
      },
      {
-      "answer3":"7. Quality Mess tents with table and chairs<"
+      "answer3":"7. Quality Mess tents with table and chairs"
      },
      {
      "answer3":"8. Large portions of fresh, healthy nutritious food."
@@ -189,10 +189,10 @@
     "answer3":"9. Clean, purified drinking water."
      },
      {
-     "answer3":"10. Crisis management and safety procedures.<"
+     "answer3":"10. Crisis management and safety procedures."
      },
      {
-    "answer3":"11. Fair and ethical treatment of porters.<"
+    "answer3":"11. Fair and ethical treatment of porters."
    }
   ],
   "questionFour":"What is the items are not included?",
@@ -225,13 +225,13 @@
         "answer5":"4. Insulated Jacket."
        },
          {
-        "answer5":"5. Fleece/Wool Jacket or Sweaterr."
+        "answer5":"5. Fleece/Wool Jacket or Sweater."
        },
         {
         "answer5":"6. Long Underwear Tops and Bottoms (Midweight, Synthetic)."
        },
        {
-        "answer5":"7. Long Sleeve Shirts (Synthetic, Lightweight).<"
+        "answer5":"7. Long Sleeve Shirts (Synthetic, Lightweight)."
        },
        {
        "answer5":"8. Hiking Pants (Convertible, Quick-Dry, Lightweight)."
@@ -240,10 +240,10 @@
       "answer5":"9. Hiking Socks (Synthetic or Wool)."
        },
        {
-       "answer5":"10. Waterproof Hiking Boots.<"
+       "answer5":"10. Waterproof Hiking Boots."
        },
        {
-      "answer5":"11. Fleece/Wool Hat.<"
+      "answer5":"11. Fleece/Wool Hat."
        },
        {
         "answer5":"12. Sun Hat."
@@ -264,7 +264,7 @@
         "answer5":"17. Bandana for Sun Protection."
        },
        {
-        "answer5":"18. Day Pack (21L-35L).<"
+        "answer5":"18. Day Pack (21L-35L)."
        },
        {
        "answer5":"19. Rain Jacket (Hooded, Lightweight, Waterproof, Breathable)."
@@ -273,10 +273,10 @@
       "answer5":"20. Water Bottles (Three 1-Quart) or Hydration System + two 1-quart water bottles."
        },
        {
-       "answer5":"21. Gloves (Waterproof and Insulating).<"
+       "answer5":"21. Gloves (Waterproof and Insulating)."
        },
        {
-      "answer5":"22. Sleeping Bag (1°-14°, Lightweight, Compressible).<"
+      "answer5":"22. Sleeping Bag (1°-14°, Lightweight, Compressible)."
      }
     ],
     "questionSix":"What Is Recommended For The Trip?",
@@ -300,7 +300,7 @@
         "answer6":" 6. Liner Socks (Synthetic)."
        },
        {
-        "answer6":" 7. Casual Shoes for Travel and Free Time.<"
+        "answer6":" 7. Casual Shoes for Travel and Free Time."
        },
        {
        "answer6":" 8. Trekking Poles."
@@ -309,10 +309,10 @@
       "answer6":" 9. Hand and Toe Warmers."
        },
        {
-       "answer6":" 10. Energy Snacks and Drink Mixes.<"
+       "answer6":" 10. Energy Snacks and Drink Mixes."
        },
        {
-      "answer6":" 11. Toiletries.<"
+      "answer6":" 11. Toiletries."
      },
        {
         "answer6":" 12. Camp Towel."
@@ -333,7 +333,7 @@
         "answer6":" 17. Energy Snacks and Drink Mixes."
        },
        {
-        "answer6":" 18. Fleece Pants.<"
+        "answer6":" 18. Fleece Pants."
        },
        {
        "answer6":" 19. Ear Plugs."
@@ -342,13 +342,13 @@
       "answer6":" 20. Rain Poncho."
        },
        {
-       "answer6":" 21. Fleece/Wool Gloves.<"
+       "answer6":" 21. Fleece/Wool Gloves."
        },
        {
-      "answer6":" 22. Insect Repellant (DEET).<"
+      "answer6":" 22. Insect Repellant (DEET)."
      },
      {
-    "answer6":" 23. Glove Liners (Synthetic).<"
+    "answer6":" 23. Glove Liners (Synthetic)."
    }
     ], 
     "GearList" : "Gear list?",

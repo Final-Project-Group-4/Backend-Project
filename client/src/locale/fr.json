@@ -113,25 +113,25 @@
   "questionOne": "Qu'est-ce qui est inclus dans votre forfait Safari?",
   "answersOne": [
     {
-      "answer1":"1. Hébergement tel que spécifié dans l'itinéraire"
+      "answer1":"1. Hébergement tel que spécifié dans l'itinéraire."
   } ,
   {
    "answer1":"2. Tous les repas dans les lodges et les camps de tentes."
   },
   {
-    "answer1": "3. Kms illimités, véhicule Toyota Landcruiser 4×4 Safari avec toit ouvrant, 6 sièges de fenêtre, adaptateurs électriques et réfrigérateur."
+    "answer1": "3. Kms illimités, véhicule Toyota Landcruiser 4x4 Safari avec toit ouvrant, 6 sièges de fenêtre, adaptateurs électriques et réfrigérateur."
 
   },
   {
-    "answer1":"Guide anglophone expérimenté."
+    "answer1":"4. Guide anglophone expérimenté."
 
   },
   {
-    "answer1":"Eau potable."
+    "answer1":"5. Eau potable."
 
   },
   {
-    "answer1": "Tous les frais d'entrée au parc et 18 % de TVA."
+    "answer1": "6. Tous les frais d'entrée au parc et 18 % de TVA."
 
   }],
   "questionTwo":"Exclus de votre forfait Safari?",
@@ -149,16 +149,16 @@
      "answer2":"4. Assurance médicale/voyage."
     },
       {
-     "answer2":"5. Balade en montgolfière dans le Serengeti 650 $ par personne."
+     "answer2":"5. Balade en montgolfière dans le Serengeti 650 $ par personne."
     },
      {
-     "answer2":"6. Boissons alcoolisées et non alcoolisées.<"
+     "answer2":"6. Boissons alcoolisées et non alcoolisées."
     },
     {
-     "answer2":"7. Astuce pour votre chauffeur.<"
+     "answer2":"7. Astuce pour votre chauffeur."
     }
  ],
- "questionThree":"Quels sont les éléments inclus ?",
+ "questionThree":"Quels sont les éléments inclus?",
    "answersThree" : [
       {
        "answer3":"1. Tentes de montagne privées de qualité, imperméables et quatre saisons."
@@ -179,7 +179,7 @@
        "answer3":"6. Guides, porteurs, salaires des cuisiniers et frais de parc."
       },
       {
-       "answer3":"7. Tentes mess de qualité avec table et chaises<"
+       "answer3":"7. Tentes mess de qualité avec table et chaises"
       },
       {
       "answer3":"8. De grandes portions d'aliments frais et sains."
@@ -188,10 +188,10 @@
      "answer3":"9. De l'eau potable propre et purifiée."
       },
       {
-      "answer3":"10. Procédures de gestion de crise et de sécurité.<"
+      "answer3":"10. Procédures de gestion de crise et de sécurité."
       },
       {
-     "answer3":"11. Traitement juste et éthique des porteurs.<"
+     "answer3":"11. Traitement juste et éthique des porteurs."
     }
    ],
    "questionFour":"Quels sont les éléments qui ne sont pas inclus ?",
@@ -212,7 +212,7 @@
      "questionFive":"Qu'est-ce qui est requis pour le voyage?",
      "answersFive" : [
         {
-         "answer5":"1. Sac de sport (51L-100L, sans roulettes ni poignées)."
+         "answer5":"1. Sac de sport (51L-100L, sans roulettes ni poignées)."
         },
         {
          "answer5":"2. Emballez la housse de pluie."
@@ -230,7 +230,7 @@
          "answer5":"6. Hauts et bas de sous-vêtements longs (épaisseur moyenne, synthétique)."
         },
         {
-         "answer5":"7. Chemises à manches longues (synthétique, légère).<"
+         "answer5":"7. Chemises à manches longues (synthétique, légère)."
         },
         {
         "answer5":"8. Pantalon de randonnée (convertible, à séchage rapide, léger)."
@@ -239,10 +239,10 @@
        "answer5":"9. Chaussettes de randonnée (synthétique ou laine)."
         },
         {
-        "answer5":"10. Bottes de randonnée imperméables.<"
+        "answer5":"10. Bottes de randonnée imperméables."
         },
         {
-       "answer5":"11. Bonnet en polaire/laine.<"
+       "answer5":"11. Bonnet en polaire/laine."
       },
         {
          "answer5":"12. Chapeau de soleil."
@@ -263,7 +263,7 @@
          "answer5":"17. Bandana pour la protection solaire."
         },
         {
-         "answer5":"18. Sachet journalier (21L-35L).<"
+         "answer5":"18. Sachet journalier (21L-35L)."
         },
         {
         "answer5":"19. Veste de pluie (à capuche, légère, imperméable, respirante)."
@@ -272,13 +272,13 @@
        "answer5":"20. Bouteilles d'eau (trois 1 litre) ou système d'hydratation + deux bouteilles d'eau 1 litre."
         },
         {
-        "answer5":"21. Gants (étanches et isolants).<"
+        "answer5":"21. Gants (étanches et isolants)."
         },
         {
-       "answer5":"22. Sac de couchage (1°-14°, léger, compressible).<"
+       "answer5":"22. Sac de couchage (1°-14°, léger, compressible)."
       }
      ],
-     "questionSix":"Qu'est-ce qui est recommandé pour le voyage ?",
+     "questionSix":"Qu'est-ce qui est recommandé pour le voyage ?",
      "answersSix": [
         {
          "answer6":" 1. Bagages (1 pièce)."
@@ -299,7 +299,7 @@
          "answer6":" 6. Chaussettes intérieures (synthétique)."
         },
         {
-         "answer6":" 7. Chaussures décontractées pour les voyages et les loisirs.<"
+         "answer6":" 7. Chaussures décontractées pour les voyages et les loisirs."
         },
         {
         "answer6":" 8. Bâtons de trekking."
@@ -308,16 +308,16 @@
        "answer6":" 9. Chauffe-mains et orteils."
         },
         {
-        "answer6":" 10. Snacks énergétiques et mélanges de boissons.<"
+        "answer6":" 10. Snacks énergétiques et mélanges de boissons."
         },
         {
-       "answer6":" 11. Articles de toilette.<"
+       "answer6":" 11. Articles de toilette."
       },
         {
          "answer6":" 12. Serviette de camping."
         },
         {
-         "answer6":" 13. Kit de salle de bain personnel : papier toilette, sacs à fermeture éclair, lingettes personnelles, nettoyant pour les mains."
+         "answer6":" 13. Kit de salle de bain personnel : papier toilette, sacs à fermeture éclair, lingettes personnelles, nettoyant pour les mains."
         },
         {
          "answer6":" 14. Guêtres (Grandes)."
@@ -332,7 +332,7 @@
          "answer6":" 17. Snacks énergétiques et mélanges de boissons."
         },
         {
-         "answer6":" 18. Pantalon polaire.<"
+         "answer6":" 18. Pantalon polaire."
         },
         {
         "answer6":" 19. Bouchons d'oreille."
@@ -341,13 +341,13 @@
        "answer6":" 20. Poncho de pluie."
         },
         {
-        "answer6":" 21. Gants en polaire/laine.<"
+        "answer6":" 21. Gants en polaire/laine."
         },
         {
-       "answer6":" 22. Insectifuge (DEET).<"
+       "answer6":" 22. Insectifuge (DEET)."
       },
       {
-     "answer6":" 23. Sous-gants (synthétique).<"
+     "answer6":" 23. Sous-gants (synthétique)."
     }
      ],
      

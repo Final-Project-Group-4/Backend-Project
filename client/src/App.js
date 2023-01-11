@@ -1,5 +1,5 @@
 //import TourCard from './components/shared/TourCard/TourCard';
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/LandingPage/Home.jsx';
 import Tours from './pages/Tours/Tours.jsx';
@@ -18,8 +18,11 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword.jsx';
 import ResetPassword from './pages/ResetPassword/ResetPassword.jsx';
+import { Context } from './context/Context.js';
 
 function App() {
+  const { user } = useContext(Context);
+
   return (
     <Router>
       <Navbar />
@@ -35,12 +38,14 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/resetpassword/:token" element={<ResetPassword />} />
-        <Route path="/admin" element={<Admin />}>
-          <Route index element={<Settings />} />
-          <Route path="/admin/settings" element={<Settings />} />
-          <Route path="/admin/manageTours" element={<ManageTours />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
+        {user && (
+          <Route path="/admin" element={<Admin />}>
+            <Route index element={<Settings />} />
+            <Route path="/admin/settings" element={<Settings />} />
+            <Route path="/admin/manageTours" element={<ManageTours />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        )}
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

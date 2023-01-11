@@ -1,6 +1,7 @@
 import { TextField } from '@mui/material';
 import axios from 'axios';
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
 function ForgotPassword() {
   const [email, setEmail] = useState('');
@@ -12,6 +13,7 @@ function ForgotPassword() {
       await axios.post(`http://localhost:4000/api/admin/forgotpassword`, {
         email,
       });
+      toast.success('Reset link has been sent!');
     } catch (err) {
       setError(true);
       console.log(err);

@@ -109,8 +109,253 @@
 
   
 
-  "//comment13": "FAQ"
+  "//comment13": "FAQ",
+  "questionOne" : "What is included in your Safari Package?",
+  "answersOne" : [
+    {
+      "answer1" :"1. Accommodation as specified in the itinerary"
+  }    ,
+  {
+   "answer1":"2. All meals at lodges and tented camps."
+  },
+  {
+    "answer1" :  "3. Unlimited kms, Toyota Landcruiser 4×4 Safari vehicle with pop up roof, 6 window seats, power adapters, and refrigerator."
 
+  },
+  {
+    "answer1" :"Experienced English speaking guide."
 
-  
+  },
+  {
+    "answer1" :"Drinking water."
+
+  },
+  {
+    "answer1" : "All park entry fees and 18% VAT."
+
+  }
+],
+  "questionTwo":"What are the items that are included?",
+  "answersTwo" : [
+     {
+      "answer2":"1. International Flights."
+     },
+     {
+      "answer2":"2. Visa."
+     },
+     {
+      "answer2":"3. Medications."
+     },  
+     {
+      "answer2":"4. Medical / Travel Insurance."
+     },
+       {
+      "answer2":"5. Hot Air Balloon Ride in Serengeti $ 650 per person."
+     }, 
+      {
+      "answer2":"6. Alcoholic and soft drinks.<"
+     },
+     {
+      "answer2":"7. Tip for Your Driver.<"
+     }
+  ],
+  "questionThree":"What are the items that are included?",
+  "answersThree" : [
+     {
+      "answer3":"1. Quality, waterproof, four-season private mountain sleeping tents."
+     },
+     {
+      "answer3":"2. Professional, experienced, mountain guides."
+     },
+     {
+      "answer3":"3. All Park fees."
+     },  
+     {
+      "answer3":"4. Rescue fees."
+     },
+       {
+      "answer3":"5. All meals while on the Mountain."
+     }, 
+      {
+      "answer3":"6. Guides, Porters, cook salaries and park fees."
+     },
+     {
+      "answer3":"7. Quality Mess tents with table and chairs<"
+     },
+     {
+     "answer3":"8. Large portions of fresh, healthy nutritious food."
+     }, 
+     {
+    "answer3":"9. Clean, purified drinking water."
+     },
+     {
+     "answer3":"10. Crisis management and safety procedures.<"
+     },
+     {
+    "answer3":"11. Fair and ethical treatment of porters.<"
+   }
+  ],
+  "questionFour":"What is the items are not included?",
+  "answersFour" : [
+     {
+      "answer4":"1. Tanzania Visa."
+     },
+     {
+      "answer4":"2. Personal Expenses (e.g. laundry, telephone, beverages, etc.)."
+     },
+     {
+      "answer4":"3. Meals not listed above."
+     },  
+     {
+      "answer4":"4. Optional Tours (short safari after your climb e.t.c)."
+     }
+    ],
+    "questionFive":"What is required for trip ?",
+    "answersFive" : [
+       {
+        "answer5":"1. Duffel Bag (51L-100L, No Wheels or Handles)."
+       },
+       {
+        "answer5":"2. Pack Rain Cover."
+       },
+       {
+        "answer5":"3. Rain Pants (Lightweight, Waterproof, Breathable)."
+       },
+       {
+        "answer5":"4. Insulated Jacket."
+       },
+         {
+        "answer5":"5. Fleece/Wool Jacket or Sweaterr."
+       },
+        {
+        "answer5":"6. Long Underwear Tops and Bottoms (Midweight, Synthetic)."
+       },
+       {
+        "answer5":"7. Long Sleeve Shirts (Synthetic, Lightweight).<"
+       },
+       {
+       "answer5":"8. Hiking Pants (Convertible, Quick-Dry, Lightweight)."
+       },
+       {
+      "answer5":"9. Hiking Socks (Synthetic or Wool)."
+       },
+       {
+       "answer5":"10. Waterproof Hiking Boots.<"
+       },
+       {
+      "answer5":"11. Fleece/Wool Hat.<"
+       },
+       {
+        "answer5":"12. Sun Hat."
+       },
+       {
+        "answer5":"13. Headlamp with Fresh Batteries."
+       },
+       {
+        "answer5":"14. Sunglasses and Accessories."
+       },
+       {
+        "answer5":"15. Sun Block and Lip Balm."
+       },
+         {
+        "answer5":"16. Long Underwear Tops and Bottoms (Heavyweight, Synthetic)."
+       },
+        {
+        "answer5":"17. Bandana for Sun Protection."
+       },
+       {
+        "answer5":"18. Day Pack (21L-35L).<"
+       },
+       {
+       "answer5":"19. Rain Jacket (Hooded, Lightweight, Waterproof, Breathable)."
+       },
+       {
+      "answer5":"20. Water Bottles (Three 1-Quart) or Hydration System + two 1-quart water bottles."
+       },
+       {
+       "answer5":"21. Gloves (Waterproof and Insulating).<"
+       },
+       {
+      "answer5":"22. Sleeping Bag (1°-14°, Lightweight, Compressible).<"
+     }
+    ],
+    "questionSix":"What Is Recommended For The Trip?",
+    "answersSix" : [
+       {
+        "answer6":" 1. Luggage (1 Piece)."
+       },
+       {
+        "answer6":" 2. Luggage Tags and Locks (2)."
+       },
+       {
+        "answer6":" 3. Passport/Money Belt or Pouch."
+       },
+       {
+        "answer6":" 4. Casual Clothing for Travel and Town Wear (Lightweight, Easily Washable)."
+       },
+         {
+        "answer6":" 5. Hiking Shorts (Longer, Quick-Dry, Lightweight)."
+       },
+        {
+        "answer6":" 6. Liner Socks (Synthetic)."
+       },
+       {
+        "answer6":" 7. Casual Shoes for Travel and Free Time.<"
+       },
+       {
+       "answer6":" 8. Trekking Poles."
+       },
+       {
+      "answer6":" 9. Hand and Toe Warmers."
+       },
+       {
+       "answer6":" 10. Energy Snacks and Drink Mixes.<"
+       },
+       {
+      "answer6":" 11. Toiletries.<"
+     },
+       {
+        "answer6":" 12. Camp Towel."
+       },
+       {
+        "answer6":" 13. Personal Bathroom Kit: Toilet Paper, Ziplock Bags, Personal Wipes, Hand Cleaner."
+       },
+       {
+        "answer6":" 14. Gaiters (Tall)."
+       },
+       {
+        "answer6":" 15. Tee Shirts (Cotton and Synthetic)."
+       },
+         {
+        "answer6":" 16. Balaclava (Synthetic or Wool)."
+       },
+        {
+        "answer6":" 17. Energy Snacks and Drink Mixes."
+       },
+       {
+        "answer6":" 18. Fleece Pants.<"
+       },
+       {
+       "answer6":" 19. Ear Plugs."
+       },
+       {
+      "answer6":" 20. Rain Poncho."
+       },
+       {
+       "answer6":" 21. Fleece/Wool Gloves.<"
+       },
+       {
+      "answer6":" 22. Insect Repellant (DEET).<"
+     },
+     {
+    "answer6":" 23. Glove Liners (Synthetic).<"
+   }
+    ], 
+    "GearList" : "Gear list?",
+    "GearListAnswer" : "The key to staying comfortable while on an active trip is layering. To get maximum comfort with minimum weight, you need versatile layers that mix and match to create the right amount of insulation, ventilation and weather protection. Try to bring only what is necessary—this will help you and the field staff.!",
+    "RentalsQuestion": "Rentals ?",
+    "RentalsAnswer": "Why buy gears that you will only use them once? We will facilitate all necessary gear at 80% cheaper than purchasing. We will make sure you are outfitted for the summit and make your trip relaxing.",
+    "FrequentlyAskedQuestions" : "Frequently Asked Questions" 
+ 
+
 }

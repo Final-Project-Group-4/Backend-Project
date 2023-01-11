@@ -114,7 +114,7 @@
   "questionOne": "Was ist in Ihrem Safari-Paket enthalten?",
   "answersOne" : [
     {
-      "answer1" :"1. Unterkunft wie im Reiseverlauf angegeben"
+      "answer1" :"1. Unterkunft wie im Reiseverlauf angegeben."
   } ,
   {
    "answer1": "2. Alle Mahlzeiten in Lodges und Zeltcamps."
@@ -153,10 +153,10 @@
       "answer2":"5. Heißluftballonfahrt in der Serengeti 650 $ pro Person."
      },
       {
-      "answer2":"6. Alkoholische und alkoholfreie Getränke.<"
+      "answer2":"6. Alkoholische und alkoholfreie Getränke."
      },
      {
-      "answer2": "7. Tipp für Ihren Fahrer.<"
+      "answer2": "7. Tipp für Ihren Fahrer."
      }
   ],
   "questionThree":"Welche Gegenstände sind enthalten?",
@@ -180,7 +180,7 @@
        "answer3": "6. Führer, Gepäckträger, Kochgehälter und Parkgebühren."
       },
       {
-       "answer3": "7. Hochwertige Messezelte mit Tisch und Stühlen<"
+       "answer3": "7. Hochwertige Messezelte mit Tisch und Stühlen."
       },
       {
       "answer3": "8. Große Portionen frischer, gesunder und nahrhafter Lebensmittel."
@@ -189,10 +189,10 @@
      "answer3": "9. Sauberes, gereinigtes Trinkwasser."
       },
       {
-      "answer3": "10. Krisenmanagement und Sicherheitsverfahren.<"
+      "answer3": "10. Krisenmanagement und Sicherheitsverfahren."
       },
       {
-     "answer3":"11. Faire und ethische Behandlung von Trägern.<"
+     "answer3":"11. Faire und ethische Behandlung von Trägern."
     }
    ],
    "questionFour":"Welche Artikel sind nicht enthalten?",
@@ -231,7 +231,7 @@
          "answer5": "6. Lange Unterwäscheoberteile und -unterteile (mittelschwer, synthetisch)."
         },
         {
-         "answer5":"7. Langarmshirts (Synthetik, leicht).<"
+         "answer5":"7. Langarmshirts (Synthetik, leicht)."
         },
         {
         "answer5": "8. Wanderhose (wandelbar, schnell trocknend, leicht)."
@@ -240,10 +240,10 @@
        "answer5": "9. Wandersocken (Synthetik oder Wolle)."
         },
         {
-        "answer5":"10. Wasserdichte Wanderschuhe.<"
+        "answer5":"10. Wasserdichte Wanderschuhe."
         },
         {
-       "answer5":"11. Fleece-/Wollmütze.<"
+       "answer5":"11. Fleece-/Wollmütze."
       },
         {
          "answer5": "12. Sonnenhut."
@@ -264,7 +264,7 @@
          "answer5": "17. Bandana als Sonnenschutz."
         },
         {
-         "answer5":"18. Tagesrucksack (21L-35L).<"
+         "answer5":"18. Tagesrucksack (21L-35L)."
         },
         {
         "answer5": "19. Regenjacke (mit Kapuze, leicht, wasserdicht, atmungsaktiv)."
@@ -273,10 +273,10 @@
        "answer5": "20. Wasserflaschen (drei 1-Liter) oder Trinksystem + zwei 1-Liter-Wasserflaschen."
         },
         {
-        "answer5": "21. Handschuhe (wasserdicht und isolierend).<"
+        "answer5": "21. Handschuhe (wasserdicht und isolierend)."
         },
         {
-       "answer5": "22. Schlafsack (1°-14°, leicht, komprimierbar).<"
+       "answer5": "22. Schlafsack (1°-14°, leicht, komprimierbar)."
       }
      ],
      "questionSix":"Was wird für die Reise empfohlen?",
@@ -300,7 +300,7 @@
          "answer6": " 6. Zwischensocken (Synthetik)."
         },
         {
-         "answer6":" 7. Freizeitschuhe für Reise und Freizeit.<"
+         "answer6":" 7. Freizeitschuhe für Reise und Freizeit."
         },
         {
         "answer6": " 8. Wanderstöcke."
@@ -309,10 +309,10 @@
        "answer6": " 9. Hand- und Zehenwärmer."
         },
         {
-        "answer6":" 10. Energy Snacks und Getränkemischungen.<"
+        "answer6":" 10. Energy Snacks und Getränkemischungen."
         },
         {
-       "answer6":" 11. Toilettenartikel.<"
+       "answer6":" 11. Toilettenartikel."
       },
         {
          "answer6": " 12. Lagerhandtuch."
@@ -333,7 +333,7 @@
          "answer6": " 17. Energie-Snacks und Getränkemischungen."
         },
         {
-         "answer6":" 18. Fleecehose.<"
+         "answer6":" 18. Fleecehose."
         },
         {
         "answer6": " 19. Ohrstöpsel."
@@ -342,13 +342,13 @@
        "answer6":" 20. Regenponcho."
         },
         {
-        "answer6":" 21. Fleece-/Wollhandschuhe.<"
+        "answer6":" 21. Fleece-/Wollhandschuhe."
         },
         {
-       "answer6":" 22. Insektenschutzmittel (DEET).<"
+       "answer6":" 22. Insektenschutzmittel (DEET)."
       },
       {
-     "answer6":" 23. Handschuheinlagen (Synthetik).<"
+     "answer6":" 23. Handschuheinlagen (Synthetik)."
     }
      ],
      "GearList": "Ausrüstungsliste?",

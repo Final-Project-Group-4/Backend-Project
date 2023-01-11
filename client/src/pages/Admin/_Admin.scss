@@ -2,23 +2,43 @@
 @import '../../../scss/buttons.scss';
 
 .admin {
-  height: 80vh;
   margin: auto;
   .admin-wrapper {
     margin-top: 6rem;
     display: flex;
   }
   .admin-nav {
-    height: 67vh;
+    height: 150px;
+    margin-right: 1rem;
     width: 20%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 1rem;
-    background-color: bisque;
+    //background-color: rgba(70, 115, 115, 0.2);
+    background-color: rgb(217, 153, 35, 0.5);
+    border-radius: 5px;
+    .admin-nav-link {
+      font-size: calc(12px + 0.390625vw);
+      color: $font-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+      padding: 1rem;
+      font-family: 'Raleway', sans-serif;
+      &:hover {
+        background-color: $main-yellow;
+        border: 1px solid white;
+      }
+    }
   }
 
   .outlet-wrapper {
     width: 80%;
-    padding: 1rem;
+    //padding: 1rem;
+    //background-color: rgb(217, 153, 35, 0.2);
+    //border: solid 2px $main-yellow;
+    display: flex;
+    flex-direction: column;
   }
 }

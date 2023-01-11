@@ -7,8 +7,12 @@ export default function Admin() {
     <div className="container admin">
       <div className="admin-wrapper">
         <div className="admin-nav">
-          <Link to="settings">Settings</Link>
-          <Link to="manageTours">Manage Tours</Link>
+          <Link to="settings" className="admin-nav-link">
+            Settings
+          </Link>
+          <Link to="manageTours" className="admin-nav-link">
+            Manage Tours
+          </Link>
         </div>
         <div className="outlet-wrapper">
           <Outlet />

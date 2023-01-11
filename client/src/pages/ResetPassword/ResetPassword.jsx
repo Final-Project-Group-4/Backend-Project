@@ -12,7 +12,7 @@ function ResetPassword() {
   const navigate = useNavigate();
   const { token } = useParams();
 
-  console.log(token);
+  //console.log(token);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ function ResetPassword() {
         password,
         passwordConfirm,
       });
-      console.log(res.data);
+      //console.log(res.data);
       if (res.data) {
         toast.success('Password reset');
         navigate('/login');

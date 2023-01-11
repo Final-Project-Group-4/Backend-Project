@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './_Gallery.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,21 +11,21 @@ import { Contacts } from '../../components/export';
 import UploadImage from './UploadImage';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
+import { Context } from '../../context/Context';
 
 export default function Gallery() {
   const { t } = useTranslation();
   const [gallery, setGallery] = useState([]);
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
+  const { user } = useContext(Context);
 
   const getGallery = async () => {
     const allImages = await axios.get(`http://localhost:4000/api/gallery`);
-   
+
     console.log(allImages);
     if (allImages.status === 200) {
-     
       setGallery(allImages.data);
-      
     } else {
       console.error('Something went wrong');
     }
@@ -34,7 +34,6 @@ export default function Gallery() {
   useEffect(() => {
     window.scrollTo(0, 0);
     getGallery();
-    
   }, []);
 
   // Modal handler
@@ -84,7 +83,12 @@ export default function Gallery() {
             </div>
           </div>
         )}
-        <UploadImage />
+
+        {user && (
+          <div className="upload-container">
+            <UploadImage />
+          </div>
+        )}
       </div>
 
       <Contacts />

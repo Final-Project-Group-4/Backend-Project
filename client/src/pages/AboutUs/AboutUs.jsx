@@ -26,26 +26,29 @@ export default function AboutUs() {
                 />
               </div>
             </div>
-
             <div className="about-text">
               <h3>{t('ourTeam')}</h3>
               <p>{t('ourTeamText')}</p>
+              <p>{t("ourTeamText2")}</p>
+              <p>{t("ourTeamText3")}</p> 
             </div>
           </div>
         </div>
 
-        <div className="main-history">
-          <div className="about-text">
-            <h3>{t('history')}</h3>
-            <p>{t('historyText')}</p>
-          </div>
-          <div className="img-section">
-            <div className="single-img">
-              <img
-                src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673444904/native-man-kilimanjaro_aafmo3.jpg"
-                alt="Yohani KinyalaLauwo"
-              />
-            </div>
+      <div className="main-history">
+        <div className="about-text">
+          <h3>{t("history")}</h3>
+          <p classname="para">{t("historyText")}</p>
+          <p classname="para">{t("historyText1")}</p>
+          <p classname="para">{t("historyText2")}</p>
+          <p classname="para">{t("historyText3")}</p>
+        </div>
+        <div className="img-section">
+          <div className="single-img">
+            <img
+            src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673444904/native-man-kilimanjaro_aafmo3.jpg"
+            alt="Yohani KinyalaLauwo"
+          />
           </div>
         </div>
       </div>

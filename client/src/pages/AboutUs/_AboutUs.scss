@@ -39,6 +39,8 @@
       p {
         font-family: $font-paragraph;
         width: 100%;
+        padding: 0.5rem;
+        
       }
     }
   }
@@ -58,6 +60,10 @@
     // width: 100%;
     margin: 0 auto;
     display: flex;
+
+    p{
+      padding:0.5rem;
+    }
 
     .img-section {
       // padding: 1rem;

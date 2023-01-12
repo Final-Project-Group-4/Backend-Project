@@ -28,8 +28,14 @@ export default function AboutUs() {
 
           <div className="about-text">
             <h3>{t("ourTeam")}</h3>
-            <p>
-              {t("ourTeamText")}
+            <p classname="para">
+                 {t("ourTeamText")}
+            </p>
+            <p classname="para">
+                 {t("ourTeamText2")}
+            </p>
+            <p classname="para">
+                 {t("ourTeamText3")}
             </p>
           </div>
         </div>
@@ -38,9 +44,10 @@ export default function AboutUs() {
       <div className="main-history">
         <div className="about-text">
           <h3>{t("history")}</h3>
-          <p>
-          {t("historyText")}
-          </p>
+          <p classname="para">{t("historyText")}</p>
+          <p classname="para">{t("historyText1")}</p>
+          <p classname="para">{t("historyText2")}</p>
+          <p classname="para">{t("historyText3")}</p>
         </div>
         <div className="img-section">
           <div className="single-img">

@@ -43,7 +43,6 @@ function App() {
             <Route index element={<Settings />} />
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/manageTours" element={<ManageTours />} />
-            <Route path="*" element={<NotFound />} />
           </Route>
         )}
         <Route path="/" element={<Home />} />

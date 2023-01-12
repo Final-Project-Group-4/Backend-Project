@@ -19,7 +19,6 @@
       font-weight: 500;
     }
     .login-form {
-      padding: 1rem;
       display: flex;
       flex-direction: column;
       .form-group {
@@ -36,5 +35,22 @@
   }
   .forgot-link {
     color: black;
+  }
+}
+
+// Media Queries--------------------------------------
+@include m {
+  .login {
+    .login-wrapper {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@include s {
+  .login {
+    .login-wrapper {
+      margin-top: 1rem;
+    }
   }
 }

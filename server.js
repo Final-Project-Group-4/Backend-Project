@@ -8,23 +8,9 @@ import adminRouter from './routes/adminRouter.js';
 import galleryRouter from './routes/galleryRouter.js';
 import AppError from './utils/appError.js';
 import ErrorHandler from './middleware/errorHandler.js';
-import cloudinary from 'cloudinary';
 
 const app = express();
 dotenv.config();
-//Cloudinary Configuration:
-// cloudinary.config({
-//   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-//   api_key: process.env.CLOUDINARY_API_KEY,
-//   api_secret: process.env.CLOUDINARY_API_SECRET,
-// });
-
-// const corsOptions ={
-//   origin:'http://localhost:4000',
-//   credentials:true,            //access-control-allow-credentials:true
-//   optionSuccessStatus:200
-// }
-// app.use(cors(corsOptions));
 
 app.use(cors());
 app.use(express.json({ extended: true, limit: '10kb' }));

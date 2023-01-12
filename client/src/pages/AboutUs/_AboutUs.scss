@@ -42,6 +42,7 @@
           font-family: $font-paragraph;
           width: 100%;
           padding: 0.5rem;
+        }
       }
     }
   }
@@ -59,9 +60,8 @@
   .main-history {
     margin: 0 auto;
     display: flex;
-
-    p{
-      padding:0.5rem;
+    p {
+      padding: 0.5rem;
     }
 
     .img-section {

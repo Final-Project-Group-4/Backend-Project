@@ -78,6 +78,8 @@ export const login = async (req, res) => {
   res.status(200).json({
     status: 'success',
     token,
+    id: currentUser._id,
+    email: currentUser.email,
   });
 };
 
@@ -98,6 +100,7 @@ export const updateUser = async (req, res, next) => {
     const user = req.body;
     const updatedUser = await User.findByIdAndUpdate(user_id, user, {
       new: true,
+      runValidators: true,
     });
     res.status(201).json({
       status: 'success',
@@ -106,6 +109,34 @@ export const updateUser = async (req, res, next) => {
   } catch (error) {
     res.status(409).send(error.message);
   }
+};
+
+export const updatePassword = async (req, res, next) => {
+  console.log(req.params.id);
+  // 1) Get user from the collection
+  const user = await User.findById(req.params.id).select('+password');
+  console.log(user);
+
+  // 2) Check if POSTed current password is correct
+  if (!user.correctPassword(req.body.passwordCurrent, user.password)) {
+    return next(new AppError('Your current password is wrong!', 401));
+  }
+
+  // 3) If so, update password
+  user.password = req.body.password;
+  user.passwordConfirm = req.body.passwordConfirm;
+  await user.save();
+
+  //removes the password from output
+  user.password = undefined;
+  //console.log(user);
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      user,
+    },
+  });
 };
 
 // when user will enter his email, then he will get an email with a link where you can click, then thats gonna take it to the page where you can enter new password.

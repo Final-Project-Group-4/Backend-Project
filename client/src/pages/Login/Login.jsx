@@ -11,13 +11,13 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { dispatch, isLoading } = useContext(Context);
+  const { user, dispatch, isLoading } = useContext(Context);
   const navigate = useNavigate();
+  console.log(user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: 'LOGIN_START' });
-    //console.log(email, password);
 
     try {
       //API call
@@ -25,10 +25,9 @@ export default function Login() {
         email: email,
         password: password,
       });
-      console.log(res.data);
       if (res.data) {
         dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
-        localStorage.setItem('user', JSON.stringify(res.data.token));
+        //console.log(user);
         toast.success('Login successful');
         navigate('/');
       }

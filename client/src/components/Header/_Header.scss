@@ -1,35 +1,40 @@
-@import "../../../scss/config.scss";
-@import url("https://fonts.cdnfonts.com/css/road-rage");
+@import '../../../scss/config.scss';
+@import url('https://fonts.cdnfonts.com/css/road-rage');
 
 .main__div {
   position: relative;
   top: 0;
   text-align: center;
+
   img {
     width: 100%;
   }
   .main__header {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    img {
-      height:340px;
-      width:auto};
+    top: 15%;
+    width: 100vw;
+    //transform: translate(-50%, -50%);
+    .overlay {
+      background-color: rgba(247, 246, 246, 0.123);
+      padding: 1em;
+      width: 100vw;
+    }
+
     h2 {
       @include header;
       color: white;
       text-transform: uppercase;
     }
+    img {
+      height: 15rem;
+      width: auto;
+    }
   }
-  h1 {
-    font-size: calc(60px + 0.390625vw);
-    color: #f99923;
-    font-family: "Road Rage";
-  }
+
   p {
-    font-size: calc(16px + 0.390625vw);
+    font-size: calc(13px + 0.390625vw);
     color: white;
+    margin: 0.4em;
   }
   button {
     background-color: transparent;
@@ -38,7 +43,6 @@
     border: 3px solid white;
     padding: 0.65rem;
     transition: all 0.3s ease-in-out;
-    margin: 2rem;
     &:hover {
       background-color: $main-yellow;
       cursor: pointer;
@@ -49,43 +53,53 @@
 @include s {
   .main__div {
     .main__header {
+      top: 70%;
+
       h2 {
         display: none;
       }
-    }
-    h1 {
-      font-size: calc(25px + 0.390625vw);
-      margin-bottom: 4px;
-    }
-    p {
-      font-size: calc(12px + 0.390625vw);
-    }
-    button {
-      font-size: calc(10px + 0.390625vw);
-      border: 2px solid white;
-      margin: 1rem;
+      img {
+        height: 2.5rem;
+        width: auto;
+      }
+
+      p {
+        font-size: calc(8px + 0.390625vw);
+      }
+      button {
+        font-size: calc(10px + 0.390625vw);
+        border: 2px solid rgb(255, 255, 255);
+        margin: 0.2rem;
+        background-color: green;
+      }
     }
   }
 }
 
 @include m {
   .main__div {
+    .bg-imgEl {
+      height: calc(35vh + 10vw);
+      width: 100vw;
+    }
     .main__header {
-      top: 40%;
+      top: 5%;
+
       h2 {
-        font-size: calc(20px + 0.390625vw);
+        font-size: calc(1.5rem + 0.390625vw);
       }
-    }
-    h1 {
-      font-size: calc(35px + 0.390625vw);
-    }
-    p {
-      font-size: calc(12px + 0.390625vw);
-    }
-    button {
-      font-size: calc(10px + 0.390625vw);
-      border: 2px solid white;
-      margin: 1rem;
+      img {
+        height: calc(8rem + 0.390625vw);
+        width: auto;
+      }
+      p {
+        font-size: calc(9px + 0.390625vw);
+      }
+      button {
+        font-size: calc(10px + 0.390625vw);
+        border: 2px solid white;
+        background-color: red;
+      }
     }
   }
 }

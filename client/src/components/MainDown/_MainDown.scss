@@ -19,7 +19,8 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center;
+  margin:0 auto;
+  justify-content: space-around;
   width: 100%;
   background-color: $main-light;
 }
@@ -29,15 +30,15 @@
 .custom {
   //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  margin: 2.5em;
   text-align: right;
   color: $font-white;
   font-family: $font-paragraph;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:calc(17em - 2em);
-  height: calc(17em - 2em);
+  width: calc(12em + 0.390625vw);
+  height: calc(12em + 0.390625vw);
+  margin: 0.5em;
   overflow: hidden;
   position: relative;
   background: radial-gradient(#111 50%, #000 100%);
@@ -45,7 +46,8 @@
   &:hover {
     img {
       cursor: pointer;
-     // transform: scaleY(1.18) translateY(-20px);
+      //! scale the image to 1.2 times its original size
+      transform: scaleY(1.05);
       opacity: 0.3;
       transition: all 0.3s ease-out;
     }
@@ -74,10 +76,11 @@
   }
   img {
     display: block;
-    width:calc(17em - 2em);
-    height: calc(17em - 2em);
-    //transform: scale(1.2);
-    //transition: all 0.5s ease-out;
+    width:calc(12em + 0.390625vw);
+    height: calc(12em + 0.390625vw);
+//! scale the image to 1.2 times its original size
+    transform: scaleY(1);
+    transition: all 0.5s ease-out;
   }
 }
 a {
@@ -122,13 +125,15 @@ a {
 //media queries 
 
 
-@include s {.hiking,
+@include s {
+  .hiking,
   .safari,
   .coffee,
   .custom {
     width: 9em;
     height:9em;
-    margin: 0.2em;
+    margin-bottom:1.4em;
+    justify-content: center;
     
       img {
         width:9em;
@@ -143,19 +148,24 @@ a {
 
 @include m {
   .tours {
-    
+   // background-color: red;
+    justify-content: space-around;
+    //padding: 4em;
+    width: 80%;
+   
   .hiking,
   .safari,
   .coffee,
   .custom {
-    width: calc(11em - 10px);
-    height:calc(11em - 10px);
-    margin: calc(1em - 5px);
+    width: calc(14em + 3.5em);
+    height:calc(14em + 3.5em);
+   
+   
     
       img {
-        width: calc(11em - 10px);
-        height:calc(11em - 10px);
+        width: calc(14em + 3.5em);
+        height:calc(14em + 3.5em);
       }
-  }
-
+  
+    }
 }}

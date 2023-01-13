@@ -17,22 +17,23 @@ const sendEmail = async (options) => {
     const htmlToSend = template(replacements);
     // 1. Create a transporter
     // TRANSPORTER FOR MAILTRAP
-    // const transporter = nodemailer.createTransport({
-    //   host: process.env.EMAIL_HOST,
-    //   port: process.env.EMAIL_PORT,
-    //   auth: {
-    //     user: process.env.EMAIL_USERNAME,
-    //     pass: process.env.EMAIL_PASSWORD,
-    //   },
-    // });
-
     const transporter = nodemailer.createTransport({
-      service: 'SendGrid',
+      host: process.env.EMAIL_HOST,
+      port: process.env.EMAIL_PORT,
       auth: {
-        user: process.env.SENDGRID_USERNAME,
-        pass: process.env.SENDGRID_PASSWORD,
+        user: process.env.EMAIL_USERNAME,
+        pass: process.env.EMAIL_PASSWORD,
       },
     });
+
+    // TRANSPORTER FOR SENDGRID(REAL EMAILS)
+    // const transporter = nodemailer.createTransport({
+    //   service: 'SendGrid',
+    //   auth: {
+    //     user: process.env.SENDGRID_USERNAME,
+    //     pass: process.env.SENDGRID_PASSWORD,
+    //   },
+    // });
 
     // 2. Define the email options
     const mailOptions = {

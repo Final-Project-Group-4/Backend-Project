@@ -38,10 +38,10 @@ export default function AboutUs() {
         <div className="main-history">
           <div className="about-text">
             <h3>{t('history')}</h3>
-            <p classname="para">{t('historyText')}</p>
-            <p classname="para">{t('historyText1')}</p>
-            <p classname="para">{t('historyText2')}</p>
-            <p classname="para">{t('historyText3')}</p>
+            <p className="para">{t('historyText')}</p>
+            <p className="para">{t('historyText1')}</p>
+            <p className="para">{t('historyText2')}</p>
+            <p className="para">{t('historyText3')}</p>
           </div>
           <div className="img-section">
             <div className="single-img">

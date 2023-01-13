@@ -112,14 +112,17 @@ export const updateUser = async (req, res, next) => {
 };
 
 export const updatePassword = async (req, res, next) => {
-  console.log(req.params.id);
+  //console.log(req.params.id);
   // 1) Get user from the collection
   const user = await User.findById(req.params.id).select('+password');
-  console.log(user);
 
+  const comparison = await user.correctPassword(req.body.passwordCurrent, user.password);
   // 2) Check if POSTed current password is correct
-  if (!user.correctPassword(req.body.passwordCurrent, user.password)) {
-    return next(new AppError('Your current password is wrong!', 401));
+  if (!comparison) {
+    return res.status(400).json({
+      status: 'failed',
+      message: 'Please provide right password.',
+    });
   }
 
   // 3) If so, update password

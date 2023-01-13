@@ -85,8 +85,8 @@ export default function UploadImage() {
   const handleOpenWidget = () => {
     let myWidget = window.cloudinary.createUploadWidget(
       {
-        cloudName: 'dgbrrpbvw',
-        uploadPreset: 'wvhult4d',
+        cloudName: 'dkwpmwrlr',
+        uploadPreset: 'uy8itapn',
       },
       (error, result) => {
         if (!error && result && result.event === 'success') {

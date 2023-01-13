@@ -35,3 +35,22 @@
     }
   }
 }
+
+// Meadia queries---------------
+
+@include s {
+}
+
+@include m {
+  .settings-div {
+    .settings-wrapper {
+      width: 80%;
+      margin: 1rem auto;
+      .settings-form {
+        .btn-login {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

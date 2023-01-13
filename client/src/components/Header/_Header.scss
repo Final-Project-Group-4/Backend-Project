@@ -13,6 +13,9 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    img {
+      height:340px;
+      width:auto};
     h2 {
       @include header;
       color: white;

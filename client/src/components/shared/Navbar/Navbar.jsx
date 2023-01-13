@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar ">
       <div className="app__navbar-logo">
-        <img src={logo} alt="logo" />
+        <p>MLAY TOURS</p>
       </div>
       <MainNav />
       <MediaIcons />

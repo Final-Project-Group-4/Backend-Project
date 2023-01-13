@@ -38,6 +38,12 @@ function Settings() {
 
   const submitPassword = async (e) => {
     e.preventDefault();
+    // compare user password & entered password
+    if (password !== passwordConfirm) {
+      toast.error('Passwords are not same');
+      return;
+    }
+
     try {
       //make a patch request with user id
       const updateRes = await axios.patch(
@@ -48,12 +54,13 @@ function Settings() {
           passwordConfirm: passwordConfirm,
         }
       );
-      console.log(updateRes.data);
+      //console.log(updateRes.data);
       if (updateRes.data) {
         toast.success('Password reset');
       }
     } catch (error) {
       console.log(error);
+      toast.error('Password reset is failed');
     }
   };
 

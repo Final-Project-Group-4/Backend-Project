@@ -42,3 +42,36 @@
     flex-direction: column;
   }
 }
+
+// Meadia queries---------------
+
+@include s {
+  .admin {
+    .admin-nav {
+      flex-direction: row;
+    }
+  }
+}
+
+@include m {
+  .admin {
+    .admin-wrapper {
+      margin-top: 5rem;
+      flex-direction: column;
+    }
+    .admin-nav {
+      flex-direction: row;
+      width: 100%;
+      height: fit-content;
+    }
+
+    .outlet-wrapper {
+      width: 100%;
+      //padding: 1rem;
+      //background-color: rgb(217, 153, 35, 0.2);
+      //border: solid 2px $main-yellow;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

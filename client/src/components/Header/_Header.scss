@@ -24,29 +24,40 @@
       @include header;
       color: white;
       text-transform: uppercase;
+      font-size: calc(2rem - 0.03434vw);
     }
     img {
       height: 15rem;
       width: auto;
     }
-  }
+    .Company_name2 {
+      font-family: 'Road Rage', cursive;
+      font-size: calc(3rem - 0.390625vw);
+      color: #D99923;
+      margin:0 !important;
+      display: none;
+      
+      }
+  
 
   p {
-    font-size: calc(13px + 0.390625vw);
+    font-size:1.5rem;
     color: white;
-    margin: 0.4em;
+    padding: 0.01em;
+    margin-bottom:0.3em;
   }
   button {
     background-color: transparent;
     font-size: 1.7rem;
     color: white;
     border: 3px solid white;
-    padding: 0.65rem;
+    padding: 0.5rem;
     transition: all 0.3s ease-in-out;
     &:hover {
       background-color: $main-yellow;
       cursor: pointer;
     }
+  }
   }
 }
 
@@ -59,47 +70,64 @@
         display: none;
       }
       img {
-        height: 2.5rem;
-        width: auto;
+        
+        display: none;
+      }
+      .Company_name2 {
+        display: block;
+        font-size: calc(3rem - 0.390625vw);
+      }
+      p {
+        font-size:1.3rem ;
+        color: white;
+       
       }
 
-      p {
-        font-size: calc(8px + 0.390625vw);
-      }
       button {
         font-size: calc(10px + 0.390625vw);
         border: 2px solid rgb(255, 255, 255);
         margin: 0.2rem;
         background-color: green;
       }
+      }
+      
     }
-  }
+  
 }
 
 @include m {
   .main__div {
     .bg-imgEl {
-      height: calc(35vh + 10vw);
+      height: auto;
       width: 100vw;
     }
     .main__header {
-      top: 5%;
+      top: calc(10% + 0.00534vh); 
+     
 
       h2 {
-        font-size: calc(1.5rem + 0.390625vw);
+        font-size: calc(1.3rem + 0.390625vw);
       }
       img {
-        height: calc(8rem + 0.390625vw);
+        height: calc(5rem + 5vw);
         width: auto;
       }
-      p {
-        font-size: calc(9px + 0.390625vw);
-      }
-      button {
-        font-size: calc(10px + 0.390625vw);
-        border: 2px solid white;
-        background-color: red;
-      }
+      .Company_name2 {
+       
+        
+        }
+        p {
+          font-size:0.7rem;
+          color: white;
+      
+        }
+      
+            button {
+              font-size: calc(10px + 0.390625vw);
+              border: 2px solid white;
+              
+            }
+    }
+ 
     }
   }
-}

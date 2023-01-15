@@ -15,7 +15,7 @@ function Header() {
         <header className="main__header">
         {/* <div className='overlay'> */}
           <h2>{t("welcomeTo")}</h2>
-          <img src={require("../../assets/Mlay_version2.png")}></img>
+          <img src={require("../../assets/Mlay_version4.png")}></img>
           <p className='Company_name2'>MLAY TOURS</p>
           <p>{t("ourGoal")}</p>
           <button className='btn-OurTours' onClick={() => navigate('/tours')}>{t("ourTours")}</button>

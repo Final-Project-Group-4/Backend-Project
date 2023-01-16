@@ -19,6 +19,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword.jsx';
 import ResetPassword from './pages/ResetPassword/ResetPassword.jsx';
 import { Context } from './context/Context.js';
+import ManageToursForm from './components/ManageToursForm/ManageToursForm.jsx';
 
 function App() {
   const { user } = useContext(Context);
@@ -43,6 +44,7 @@ function App() {
             <Route index element={<Settings />} />
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/manageTours" element={<ManageTours />} />
+            <Route path="/admin/manageTours/form" element={<ManageToursForm />} />
           </Route>
         )}
         <Route path="/" element={<Home />} />

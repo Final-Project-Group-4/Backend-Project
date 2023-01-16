@@ -30,12 +30,18 @@
   .app__navbar {
     height: 70px;
     background: transparent;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
   .app__navbar-logo {
     //float: right;
-    width: 150px;
+    width: 100px;
     height: auto;
-    display: none;
+    //display: none;
+    p{
+      font-size: calc(1rem + 0.390625vw);
+      
+    }
   }
 }
 
@@ -43,12 +49,16 @@
   .app__navbar {
     height: 80px;
     background: transparent;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
   .app__navbar-logo {
    // display: none;
-    width: 250px;
+    width: 150px;
     height: auto;
-    display: none;
+    //display: none;
+    p{
+    font-size: calc(1.4rem + 0.390625vw);}
 
   }
 }

@@ -14,12 +14,15 @@
 }
 
 .app__navbar-logo {
-  width: 90px;
+  width: 240px;
   height: auto;
   padding: 0.2rem;
-  img {
+  p {
     width: 100%;
     object-fit: cover;
+    font-size: calc(2rem + 0.390625vw);
+    color: #f99923;
+    font-family: "Road Rage";
   }
 }
 
@@ -27,10 +30,18 @@
   .app__navbar {
     height: 70px;
     background: transparent;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
   .app__navbar-logo {
-    width: 65px;
+    //float: right;
+    width: 100px;
     height: auto;
+    //display: none;
+    p{
+      font-size: calc(1rem + 0.390625vw);
+      
+    }
   }
 }
 
@@ -38,9 +49,16 @@
   .app__navbar {
     height: 80px;
     background: transparent;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
   .app__navbar-logo {
-    width: 80px;
+   // display: none;
+    width: 150px;
     height: auto;
+    //display: none;
+    p{
+    font-size: calc(1.4rem + 0.390625vw);}
+
   }
 }

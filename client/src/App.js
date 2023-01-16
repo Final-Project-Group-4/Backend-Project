@@ -44,7 +44,7 @@ function App() {
             <Route index element={<Settings />} />
             <Route path="/admin/settings" element={<Settings />} />
             <Route path="/admin/manageTours" element={<ManageTours />} />
-            <Route path="/admin/manageTours/createTourform" element={<CreateTourForm />} />
+            <Route path="/admin/manageTours/form" element={<CreateTourForm />} />
           </Route>
         )}
         <Route path="/" element={<Home />} />

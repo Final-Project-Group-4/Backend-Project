@@ -1,0 +1,61 @@
+@import '../../../scss/config.scss';
+@import '../../../scss/buttons.scss';
+
+.form-tours {
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(40px + 0.390625vw);
+    font-weight: 500;
+  }
+  .form-wrapper {
+    text-align: center;
+    margin-top: 8rem;
+    width: 70%;
+    
+    .login-form {
+      display: flex;
+      flex-direction: column;
+     
+      
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        .description-tag {
+          color:red !important
+        }
+       
+
+
+      }
+      
+    }
+  }
+ 
+}
+
+
+
+
+// Media Queries--------------------------------------
+@include m {
+  .login {
+    .login-wrapper {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@include s {
+  .login {
+    .login-wrapper {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -1,31 +1,34 @@
 import React from 'react'
-import { useRef, useState, useEffect } from 'react';
-import axios from "../../api/axios";
-const createTourForm_URL= "http://localhost:3000/admin/manageTours/createTourForm"
+import { useState, useEffect } from 'react';
+//import axios from 'axios';
+import { TextField } from '@mui/material';
+//const createTourForm_URL= "http://localhost:4000/api/tours"
 
+//http://localhost:4000/api/tours . I SHOULD USE THIS TO POST A REQUESTO TO THE BACKEND
+
+///admin/manageTours/createTourform
 
 export default function CreateTour() {
-     const userRef = useRef(null);
+   
+    // const errRef = useRef();
      const [tourName, setTourName] = useState("");
-     const [errMsg, setErrMsg] = useState("");
-     const [success, setSuccess] = useState(false);
-     
-     const [tour, setTour]   = useState({
-        tourName: "",
-        duration: "",
-        difficulty: "",
-        description: "",
-        subNote: "",
-        subtitle: "",
-        imgCover: "",
-        type:"",
-        scenery:"",
-    }) 
+     //const [errMsg, setErrMsg] = useState("");
+     //const [success, setSuccess] = useState(false);
+     const [duration, setDuration] = useState("");
+     const [difficulty, setDifficulty] = useState("");
+     const [description, setDescription] = useState("");
+     const [subnote, setSubnote] = useState("");
+     const [subtitle, setSubtitle] = useState("");
+     const [imgcover, setImgCover] = useState("");
+     const [type, setType] = useState("");
+     const [scenery, setScenery] = useState("");
+     const [tour, setTour] = useState({"tourName": "", "duration": "", "difficulty": "", "description": "", "subNote": "", "subtitle": "", "imgCover": "", "type": "", "scenery": ""})
+       
 
         const handleSubmit = e => {
             e.preventDefault()
-            console.log(JSON.stringify(tour)) }
-
+            console.log(JSON.stringify(tourName)) }
+ /*
 
             const handleChange = e => {
                 const type = e.target.type
@@ -33,28 +36,26 @@ export default function CreateTour() {
                 const value = e.target.value
                 setTour({...tour, [name]: value})
 
-            }
+            } */
+/* 
 
-
-  useEffect(() =>{
-    userRef.current.focus()
-  },[])
-
-
-  useEffect (() => {
-    setErrMsg("");
-  },[tourName, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery])
-
+ 
 
 /* 
+  useEffect (() => {
+    setErrMsg("");
+  },[tourName, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery]) */
+
+/* 
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     try {
       
-      //axios will throw error if necessary
+    
       const response = await axios.post(createTourForm_URL,
-        JSON.stringify({name, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery}),
+        JSON.stringify({tourName, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery}),
           {
             headers:{'Content-Type': 'application/json'},
             withCredentials: true
@@ -62,13 +63,10 @@ export default function CreateTour() {
           }
         );
       console.log (JSON.stringify(response.data));
-      //console.log (JSON.stringify(response));
+    
      
-      setTour({ name, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery }) 
-      //we are saving it in the global context if everything goes well.
+      setTour({ tourName, duration, difficulty, description, subNote, subtitle, imgCover, type, scenery }) 
       
-      setEmail("");
-      setPassword("");
       setSuccess(true);
 
 
@@ -93,54 +91,135 @@ export default function CreateTour() {
 
     }
 
-  }; */
+  };   */
 
 
   return (
     <div>
-        <section> <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p></section>
-        {success ? ( 
-        <section>
-            <h1>tour was succesfully created!</h1>
-            <br />
-            <p>
-              <a href="/admin"> go to admin page</a>
-            </p>
-          </section>
-          
-          ) : (<section>
-            <h1>Please login</h1>
-            <section className="form">
+   {/*      <section> <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p></section> */}
+        
+          <section className='form-tours'>
+            <h1>Create a New Tour</h1>
+            <section className="form-wrapper">
               <form className="login-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <TextField
+                    fullWidth
                     required
-                    ref={userRef}
                     value={tourName}
                     label="tourName"
                     type="tourName"
                     margin="normal"
                     onChange={(e) => setTourName(e.target.value)}
                   />
+                   </div> 
+                   <div className="form-group">
                   <TextField
+                    fullWidth
                     required
-                    value={password}
-                    label="Password"
-                    type="password"
+                    value={duration}
+                    label="Duration"
+                    type="duration"
                     margin="normal"
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => setDuration(e.target.value)}
+                  />
+               </div>
+               <div className="form-group">
+                  <TextField
+                    fullWidth
+                    required
+                    value={difficulty}
+                    label="Difficulty"
+                    type="difficulty"
+                    margin="normal"
+                    onChange={(e) => setDifficulty(e.target.value)}
+                  />
+               </div>
+               <div className="form-group">
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={description}
+                    label="Description"
+                    type="description"
+                    margin="normal"
+                    onChange={(e) => setDescription(e.target.value)}
+                  />
+               </div>
+               <div className="form-group">
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={subnote}
+                    label="Subnote"
+                    type="subnote"
+                    margin="normal"
+                    onChange={(e) => setSubnote(e.target.value)}
+                  />
+               </div>
+               <div className="form-group">
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={subtitle}
+                    label="Subtitle"
+                    type="subtitle"
+                    margin="normal"
+                    onChange={(e) => setSubtitle(e.target.value)}
+                  />
+               </div>
+               <div className="form-group">
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={imgcover}
+                    label="imgcover"
+                    type="imgcover"
+                    margin="normal"
+                    onChange={(e) => setImgCover(e.target.value)}
                   />
                 </div>
                 <div className="form-group">
-                  <button className="btn-primary btn-login" type="submit">Submit</button>
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={type}
+                    label="type"
+                    type="type"
+                    margin="normal"
+                    onChange={(e) => setType(e.target.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <TextField
+                    className='description-tag'
+                    fullWidth
+                    required
+                    value={scenery}
+                    label="scenery"
+                    type="scenery"
+                    margin="normal"
+                    onChange={(e) => setScenery(e.target.value)}
+                  />
+                </div>
+                
+                <div className="form-group">
+                  <button className="btn-secondary btn-login" type="submit">Submit</button>
                 </div>
                 <p>If you want to reset your password, please click here.</p>
+                
               </form>
+              
             </section>
             </section>
 
+            
 
-
-          )}</div>
+          </div>
   );
 }

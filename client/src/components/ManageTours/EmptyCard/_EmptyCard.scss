@@ -1,0 +1,13 @@
+@import '../../../../scss/_config.scss';
+
+.empty-card-title {
+  font-weight: 500;
+}
+
+.empty-tour-link {
+  color: black;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $main-yellow;
+  }
+}

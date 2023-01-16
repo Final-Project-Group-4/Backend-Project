@@ -48,9 +48,13 @@ export const deleteTour = async (req, res, next) => {
   console.log(req.params.id);
   try {
     const tour = await Tour.findByIdAndRemove(req.params.id);
-    res.status(200).json({ msg: `${tour} is deleted!` });
+    if (tour === null) {
+      res.status(400).json({ msg: `there is no such tour` });
+    } else {
+      res.status(200).json({ msg: `${tour} is deleted!` });
+    }
   } catch (e) {
-    next(e);
+    console.log(e);
   }
 };
 

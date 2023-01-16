@@ -1,5 +1,4 @@
 import express from 'express';
-import { getTourPhotos } from '../controllers/galleryController.js';
 import {
   deleteTour,
   getAllTours,

@@ -6,48 +6,41 @@
   font-size: calc(12px + 0.390625vw);
   min-height: 100vh;
 }
-
 .container2 {
   flex-direction: row;
   display: flex;
   margin-bottom: 0;
   width: 100%;
   margin-top: 6rem;
+  margin-bottom: 1rem;
   .gridRight {
-    top: 1.2em;
-    height: 87vh;
+    margin-top: 0;
+    height: 90vh;
+    overflow-y: scroll;
   }
 }
-
 .tourTitle {
   color: $main-yellow !important;
 }
-
 .leftSide {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  // padding-right: 2rem;
-  // padding-left: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 90vh;
   background-image: url('../../assets/hiking_tours.jpg');
   width: 100%;
   .insideLeft {
-    .tourPara {
-      padding: 0;
-    }
-
     h2 {
       font-size: calc(1.75rem + 0.390625vw);
       color: white;
       margin-bottom: 0.35em;
     }
   }
-
   div {
     display: flex;
     flex-direction: column;
@@ -63,24 +56,19 @@
     }
   }
 }
-
 .img-hiking {
   background-image: url('../../assets/hiking_tours.jpg');
 }
-
 .img-safari {
   background-image: url('../../assets/safari_unsplash.jpg');
 }
-
 .img-coffee {
   background-image: url('../../assets/cofeeMarangu_cover.jpg');
 }
-
 .coverImg {
   width: calc(100% - 80px);
   margin-bottom: 2rem;
 }
-
 .overlay {
   background: rgba(169, 136, 52, 0.344);
   margin: 0 auto;
@@ -88,34 +76,32 @@
   padding: 1em;
   margin-bottom: 4em;
 }
-
 .moreOpaque {
   background: rgba(114, 116, 88, 0.709);
 }
-
 .moreOpaque2 {
   background: rgba(208, 150, 92, 0.584);
 }
-
 .conditionalText {
   position: relative;
   font-weight: 500;
   font-size: calc(12px + 0.390625vw);
 }
 
+// Media queries--------------------------
+
 @include m {
   .container2 {
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-top: 4.5rem;
+    .gridRight {
+      margin-top: 1rem;
+    }
     .leftSide {
       height: 65vh;
-      background-size: 100%;
-      background-position: center;
     }
     .rightSide {
       width: 100%;
-      margin-right: calc(10% + 2em) !important;
-      margin-left: calc(10% + 2em) !important;
       & > .MuiGrid-root {
         min-height: 60vh;
         overflow-y: 'unset';
@@ -128,23 +114,21 @@
 @include s {
   .container2 {
     flex-wrap: wrap;
+    margin-top: 4.5rem;
     .leftSide {
       font-size: calc(12px + 0.390625vw);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
       height: 40vh;
+      div {
+        .tourPara {
+          max-height: 200px;
+          overflow: scroll;
+        }
+      }
     }
-  }
-
-  .rightSideTours {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
   }
   .rightSide {
     width: 100%;
     & > .MuiGrid-root {
-      min-height: 100vh;
       overflow-y: 'unset';
       background-color: 'purple';
     }

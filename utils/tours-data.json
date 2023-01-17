@@ -217,10 +217,10 @@
       {
         "number": 7,
         "title": "Mweka Camp - Mweka Gate - Moshi",
-        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it’s time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel in (about 1 hour ). Enjoy a long overdue hot shower, dinner and celebrations!",
+        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it's time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel in (about 1 hour ). Enjoy a long overdue hot shower, dinner and celebrations!",
         "elevation": "3106m/10,190ft to 1633m/5358ft",
         "altitudeLost": "1473m",
-        "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar.",
+        "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar.",
         "_id": "63b28801066f59368ebabb96"
       }
     ],
@@ -268,7 +268,7 @@
       {
         "number": 1,
         "title": "Londrossi Gate - Mti Mkubwa Camp",
-        "description": "Departing from Hotel several hours drive will take you through welcoming mountainside villages to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead. Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
+        "description": "Departing from Hotel several hours drive will take you through welcoming mountainside villages to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead. Enjoy the beautiful rain forest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
         "elevation": "2389m/7838ft to 2785m/9137ft",
         "altitudeGained": "396m",
         "_id": "63b28816066f59368ebabb9d"
@@ -326,7 +326,7 @@
       {
         "number": 8,
         "title": "Mweka Camp - Mweka Gate - Moshi",
-        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it’s time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel in (about 1 hour ). Enjoy a long overdue hot shower, dinner and celebrations!",
+        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it's time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel in (about 1 hour ). Enjoy a long overdue hot shower, dinner and celebrations!",
         "elevation": "3106m/10,190ft to 1633m/5358ft",
         "altitudeLost": "1473m",
         "_id": "63b28816066f59368ebabba4"
@@ -525,7 +525,7 @@
       {
         "number": 1,
         "title": "Umbwe Gate - Umbwe Cave",
-        "description": "Departing from Moshi driving to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead.Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here. The path follows a ridge between two deep valleys up through the dense montane forest. The camp is perched between huge trees and thick undergrowth.",
+        "description": "Departing from Moshi driving to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead.Enjoy the beautiful rain forest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here. The path follows a ridge between two deep valleys up through the dense montane forest. The camp is perched between huge trees and thick undergrowth.",
         "elevation": "1651m/5417ft to 2944m/9659ft",
         "altitudeGained": "1293m",
         "_id": "63b2883c066f59368ebabbbf"
@@ -580,7 +580,7 @@
     "name": "Shira Route",
     "duration": "6 - 8 days",
     "difficulty": "difficult",
-    "description": "Very similar to Lemosho route, however it starts at 3,600 meters and is therefore not ideal for trekkers who have little or no experience of high altitude trekking.On the first day you begin at Shira Gate to Simba Camp before joining the Lemosho Route on day two at Shira Camp 2. The high starting point is however a major negative for this route as many experience altitude sickness from day one without enough time to acclimatize.The route over the Shira Plateau has several possible variations.After Shira Camp 2 the route joins the Machame Route via Lava Tower, and then descends to the Barranco Camp via the Southern Circuit. Ascent to Uhuru Peak is made via Barafu Camp and up the southern slopes of Kibo. The route is seldom used by other trekkers and so your initial two days on the mountain are less crowded than on most other routes.",
+    "description": "Very similar to Lemosho route, however it starts at 3,600 meters and is therefore not ideal for trekkers who have little or no experience of high altitude trekking.On the first day you begin at Shira Gate to Simba Camp before joining the Lemosho Route on day two at Shira Camp 2. The high starting point is however a major negative for this route as many experience altitude sickness from day one without enough time to acclimatize.The route over the Shira Plateau has several possible variations.After Shira Camp 2 the route joins the Machame Route via Lava Tower, and then descends to the Barranco Camp via the Southern Circuit. Ascent to Uhuru Peak is made via Barafu Camp and up the southern slopes of Kibo. The route is seldom used by other trekkers and so your initial two days on the mountain are less crowded than on most other routes.",
     "subtitle": "Climbing Mount Kilimanjaro via The Shira Route",
     "imgCover": "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350623/shira-tour2_v1pfis.jpg",
     "otherImages": [
@@ -653,7 +653,7 @@
       {
         "number": 2,
         "title": "Shira 2 Camp - Lava Tower - Barranco Camp",
-        "description": "From the Shira Plateau we continue to the east up a ridge, passing the junction towards the peak of Kibo. As we continue, our direction changesto the South East towards the Lava Tower, called the “Shark’s Tooth” (elev 4650m/15,250ft). Shortly after the tower we come to the second junction which goes to the Arrow Glacier. We now continue down to the Barranco Camp. Although you end the day around the same elevation as when you began, this day is very important for acclimatization and will help your body prepare for summit day. An overnight at Barranco Camp.",
+        "description": "From the Shira Plateau we continue to the east up a ridge, passing the junction towards the peak of Kibo. As we continue, our direction changes to the South East towards the Lava Tower, called the “Shark's Tooth” (elev 4650m/15,250ft). Shortly after the tower we come to the second junction which goes to the Arrow Glacier. We now continue down to the Barranco Camp. Although you end the day around the same elevation as when you began, this day is very important for acclimatization and will help your body prepare for summit day. An overnight at Barranco Camp.",
         "elevation": "3850m/12,600ft to 4000m/13,000ft",
         "hikingTime": "5-6 hours",
         "_id": "63b28852066f59368ebabbd0"
@@ -661,7 +661,7 @@
       {
         "number": 3,
         "title": "Barranco Camp - Karanga Camp",
-        "description": "After breakfast, we leave Barranco and continue on a steep ridge up the Barranco Wall to the Karanga Valley and the junction which connects withthe Mweka Trail. An overnight at Karanga Camp.",
+        "description": "After breakfast, we leave Barranco and continue on a steep ridge up the Barranco Wall to the Karanga Valley and the junction which connects with the Mweka Trail. An overnight at Karanga Camp.",
         "elevation": "4000m/13,000ft to 4050m/13,250ft",
         "hikingTime": "3-4 hours",
         "_id": "63b28852066f59368ebabbd1"
@@ -697,7 +697,7 @@
     "name": "Safari Tour",
     "duration": "5 days / 4 nights",
     "difficulty": "easy",
-    "description": "This is a safari tour and we need some introduction, like a summary about tour.",
+    "description": "Tanzania is the most impressive African Safari destination with typical wilderness in its national parks that can easily be located in their respective circuits; the Northern circuit, southern circuit, and the western circuit which you can explore while on your Tanzania safari. There are 17 national parks that occupy about a third of the total area within the geographical territories. The Northern circuit comprises of Serengeti national park, Ngorongoro Conservation Area, Lake Manyara National park, Tarangire national park, and Arusha national park. The southern circuit has Ruaha national park, Mikumi national park, and Selous game reserve and Mahale mountains national park and Katavi national park in the western circuit. National parks in the Northern circuit offer numerous views of the game especially the wildebeest which also attracts a number of predators including lions, leopards, and others.",
     "subtitle": "Safari Tour with the route of different national parks",
     "imgCover": "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350626/Safari2_pfnyt9.jpg",
     "otherImages": [

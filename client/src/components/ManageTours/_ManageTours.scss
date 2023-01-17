@@ -1,4 +1,21 @@
 @import '../../../scss/_config.scss';
+@import '../../../scss/buttons.scss';
 
-.manage-tours-div {
+.manage-tours-container {
+  height: 70vh;
+  width: 100%;
+  overflow: auto;
+  justify-content: center;
+  .manage-tours-wrapper {
+    padding: 0 0.5rem;
+  }
+}
+
+@include m {
+  .manage-tours-container {
+    padding: 0.5rem;
+    .manage-tours-wrapper {
+      padding: 0;
+    }
+  }
 }

@@ -20,7 +20,7 @@
       margin: auto;
       h2 {
         @include titles;
-        font-size: 3rem;
+        font-size: calc(2.5rem + 0.390625vw);
         font-weight: 500;
       }
       p {
@@ -81,6 +81,7 @@
         margin: 0.5rem;
         h2 {
           margin: 0.5rem;
+          font-size: calc(2rem + 0.390625vw);
         }
         p {
           margin: 0.2rem;
@@ -93,7 +94,6 @@
         width: 90%;
       }
     }
-
     .values-container {
       padding: 1rem;
       justify-content: center;
@@ -102,14 +102,13 @@
         max-width: 350px;
         flex-flow: row wrap;
         h3 {
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
         p {
           display: none;
         }
       }
     }
-
     .peter {
       .peter-img {
         height: auto;
@@ -129,7 +128,6 @@
         }
       }
     }
-
     .icons {
       width: auto;
       justify-content: center;
@@ -168,20 +166,13 @@
         width: 90%;
       }
     }
-
     .values-container {
+      width: 100%;
+      display: flex;
       padding: 1rem;
       justify-content: center;
       flex-wrap: wrap;
     }
-
-    .values-container {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
     .peter {
       .peter-img {
         display: flex;

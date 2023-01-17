@@ -6,10 +6,8 @@ import './_Tours.scss';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 
-
-
 export default function Tours() {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const [tourData, setTourData] = useState([]);
 
   const { type } = useParams();
@@ -30,7 +28,6 @@ export default function Tours() {
     //console.log(filteredToursByType.data);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
-      
     } else {
       console.error('Something went wrong');
     }
@@ -60,38 +57,29 @@ export default function Tours() {
             <div className="tourPara">
               {!type && (
                 <div className="overlay moreOpaque">
-                  <h2>{t("ourTours")}</h2>
-                  <p className="conditionalText">
-                  {t("ourToursText")}
-                    
-                  </p>
+                  <h2>{t('ourTours')}</h2>
+                  <p className="conditionalText">{t('ourToursText')}</p>
                 </div>
               )}
 
               {type === 'hiking' && (
                 <div className="overlay moreOpaque">
-                  <h2>{t("hikingTours")}</h2>
-                  <p className="conditionalText">{t("ourToursText")}</p>
+                  <h2>{t('hikingTours')}</h2>
+                  <p className="conditionalText">{t('ourToursText')}</p>
                 </div>
               )}
 
               {type === 'safari' && (
                 <div className="overlay">
-                  <h2>{t("safariTours")}</h2>
-                  <p className="conditionalText">
-                    {t("safariToursText")}
-                    
-                  </p>
+                  <h2>{t('safariTours')}</h2>
+                  <p className="conditionalText">{t('safariToursText')}</p>
                 </div>
               )}
 
               {type === 'coffee' && (
                 <div className="overlay moreOpaque2">
-                  <h2>{t("localTours")}</h2>
-                  <p className="conditionalText">
-                    {t("localToursText")}
-                  
-                  </p>
+                  <h2>{t('localTours')}</h2>
+                  <p className="conditionalText">{t('localToursText')}</p>
                 </div>
               )}
             </div>
@@ -100,7 +88,6 @@ export default function Tours() {
         <Container className="rightSide rightSideTours">
           <Grid
             className="gridRight"
-            sx={{ position: 'relative', top: '80px', marginBottom: '80px', overflowY: 'scroll' }}
             container
             spacing={1}
             direction="row"
@@ -110,7 +97,7 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
-                <Grid item xs={12} sm={12} md={12} lg={5} margin="0.2em" key={tour._id}>
+                <Grid item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}>
                   <TourCard
                     mainImg={tour.imgCover}
                     days={tour.days}

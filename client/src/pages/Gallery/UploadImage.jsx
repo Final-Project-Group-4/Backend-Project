@@ -86,15 +86,17 @@ export default function UploadImage() {
     let myWidget = window.cloudinary.createUploadWidget(
       {
         cloudName: 'dkwpmwrlr',
-        uploadPreset: 'uy8itapn',
+        uploadPreset: 'ml_default',
       },
       (error, result) => {
         if (!error && result && result.event === 'success') {
           // console.log('Done! Here is the image info: ', result.info);
-          setImages((prev) => [
-            ...prev,
-            { url: result.info.url, public_id: result.info.public_id },
-          ]);
+          // setImages((prev) => [
+          //   ...prev,
+          //   { url: result.info.url, public_id: result.info.public_id },
+          // ]);
+          // eslint-disable-next-line no-restricted-globals
+          location.reload()
         }
       }
     );

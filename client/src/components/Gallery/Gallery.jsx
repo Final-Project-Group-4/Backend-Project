@@ -18,7 +18,7 @@ export default function Gallery() {
 
   const getGallery = async () => {
     const allImages = await axios.get(
-      `https://${process.env.REACT_APP_CLOUDINARY_API_KEY}:${process.env.REACT_APP_CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/resources/image?max_results=50`
+      // `https://${process.env.REACT_APP_CLOUDINARY_API_KEY}:${process.env.REACT_APP_CLOUDINARY_API_SECRET}@api.cloudinary.com/v1_1/${process.env.REACT_APP_CLOUDINARY_NAME}/resources/image?max_results=50`
     );
     if (allImages.status === 200) {
       setGallery(allImages);

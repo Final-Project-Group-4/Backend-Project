@@ -10,21 +10,22 @@ export default function PlanTrip() {
   const { t } = useTranslation();
   const form = useRef();
   const [message, setMessage] = useState(false);
+  window.scrollTo(0, 0);
 
   //handleSubmit function for clearing the form after submit and sending the details through email
   const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions);
+    //console.log(values);
+    //console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
     sendEmail();
   };
   //Send Email
   const sendEmail = () => {
-    console.log(form.current);
+    //console.log(form.current);
     emailjs.sendForm('service_vhsqlog', 'template_av8kbnq', form.current, 'qRUwiJCe6auC3a9U0').then(
       (response) => {
-        console.log(response.text);
+        //console.log(response.text);
         setMessage(true);
       },
       (error) => {

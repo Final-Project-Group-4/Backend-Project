@@ -14,6 +14,7 @@ export const getAllTours = async (req, res, next) => {
 };
 
 export const createTour = async (req, res, next) => {
+  //console.log(req.body);
   try {
     const newTour = await Tour.create(req.body);
     res.status(201).json({

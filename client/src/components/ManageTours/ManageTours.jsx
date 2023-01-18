@@ -11,7 +11,6 @@ function ManageTours() {
   const [tourData, setTourData] = useState([]);
   const [open, setOpen] = useState(false);
   const { user } = useContext(Context);
-  const [isConfirmed, setIsConfirmed] = useState(false);
 
   const loadToursData = async () => {
     const allTours = await axios.get(`http://localhost:4000/api/tours`);
@@ -22,12 +21,15 @@ function ManageTours() {
     }
   };
 
-  //const handleEdit = () => {};
+  const handleEdit = (tourId) => {};
 
   const handleDelete = async (tourId) => {
-    setOpen(true);
-    if (isConfirmed) {
-      await axios.delete(`http://localhost:4000/api/tours/${tourId}`, {
+    setOpen(tourId);
+  };
+
+  const handleClose = async (answer) => {
+    if (answer === 'yes') {
+      await axios.delete(`http://localhost:4000/api/tours/${open}`, {
         headers: {
           authorization: `Bearer ${user.token}`,
         },
@@ -39,15 +41,6 @@ function ManageTours() {
       } else {
         console.error('Something went wrong');
       }
-      setIsConfirmed(false);
-    } else {
-      return;
-    }
-  };
-
-  const handleClose = (answer) => {
-    if (answer === 'yes') {
-      setIsConfirmed(true);
       setOpen(false);
     } else {
       setOpen(false);
@@ -89,13 +82,16 @@ function ManageTours() {
                 handleDelete={() => {
                   handleDelete(tour._id);
                 }}
+                handleEdit={() => {
+                  handleEdit(tour._id);
+                }}
               />
             </Grid>
           );
         })}
       </Grid>
       <Dialog
-        open={open}
+        open={open ? true : false}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"

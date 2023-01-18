@@ -105,9 +105,9 @@ function TourCard(props) {
               <FaSearch size={30} />
             </Link>
           </Button>
-          <Button className="btn-edit" onClick={handleEdit}>
+          {/* <Button className="btn-edit" onClick={handleEdit}>
             <FaPen size={30} />
-          </Button>
+          </Button> */}
           <Button className="btn-delete" onClick={handleDelete}>
             <FaTrash size={30} />
           </Button>

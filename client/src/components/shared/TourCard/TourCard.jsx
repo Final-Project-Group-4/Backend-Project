@@ -22,7 +22,10 @@ function TourCard(props) {
   } = props;
 
   return (
-    <Paper elevation={3} sx={{ height: { height }, textAlign: 'center' }}>
+    <Paper
+      elevation={3}
+      sx={{ height: { height }, textAlign: 'center', justifyContent: 'space-between' }}
+    >
       <img src={mainImg} alt="mainImage" className="img" />
       <Box paddingX={1}>
         <Typography variant="subtitle1" component="h2" className="nameOfRoute">

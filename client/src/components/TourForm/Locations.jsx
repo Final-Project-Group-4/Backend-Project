@@ -1,60 +1,83 @@
-import React from 'react';
 import { TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
+import uuid from 'react-uuid';
 
 export default function Locations() {
-  const { tour, handleChange, setTour } = useFormContext();
-  
+  const { tour, setTour } = useFormContext();
+
   const handleLocDescription = (e, location) => {
-    console.log("what about you",e.target.value);
-    console.log(e.target);
-    console.log("the whole object",tour);
-    console.log("location",location);
-  
+    //console.log('TOUR OBJECT', tour);
+
     setTour((prev) => {
-      const copy = { ...prev};
-      console.log(copy)
-      const rightLocation = copy.locations.map((loc)=>{
-        if(loc.day === location.day){
+      const copy = { ...prev };
+      //console.log(copy);
+      const rightLocation = copy.locations.map((loc) => {
+        if (loc.day === location.day) {
           loc.description = e.target.value;
         }
-        return loc;// returns the updated value 
+        return loc;
       });
 
       copy.locations = rightLocation;
-      return copy
-    })
- 
+      return copy;
+    });
   };
 
+  const handleCoordinates = (e, location) => {
+    setTour((prev) => {
+      const copy = { ...prev };
+      console.log(copy);
+      const rightLocation = copy.locations.map((loc) => {
+        console.log('LOC', loc);
+        if (loc.day === location.day) {
+          if (e.target.name === 'longitute') {
+            loc.coordinates[0] = e.target.value;
+          } else if (e.target.name === 'latitute') {
+            loc.coordinates[1] = e.target.value;
+          }
+        }
+        return loc;
+      });
+
+      copy.locations = rightLocation;
+      return copy;
+    });
+  };
 
   return (
     <>
-      {tour.locations.map((location, index) => {
+      {tour.locations.map((location) => {
         return (
           <>
-            <p>day:{location.day}type:point</p>
-            <div className="form-group">
+            <p key={uuid()}>Day: {location.day}</p>
+            <div className="form-group" key={uuid()}>
               <TextField
-                fullWidth
-                required
-                value={location.coordinates}
-                name="coordinates"
-                label="coordinates"
-                type="coordinates"
-                margin="normal"
-                onChange={handleChange}
+                value={location.coordinates[0]}
+                name="longitute"
+                label="Longitute"
+                type="longitute"
+                margin="dense"
+                onChange={(e) => handleCoordinates(e, location)}
               />
             </div>
-            <div key={index}>
+            <div className="form-group" key={uuid()}>
+              <TextField
+                value={location.coordinates[1]}
+                name="latitute"
+                label="Latitute"
+                type="latitute"
+                margin="dense"
+                onChange={(e) => handleCoordinates(e, location)}
+              />
+            </div>
+            <div key={uuid()}>
               <TextField
                 fullWidth
-                required
                 value={location.description}
                 name="description"
                 label="description"
                 type="description"
-                margin="normal"
+                margin="dense"
                 onChange={(e) => handleLocDescription(e, location)}
               />
             </div>

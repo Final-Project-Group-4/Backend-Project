@@ -1,75 +1,75 @@
-import { createContext, useState} from "react";
+import { createContext, useState } from 'react';
 
 const FormContext = createContext({});
 
 export const FormProvider = ({ children }) => {
+  const title = {
+    0: 'Create Tour',
+    1: 'Locations',
+    2: 'Days',
+  };
 
-    const title = {
-        0: "Create Tour",
-        1: "locations",
-        2:"days"
-    }
+  const [page, setPage] = useState(0);
 
-    const [page, setPage] = useState(0);
+  const [tour, setTour] = useState({
+    name: '',
+    duration: '',
+    difficulty: '',
+    description: '',
+    subNote: '',
+    subtitle: '',
+    imgCover:
+      'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
+    type: '',
+    scenery: '',
+    otherImages: [],
+    locations: [
+      {
+        type: '',
+        coordinates: [],
+        description: '',
+        day: '',
+      },
+    ],
+    days: [
+      {
+        number: '',
+        title: '',
+        description: '',
+        elevation: '',
+        altitudeGained: '',
+        altitudeLost: '',
+        descentTo: '',
+        note: '',
+        hikingTime: '',
+      },
+    ],
+  });
 
-    const [tour, setTour] = useState({
-        name:"",
-        duration: "",
-        difficulty: "",
-        description: "",
-        subNote: "",
-        subtitle: "",
-        imgCover: "",
-        type: "",
-        scenery: "",
-        locations: [
-            {
-                type: "",
-                coordinates: [{}],
-                description: "",
-                day: ""
-            }
-        
-        ],
-        days: [
-            { 
-                number: "", 
-                title:"", 
-                description: "",
-                elevation: "",
-                altitudeGained: "" 
-            }
-
-        ]
-
-    });
- 
-
-const handleChange = (e) => {
+  const handleChange = (e) => {
     const type = e.target.type;
     const name = e.target.name;
     const value = e.target.value;
     setTour((prevTour) => ({
-    ...prevTour,
-    [name]: value,
+      ...prevTour,
+      [name]: value,
     }));
+  };
+
+  return (
+    <FormContext.Provider
+      value={{
+        tour,
+        setTour,
+        title,
+        page,
+        setPage,
+        handleChange,
+      }}
+    >
+      {children}
+    </FormContext.Provider>
+  );
 };
-
-
-    return (
-        <FormContext.Provider
-        value={{
-            tour, 
-            setTour, 
-            title, 
-            page, 
-            setPage, 
-            handleChange
-        }}
-        >
-        {children}
-        </FormContext.Provider>
-    );
-}
 
 export default FormContext;

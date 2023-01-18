@@ -22,14 +22,13 @@ export default function Gallery() {
 
   const removeImage = async (public_id) => {
     const sth = await axios.delete(`http://localhost:4000/api/gallery/${public_id}`);
-    console.log(sth)
     setGallery((oldState) => oldState.filter((item) => item.public_id !== public_id));
   };
 
   const getGallery = async () => {
     const allImages = await axios.get(`http://localhost:4000/api/gallery`);
 
-    console.log(allImages);
+    //console.log(allImages);
     if (allImages.status === 200) {
       setGallery(allImages.data);
     } else {
@@ -73,14 +72,15 @@ export default function Gallery() {
             gallery.map((slide, index) => {
               return (
                 <div className="single" key={index}>
-                  {user &&
-                  (<button
-                    onClick={() => removeImage(slide.public_id)}
-                    style={{ height: '30px', width: '30px' }}
-                  >
-                    x
-                  </button>)}
-                  
+                  {user && (
+                    <button
+                      onClick={() => removeImage(slide.public_id)}
+                      style={{ height: '30px', width: '30px' }}
+                    >
+                      x
+                    </button>
+                  )}
+
                   <img
                     src={slide.secure_url}
                     alt={slide.name}

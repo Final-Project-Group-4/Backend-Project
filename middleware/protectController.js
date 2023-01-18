@@ -1,11 +1,11 @@
 import jwt from 'jsonwebtoken';
-
 import User from '../models/userModel.js';
 
 export const protectController = async (req, res, next) => {
   //We will take the token from request.headers.authorization and split [1] as token.
   try {
     const token = req.headers.authorization?.split(' ')[1];
+    //console.log('TOKEN', token);
 
     if (!token) return res.status(401).json({ message: 'Not Authorized' });
 

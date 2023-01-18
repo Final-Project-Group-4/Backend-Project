@@ -26,9 +26,9 @@ export default function Locations() {
   const handleCoordinates = (e, location) => {
     setTour((prev) => {
       const copy = { ...prev };
-      console.log(copy);
+      //console.log(copy);
       const rightLocation = copy.locations.map((loc) => {
-        console.log('LOC', loc);
+        //console.log('LOC', loc);
         if (loc.day === location.day) {
           if (e.target.name === 'longitute') {
             loc.coordinates[0] = e.target.value;
@@ -49,8 +49,8 @@ export default function Locations() {
       {tour.locations.map((location) => {
         return (
           <>
-            <p key={uuid()}>Day: {location.day}</p>
-            <div className="form-group" key={uuid()}>
+            <p>Day: {location.day}</p>
+            <div className="form-group">
               <TextField
                 value={location.coordinates[0]}
                 name="longitute"
@@ -60,7 +60,7 @@ export default function Locations() {
                 onChange={(e) => handleCoordinates(e, location)}
               />
             </div>
-            <div className="form-group" key={uuid()}>
+            <div className="form-group">
               <TextField
                 value={location.coordinates[1]}
                 name="latitute"
@@ -70,7 +70,7 @@ export default function Locations() {
                 onChange={(e) => handleCoordinates(e, location)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={location.description}

@@ -53,8 +53,8 @@ export default function Days() {
       {tour.days.map((day) => {
         return (
           <>
-            <p key={uuid()}>Day: {day.number}</p>
-            <div className="form-group" key={uuid()}>
+            <p>Day: {day.number}</p>
+            <div className="form-group">
               <TextField
                 required
                 value={day.title}
@@ -65,7 +65,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div className="form-group" key={uuid()}>
+            <div className="form-group">
               <TextField
                 required
                 value={day.description}
@@ -76,7 +76,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.elevation}
@@ -87,7 +87,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.altitudeGained}
@@ -98,7 +98,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.altitudeLost}
@@ -109,7 +109,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.descentTo}
@@ -120,7 +120,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.note}
@@ -131,7 +131,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-            <div key={uuid()}>
+            <div>
               <TextField
                 fullWidth
                 value={day.hikingTime}

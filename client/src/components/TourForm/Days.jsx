@@ -52,7 +52,7 @@ export default function Days() {
     <>
       {tour.days.map((day) => {
         return (
-          <>
+          <div key={day.number}>
             <p>Day: {day.number}</p>
             <div className="form-group">
               <TextField
@@ -142,7 +142,7 @@ export default function Days() {
                 onChange={(e) => handleDays(e, day)}
               />
             </div>
-          </>
+          </div>
         );
       })}
     </>

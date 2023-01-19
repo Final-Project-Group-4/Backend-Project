@@ -1,6 +1,5 @@
 import { TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
-import uuid from 'react-uuid';
 
 export default function Locations() {
   const { tour, setTour } = useFormContext();
@@ -48,7 +47,7 @@ export default function Locations() {
     <>
       {tour.locations.map((location) => {
         return (
-          <>
+          <div key={location.day}>
             <p>Day: {location.day}</p>
             <div className="form-group">
               <TextField
@@ -81,7 +80,7 @@ export default function Locations() {
                 onChange={(e) => handleLocDescription(e, location)}
               />
             </div>
-          </>
+          </div>
         );
       })}
     </>

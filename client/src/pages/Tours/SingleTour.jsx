@@ -13,8 +13,12 @@ export default function SingleTour() {
   const [images, setImages] = useState([]);
 
   const { id } = useParams();
+  window.scroll(0, 0);
 
   const displayMap = async () => {
+    if (locs.length === 0) {
+      return;
+    }
     mapboxgl.accessToken =
       'pk.eyJ1IjoiYWRhbnVyayIsImEiOiJjbGFoYmd0eDcwNnUxM3VueXV2cGoyd3V0In0.WjdfQXZW6I4SykjLM6t8YA';
 
@@ -42,6 +46,7 @@ export default function SingleTour() {
       //Add popup
       new mapboxgl.Popup({
         offset: 20,
+        focusAfterOpen: false,
       })
         .setLngLat(loc?.coordinates)
         .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
@@ -73,7 +78,6 @@ export default function SingleTour() {
   useEffect(() => {
     if (id) {
       getSingleTour();
-      console.log(tour);
     }
   }, [id]);
 

@@ -1,6 +1,5 @@
 import { TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
-import uuid from 'react-uuid';
 
 export default function Days() {
   const { tour, setTour } = useFormContext();

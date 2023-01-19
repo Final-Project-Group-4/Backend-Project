@@ -9,7 +9,6 @@ export default function Locations() {
 
     setTour((prev) => {
       const copy = { ...prev };
-      //console.log(copy);
       const rightLocation = copy.locations.map((loc) => {
         if (loc.day === location.day) {
           loc.description = e.target.value;
@@ -25,9 +24,7 @@ export default function Locations() {
   const handleCoordinates = (e, location) => {
     setTour((prev) => {
       const copy = { ...prev };
-      //console.log(copy);
       const rightLocation = copy.locations.map((loc) => {
-        //console.log('LOC', loc);
         if (loc.day === location.day) {
           if (e.target.name === 'longitute') {
             loc.coordinates[0] = e.target.value;
@@ -54,7 +51,7 @@ export default function Locations() {
                 value={location.coordinates[0]}
                 name="longitute"
                 label="Longitute"
-                type="longitute"
+                type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}
               />
@@ -64,7 +61,7 @@ export default function Locations() {
                 value={location.coordinates[1]}
                 name="latitute"
                 label="Latitute"
-                type="latitute"
+                type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}
               />
@@ -75,7 +72,6 @@ export default function Locations() {
                 value={location.description}
                 name="description"
                 label="description"
-                type="description"
                 margin="dense"
                 onChange={(e) => handleLocDescription(e, location)}
               />

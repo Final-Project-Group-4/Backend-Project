@@ -6,11 +6,13 @@ import peter from './../../assets/peter1.png';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 
+import { /* FormControl, InputLabel, MenuItem, Select, */ TextField } from '@mui/material';
+
 export default function PlanTrip() {
   const { t } = useTranslation();
   const form = useRef();
   const [message, setMessage] = useState(false);
-  window.scrollTo(0, 0);
+  /* window.scrollTo(0, 0); */
 
   //handleSubmit function for clearing the form after submit and sending the details through email
   const onSubmit = async (values, actions) => {
@@ -61,89 +63,116 @@ export default function PlanTrip() {
         <div>
           <form ref={form} onSubmit={handleSubmit} autoComplete="off" className="PlanTripForm">
             <p>{t('readyForAdventureText')}</p>
-            <label htmlFor="name">{t('nameLabel')}</label>
-            <input
+            <TextField
+              fullWidth
+              required
               value={values.name}
-              onChange={handleChange}
               onBlur={handleBlur}
-              id="name"
-              type="text"
               name="name"
-              className={errors.name && touched.name ? 'input-error' : ''}
-            />
-            <label htmlFor="email">{t('emailLabel')}</label>
-            <input
-              value={values.email}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              id="email"
-              type="email"
-              name="email"
-              className={errors.email && touched.email ? 'input-error' : ''}
-            />
-            <label htmlFor="contact">{t('contactLabel')}</label>
-            <input
-              value={values.contact}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              id="contact"
-              type="phone"
-              name="contact"
-              className={errors.contact && touched.contact ? 'input-error' : ''}
-            />
-            <label htmlFor="routeName">{t('destinationLabel')}</label>
-            <input
-              value={values.routeName}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              id="routeName"
+              id="name"
+              label={t('nameLabel')}
               type="text"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.name && Boolean(errors.name)}
+            />
+            <TextField
+              fullWidth
+              required
+              value={values.email}
+              onBlur={handleBlur}
+              name="email"
+              id="name"
+              label={t('emailLabel')}
+              type="email"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.email && Boolean(errors.email)}
+            />
+            <TextField
+              fullWidth
+              required
+              value={values.contact}
+              onBlur={handleBlur}
+              name="contact"
+              id="contact"
+              label={t('contactLabel')}
+              type="phone"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.contact && Boolean(errors.contact)}
+            />
+            <TextField
+              fullWidth
+              required
+              value={values.routeName}
+              onBlur={handleBlur}
               name="routeName"
-              className={errors.routeName && touched.routeName ? 'input-error' : ''}
+              id="routeName"
+              label={t('destinationLabel')}
+              type="text"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.routeName && Boolean(errors.routeName)}
             />
-            <label htmlFor="startDate">{t('dateLabel')}</label>
-            <input
+            <TextField
+              fullWidth
+              required
               value={values.startDate}
-              onChange={handleChange}
               onBlur={handleBlur}
-              id="startDate"
-              type="date"
               name="startDate"
-              className={errors.startDate && touched.startDate ? 'input-error' : ''}
+              id="startDate"
+              label={t('dateLabel')}
+              type="date"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.startDate && Boolean(errors.startDate)}
             />
-            <label htmlFor="days">{t('durationLabel')}</label>
-            <input
+            <TextField
+              className={errors.name && touched.name ? 'input-error' : ''}
+              fullWidth
+              required
               value={values.days}
-              onChange={handleChange}
               onBlur={handleBlur}
-              id="days"
-              type="number"
               name="days"
-              className={errors.days && touched.days ? 'input-error' : ''}
-            />
-            <label htmlFor="size">{t('groupSizeLabel')}</label>
-            <input
-              value={values.size}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              id="size"
+              id="days"
+              label={t('durationLabel')}
               type="number"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.days && Boolean(errors.days)}
+            />
+            <TextField
+              fullWidth
+              required
+              value={values.size}
+              onBlur={handleBlur}
               name="size"
-              className={errors.size && touched.size ? 'input-error' : ''}
+              id="size"
+              label={t('groupSizeLabel')}
+              type="number"
+              margin="dense"
+              onChange={handleChange}
+              error={touched.size && Boolean(errors.size)}
             />
             <textarea
               name="message"
               id="message"
-              // dont forget that
               placeholder={t('yourMessage')}
               onChange={handleChange}
               value={values.message}
               onBlur={handleBlur}
-              className={errors.message && touched.message ? 'input-error' : ''}
+              error={touched.message && Boolean(errors.message)}
             />
-            <button disabled={isSubmitting} type="submit" className="plan-submit-btn">
-              {t('freeQuoteLabel')}
-            </button>
+            <div className="flexForBtn">
+              <button
+                disabled={isSubmitting}
+                type="submit"
+                className="/* plan-submit-btn */ btn-secondary"
+              >
+                {t('freeQuoteLabel')}
+              </button>
+            </div>
             {message && <p>{t('requestSentLabel')}</p>}
           </form>
         </div>

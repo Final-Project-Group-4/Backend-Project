@@ -5,33 +5,29 @@ import { planTripSchema } from './schema/PlanTripSchema';
 import peter from './../../assets/peter1.png';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
-
-import { /* FormControl, InputLabel, MenuItem, Select, */ TextField } from '@mui/material';
+import { toast } from 'react-toastify';
+import { TextField } from '@mui/material';
+import { useEffect } from 'react';
 
 export default function PlanTrip() {
   const { t } = useTranslation();
   const form = useRef();
-  const [message, setMessage] = useState(false);
   /* window.scrollTo(0, 0); */
 
   //handleSubmit function for clearing the form after submit and sending the details through email
   const onSubmit = async (values, actions) => {
-    //console.log(values);
-    //console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
     sendEmail();
   };
   //Send Email
   const sendEmail = () => {
-    //console.log(form.current);
     emailjs.sendForm('service_vhsqlog', 'template_av8kbnq', form.current, 'qRUwiJCe6auC3a9U0').then(
       (response) => {
-        //console.log(response.text);
-        setMessage(true);
+        toast.success(`${t('requestSentLabel')}`);
       },
       (error) => {
-        console.log(error.text);
+        toast.error(`${error.text}`);
       }
     );
   };
@@ -51,9 +47,11 @@ export default function PlanTrip() {
       validationSchema: planTripSchema,
       onSubmit,
     });
-  // service_id = service_o88vdfp;
-  //Public Key=CU-Fpo2wtJ0EYhcL6
-  //Template_id=template_dw6d4qk
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <div className="plan-trip-banner">
@@ -173,7 +171,6 @@ export default function PlanTrip() {
                 {t('freeQuoteLabel')}
               </button>
             </div>
-            {message && <p>{t('requestSentLabel')}</p>}
           </form>
         </div>
         <div className="peter">

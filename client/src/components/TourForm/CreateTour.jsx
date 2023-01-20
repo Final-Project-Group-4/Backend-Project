@@ -153,6 +153,7 @@ export default function CreateTour() {
           className="description-tag"
           fullWidth
           value={tour.otherImages[0]}
+          required
           name="first"
           label="First image"
           margin="dense"

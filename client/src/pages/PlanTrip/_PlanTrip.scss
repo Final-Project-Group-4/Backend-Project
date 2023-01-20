@@ -22,17 +22,18 @@
   justify-content: space-evenly;
   margin: auto;
   height: 100%;
-
+/* 
   .plan-submit-btn {
     background-color: $main-yellow;
     color: $main-light;
-  }
+  } */
 
   form {
+    
     width: 95%;
     max-width: 900px;
     margin: auto;
-    border: 2px solid lightgrey;
+    border: 2px solid $main-light;
     border-radius: 10px;
     padding: 15px;
     margin-top: 30px;
@@ -42,29 +43,26 @@
     font-size: calc(10px + 0.390625vw);
     display: block;
     text-align: left;
-    margin: 1rem 0 0.2rem;
+    background-color:$main-light;
     color: grey;
     @include paragraph;
     font-weight: 900;
   }
   form p {
     color: grey;
-    font-size: calc(10px + 0.390625vw);
+    font-size: calc(13px + 0.390625vw);
+    font-weight: 600;
     font-style: oblique;
   }
-  input,
+ 
   textarea {
+   margin-top: 0.5rem;
+    max-width: 900px;
     width: 100%;
+    height:100px;
     padding: 1rem;
-    font-size: calc(10px + 0.390625vw);
-    color: grey;
-    border: 2px solid lightgrey;
-    border-radius: 10px;
-    outline: none;
-  }
-  textarea {
-    margin-top: 1rem;
-    max-width: 600px;
+    font-family: "raleway";
+    font-size: 1rem;
   }
   input:focus {
     border-color: #4299e1;
@@ -72,34 +70,27 @@
 
   input::placeholder {
     color: #a0aec0;
+   
   }
 
-  button {
-    display: block;
-    margin: 1rem auto 1rem auto;
-    padding: 0.35rem 0.5rem;
-    background-color: #0cb9ee;
-    color: #1a202c;
-    border: none;
-    border-radius: 3px;
-    width: 50%;
-    font-size: calc(15px + 0.390625vw);
-    font-weight: bold;
-    cursor: pointer;
-  }
+button {
+  margin: 1rem auto;
 
-  input.input-error,
-  select.input-error {
-    border-color: #fc8181;
-  }
+}
+
 
   button:disabled {
     opacity: 0.35;
+    
+  }
+
+  .flexForBtn {
+    display: flex;
+    justify-content: center;
   }
 
   .peter {
     display: block;
-    // margin-top: 0;
     font-size: calc(12px + 0.390625vw);
     color: grey;
   }

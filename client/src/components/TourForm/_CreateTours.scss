@@ -1,8 +1,12 @@
 @import '../../../scss/config.scss';
 @import '../../../scss/buttons.scss';
 
-.form-tours {
-  height: 80vh;
+
+.content-container{
+  width:90%;
+  max-width: 900px;
+.form-group {
+  //height: 80vh;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -32,6 +36,7 @@
       }
     }
   }
+}
 }
 
 // Media Queries--------------------------------------

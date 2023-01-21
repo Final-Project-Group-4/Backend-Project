@@ -13,20 +13,20 @@ export const FormProvider = ({ children }) => {
 
   const [tour, setTour] = useState({
     name: '',
-    duration: '',
+    duration: "",
     difficulty: '',
     description: '',
     subNote: '',
     subtitle: '',
     imgCover:
       'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
-    type: '',
+    type: 'hiking',
     scenery: '',
     otherImages: [],
     locations: [
       {
         type: '',
-        coordinates: [],
+        coordinates:[],
         description: '',
         day: '',
       },

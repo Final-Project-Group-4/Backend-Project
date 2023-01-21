@@ -23,11 +23,6 @@
         font-size: calc(2.5rem + 0.390625vw);
         font-weight: 500;
       }
-      p {
-        @include paragraph;
-        font-size: 1.2rem;
-        padding: $padding-small $padding-small 0;
-      }
     }
     img {
       min-width: 300px;
@@ -47,6 +42,16 @@
       p {
         padding: 0.5rem;
         margin: 0.5rem;
+      }
+    }
+  }
+  .peter {
+    
+    .peter-text {
+      
+      p {
+        @include paragraph;
+        padding: $padding-small $padding-small 0;
       }
     }
   }
@@ -118,13 +123,14 @@
         }
       }
       .peter-text {
-        width: auto;
-        text-align: center;
-        h3 {
-          font-size: 2rem;
-        }
+      width: auto;
+      text-align: center;
+      h3 {
+        font-size: 2rem;
+      }
+       
         p {
-          font-size: 1.5rem;
+          font-size: 1rem;
         }
       }
     }

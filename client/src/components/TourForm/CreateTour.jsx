@@ -1,13 +1,15 @@
 import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
 
+
+
 export default function CreateTour() {
   const { tour, handleChange, setTour } = useFormContext();
 
   const handleDuration = (e) => {
     setTour((prev) => {
       const copy = { ...prev };
-      const durationTour = parseInt(e.target.value);
+      const durationTour = e.target.value;
       //console.log(copy);
       copy.locations = [];
       copy.days = [];
@@ -36,21 +38,26 @@ export default function CreateTour() {
   };
 
   const handleImages = (e) => {
+    
     setTour((prev) => {
       const copy = { ...prev };
-      if (e.target.name === 'first') {
-        copy.otherImages[0] = e.target.value;
-      } else if (e.target.name === 'second') {
-        copy.otherImages[1] = e.target.value;
-      } else if (e.target.name === 'third') {
-        copy.otherImages[2] = e.target.value;
-      }
-      return copy;
+
+       copy.otherImages.push({first: '', second: '', third: ''}); 
+      
+    
+          if (e.target.name === 'first') {
+            copy.otherImages[0] = e.target.value;
+          } else if (e.target.name === 'second') {
+            copy.otherImages[1] = e.target.value;
+          } else if (e.target.name === 'third') {
+            copy.otherImages[2] = e.target.value;
+          }
+          return copy;
     });
   };
 
   const content = (
-    <div style={{ width: '300px', color: 'red' }}>
+    <div className='content-container'>
       <div className="form-group">
         <TextField
           fullWidth
@@ -110,8 +117,8 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.subnote}
-          name="subnote"
+          value={tour.subNote}
+          name="subNote"
           label="Subnote"
           type="subnote"
           margin="dense"
@@ -134,8 +141,8 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.imgcover}
-          name="imgcover"
+          value={tour.imgCover}
+          name="imgCover"
           label="Cover image"
           type="imgcover"
           margin="dense"

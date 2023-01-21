@@ -37,13 +37,23 @@ export default function CreateTour() {
     });
   };
 
+  const handleCoverImg = (e) => {
+    setTour((prev) => {
+      const copy = { ...prev };
+      if (e.target.value) {
+        copy.imgCover = e.target.value;
+      } else {
+        return copy;
+      }
+      return copy;
+    });
+  };
+
   const handleImages = (e) => {
     
     setTour((prev) => {
       const copy = { ...prev };
 
-       copy.otherImages.push({first: '', second: '', third: ''}); 
-      
     
           if (e.target.name === 'first') {
             copy.otherImages[0] = e.target.value;
@@ -146,7 +156,7 @@ export default function CreateTour() {
           label="Cover image"
           type="imgcover"
           margin="dense"
-          onChange={handleChange}
+          onChange={handleCoverImg}
         />
       </div>
       <div className="form-group">

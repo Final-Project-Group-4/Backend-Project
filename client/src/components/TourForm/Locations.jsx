@@ -55,7 +55,7 @@ export default function Locations() {
                 value={location.coordinates[0]}
                 name="longitude"
                 label="Longitude"
-                type="longitude"
+                type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}
                 
@@ -66,7 +66,7 @@ export default function Locations() {
                 value={location.coordinates[1]}
                 name="latitude"
                 label="Latitude"
-                type="latitude"
+                type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}
               />
@@ -77,7 +77,6 @@ export default function Locations() {
                 value={location.description}
                 name="description"
                 label="description"
-                type="description"
                 margin="dense"
                 onChange={(e) => handleLocDescription(e, location)}
               />

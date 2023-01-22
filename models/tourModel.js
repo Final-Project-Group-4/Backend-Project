@@ -38,19 +38,9 @@ const tourSchema = new mongoose.Schema({
     type: String,
     default: 'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
   },
-  otherImages: [
-    {
-      first: {
-        type:String
-      },
-      second: {
-        type:String
-      },
-      third: {
-        type:String
-      }
-    }
-  ],
+  otherImages:{
+    type:[String],
+    maxlength:3},
   type: {
     type: String,
     required: [true, 'A tour must have a type'],
@@ -61,7 +51,7 @@ const tourSchema = new mongoose.Schema({
   },
   scenery: {
     type: String,
-    /* required: [true, 'A tour must have a scenery value'], */
+    required: [true, 'A tour must have a scenery value'], 
     enum: {
       values: ['good', 'very good', 'excellent'],
       message: 'Type value is not valid',
@@ -70,22 +60,15 @@ const tourSchema = new mongoose.Schema({
   locations: [
     {
       type: {
-        type: String, 
-        default:"Point",
-        enum: ["Point"]
+        type: String,
+        default: 'Point',
+        enum: ['Point'],
       },
-      coordinates: [
-        { 0:{
-          type: Number,
-        },
-        1:{
-          type: Number,
-        }
-      }
-      ],  
+      coordinates: [Number],
       description: String,
       day: Number,
     },
+  
   ],
   days: [
     {

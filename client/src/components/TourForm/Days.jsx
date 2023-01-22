@@ -59,7 +59,6 @@ export default function Days() {
                 value={day.title}
                 name="title"
                 label="Title"
-                type="title"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -70,7 +69,6 @@ export default function Days() {
                 value={day.description}
                 name="description"
                 label="Description"
-                type="description"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -81,7 +79,6 @@ export default function Days() {
                 value={day.elevation}
                 name="elevation"
                 label="Elevation"
-                type="elevation"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -92,7 +89,6 @@ export default function Days() {
                 value={day.altitudeGained}
                 name="altitudeGained"
                 label="Altitude Gained"
-                type="altitudeGained"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -103,7 +99,6 @@ export default function Days() {
                 value={day.altitudeLost}
                 name="altitudeLost"
                 label="Altitude lost"
-                type="altitudeLost"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -114,7 +109,6 @@ export default function Days() {
                 value={day.descentTo}
                 name="descentTo"
                 label="Descent to"
-                type="descentTo"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -125,7 +119,6 @@ export default function Days() {
                 value={day.note}
                 name="note"
                 label="Note"
-                type="note"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />
@@ -136,7 +129,6 @@ export default function Days() {
                 value={day.hikingTime}
                 name="hikingTime"
                 label="Hiking Time"
-                type="hikingTime"
                 margin="dense"
                 onChange={(e) => handleDays(e, day)}
               />

@@ -23,17 +23,12 @@ export default function TourForm() {
 
   const handlePrev = () => {
    /*  setTour((prev) => ({ ...prev, ...newData })); */
-    setPage((prev) => prev - 1);
-         
-    console.log("are you it",title[page])
-    
+   setPage((prev) => (prev > 0 ? prev - 1 : prev));       
   };
 
-  const handleNext = (newData) => {
-    
-/*     setTour((prev) => ({ ...prev, ...newData })); */
-    setPage((prev) => prev + 1);
-    
+  const handleNext = (newData) => {   
+/*     setTour((prev) => ({ ...prev, ...newData })); */ 
+    setPage((prev) => (prev < 2 ? prev + 1 : prev));  
   };
   
   

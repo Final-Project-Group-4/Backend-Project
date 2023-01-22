@@ -75,7 +75,6 @@ export default function CreateTour() {
           value={tour.name}
           name="name"
           label="Name"
-          type="name"
           margin="dense"
           onChange={handleChange}
         />
@@ -87,7 +86,6 @@ export default function CreateTour() {
           value={tour.duration}
           name="duration"
           label="Duration"
-          type="duration"
           margin="dense"
           onChange={handleDuration}
         />
@@ -97,7 +95,6 @@ export default function CreateTour() {
         <Select
           required
           value={tour.difficulty}
-          type="difficulty"
           name="difficulty"
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
@@ -118,7 +115,6 @@ export default function CreateTour() {
           value={tour.description}
           name="description"
           label="Description"
-          type="description"
           margin="dense"
           onChange={handleChange}
         />
@@ -130,7 +126,6 @@ export default function CreateTour() {
           value={tour.subNote}
           name="subNote"
           label="Subnote"
-          type="subnote"
           margin="dense"
           onChange={handleChange}
         />
@@ -142,7 +137,6 @@ export default function CreateTour() {
           value={tour.subtitle}
           name="subtitle"
           label="Subtitle"
-          type="subtitle"
           margin="dense"
           onChange={handleChange}
         />
@@ -154,7 +148,6 @@ export default function CreateTour() {
           value={tour.imgCover}
           name="imgCover"
           label="Cover image"
-          type="imgcover"
           margin="dense"
           onChange={handleCoverImg}
         />
@@ -166,7 +159,6 @@ export default function CreateTour() {
           value={tour.otherImages[0]}
           name="first"
           label="First image"
-          type="first"
           margin="dense"
           onChange={handleImages}
         />
@@ -178,7 +170,6 @@ export default function CreateTour() {
           value={tour.otherImages[1]}
           name="second"
           label="Second image"
-          type="second"
           margin="dense"
           onChange={handleImages}
         />
@@ -190,7 +181,6 @@ export default function CreateTour() {
           value={tour.otherImages[2]}
           name="third"
           label="Third image"
-          type="third"
           margin="dense"
           onChange={handleImages}
         />
@@ -200,7 +190,6 @@ export default function CreateTour() {
         <Select
           required
           value={tour.type}
-          type="type"
           name="type"
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"
@@ -218,7 +207,6 @@ export default function CreateTour() {
         <Select
           required
           value={tour.scenery}
-          type="scenery"
           name="scenery"
           labelId="demo-simple-select-helper-label"
           id="demo-simple-select-helper"

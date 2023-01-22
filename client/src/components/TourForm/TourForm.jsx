@@ -52,6 +52,7 @@ export default function TourForm() {
 
 
   return (
+    <div className="planTrip container">
     <form onSubmit={handleSubmit} className="form2" >
       {/*      <section> <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p></section> */}
 
@@ -62,23 +63,27 @@ export default function TourForm() {
           <div className="three">3</div>
         </div> */}
         <h2>{title[page]}</h2>
-        <div className="button-container">
+        <div className="buttonDiv">
         
-          <button className="button btn-secondary" type="button" onClick={handlePrev}>
-            Prev
-          </button>
-
-          <button className="button btn-secondary" type="button" onClick={handleNext}>
-            Next
-          </button>
-
-          <button className="btn-secondary button" type="submit">
-            Submit
-          </button>
+          <div className="buttonNextPrev">
+            <button className="button btn-secondary" type="button" onClick={handlePrev}>
+              Prev
+            </button>
+            <button className="button btn-secondary" type="button" onClick={handleNext}>
+              Next
+            </button>
+          </div>
+<div className="btnSub">
+  
+            <button className="btn-secondary button" type="submit">
+              Submit
+            </button>
+</div>
         </div>
       </header>
 
       <FormInputs />
     </form>
+    </div>
   );
 }

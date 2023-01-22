@@ -56,11 +56,11 @@ export default function CreateTour() {
 
     
           if (e.target.name === 'first') {
-            copy.otherImages[0] = e.target.value;
+            copy.otherImages.first = e.target.value;
           } else if (e.target.name === 'second') {
-            copy.otherImages[1] = e.target.value;
+            copy.otherImages.second = e.target.value;
           } else if (e.target.name === 'third') {
-            copy.otherImages[2] = e.target.value;
+            copy.otherImages.third = e.target.value;
           }
           return copy;
     });
@@ -81,6 +81,7 @@ export default function CreateTour() {
       </div>
       <div className="form-group">
         <TextField
+          className='text-field'
           fullWidth
           required
           value={tour.duration}
@@ -155,8 +156,9 @@ export default function CreateTour() {
       <div className="form-group">
         <TextField
           className="description-tag"
+          required
           fullWidth
-          value={tour.otherImages[0]}
+          value={tour.otherImages.first}
           name="first"
           label="First image"
           margin="dense"
@@ -167,7 +169,7 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.otherImages[1]}
+          value={tour.otherImages.second}
           name="second"
           label="Second image"
           margin="dense"
@@ -178,7 +180,7 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.otherImages[2]}
+          value={tour.otherImages.third}
           name="third"
           label="Third image"
           margin="dense"

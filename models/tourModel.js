@@ -38,9 +38,11 @@ const tourSchema = new mongoose.Schema({
     type: String,
     default: 'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
   },
-  otherImages:{
-    type:[String],
-    maxlength:3},
+ 
+    otherImages: {
+      type: [String],
+      maxlength: 3,
+    },
 
   type: {
     type: String,

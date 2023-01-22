@@ -38,24 +38,10 @@ const tourSchema = new mongoose.Schema({
     type: String,
     default: 'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
   },
-  /* otherImages:{
+  otherImages:{
     type:[String],
-    maxlength:3}, */
+    maxlength:3},
 
-  otherImages: [
-    {
-      first: {
-        type:String,
-        required: [true, 'A tour must have a description'],
-      },
-      second: {
-        type:String
-      },
-      third: {
-        type:String
-      }
-    }
-  ],
   type: {
     type: String,
     required: [true, 'A tour must have a type'],

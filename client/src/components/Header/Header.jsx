@@ -13,7 +13,7 @@ function Header() {
       <header className="main__header">
         {/* <div className='overlay'> */}
         <h2>{t('welcomeTo')}</h2>
-        <img src={require('../../assets/Mlay_version4.png')} alt="logo"></img>
+        <img className="logo2" src={require('../../assets/Mlay_version4.png')} alt="logo"></img>
 
         <p>{t('ourGoal')}</p>
         {/* <li><a className='linkToTours' href="http://localhost:3000/tours">{t("ourTours")} <FaArrowRight /></a></li>   */}

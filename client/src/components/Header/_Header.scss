@@ -6,14 +6,14 @@
   top: 0;
   text-align: center;
 
-  img {
+  .bg-imgEl {
     width: 100%;
     position: relative;
   }
 
   .main__header {
     position: absolute;
-    top: 15%;
+    top: 14rem;
     width: 100vw;
 
     .overlay {
@@ -26,8 +26,9 @@
       color: white;
       text-transform: uppercase;
       font-size: calc(2rem - 0.03434vw);
+      display: block;
     }
-    img {
+    .logo2 {
       height: 15rem;
       width: auto;
     }
@@ -73,74 +74,53 @@
   }
 }
 
+
+
 @include s {
   .main__div {
+    
+
     .main__header {
-      top: 70%;
+      top:2rem;
 
       h2 {
+        font-size: calc(1.3rem + 0.390625vw);
         display: none;
       }
-      img {
+
+      .logo2 {
         height: 15rem;
         width: auto;
-        //display: none;
       }
-      .Company_name2 {
-        display: none;
-        font-size: calc(3rem - 0.390625vw);
-      }
-      /* 
-      li {
-        list-style-type: none;
-  .linkToTours {
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-    font-size: 1rem;
-    font-family: roboto;
-    display: block;
-  }
-} */
-      p {
-        font-size: 0.8rem;
-        color: white;
-      }
+
+
       button {
         font-size: calc(10px + 0.390625vw);
         border: 2px solid rgb(255, 255, 255);
         margin: 0.2rem;
-        //background-color: green;
-        //display: none;
       }
     }
   }
 }
 
+
+
 @include m {
   .main__div {
-    .bg-imgEl {
-      height: auto;
-      width: 100vw;
-    }
-
+    
     .main__header {
-      top: calc(10% + 0.00534vh);
+      top:2rem;
+      
 
       h2 {
         font-size: calc(1.3rem + 0.390625vw);
       }
 
-      img {
+      .logo2 {
         height: calc(5rem + 5vw);
         width: auto;
       }
 
-      /* 
-        li {
-          list-style-type: none;
-    
-  }
-        */
 
       button {
         font-size: calc(10px + 0.390625vw);

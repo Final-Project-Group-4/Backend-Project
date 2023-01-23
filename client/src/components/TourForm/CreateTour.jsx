@@ -49,6 +49,7 @@ export default function CreateTour() {
     });
   };
 
+
   const handleImages = (e) => {
     
     setTour((prev) => {
@@ -63,6 +64,16 @@ export default function CreateTour() {
             copy.otherImages[2] = e.target.value;
           }
           return copy;
+
+  const handleCoverImg = (e) => {
+    setTour((prev) => {
+      const copy = { ...prev };
+      if (e.target.value) {
+        copy.imgCover = e.target.value;
+      } else {
+        return copy;
+      }
+      return copy;
     });
   };
 
@@ -87,6 +98,7 @@ export default function CreateTour() {
           value={tour.duration}
           name="duration"
           label="Duration"
+          type="number"
           margin="dense"
           onChange={handleDuration}
         />
@@ -158,6 +170,7 @@ export default function CreateTour() {
           className="description-tag"
           fullWidth
           value={tour.otherImages[0]}
+          required
           name="first"
           label="First image"
           margin="dense"

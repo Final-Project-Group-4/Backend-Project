@@ -13,7 +13,6 @@ export default function SingleTour() {
   const [images, setImages] = useState([]);
 
   const { id } = useParams();
-  window.scroll(0, 0);
 
   const displayMap = async () => {
     if (locs.length === 0) {
@@ -78,6 +77,7 @@ export default function SingleTour() {
   useEffect(() => {
     if (id) {
       getSingleTour();
+      window.scroll(0, 0);
     }
   }, [id]);
 

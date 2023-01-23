@@ -50,8 +50,7 @@ function Toggle(props) {
             </li>
             <li>
               <Link to={'/gallery'} onClick={() => props.setToggle(false)}>
-                {' '}
-                {t('gallery')}{' '}
+                {t('gallery')}
               </Link>
             </li>
             <li>

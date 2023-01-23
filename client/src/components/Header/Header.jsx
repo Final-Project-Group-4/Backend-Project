@@ -1,8 +1,6 @@
 import './_Header.scss';
 import { useTranslation } from 'react-i18next';
-import image from '../../assets/safari_unsplash.jpg';
 import { useNavigate } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
 
 function Header() {
   const navigate = useNavigate();

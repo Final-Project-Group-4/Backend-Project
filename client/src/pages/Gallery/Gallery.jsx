@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import './_Gallery.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -21,7 +21,7 @@ export default function Gallery() {
   const { user } = useContext(Context);
 
   const removeImage = async (public_id) => {
-    const sth = await axios.delete(`/api/gallery/${public_id}`);
+    await axios.delete(`/api/gallery/${public_id}`);
     setGallery((oldState) => oldState.filter((item) => item.public_id !== public_id));
   };
 

@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 function Footer() {
-
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="main-footer">
       <div className="footer-container">
@@ -21,7 +20,7 @@ function Footer() {
           <div className="col">
             <h4>CONTACT</h4>
             <ul className="list-unstyled">
-              <li>{t("peterName")} Peter Mlay</li>
+              <li>{t('peterName')} Peter Mlay</li>
               <li>telephone: +255766034379</li>
               <li>Email: mlaypeter019@gmail.com</li>
             </ul>
@@ -31,7 +30,7 @@ function Footer() {
               <h4>FAQ</h4>
             </Link>
             <ul className="list-unstyled">
-              <li>{t("anyQuestions")}</li>
+              <li>{t('anyQuestions')}</li>
             </ul>
           </div>
         </div>
@@ -40,12 +39,16 @@ function Footer() {
           <p className="col-sm">copyright 2009 © All rights reserved</p>
           <div className="social-icons">
             <div className="icons">
-              <a href="https://www.facebook.com/profile.php?id=100069632993371" target="_blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=100069632993371"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
             <div className="icons">
-              <a href="https://instagram.com/mlay_tours?r=nametag" target="_blank">
+              <a href="https://instagram.com/mlay_tours?r=nametag" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>

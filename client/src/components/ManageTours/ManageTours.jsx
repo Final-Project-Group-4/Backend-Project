@@ -13,7 +13,7 @@ function ManageTours() {
   const { user } = useContext(Context);
 
   const loadToursData = async () => {
-    const allTours = await axios.get(`http://localhost:4000/api/tours`);
+    const allTours = await axios.get(`/api/tours`);
     if (allTours.status === 200) {
       setTourData(allTours.data.data);
     } else {
@@ -29,13 +29,13 @@ function ManageTours() {
 
   const handleClose = async (answer) => {
     if (answer === 'yes') {
-      await axios.delete(`http://localhost:4000/api/tours/${open}`, {
+      await axios.delete(`/api/tours/${open}`, {
         headers: {
           authorization: `Bearer ${user.token}`,
         },
       });
       toast.success('Tour is deleted!');
-      const allTours = await axios.get(`http://localhost:4000/api/tours`);
+      const allTours = await axios.get(`/api/tours`);
       if (allTours.status === 200) {
         setTourData(allTours.data.data);
       } else {

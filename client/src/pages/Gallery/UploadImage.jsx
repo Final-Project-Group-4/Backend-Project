@@ -75,7 +75,7 @@ export default function UploadImage() {
   const handleRemoveImage = (imgObj) => {
     setImageToRemove(imgObj.public_id);
     axios
-      .delete(`http://localhost:4000/api/gallery/${imgObj.public_id}`)
+      .delete(`/api/gallery/${imgObj.public_id}`)
       .then(() => {
         setImages((prev) => prev.filter((image) => image.public_id !== imgObj.public_id));
       })
@@ -96,7 +96,7 @@ export default function UploadImage() {
           //   { url: result.info.url, public_id: result.info.public_id },
           // ]);
           // eslint-disable-next-line no-restricted-globals
-          location.reload()
+          location.reload();
         }
       }
     );

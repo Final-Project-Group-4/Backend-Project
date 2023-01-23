@@ -21,12 +21,12 @@ export default function Gallery() {
   const { user } = useContext(Context);
 
   const removeImage = async (public_id) => {
-    const sth = await axios.delete(`http://localhost:4000/api/gallery/${public_id}`);
+    const sth = await axios.delete(`/api/gallery/${public_id}`);
     setGallery((oldState) => oldState.filter((item) => item.public_id !== public_id));
   };
 
   const getGallery = async () => {
-    const allImages = await axios.get(`http://localhost:4000/api/gallery`);
+    const allImages = await axios.get(`/api/gallery`);
 
     //console.log(allImages);
     if (allImages.status === 200) {

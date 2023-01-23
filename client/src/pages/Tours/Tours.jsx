@@ -14,7 +14,7 @@ export default function Tours() {
 
   //Get all the Tours data and check for the status
   const loadToursData = async () => {
-    const allTours = await axios.get(`http://localhost:4000/api/tours`);
+    const allTours = await axios.get(`/api/tours`);
     if (allTours.status === 200) {
       setTourData(allTours.data.data);
     } else {
@@ -24,7 +24,7 @@ export default function Tours() {
 
   //Get the Tours data according to the type of the tour and check for the status
   const loadToursDataByType = async () => {
-    const filteredToursByType = await axios.get(`http://localhost:4000/api/tours/category/${type}`);
+    const filteredToursByType = await axios.get(`/api/tours/category/${type}`);
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data);
     } else {

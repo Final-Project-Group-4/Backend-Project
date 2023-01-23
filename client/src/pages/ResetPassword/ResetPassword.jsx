@@ -17,7 +17,7 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.patch(`http://localhost:4000/api/admin/resetPassword/${token}`, {
+      const res = await axios.patch(`/api/admin/resetPassword/${token}`, {
         password,
         passwordConfirm,
       });

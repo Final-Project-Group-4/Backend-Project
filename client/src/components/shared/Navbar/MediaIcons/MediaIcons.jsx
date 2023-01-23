@@ -17,7 +17,7 @@ function MediaIcons() {
     dispatch({ type: 'LOGOUT' });
 
     try {
-      const res = await axios.post(`http://localhost:4000/api/admin/logout`);
+      const res = await axios.post(`/api/admin/logout`);
       console.log(res.data);
       if (res.data) {
         toast.error('You logged out');

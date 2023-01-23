@@ -10,7 +10,7 @@ function ForgotPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:4000/api/admin/forgotpassword`, {
+      await axios.post(`/api/admin/forgotpassword`, {
         email,
       });
       toast.success('Reset link has been sent!');

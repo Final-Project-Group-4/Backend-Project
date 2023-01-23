@@ -73,7 +73,7 @@ export default function SingleTour() {
   };
 
   const getSingleTour = async () => {
-    const response = await axios.get(`http://localhost:4000/api/tours/${id}`);
+    const response = await axios.get(`/api/tours/${id}`);
     setTour(response.data);
     setDays(response.data.days);
     setInfo(response.data.days[0]);

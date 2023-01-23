@@ -133,6 +133,28 @@
       }
     }
   }
+
+  .marker {
+    background-image: url('./../../assets/mapbox-icon.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .mapboxgl-popup-content {
+    p {
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    .mapboxgl-popup-close-button {
+      color: $main-yellow;
+    }
+  }
 }
 
 // Media Queries--------------------------------------

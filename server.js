@@ -14,41 +14,15 @@ import { fileURLToPath } from 'url';
 const app = express();
 dotenv.config();
 
-const corsOptions = {
-  origin: 'http://localhost:3000', //backend servers are secured, we mention wich url can access this server. we are allowing the frontend in port 3000 to access the backend. we have to update this frontend url when we deploy
-  credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
-
 const __fileName = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__fileName);
 
 app.use(express.static(path.join(__dirname, './client/build')));
 
-//app.use(cors());
+app.use(cors());
 app.use(express.json({ extended: true, limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(morgan('dev'));
-
-// app.delete('/:public_id', async (req, res) => {
-//   const { public_id } = req.params;
-//   try {
-//     await cloudinary.uploader.destroy(public_id);
-//     res.status(200).send();
-//   } catch (error) {
-//     res.status(400).send();
-//   }
-// });
-// const __dirname = dirname(fileURLToPath(import.meta.url));
-// app.use(express.static(`${__dirname}/public`));
-//console.log(__dirname);
-
-// app.use((req, res, next) => {
-//   req.requestTime = new Date().toISOString();
-//   console.log(req.headers);
-//   next();
-// });
 
 // routes:
 app.use('/api/tours', tourRouter);

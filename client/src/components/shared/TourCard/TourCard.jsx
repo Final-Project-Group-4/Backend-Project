@@ -59,10 +59,10 @@ function TourCard(props) {
             >
               {days.length}
               <b className="subtitles">
-                <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Days /{' '}
+                <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Days /
               </b>
               <span />
-              {days.length + 1}
+              {days.length - 1}
               <b className="subtitles">
                 <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Nights
               </b>

@@ -24,7 +24,7 @@ function Settings() {
     }
     try {
       //make a patch request with user id
-      const updateRes = await axios.patch(`http://localhost:4000/api/admin/${user.id}`, {
+      const updateRes = await axios.patch(`/api/admin/${user.id}`, {
         email: newEmail,
       });
       if (updateRes.data) {
@@ -46,14 +46,11 @@ function Settings() {
 
     try {
       //make a patch request with user id
-      const updateRes = await axios.patch(
-        `http://localhost:4000/api/admin/${user.id}/updatePassword`,
-        {
-          passwordCurrent: passwordCurrent,
-          password: password,
-          passwordConfirm: passwordConfirm,
-        }
-      );
+      const updateRes = await axios.patch(`/api/admin/${user.id}/updatePassword`, {
+        passwordCurrent: passwordCurrent,
+        password: password,
+        passwordConfirm: passwordConfirm,
+      });
       //console.log(updateRes.data);
       if (updateRes.data) {
         toast.success('Password reset');

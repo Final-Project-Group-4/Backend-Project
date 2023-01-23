@@ -23,16 +23,18 @@
   font-size: 1.2rem !important;
   color: black !important;
   border: 3px solid black !important;
-  padding: 0.25rem !important;
+  //padding: 0.25rem !important;
   padding-left: 0.7rem !important;
   padding-right: 0.7rem !important;
   transition: all 0.3s ease-in-out !important;
-  //margin: 2rem !important;
-  position: relative !important;
-  bottom: 0 !important;
-  left: 0 !important;
+  margin: 2rem !important;
+  //position: relative !important;
+ // bottom: 0 !important;
+  //left: 0 !important;
 
   &:hover {
+    
+    font-size: 2rem;
     background-color: $main-yellow !important;
     cursor: pointer !important;
   }
@@ -41,7 +43,7 @@
 .MuiPaper-root {
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-around !important;
+  //justify-content: space-around !important;
 }
 
 .li-divider {
@@ -77,7 +79,7 @@
   }
 
   .btn-details {
-    line-height: 1 !important;
+    //line-height: 1 !important;
     width: 90px;
     &:hover {
       background-color: $main-yellow !important;

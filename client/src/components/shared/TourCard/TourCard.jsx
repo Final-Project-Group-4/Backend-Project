@@ -32,7 +32,7 @@ function TourCard(props) {
           {tour}
         </Typography>
       </Box>
-      <Divider component="li" className="li-divider" />
+      {/* <Divider component="li" className="li-divider" /> */}
       <Box paddingX={2}>
         <Typography
           component="h2"
@@ -46,7 +46,7 @@ function TourCard(props) {
           {subtitle}
         </Typography>
       </Box>
-      <Divider component="li" className="li-divider" />
+      {/* <Divider component="li" className="li-divider" /> */}
       {!inAdmin && (
         <>
           <Box paddingX={2}>
@@ -59,17 +59,17 @@ function TourCard(props) {
             >
               {days.length}
               <b className="subtitles">
-                <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Days /
+                <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} /> Days /
               </b>
               <span />
               {days.length - 1}
               <b className="subtitles">
-                <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Nights
+                <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} /> Nights
               </b>
               <span />
             </Typography>
           </Box>
-          <Divider component="li" className="li-divider" />
+          {/* <Divider component="li" className="li-divider" /> */}
 
           <Box paddingX={2}>
             <Typography
@@ -83,7 +83,7 @@ function TourCard(props) {
               {difficulty}
             </Typography>
           </Box>
-          <Divider component="li" className="li-divider" />
+          {/* <Divider component="li" className="li-divider" /> */}
           <Box paddingX={2}>
             <Typography
               component="h2"

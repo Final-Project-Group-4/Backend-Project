@@ -13,11 +13,13 @@
   width: 100%;
  // margin-top: 5.1rem;
   margin-bottom: 1rem;
+  background-color:$main-yellow;
   
   .gridRight {
     margin-top: 5.6rem;
     height: 90vh;
     overflow-y: scroll;
+    background-color:$main-yellow;
   }
 }
 .tourTitle {
@@ -41,6 +43,7 @@
       font-size: calc(1.75rem + 0.390625vw);
       color: white;
       margin-bottom: 0.35em;
+      @include subtitles;
     }
   }
   div {
@@ -77,6 +80,8 @@
   max-width: min(700px, 80%);
   padding: 1em;
   margin-bottom: 4em;
+  position: absolute;
+  top:8em;
 }
 .moreOpaque {
   background: rgba(114, 116, 88, 0.709);
@@ -87,7 +92,10 @@
 .conditionalText {
   position: relative;
   font-weight: 500;
-  font-size: calc(12px + 0.390625vw);
+  @include paragraph;
+  font-weight: 500;
+  //font-size: calc(12px + 0.390625vw);
+  
 }
 
 // Media queries--------------------------

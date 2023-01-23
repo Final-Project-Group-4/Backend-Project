@@ -262,6 +262,27 @@
         "description": "Lava Tower",
         "day": 3,
         "_id": "63b28816066f59368ebabb9c"
+      },
+      {
+        "type": "Point",
+        "coordinates": [37.3287, -3.0942],
+        "description": "Barranco Camp",
+        "day": 5,
+        "_id": "63b28801066f59368ebabb8b"
+      },
+      {
+        "type": "Point",
+        "coordinates": [37.3545, -3.1122],
+        "description": "Karanga Camp",
+        "day": 6,
+        "_id": "63b28801066f59368ebabb8c"
+      },
+      {
+        "type": "Point",
+        "coordinates": [37.378, -3.0993],
+        "description": "Barafu Camp",
+        "day": 7,
+        "_id": "63b28801066f59368ebabb8d"
       }
     ],
     "days": [

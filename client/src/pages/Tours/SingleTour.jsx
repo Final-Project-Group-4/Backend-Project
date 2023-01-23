@@ -40,16 +40,23 @@ export default function SingleTour() {
         anchor: 'bottom',
       })
         .setLngLat(loc?.coordinates)
+        //Add popup
+        .setPopup(
+          new mapboxgl.Popup({
+            offset: 20,
+            focusAfterOpen: false,
+          }).setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
+        )
         .addTo(map);
 
       //Add popup
-      new mapboxgl.Popup({
-        offset: 20,
-        focusAfterOpen: false,
-      })
-        .setLngLat(loc?.coordinates)
-        .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
-        .addTo(map);
+      // new mapboxgl.Popup({
+      //   offset: 20,
+      //   focusAfterOpen: false,
+      // })
+      //   .setLngLat(loc?.coordinates)
+      //   .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
+      //   .addTo(map);
 
       // Extend map bounds to include current location
       bounds.extend(loc?.coordinates);

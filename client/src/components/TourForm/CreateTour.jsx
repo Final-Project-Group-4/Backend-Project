@@ -37,19 +37,6 @@ export default function CreateTour() {
     });
   };
 
-  const handleCoverImg = (e) => {
-    setTour((prev) => {
-      const copy = { ...prev };
-      if (e.target.value) {
-        copy.imgCover = e.target.value;
-      } else {
-        return copy;
-      }
-      return copy;
-    });
-  };
-
-
   const handleImages = (e) => {
     
     setTour((prev) => {
@@ -64,7 +51,11 @@ export default function CreateTour() {
             copy.otherImages[2] = e.target.value;
           }
           return copy;
+        })
 
+      }   
+      
+    
   const handleCoverImg = (e) => {
     setTour((prev) => {
       const copy = { ...prev };

@@ -57,12 +57,12 @@ function TourCard(props) {
               sx={{ fontFamily: 'raleway', fontSize: '1', fontWeight: '400' }}
               textAlign="left"
             >
-              {days.length}{' '}
+              {days.length}
               <b className="subtitles">
                 <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Days /{' '}
               </b>
               <span />
-              {days.length + 1}{' '}
+              {days.length + 1}
               <b className="subtitles">
                 <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '5px' }} /> Nights
               </b>

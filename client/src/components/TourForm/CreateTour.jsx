@@ -1,13 +1,15 @@
 import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
 
+
+
 export default function CreateTour() {
   const { tour, handleChange, setTour } = useFormContext();
 
   const handleDuration = (e) => {
     setTour((prev) => {
       const copy = { ...prev };
-      const durationTour = parseInt(e.target.value);
+      const durationTour = e.target.value;
       //console.log(copy);
       copy.locations = [];
       copy.days = [];
@@ -35,19 +37,33 @@ export default function CreateTour() {
     });
   };
 
-  const handleImages = (e) => {
+  const handleCoverImg = (e) => {
     setTour((prev) => {
       const copy = { ...prev };
-      if (e.target.name === 'first') {
-        copy.otherImages[0] = e.target.value;
-      } else if (e.target.name === 'second') {
-        copy.otherImages[1] = e.target.value;
-      } else if (e.target.name === 'third') {
-        copy.otherImages[2] = e.target.value;
+      if (e.target.value) {
+        copy.imgCover = e.target.value;
+      } else {
+        return copy;
       }
       return copy;
     });
   };
+
+
+  const handleImages = (e) => {
+    
+    setTour((prev) => {
+      const copy = { ...prev };
+
+    
+          if (e.target.name === 'first') {
+            copy.otherImages[0] = e.target.value;
+          } else if (e.target.name === 'second') {
+            copy.otherImages[1] = e.target.value;
+          } else if (e.target.name === 'third') {
+            copy.otherImages[2] = e.target.value;
+          }
+          return copy;
 
   const handleCoverImg = (e) => {
     setTour((prev) => {
@@ -62,7 +78,7 @@ export default function CreateTour() {
   };
 
   const content = (
-    <div style={{ width: '300px', color: 'red' }}>
+    <div className='content-container'>
       <div className="form-group">
         <TextField
           fullWidth
@@ -76,6 +92,7 @@ export default function CreateTour() {
       </div>
       <div className="form-group">
         <TextField
+          className='text-field'
           fullWidth
           required
           value={tour.duration}
@@ -119,8 +136,8 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.subnote}
-          name="subnote"
+          value={tour.subNote}
+          name="subNote"
           label="Subnote"
           margin="dense"
           onChange={handleChange}
@@ -141,8 +158,8 @@ export default function CreateTour() {
         <TextField
           className="description-tag"
           fullWidth
-          value={tour.imgcover}
-          name="imgcover"
+          value={tour.imgCover}
+          name="imgCover"
           label="Cover image"
           margin="dense"
           onChange={handleCoverImg}

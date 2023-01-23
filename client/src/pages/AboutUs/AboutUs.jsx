@@ -8,23 +8,21 @@ export default function AboutUs() {
   window.scrollTo(0, 0);
   return (
     <>
-      <div className="container aboutus">
+      <div className="container blocksPicText">
+      
         <div className="about">
-          <h2>{t('aboutUs')}</h2>
-          <div className="main">
             <div className="img-section">
-              <div className="single-img">
                 <img
                   src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673440165/kilimanjaro-peak4_zwr71r.jpg"
                   alt="our team"
                 />
-              </div>
-              <div className="single-img">
+              
+           {/* 
                 <img
                   src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673445026/peter-in-orange-bg-mountain_edulkj.jpg"
                   alt="Peter Mlay"
-                />
-              </div>
+                /> */}
+               
             </div>
             <div className="about-text">
               <h3>{t('ourTeam')}</h3>
@@ -32,25 +30,25 @@ export default function AboutUs() {
               <p>{t('ourTeamText2')}</p>
               <p>{t('ourTeamText3')}</p>
             </div>
-          </div>
+          
         </div>
 
-        <div className="main-history">
-          <div className="about-text">
+        <div className="blocksPicText-inside">
+          <div className="about-text-down">
             <h3>{t('history')}</h3>
             <p className="para">{t('historyText')}</p>
             <p className="para">{t('historyText1')}</p>
             <p className="para">{t('historyText2')}</p>
             <p className="para">{t('historyText3')}</p>
           </div>
-          <div className="img-section">
-            <div className="single-img">
+          
+            <div className="img-section">
               <img
                 src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673444904/native-man-kilimanjaro_aafmo3.jpg"
                 alt="Yohani KinyalaLauwo"
               />
             </div>
-          </div>
+          
         </div>
       </div>
       <Contacts />

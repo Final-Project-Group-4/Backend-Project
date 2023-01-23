@@ -4,6 +4,7 @@ import { useFormContext } from '../../hooks/useFormContext';
 export default function Locations() {
   const { tour, setTour } = useFormContext();
 
+
   const handleLocDescription = (e, location) => {
     //console.log('TOUR OBJECT', tour);
 
@@ -26,9 +27,9 @@ export default function Locations() {
       const copy = { ...prev };
       const rightLocation = copy.locations.map((loc) => {
         if (loc.day === location.day) {
-          if (e.target.name === 'longitute') {
+          if (e.target.name === 'longitude') {
             loc.coordinates[0] = e.target.value;
-          } else if (e.target.name === 'latitute') {
+          } else if (e.target.name === 'latitude') {
             loc.coordinates[1] = e.target.value;
           }
         }
@@ -49,18 +50,19 @@ export default function Locations() {
             <div className="form-group">
               <TextField
                 value={location.coordinates[0]}
-                name="longitute"
-                label="Longitute"
+                name="longitude"
+                label="Longitude"
                 type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}
+                
               />
             </div>
             <div className="form-group">
               <TextField
                 value={location.coordinates[1]}
-                name="latitute"
-                label="Latitute"
+                name="latitude"
+                label="Latitude"
                 type="number"
                 margin="dense"
                 onChange={(e) => handleCoordinates(e, location)}

@@ -13,7 +13,7 @@ export const FormProvider = ({ children }) => {
 
   const [tour, setTour] = useState({
     name: '',
-    duration: '',
+    duration: "",
     difficulty: '',
     description: '',
     subNote: '',
@@ -26,7 +26,7 @@ export const FormProvider = ({ children }) => {
     locations: [
       {
         type: '',
-        coordinates: [],
+        coordinates:[],
         description: '',
         day: '',
       },
@@ -47,6 +47,7 @@ export const FormProvider = ({ children }) => {
   });
 
   const handleChange = (e) => {
+
     const name = e.target.name;
     const value = e.target.value;
     setTour((prevTour) => ({

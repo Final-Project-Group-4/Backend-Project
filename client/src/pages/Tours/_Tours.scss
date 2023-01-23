@@ -2,7 +2,7 @@
 
 .container1 {
   width: 100vw;
-  padding: 0.5rem;
+  //padding: 0.5rem;
   font-size: calc(12px + 0.390625vw);
   min-height: 100vh;
 }
@@ -11,10 +11,11 @@
   display: flex;
   margin-bottom: 0;
   width: 100%;
-  margin-top: 6rem;
+ // margin-top: 5.1rem;
   margin-bottom: 1rem;
+  
   .gridRight {
-    margin-top: 0;
+    margin-top: 5.6rem;
     height: 90vh;
     overflow-y: scroll;
   }
@@ -23,6 +24,7 @@
   color: $main-yellow !important;
 }
 .leftSide {
+  margin-top: 5.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,27 +92,6 @@
 
 // Media queries--------------------------
 
-@include m {
-  .container2 {
-    flex-wrap: wrap;
-    margin-top: 4.5rem;
-    .gridRight {
-      margin-top: 1rem;
-    }
-    .leftSide {
-      height: 65vh;
-    }
-    .rightSide {
-      width: 100%;
-      & > .MuiGrid-root {
-        min-height: 60vh;
-        overflow-y: 'unset';
-        background-color: 'purple';
-      }
-    }
-  }
-}
-
 @include s {
   .container2 {
     flex-wrap: wrap;
@@ -134,3 +115,25 @@
     }
   }
 }
+@include m {
+  .container2 {
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+    .gridRight {
+      margin-top: 1rem;
+    }
+    .leftSide {
+      height: 65vh;
+      margin-top: 4.5rem;
+    }
+    .rightSide {
+      width: 100%;
+      & > .MuiGrid-root {
+        min-height: 60vh;
+        overflow-y: 'unset';
+        background-color: 'purple';
+      }
+    }
+  }
+}
+

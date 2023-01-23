@@ -1,0 +1,32 @@
+@import '../../../scss/config.scss';
+@import '../../../scss/buttons.scss';
+ 
+
+form label {
+    font-size: calc(10px + 0.390625vw);
+    display: block;
+    text-align: left;
+    color: grey;
+    @include paragraph;
+    font-weight: 900;
+}
+
+.buttonDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonNextPrev {
+    
+    display: flex;
+    align-items: center;
+    width:200px
+}
+
+.btnSub {
+    display: flex;
+    align-items: right;
+    width:200px
+
+}

@@ -7,9 +7,11 @@ const tourSchema = new mongoose.Schema({
     unique: true,
     trim: true,
     maxlength: [40, 'A tour name must have less or equal then 40 characters'],
-    //minlength: [10, 'A tour name must have equal or more then 10 characters'],
   },
-  duration: { type: String, required: [true, 'A tour must have a duration'] },
+  duration: {
+    type: String,
+    required: [true, 'A tour must have a duration'],
+  },
   difficulty: {
     type: String,
     required: [true, 'A tour must have a difficulty'],
@@ -23,7 +25,10 @@ const tourSchema = new mongoose.Schema({
     trim: true,
     required: [true, 'A tour must have a description'],
   },
-  subNote: String,
+  subNote: {
+    type: String,
+    trim: true,
+  },
   subtitle: {
     type: String,
     trim: true,
@@ -32,6 +37,7 @@ const tourSchema = new mongoose.Schema({
     type: String,
     default: 'https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350629/mount-Meru2_nu33v5.jpg',
   },
+
   otherImages: {
     type: [String],
     maxlength: 3,

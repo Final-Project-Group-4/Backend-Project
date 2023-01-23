@@ -1,37 +1,30 @@
 @import '../../../scss/config.scss';
 @import '../../../scss/buttons.scss';
 
-.form-tours {
-  height: 80vh;
+
+.content-container{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin: auto;
+  //height: 100%;
+.form-group {
+  //height: 80vh;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  h1 {
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(40px + 0.390625vw);
-    font-weight: 500;
+  .text-field {
+    font-size: calc(10px + 0.390625vw);
+    display: block;
+    text-align: left;
+    background-color:$main-light;
+    color: grey;
+    @include paragraph;
+    font-weight: 900;
   }
-  .form-wrapper {
-    text-align: center;
-    margin-top: 8rem;
-    width: 70%;
-
-    .login-form {
-      display: flex;
-      flex-direction: column;
-
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        .description-tag {
-          color: red !important;
-        }
-      }
-    }
-  }
+}
 }
 
 // Media Queries--------------------------------------

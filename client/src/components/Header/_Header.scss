@@ -2,58 +2,64 @@
 @import url('https://fonts.cdnfonts.com/css/road-rage');
 
 .main__div {
-  position: relative;
+  background-image: url("../../assets/safari_unsplash.jpg");
+  display: flex;
+  flex-direction: row;
   top: 0;
   text-align: center;
-
-  img {
-    width: 100%;
-  }
-
+  width:100%;
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+  
   .main__header {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 15%;
-    width: 100vw;
-
-    .overlay {
-      background-color: rgba(247, 246, 246, 0.123);
-      padding: 1em;
-      width: 100vw;
+    height:100%;
+    width: 50%;
+    //max-height:900px;
+    //height:calc(90% + 10vw);
+    top: 0;
+    
+    .overlay1 {
+      background-color: rgba(39, 37, 37, 0.386);
+      width: 90%;
+      height:100%;
+      
+     
+      //position: relative;
+     // z-index:1;
+     //top:3rem;
+    
+      padding-top: 10rem;
+      //height:100%;
+      
+      
     }
     h2 {
       @include header;
       color: white;
       text-transform: uppercase;
-      font-size: calc(2rem - 0.03434vw);
+      font-size: calc(3rem - 0.03434vw);
+      display: block;
+      font-weight: 300;
+      padding-top: 1em;
     }
-    img {
+    .logo2 {
       height: 15rem;
       width: auto;
     }
-    .Company_name2 {
-      font-family: 'Road Rage', cursive;
-      font-size: calc(3rem - 0.390625vw);
-      color: #d99923;
-      margin: 0 !important;
-      display: none;
-    }
-    /* 
-      li {
-        list-style-type: none;
-  .linkToTours {
-    text-decoration: none;
-    color:white;
-    font-size: 0.6rem;
-    font-family: roboto;
-    display: none;
-  }
-} */
-
-    p {
-      font-size: 1.2rem;
+    .ourGoal {
       color: white;
       padding: 0.01em;
-      margin-bottom: 0.3em;
+      display: block;
+      @include subtitles;
+      font-size:1.5rem;
+      margin-top: 0.2em;
+      margin-bottom: 1em;
     }
 
     button {
@@ -70,77 +76,92 @@
       }
     }
   }
+
 }
+
+
 
 @include s {
   .main__div {
+    justify-content: center;
     .main__header {
-      top: 70%;
-
+      width: 100%;
+      top:0;
+     
+      //max-height: 210px;
+      //height:calc(50% + 1vw);
+      width: 100%;
+      top: 1rem;
+      
+      
+      
+    .overlay1 {
+      background-color:transparent;
+      padding: 0.4em;
+      top:0;
+     // position: relative;
+     // z-index:1;
+      //top: 1rem;
+      /* min-height:30vh;
+      height:calc(35% + 10vw);
+      padding-bottom: 1em; */
+      
+      
+    }
       h2 {
+        font-size: calc(1.3rem + 0.390625vw);
         display: none;
       }
-      img {
+      .logo2 {
         height: 15rem;
         width: auto;
-        //display: none;
       }
-      .Company_name2 {
-        display: none;
-        font-size: calc(3rem - 0.390625vw);
-      }
-      /* 
-      li {
-        list-style-type: none;
-  .linkToTours {
-    text-decoration: none;
-    color:rgb(255, 255, 255);
-    font-size: 1rem;
-    font-family: roboto;
-    display: block;
-  }
-} */
-      p {
-        font-size: 0.8rem;
-        color: white;
-      }
+    .ourGoal {
+      font-size:0.4rem;
+      /* padding: 0.01em;
+      margin-bottom: 0.3em;  */ 
+    }
       button {
         font-size: calc(10px + 0.390625vw);
         border: 2px solid rgb(255, 255, 255);
         margin: 0.2rem;
-        //background-color: green;
-        //display: none;
       }
     }
   }
 }
 
+
+
 @include m {
   .main__div {
-    .bg-imgEl {
-      height: auto;
-      width: 100vw;
-    }
-
+    
     .main__header {
-      top: calc(10% + 0.00534vh);
+      //max-height: 500px;
+      //height:calc(50% + 15vw);
+      width: 100%;
+      //min-height: 100vh;
 
+    .overlay1 {
+      background-color: rgba(30, 29, 29, 0.272);
+      //position: relative;
+      //z-index:1;
+      //padding: 3px;
+            
+       
+    }
+      
+     
       h2 {
         font-size: calc(1.3rem + 0.390625vw);
       }
-
-      img {
+      .logo2 {
         height: calc(5rem + 5vw);
         width: auto;
       }
-
-      /* 
-        li {
-          list-style-type: none;
-    
-  }
-        */
-
+    .ourGoal {
+      font-size:1rem;
+      padding: 0.01em;
+    }
       button {
         font-size: calc(10px + 0.390625vw);
         border: 2px solid white;

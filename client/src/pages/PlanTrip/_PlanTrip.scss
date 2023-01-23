@@ -19,9 +19,10 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content:center;
   margin: auto;
   height: 100%;
+  width: 100%;
 /* 
   .plan-submit-btn {
     background-color: $main-yellow;
@@ -90,12 +91,15 @@ button {
   }
 
   .peter {
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: calc(12px + 0.390625vw);
     color: grey;
+    justify-content: center;
+    align-items: center;
   }
   .peter img {
-    width: 100%;
+    //width: 100%;
     margin: auto;
     border-radius: 10%;
     height: 300px;
@@ -105,6 +109,7 @@ button {
     padding: 2px;
     display: block;
     text-align: left;
+    width:200px;
   }
 }
 

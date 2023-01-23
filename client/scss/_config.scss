@@ -24,6 +24,7 @@ $font-paragraph: "Raleway", sans-serif;
   font-size: 3rem;
   font-weight: 500;
   font-family: $font-heading;
+  font-style: italic;
 }
 
 //Use this mixin for buttons and capitalized(Our Tours and Submit button in landing page)
@@ -49,7 +50,7 @@ $font-paragraph: "Raleway", sans-serif;
 //For paragraph
 @mixin paragraph {
   font-family: $font-paragraph;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 //for the titles we we are offering and contact us

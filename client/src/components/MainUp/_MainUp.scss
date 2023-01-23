@@ -16,12 +16,16 @@
     text-align: center;
     .text {
       padding: 1rem;
-      width: 60%;
+      width: 55%;
       margin: auto;
       h2 {
-        @include titles;
+        @include subtitles;
         font-size: calc(2.5rem + 0.390625vw);
         font-weight: 500;
+      }
+      p {
+        @include paragraph;
+        font-size: calc(1rem + 0.390625vw);
       }
     }
     img {
@@ -51,6 +55,7 @@
       
       p {
         @include paragraph;
+        font-size: calc(1rem + 0.390625vw);
         padding: $padding-small $padding-small 0;
       }
     }

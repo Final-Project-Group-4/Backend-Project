@@ -9,19 +9,20 @@ function Header() {
   const { t } = useTranslation();
   return (
     <div className="main__div">
-      
       <header className="main__header">
-         <div className='overlay1'> 
-        <h2>{t('welcomeTo')}</h2>
-        <img className="logo2" src={require('../../assets/Mlay_versionWhite.png')} alt="logo"></img>
-
-        <p className='ourGoal'>{t('ourGoal')}</p>
-        <button className="btn-OurTours" onClick={() => navigate('/tours')}>
-          {t('ourTours')}
-        </button>
-         </div> 
+        <div className="overlay1">
+          <h2>{t('welcomeTo')}</h2>
+          <img
+            className="logo2"
+            src={require('../../assets/Mlay_versionWhite.png')}
+            alt="logo"
+          ></img>
+          <p className="ourGoal">{t('ourGoal')}</p>
+          <button className="btn-OurTours" onClick={() => navigate('/tours')}>
+            {t('ourTours')}
+          </button>
+        </div>
       </header>
-      
     </div>
   );
 }

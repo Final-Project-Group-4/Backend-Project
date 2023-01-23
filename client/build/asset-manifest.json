@@ -1,13 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.da3e102d.css",
-    "main.js": "/static/js/main.a31c0cb0.js",
+    "main.css": "/static/css/main.91af1d75.css",
+    "main.js": "/static/js/main.4cf82f71.js",
+    "static/media/safari_unsplash.jpg": "/static/media/safari_unsplash.c59d63e984d18edf5384.jpg",
+    "static/media/cofeeMarangu_cover.jpg": "/static/media/cofeeMarangu_cover.e6c9c3ee7c20cdef3de0.jpg",
+    "static/media/hiking_tours.jpg": "/static/media/hiking_tours.83f1c87a811870e9b36a.jpg",
+    "static/media/lp-img-mainup.jpg": "/static/media/lp-img-mainup.69db7ea4c073d7bad945.jpg",
+    "static/media/contact-img-example.jpg": "/static/media/contact-img-example.4c2537616f82b181220e.jpg",
+    "static/media/safari_tours3.jpg": "/static/media/safari_tours3.dbef6e2e48b7bba40421.jpg",
+    "static/media/peter1.png": "/static/media/peter1.e1c7f9592b7bbfd224b4.png",
+    "static/media/Mlay_versionWhite.png": "/static/media/Mlay_versionWhite.11dad1c9397b8bd536a0.png",
+    "static/media/error-404.jpg": "/static/media/error-404.44f968b5b37b520269b3.jpg",
+    "static/media/icons8-hill-all-terrain-vehicule-400.png": "/static/media/icons8-hill-all-terrain-vehicule-400.7db26516cbc2d764f3c3.png",
+    "static/media/icons8-elephant-400.png": "/static/media/icons8-elephant-400.c4988ebb4431663cc2b6.png",
+    "static/media/icons8-cut-400.png": "/static/media/icons8-cut-400.b0b47e3d1df8c56e0b39.png",
     "index.html": "/index.html",
-    "main.da3e102d.css.map": "/static/css/main.da3e102d.css.map",
-    "main.a31c0cb0.js.map": "/static/js/main.a31c0cb0.js.map"
+    "static/media/arrow-down-mint.svg": "/static/media/arrow-down-mint.b66788ac0f4e398ce933.svg",
+    "main.91af1d75.css.map": "/static/css/main.91af1d75.css.map",
+    "main.4cf82f71.js.map": "/static/js/main.4cf82f71.js.map"
   },
   "entrypoints": [
-    "static/css/main.da3e102d.css",
-    "static/js/main.a31c0cb0.js"
+    "static/css/main.91af1d75.css",
+    "static/js/main.4cf82f71.js"
   ]
 }

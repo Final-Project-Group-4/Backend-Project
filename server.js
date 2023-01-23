@@ -8,16 +8,23 @@ import adminRouter from './routes/adminRouter.js';
 import galleryRouter from './routes/galleryRouter.js';
 import AppError from './utils/appError.js';
 import ErrorHandler from './middleware/errorHandler.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
 dotenv.config();
 
-const corsOptions ={
-  origin:'http://localhost:3000', //backend servers are secured, we mention wich url can access this server. we are allowing the frontend in port 3000 to access the backend. we have to update this frontend url when we deploy
-  credentials:true,            //access-control-allow-credentials:true
-  optionSuccessStatus:200
-} 
+const corsOptions = {
+  origin: 'http://localhost:3000', //backend servers are secured, we mention wich url can access this server. we are allowing the frontend in port 3000 to access the backend. we have to update this frontend url when we deploy
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
 app.use(cors(corsOptions));
+
+const __fileName = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__fileName);
+
+app.use(express.static(path.join(__dirname, './client/build')));
 
 //app.use(cors());
 app.use(express.json({ extended: true, limit: '10kb' }));
@@ -47,6 +54,10 @@ app.use(morgan('dev'));
 app.use('/api/tours', tourRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/gallery', galleryRouter);
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './client/build/index.html'));
+});
 
 app.all('*', (req, res, next) => {
   next(new AppError('Page Not Found!', 404));

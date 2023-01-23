@@ -28,15 +28,15 @@ function Footer() {
           <div className="col">
             <Link to={'/faq'} className="faq">
               <h4>FAQ</h4>
+              <ul className="list-unstyled">
+                <li>{t('anyQuestions')}</li>
+              </ul>
             </Link>
-            <ul className="list-unstyled">
-              <li>{t('anyQuestions')}</li>
-            </ul>
           </div>
         </div>
         <hr />
         <div className="last-row">
-          <p className="col-sm">copyright 2009 © All rights reserved</p>
+          <p className="col-sm">All rights reserved</p>
           <div className="social-icons">
             <div className="icons">
               <a
@@ -52,11 +52,6 @@ function Footer() {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
-            {/* <div className="icons">
-              <a href="https://twitter.com">
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-            </div> */}
           </div>
         </div>
       </div>

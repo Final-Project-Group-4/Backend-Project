@@ -141,9 +141,9 @@ export default function SingleTour() {
           <div className="main-middle">
             <div className="middle-multiple-img">
               <img src={images[1]} alt="" className="middle-img-small" />
-              <img src={images[2]} alt="" className="middle-img-small" />
+              <img src={images[2]} alt="" className="middle-img-small2" />
             </div>
-            <img src={images[0]} alt="img" className="middle-img" />
+            <img src={images[0]} alt="img" className="middle-img2" />
           </div>
         )}
         <div className="map-container" id="map" style={{ height: '50vh' }}></div>

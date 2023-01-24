@@ -3,6 +3,7 @@
 .single-tour {
   margin: auto;
   background-color: $main-light;
+  padding:$padding-medium;
   h1 {
     text-align: center;
     padding: 1rem;
@@ -12,18 +13,21 @@
   }
 
   .main-img-div {
+    
     margin-top: 6rem;
     width: 100%;
     height: 40vh;
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     img {
       object-fit: cover;
       height: 100%;
-      width: 40%;
+      width: 50%;
+      border-radius: 20px;
     }
     .inner-text-container {
-      padding: 0.3rem;
+      padding-left: $padding-medium;
+      padding-right:$padding-medium ;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -36,9 +40,11 @@
         padding: 0.5rem;
         text-align: center;
         align-items: flex-end;
-        font-family: 'Raleway', sans-serif;
+        //font-family: 'Raleway', sans-serif;
         font-weight: 300;
-        font-size: calc(16px + 0.390625vw);
+        @include paragraph;
+
+        /* font-size: calc(16px + 0.390625vw); */
       }
     }
   }
@@ -47,13 +53,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid $main-yellow;
+   // border: 1px solid $main-yellow;
     margin-bottom: 1rem;
     height: 450px;
     .days-container {
       display: flex;
       height: 100%;
       width: 50%;
+      margin-bottom: 3em;
       .days-list {
         width: 30%;
         padding: 0.5rem;
@@ -84,16 +91,19 @@
         }
       }
       .day-details {
-        padding: 0.5rem;
+        padding: $padding-medium;
         width: 75%;
         display: flex;
         flex-direction: column;
         overflow: auto;
+       
+        
         p {
           margin-top: 0.3rem;
-          padding: 0.3rem;
+          padding:$padding-small;
           border-top: solid 1px $main-yellow;
-          font-size: calc(16px + 0.390625vw);
+          @include paragraph;
+          /* font-size: calc(16px + 0.390625vw); */
         }
 
         h3 {
@@ -101,6 +111,9 @@
           font-weight: 500;
           font-family: 'Roboto', sans-serif;
           font-size: calc(18px + 0.390625vw);
+          padding-left: 0.5em;
+          text-align: left;
+          
         }
         h5 {
           font-weight: 400;
@@ -108,6 +121,7 @@
           font-size: calc(12px + 0.390625vw);
           padding: 0.3rem;
           font-style: italic;
+          padding-left: 0.5em;
         }
         h6 {
           font-size: calc(10px + 0.390625vw);
@@ -120,6 +134,13 @@
       width: 50%;
       height: 100%;
       object-fit: cover;
+      border-radius: 20px;
+    }
+    .middle-img2 {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+     border-radius: 0 20px 0 0;
     }
     .middle-multiple-img {
       display: flex;
@@ -127,9 +148,16 @@
       width: 50%;
       height: 100%;
       .middle-img-small {
+        border-radius: 20px 0 0 0;
         width: 50%;
         object-fit: cover;
-        border-right: solid 2px $main-yellow;
+        //border-right: solid 2px $main-yellow;
+      }
+      .middle-img-small2 {
+        //border-radius: 20px 0 0 0;
+        width: 50%;
+        object-fit: cover;
+        //border-right: solid 2px $main-yellow;
       }
     }
   }
@@ -177,6 +205,7 @@
         width: 100%;
         border-bottom: solid 1px $main-yellow;
         max-height: 375px;
+        
         .days-list {
           max-height: 355px;
           margin: auto 0;

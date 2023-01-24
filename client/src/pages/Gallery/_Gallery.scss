@@ -23,6 +23,10 @@
     // -moz-column-width: 20%;
     // column-width: 20%;
     padding: 0.8em 0.8em;
+    //this is what I added
+    position: relative;
+    top:5em;
+    margin-bottom: 5em;
 
     @include m {
       -webkit-column-count: 3;

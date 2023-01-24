@@ -4,35 +4,53 @@ import { useContext, useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Context } from '../../context/Context';
+import { useNavigate } from 'react-router-dom';
 
 function Settings() {
-  const { user } = useContext(Context);
+  const { user, dispatch } = useContext(Context);
   const [passwordCurrent, setPasswordCurrent] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [email, setEmail] = useState('');
   const [newEmail, setNewEmail] = useState('');
+  const navigate = useNavigate();
 
   // console.log(user);
   // console.log(user.email);
 
+  const handleLogout = async () => {
+    dispatch({ type: 'LOGOUT' });
+    try {
+      await axios.post(`/api/admin/logout`);
+      //console.log(res.data);
+      navigate('/login');
+    } catch (err) {
+      toast.error(err.response.data.message);
+    }
+  };
+
   const submitEmail = async (e) => {
     e.preventDefault();
     if (email !== user.email) {
-      toast.error('Email is not true');
-      return;
+      return toast.error('Email is wrong, please enter your current email.');
+    } else if (email === newEmail) {
+      return toast.error('Emails are same!');
     }
+
+    console.log(user);
+
     try {
       //make a patch request with user id
       const updateRes = await axios.patch(`/api/admin/${user.id}`, {
         email: newEmail,
       });
-      if (updateRes.data) {
-        toast.success('Email reset');
-        //console.log(updateRes.data);
-      }
-    } catch (error) {
-      console.log(error);
+      //console.log(updateRes);
+      toast.success('Email reset, please log in with your new email address.');
+      setEmail('');
+      setNewEmail('');
+      handleLogout();
+    } catch (err) {
+      toast.error(err.response.data.message);
     }
   };
 
@@ -40,8 +58,7 @@ function Settings() {
     e.preventDefault();
     // compare user password & entered password
     if (password !== passwordConfirm) {
-      toast.error('Passwords are not same');
-      return;
+      return toast.error('New password and confirm password must be same.');
     }
 
     try {
@@ -52,12 +69,16 @@ function Settings() {
         passwordConfirm: passwordConfirm,
       });
       //console.log(updateRes.data);
-      if (updateRes.data) {
-        toast.success('Password reset');
-      }
-    } catch (error) {
-      console.log(error);
-      toast.error('Password reset is failed');
+      toast.success('Password reset');
+      setPassword('');
+      setPasswordConfirm('');
+      setPasswordCurrent('');
+    } catch (err) {
+      //console.log(err);
+      toast.error(err.response.data.message);
+      setPassword('');
+      setPasswordConfirm('');
+      setPasswordCurrent('');
     }
   };
 

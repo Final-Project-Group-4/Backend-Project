@@ -16,7 +16,7 @@ function ForgotPassword() {
       toast.success('Reset link has been sent!');
     } catch (err) {
       setError(true);
-      console.log(err);
+      toast.error(err.response.data.message);
     }
   };
 

@@ -37,12 +37,10 @@ export default function TourForm() {
           authorization: `Bearer ${user.token}`,
         },
       });
-      if (res.data) {
-        toast.success('Tour created!');
-        navigate('/admin/manageTours');
-      }
-    } catch (error) {
-      toast.error(error);
+      toast.success('Tour created!');
+      navigate('/admin/manageTours');
+    } catch (err) {
+      toast.error(err.response.data.message);
     }
   };
 

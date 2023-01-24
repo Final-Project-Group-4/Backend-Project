@@ -12,7 +12,7 @@ const sendEmail = async (options) => {
     const template = Handlebars.compile(source);
     const replacements = {
       username: options.name,
-      link: `http://localhost:3000/resetPassword/${options.token}`,
+      link: `${process.env.PROD_URL}/resetPassword/${options.token}`,
     };
     const htmlToSend = template(replacements);
     // 1. Create a transporter
@@ -38,7 +38,7 @@ const sendEmail = async (options) => {
 
     // 2. Define the email options
     const mailOptions = {
-      from: `<${process.env.SENDGRID_EMAIL_FROM}`,
+      from: `<${process.env.SENDGRID_EMAIL_FROM}>`,
       to: options.email,
       subject: options.subject,
       html: htmlToSend,

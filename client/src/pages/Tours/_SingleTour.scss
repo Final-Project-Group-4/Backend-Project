@@ -136,16 +136,28 @@
       object-fit: cover;
       border-radius: 20px;
     }
+    .middle-img2 {
+      width: 50%;
+      height: 100%;
+      object-fit: cover;
+     border-radius: 0 20px 0 0;
+    }
     .middle-multiple-img {
       display: flex;
       flex-wrap: wrap;
       width: 50%;
       height: 100%;
       .middle-img-small {
-        border-radius: 20px;
+        border-radius: 20px 0 0 0;
         width: 50%;
         object-fit: cover;
-        border-right: solid 2px $main-yellow;
+        //border-right: solid 2px $main-yellow;
+      }
+      .middle-img-small2 {
+        //border-radius: 20px 0 0 0;
+        width: 50%;
+        object-fit: cover;
+        //border-right: solid 2px $main-yellow;
       }
     }
   }

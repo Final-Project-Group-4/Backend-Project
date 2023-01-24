@@ -46,6 +46,7 @@ export default function Tours() {
 
   return (
     <div className="container1">
+      
       <div className="container2">
         <div
           className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
@@ -111,7 +112,7 @@ export default function Tours() {
               );
             })}
           </Grid>
-        </Container>
+         </Container> 
       </div>
       <Contacts />
     </div>

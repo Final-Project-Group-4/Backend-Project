@@ -4,9 +4,15 @@ import Box from '@mui/material/Box';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from 'react-router-dom';
-import { FaPen, FaSearch, FaTrash } from 'react-icons/fa';
+import { FaPen, FaSearch, FaTrash, FaArrowRight } from 'react-icons/fa';
+import { borderRadius } from '@mui/system';
 
 function TourCard(props) {
+  
+    
+
+
+
   const {
     tour,
     difficulty,
@@ -22,9 +28,9 @@ function TourCard(props) {
   } = props;
 
   return (
-    <Paper
+    <Paper className="card"
       elevation={3}
-      sx={{ height: { height }, textAlign: 'center', justifyContent: 'space-between' }}
+      sx={{ height: { height }, textAlign: 'center', justifyContent: 'space-between', borderRadius:"16px"}}
     >
       <img src={mainImg} alt="mainImage" className="img" />
       <Box paddingX={1}>
@@ -41,9 +47,9 @@ function TourCard(props) {
           sx={{ fontFamily: 'raleway', fontSize: '1rem', fontWeight: '400' }}
           textAlign="left"
         >
-          <b className="subtitles"></b>
+          <b className="subtitlesTop">{subtitle}</b>
           <span />
-          {subtitle}
+          
         </Typography>
       </Box>
       {/* <Divider component="li" className="li-divider" /> */}
@@ -54,7 +60,6 @@ function TourCard(props) {
               component="h2"
               variant="subtitle1"
               className="CardBodyText"
-              sx={{ fontFamily: 'raleway', fontSize: '1', fontWeight: '400' }}
               textAlign="left"
             >
               {days.length}
@@ -116,9 +121,9 @@ function TourCard(props) {
 
       {!inAdmin && (
         <Box sx={{ alignContent: 'center' }}>
-          <Button className="btn-primary">
+          <Button className="visitBtn">
             <Link to={`/tours/${id}`} className="card-link">
-              Go to tour
+              DETAILS <FaArrowRight size={30} style={{marginLeft:"10px",position: 'relative', top: '8px' }}/>
             </Link>
           </Button>
         </Box>

@@ -102,12 +102,15 @@
 
 .MuiCardActionArea-root:hover .MuiPaper-root{
   
-  background-color: $main-yellow;
-  color:white;
+ // background-color: $main-yellow;
+  color:rgb(0, 0, 0);
   cursor:pointer;
-  transform:scale(1.03);
-  transition: all 0.6s ease-in-out;}
+  transform:scale(1.01);
+  transition: all 0.3s ease-in-out;
   
+  }
+  
+
   
 
 // Media queries--------------------------

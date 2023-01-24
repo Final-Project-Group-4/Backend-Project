@@ -49,7 +49,7 @@ export default function Tours() {
   return (
     <div className="container1">
       
-      <div className="container2">
+      <div className="container2" style={{overflow:"hidden"}}>
         <div  style={{position:"relative", zIndex:"2"}} 
           className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
             type === 'safari' ? 'img-safari' : ''

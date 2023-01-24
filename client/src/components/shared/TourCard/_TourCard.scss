@@ -73,27 +73,18 @@
     }
   }
 
-  .btn-details {
-    //line-height: 1 !important;
-    width: 90px;
-    &:hover {
-      background-color: $main-yellow !important;
-    }
-    .details-link {
-      color: black;
-    }
-  }
+ 
 }
 
 .MuiCardActionArea-root:hover .card-link{
 
 
-      border: 3px solid rgb(255, 255, 255);
-      background-color:  white;
-      color: rgb(6, 6, 6);
+      border: 3px solid rgb(6, 6, 6);;
+      //background-color:  rgb(6, 6, 6);
+      color: rgb(0, 0, 0);
       text-decoration: none;
       font-weight: 400;
-}
+} 
   
 
 
@@ -114,9 +105,11 @@
     border: 3px solid black;
     font-weight: 400;
     transition: all 0.6s ease-in-out;
+   
 
-     
     }
 }
 
- 
+.visitBtn:hover .card-link {
+  background-color: $main-yellow;
+}

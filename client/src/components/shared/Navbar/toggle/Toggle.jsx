@@ -2,7 +2,7 @@ import './_toggle.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaInstagram, FaPowerOff,FaFacebook } from 'react-icons/fa';
+import { FaInstagram,FaFacebook } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { Context } from '../../../../context/Context';
@@ -33,7 +33,7 @@ function Toggle(props) {
     <div className="app__navbar__menu">
       <HiMenuAlt4 onClick={() => props.setToggle(true)} />
       {props.toggle && (
-        <motion.div whileInView={{ x: [800, 0] }} transition={{ duration: 1 }}>
+        <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85 }}>
           {/* when the use toggle the function setToggle useState gonna be false so it can disappear */}
           <HiX onClick={() => props.setToggle(false)} />
           <ul className="try">

@@ -1,7 +1,7 @@
 import './MediaIcons.scss';
-import { FaFacebook } from 'react-icons/fa';
+import {  } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
-import { FaInstagram, FaPowerOff } from 'react-icons/fa';
+import { FaInstagram, FaPowerOff,FaFacebook } from 'react-icons/fa';
 import { useContext } from 'react';
 import { Context } from '../../../../context/Context';
 import { Link, useNavigate } from 'react-router-dom';

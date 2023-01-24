@@ -2,8 +2,7 @@ import './_toggle.scss';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { BsFacebook } from 'react-icons/bs';
-import { FaInstagram } from 'react-icons/fa';
+import { FaInstagram, FaPowerOff,FaFacebook } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { useContext } from 'react';
 import { Context } from '../../../../context/Context';
@@ -34,10 +33,11 @@ function Toggle(props) {
     <div className="app__navbar__menu">
       <HiMenuAlt4 onClick={() => props.setToggle(true)} />
       {props.toggle && (
-        <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85 }}>
+        <motion.div whileInView={{ x: [800, 0] }} transition={{ duration: 1 }}>
           {/* when the use toggle the function setToggle useState gonna be false so it can disappear */}
           <HiX onClick={() => props.setToggle(false)} />
           <ul className="try">
+            
             <li>
               <Link to={'/'} onClick={() => props.setToggle(false)}>
                 Home
@@ -62,6 +62,7 @@ function Toggle(props) {
               <Link to={'/plantrip'} onClick={() => props.setToggle(false)}>
                 {t('planTrip')}
               </Link>
+              
             </li>
             {user && (
               <>
@@ -115,13 +116,25 @@ function Toggle(props) {
                   EN
                 </p>
               </li>
+              
             </ul>
+            <ul className="icon">
+            <a
+            href={`https://www.facebook.com/profile.php?id=100069632993371`}
+            rel="noreferrer"
+            target="_blank"
+           
+          >
+            <FaFacebook size={20} color= "black" />
+          </a>
+        
+          <a href={`https://instagram.com/mlay_tours?r=nametag`} rel="noreferrer" target="_blank">
+            <FaInstagram size={20} color= "black" />
+          </a>
+          </ul>
           </ul>
 
-          <ul className="icon">
-            <BsFacebook style={{ width: '20px', height: '20px' }} />,
-            <FaInstagram style={{ width: '20px', height: '20px' }} />,
-          </ul>
+       
         </motion.div>
       )}
     </div>

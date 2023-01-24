@@ -6,7 +6,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from 'react-router-dom';
 import { FaPen, FaSearch, FaTrash, FaArrowRight } from 'react-icons/fa';
 import { borderRadius } from '@mui/system';
-
+import { Card } from '@mui/material';
 function TourCard(props) {
   
     
@@ -28,10 +28,12 @@ function TourCard(props) {
   } = props;
 
   return (
-    <Paper className="card"
+    <Card className="card"
       elevation={3}
       sx={{ height: { height }, textAlign: 'center', justifyContent: 'space-between', borderRadius:"16px"}}
     >
+      
+
       <img src={mainImg} alt="mainImage" className="img" />
       <Box paddingX={1}>
         <Typography variant="subtitle1" component="h2" className="nameOfRoute">
@@ -128,7 +130,8 @@ function TourCard(props) {
           </Button>
         </Box>
       )}
-    </Paper>
+       
+    </Card>
   );
 }
 

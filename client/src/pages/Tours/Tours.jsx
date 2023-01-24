@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react';
 import './_Tours.scss';
 import axios from 'axios';
 import { useTranslation } from 'react-i18next';
+import { CardActionArea } from '@mui/material';
+
 
 export default function Tours() {
   const { t } = useTranslation();
@@ -48,12 +50,12 @@ export default function Tours() {
     <div className="container1">
       
       <div className="container2">
-        <div
+        <div  style={{position:"relative", zIndex:"2"}} 
           className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
             type === 'safari' ? 'img-safari' : ''
           } ${type === 'coffee' ? 'img-coffee' : ''}`}
         >
-          <div className="insideLeft">
+          <div className="insideLeft" >
             <div className="tourPara">
               {!type && (
                 <div className="overlay moreOpaque">
@@ -86,7 +88,12 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
+        <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
+          <img src={require("../../assets/inkySpot.png")} style={{width:"20em",top:"-50px", right:"-40px", position:"relative"}}></img>
+           <img src={require("../../assets/inkySpot.png")} style={{position:"relative", width:"20em", bottom:"-35em", right:"-15em",position:"relative", zIndex:"-1"}}></img> 
+        </div>
           <Grid
+          sx={{position:"relative", zIndex:"3"}}
             className="gridRight"
             container
             spacing={1}
@@ -97,17 +104,20 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
-                <Grid item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}>
-                  <TourCard
-                    mainImg={tour.imgCover}
-                    days={tour.days}
-                    name={tour.name}
-                    tour={tour.name}
-                    subtitle={tour.subtitle}
-                    difficulty={tour.difficulty}
-                    scenery={tour.scenery}
-                    id={tour._id}
-                  />
+                <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
+                ><CardActionArea>
+                  
+                    <TourCard
+                      mainImg={tour.imgCover}
+                      days={tour.days}
+                      name={tour.name}
+                      tour={tour.name}
+                      subtitle={tour.subtitle}
+                      difficulty={tour.difficulty}
+                      scenery={tour.scenery}
+                      id={tour._id}
+                    />
+                </CardActionArea>
                 </Grid>
               );
             })}

@@ -24,7 +24,7 @@ function MediaIcons() {
         navigate('/');
       }
     } catch (err) {
-      toast.error(err);
+      toast.error(err.response.data.message);
     }
   };
 

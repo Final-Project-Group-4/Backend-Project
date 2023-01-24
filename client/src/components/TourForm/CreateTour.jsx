@@ -1,8 +1,6 @@
 import { FormControl, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import { useFormContext } from '../../hooks/useFormContext';
 
-
-
 export default function CreateTour() {
   const { tour, handleChange, setTour } = useFormContext();
 
@@ -38,24 +36,19 @@ export default function CreateTour() {
   };
 
   const handleImages = (e) => {
-    
     setTour((prev) => {
       const copy = { ...prev };
+      if (e.target.name === 'first') {
+        copy.otherImages[0] = e.target.value;
+      } else if (e.target.name === 'second') {
+        copy.otherImages[1] = e.target.value;
+      } else if (e.target.name === 'third') {
+        copy.otherImages[2] = e.target.value;
+      }
+      return copy;
+    });
+  };
 
-    
-          if (e.target.name === 'first') {
-            copy.otherImages[0] = e.target.value;
-          } else if (e.target.name === 'second') {
-            copy.otherImages[1] = e.target.value;
-          } else if (e.target.name === 'third') {
-            copy.otherImages[2] = e.target.value;
-          }
-          return copy;
-        })
-
-      }   
-      
-    
   const handleCoverImg = (e) => {
     setTour((prev) => {
       const copy = { ...prev };
@@ -69,7 +62,7 @@ export default function CreateTour() {
   };
 
   const content = (
-    <div className='content-container'>
+    <div className="content-container">
       <div className="form-group">
         <TextField
           fullWidth
@@ -83,7 +76,7 @@ export default function CreateTour() {
       </div>
       <div className="form-group">
         <TextField
-          className='text-field'
+          className="text-field"
           fullWidth
           required
           value={tour.duration}

@@ -28,7 +28,7 @@ export default function Tours() {
   const loadToursDataByType = async () => {
     const filteredToursByType = await axios.get(`/api/tours/category/${type}`);
     if (filteredToursByType.status === 200) {
-      setTourData(filteredToursByType.data);
+      setTourData(filteredToursByType.data.tour);
     } else {
       console.error('Something went wrong');
     }

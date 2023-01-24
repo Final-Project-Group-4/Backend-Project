@@ -11,29 +11,24 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { user, dispatch, isLoading } = useContext(Context);
+  const { dispatch, isLoading } = useContext(Context);
   const navigate = useNavigate();
-  console.log(user);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: 'LOGIN_START' });
-
     try {
       //API call
       const res = await axios.post(`/api/admin/login`, {
         email: email,
         password: password,
       });
-      if (res.data) {
-        dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
-        //console.log(user);
-        toast.success('Login successful');
-        navigate('/');
-      }
+      dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
+      toast.success('Login successful');
+      navigate('/');
     } catch (err) {
       dispatch({ type: 'LOGIN_FAILURE' });
-      toast.error('Wrong Credentials');
+      toast.error(err.response.data.message);
     }
   };
 

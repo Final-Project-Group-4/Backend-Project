@@ -38,7 +38,7 @@ const sendEmail = async (options) => {
 
     // 2. Define the email options
     const mailOptions = {
-      from: `<${process.env.SENDGRID_EMAIL_FROM}`,
+      from: `<${process.env.SENDGRID_EMAIL_FROM}>`,
       to: options.email,
       subject: options.subject,
       html: htmlToSend,

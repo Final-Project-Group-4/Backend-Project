@@ -94,6 +94,7 @@ export default function Tours() {
             <img
               src={require('../../assets/inkySpot.png')}
               style={{ width: '20em', top: '-50px', right: '-40px', position: 'relative' }}
+              alt=""
             ></img>
             <img
               src={require('../../assets/inkySpot.png')}
@@ -102,9 +103,9 @@ export default function Tours() {
                 width: '20em',
                 bottom: '-35em',
                 right: '-15em',
-                position: 'relative',
                 zIndex: '-1',
               }}
+              alt=""
             ></img>
           </div>
           <Grid

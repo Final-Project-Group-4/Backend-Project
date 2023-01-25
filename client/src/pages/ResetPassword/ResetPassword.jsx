@@ -19,7 +19,7 @@ function ResetPassword() {
       return toast.error('Password and confirm password must be same!');
     }
     try {
-      const res = await axios.patch(`/api/admin/resetPassword/${token}`, {
+      await axios.patch(`/api/admin/resetPassword/${token}`, {
         password,
         passwordConfirm,
       });

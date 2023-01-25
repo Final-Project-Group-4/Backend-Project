@@ -9,12 +9,6 @@ import './_TourForm.scss';
 
 export default function TourForm() {
   const { tour, title, page, setPage } = useFormContext();
-  //tour es el componente que se va a enviar al backend
-  //title es el titulo de cada pagina
-  //page es el numero de pagina
-  //setPage es la funcion que cambia el numero de pagina
-
-  //const {display, setDisplay} = useState(0);
   const { user } = useContext(Context);
   const navigate = useNavigate();
   //console.log('CURRENT TOUR', tour);

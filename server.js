@@ -30,9 +30,7 @@ app.use(cors());
 app.use(express.json({ extended: true, limit: '10kb' }));
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
+app.use(morgan('dev'));
 
 // ROUTES:
 app.use('/api/tours', tourRouter);

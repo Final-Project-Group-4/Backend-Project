@@ -1,38 +1,35 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector"
-import translationEn from "./locale/en.json"
-import translationFr from "./locale/fr.json"
-import translationDe from "./locale/de.json"
+import LanguageDetector from "i18next-browser-languagedetector";
+import translationEn from "./locale/en.json";
+import translationFr from "./locale/fr.json";
+import translationDe from "./locale/de.json";
 
 const resources = {
   en: {
-    translation: translationEn
-
+    translation: translationEn,
   },
   fr: {
-    translation: translationFr
+    translation: translationFr,
   },
   de: {
-    translation: translationDe
+    translation: translationDe,
   },
-  
 };
 
 i18n
-.use(LanguageDetector)
-  .use(initReactI18next) 
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     resources,
     lng: "en",
 
     interpolation: {
-      escapeValue: false 
+      escapeValue: false,
     },
     react: {
-        useSuspense: false
-    }
-
+      useSuspense: false,
+    },
   });
 
-  export default i18n;
+export default i18n;

@@ -13,15 +13,15 @@ function MainUp() {
 
   return (
     <div className="container mainup" style={{overflow:"hidden"}} >
-
+{/* 
 
       <div className='background-Squiggly' style={{position:"absolute",left:"-30%",top:"90em", height:"50vh", width:"50%"}} >
-           {/* <img className='bg-Animalprints' src={require("../../assets/inkySpot.png")} style={{width:"60em",top:"-70px", right:"-40px", position:"relative", zIndex:"-3"}}></img>  */}
+          
 
            <img className='bg-Animalprints' src={require("../../assets/animal23_circle.png")} style={{  position:"relative", zIndex:"-4"}}></img>  
            
 
-        </div>
+        </div> */}
       <div className="first" >
 
       

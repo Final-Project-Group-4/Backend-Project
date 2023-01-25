@@ -87,7 +87,7 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
-
+{/* 
           <div
             className="background-Squiggly"
             style={{ position: 'absolute', left: '50%', height: '100vh', width: '50%' }}
@@ -108,9 +108,9 @@ export default function Tours() {
               }}
               alt=""
             ></img>
-          </div>
+          </div> */}
           <Grid
-            sx={{ position: 'relative', zIndex: '3' }}
+            sx={{ position: 'relative', zIndex: '0' }}
             className="gridRight"
             container
             spacing={1}
@@ -123,7 +123,7 @@ export default function Tours() {
               return (
 
                 <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
-                style={{position:"relative", zIndex:"-1"}}
+                style={{position:"relative", zIndex:"1"}}
                 ><CardActionArea>
                   
                     <TourCard

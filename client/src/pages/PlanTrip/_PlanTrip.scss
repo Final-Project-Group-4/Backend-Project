@@ -23,7 +23,7 @@
   margin: auto;
   height: 100%;
   width: 100%;
-  /* 
+  /*
   .plan-submit-btn {
     background-color: $main-yellow;
     color: $main-light;
@@ -93,6 +93,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .peter img {
     //width: 100%;
     margin: auto;
@@ -117,5 +118,16 @@
     width: 100%;
     height: 100%;
     margin: auto;
+  }
+}
+
+@include s {
+  .peter {
+    // max-width: 200px;
+    width: 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 }

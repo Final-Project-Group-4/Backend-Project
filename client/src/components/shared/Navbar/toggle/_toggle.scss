@@ -75,15 +75,15 @@
       align-items: flex-start;
       flex-direction: column;
 
-      @include s {
-        a {
-          font-size: 0.5rem;
-        }
-      }
-      @include m {
-      }
-      @include l {
-      }
+      // @include s {
+      //   a {
+      //     font-size: 0.5rem;
+      //   }
+      // }
+      // @include m {
+      // }
+      // @include l {
+      // }
 
       li {
         margin: 1rem;

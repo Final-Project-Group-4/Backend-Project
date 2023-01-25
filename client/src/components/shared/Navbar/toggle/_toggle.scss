@@ -1,4 +1,4 @@
-@import '../../../../../scss/config';
+@import "../../../../../scss/config";
 
 .app__navbar__menu {
   width: 50px;
@@ -44,9 +44,7 @@
       display: block;
       width: 100%;
       height: 100vh;
-
     }
-
     @include m {
       display: block;
       width: 100%;
@@ -61,7 +59,7 @@
       height: 45px;
       color: $main-yellow;
       margin: 0.5rem 1rem;
-      
+
       :hover {
         cursor: pointer;
       }
@@ -77,9 +75,18 @@
       align-items: flex-start;
       flex-direction: column;
 
+      @include s {
+        a {
+          font-size: 0.5rem;
+        }
+      }
+      @include m {
+      }
+      @include l {
+      }
+
       li {
         margin: 1rem;
-
         a {
           @include navlinks;
           color: black;
@@ -87,10 +94,9 @@
           font-size: 1rem;
           text-transform: uppercase;
           transition: all 0.3s ease-in-out;
-          padding: 0.5rem;
+          //padding: 0.5rem;
           &:hover {
             background-color: $main-yellow;
-            
           }
         }
       }

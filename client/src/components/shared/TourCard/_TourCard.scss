@@ -1,8 +1,20 @@
-@import '../../../../scss/_config.scss';
-@import '../../../../scss/_buttons.scss';
+@import "../../../../scss/_config.scss";
+@import "../../../../scss/_buttons.scss";
 
 .typeIcons {
-  margin-left:3px;
+  margin-left: 3px;
+}
+
+.orange {
+  color: $main-yellow;
+}
+
+.brown {
+  color: saddlebrown;
+}
+
+.green {
+  color: $main-green;
 }
 
 .img {
@@ -13,11 +25,11 @@
 }
 
 .nameOfRoute {
- // @include subtitles;
+  // @include subtitles;
   font-size: 2rem !important;
   font-weight: 400 !important;
   text-transform: uppercase;
-  font-family:$font-paragraph;
+  font-family: $font-paragraph;
 }
 
 .subtitles {
@@ -25,8 +37,6 @@
   font-size: 1rem;
   font-weight: 500;
   //font-style: italic;
-  
-  
 }
 
 .subtitlesTop {
@@ -34,16 +44,12 @@
   font-size: 1rem;
   font-weight: 600;
   font-style: italic;
- 
-    
-  
 }
-
-
 
 .card {
   display: flex !important;
-  flex-direction: column !important;}
+  flex-direction: column !important;
+}
 
 .li-divider {
   list-style-type: none;
@@ -72,35 +78,44 @@
   .btn-delete {
     line-height: 1 !important;
     width: 90px;
+    color: black;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
     &:hover {
       background-color: red !important;
     }
   }
 
- 
+  .btn-details {
+    line-height: 1 !important;
+    width: 90px;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
+    &:hover {
+      background-color: $main-yellow !important;
+    }
+    .details-link {
+      color: black;
+    }
+  }
 }
 
-.MuiCardActionArea-root:hover .card-link{
-
-
-      border: 3px solid rgb(6, 6, 6);;
-      //background-color:  rgb(6, 6, 6);
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-weight: 400;
-} 
-  
-
-
+.MuiCardActionArea-root:hover .card-link {
+  border: 3px solid rgb(6, 6, 6);
+  //background-color:  rgb(6, 6, 6);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 400;
+}
 
 .visitBtn {
   display: flex;
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
   .card-link {
-    font-family:$font-paragraph;
+    font-family: $font-paragraph;
     font-weight: 300;
-    height:50px;
+    height: 50px;
     width: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -109,9 +124,7 @@
     border: 3px solid black;
     font-weight: 400;
     transition: all 0.6s ease-in-out;
-   
-
-    }
+  }
 }
 
 .visitBtn:hover .card-link {

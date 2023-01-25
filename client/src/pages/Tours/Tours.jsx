@@ -86,7 +86,7 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
-          <div
+          {/* <div
             className="background-Squiggly"
             style={{
               position: "absolute",
@@ -116,9 +116,9 @@ export default function Tours() {
               }}
               alt=""
             ></img>
-          </div>
+          </div> */}
           <Grid
-            sx={{ position: "relative", zIndex: "3" }}
+            sx={{ position: "relative", zIndex: "0" }}
             className="gridRight"
             container
             spacing={1}
@@ -137,22 +137,22 @@ export default function Tours() {
                   lg={5.5}
                   margin="0.2em"
                   key={tour._id}
-                  style={{ position: "relative", zIndex: "-1" }}
+                  style={{ position: "relative", zIndex: "1" }}
                 >
-                  <CardActionArea>
-                    <TourCard
-                      mainImg={tour.imgCover}
-                      days={tour.days}
-                      name={tour.name}
-                      tour={tour.name}
-                      subtitle={tour.subtitle}
-                      difficulty={tour.difficulty}
-                      scenery={tour.scenery}
-                      id={tour._id}
-                      duration={tour.duration}
-                      type={tour.type}
-                    />
-                  </CardActionArea>
+                  {/* <CardActionArea> */}
+                  <TourCard
+                    mainImg={tour.imgCover}
+                    days={tour.days}
+                    name={tour.name}
+                    tour={tour.name}
+                    subtitle={tour.subtitle}
+                    difficulty={tour.difficulty}
+                    scenery={tour.scenery}
+                    id={tour._id}
+                    duration={tour.duration}
+                    type={tour.type}
+                  />
+                  {/* </CardActionArea> */}
                 </Grid>
               );
             })}

@@ -1,13 +1,13 @@
-@import '../../../scss/_config.scss';
-@import '../../../scss/buttons.scss';
+@import "../../../scss/_config.scss";
+@import "../../../scss/buttons.scss";
 
 .manage-tours-container {
-  height:80vh;
+  height: 80vh;
   width: 100%;
   overflow: auto;
   justify-content: center;
   .manage-tours-wrapper {
-    padding: 0 0.5rem;
+    padding: 0.5rem;
   }
 }
 

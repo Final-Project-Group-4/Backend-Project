@@ -5,52 +5,40 @@
   "aboutUs": "About Us",
   "planTrip": "Plan Trip",
 
-
-
   "//comment2": "Welcome landing page",
   "welcomeTo": "-WELCOME TO-",
   "ourGoal": "Our goal is set to provide a unique adventure for everyone.",
   "ourTours": "OUR TOURS",
 
-
-
   "//comment3": "MainUp page",
   "whatWeOffer": "We are offering",
   "weOffer": "Mlay Tours leads tourists on incredible adventures in Tanzania. Leading treks to Mt. Kilimanjaro Mt. Meru, Tanzania's game parks and cultural tours. All these activities will make your journey unforgettable.",
-  
-
 
   "//comment4": "MainUp cards",
 
-      "CustomTrip": "Custom trip",
-      "CustomTripText": "We offer best of Tanzania adventures: Kilimanjaro trekking, Meru trekking, day hike, safaris to different tanzanian parks.",
-  
-      "localTrip": "Local, Coffee",
-      "localTripText": "We make coffee in a traditional way from a coffee seed to a cup of coffee, while doing this process we also sing and dance.",
-    
-      "safariTrip": "Safari",
-      "safariTripText": "We offer best of Tanzania safari: Great migration, Ngorongoro crater, Tarangire national park and other Tanzanian parks.",
-    
-      "transportation": "Transportation",
-      "transportationText": "We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel.",
-    
-  
+  "CustomTrip": "Custom trip",
+  "CustomTripText": "We offer best of Tanzania adventures: Kilimanjaro trekking, Meru trekking, day hike, safaris to different tanzanian parks.",
+
+  "localTrip": "Local, Coffee",
+  "localTripText": "We make coffee in a traditional way from a coffee seed to a cup of coffee, while doing this process we also sing and dance.",
+
+  "safariTrip": "Safari",
+  "safariTripText": "We offer best of Tanzania safari: Great migration, Ngorongoro crater, Tarangire national park and other Tanzanian parks.",
+
+  "transportation": "Transportation",
+  "transportationText": "We use 4x4 drive Land Cruisers for safaris and mini bus to transfer from airport to the hotel.",
 
   "//comment5": "PeterCards",
   "peter": "Hi, I'm Peter",
   "petersExperience": "One of the most experienced guides you can ever find. Over 8 years of experience in technical climbing and hiking I have summit Kilimanjaro many times. On top of all I am certified CPR and mountain rescue.",
 
-
-
   "//comment6": "MainDown cards",
-  "chooseTripText":"CHOOSE A CATEGORY FROM OUR TOURS",
+  "chooseTripText": "CHOOSE A CATEGORY FROM OUR TOURS",
   "Hiking": " Hiking",
   "Safari": "Safari",
   "Coffee": "Coffee",
   "CustomTour": "Custom Tour",
   "WhyTravelWithUs": "WHY TRAVEL WITH US?",
-
-
 
   "//comment7": "Plan trip",
   "readyForAdventure": "Ready for Adventure!",
@@ -68,8 +56,6 @@
   "call": "Call:",
   "yourMessage": "Your message",
 
-
-
   "//comment8": "Tours page",
   "ourToursText": "Select from one of the following Amazing Africa Hikes & Treks. Do you prefer shorter walks or longer treks? Easy strolls or conquering the highest peaks? Or perhaps you would like to design a custom tour, I invite you to look at our tailored options and decide from there.",
 
@@ -78,288 +64,273 @@
   "safariToursText": "Let Africa's wildlife and safari lifestyle show you what this magical continent is about, once you go on your first Safari trip, you develop a deep longing to return to this magical continent. Start now and have a look at our offer, enjoy your next African Safari holiday alongside our experienced guides for an unforgettable experience.",
 
   "localTours": "LOCAL TOURS",
-  "localToursText": "This one-day tour takes in various natural and cultural sites on the surrounding slopes. Highlights include: Waterfalls - Make a splash in the mountain water of Kilimanjaro and enjoy stunning views of the surrounding valleys. Chagga Museum - The Chagga culture and history can be explored by visiting the museum. There are several exhibitions including a reconstructed thatched Chagga house. Underground Chagga Tunnels - These were used by the Chagga people to hide themselves from the enemies during clan wars. Coffee and Banana Farms - Visit coffee farms and a local home where you can enjoy local dishes and learn the traditional process of preparing coffee from bean to cup. Visit local Chagga bars and drink the traditional beer.",
-
-
+  "localToursText": "This one-day tour takes in various natural and cultural sites on the surrounding slopes. Highlights include: Waterfalls, Chagga Museum, Underground Chagga Tunnels, Coffee and Banana Farms and also a visit to the coffee farms and a local home where you can enjoy local dishes and learn the traditional process of preparing coffee from bean to cup. Visit local Chagga bars and drink the traditional beer.",
 
   "//comment9": "Contact US page",
   "ContactUs": "Contact Us",
   "needHelp": "Need help starting out ? Please contact Us, we are glad to help you plan your awesome trip",
   "Submit": "Submit",
 
-
-
   "//comment10": "Footer page",
   "anyQuestions": "If you have any other questions please don't hesitate to contact us!",
-
-
 
   "//comment11": "About us page ",
   "ourTeam": "Our team",
   "ourTeamText": "We are a fully licensed and insured, locally owned business with years of experience and expertise offering custom made safaris and Kilimanjaro climbs to fit your time,interests and budget. Not only is it more cost effective for you to book with an on the ground operator you are also supporting the local economy and business owners. Unlike many operators, we can ensure you will be fully looked after by our employees as we never outsource our clients to other companies. We are fully committed to responsible tourism and community development are proud to be one of the few companies offering 100% certified ethical Kilimanjaro climbs ensuring the fair and proper treatment of the hardworking mountain crew.",
-  "ourTeamText2":"Our team welcomes you to explore the unparalleled natural beauty of East Africa. You'll see native traditional tribes, hidden waterfalls, dazzling white sands, volcanic craters, and ice-capped mountain peaks all within hours of each other. We are able to offer customized unique safari, trekking and beach paradise experiences specifically matched to your interests, time and budget. Our experienced team and crew are dedicated to planning the perfect Tanzania adventure for you. We warmly invite you to explore our beautiful country with us, Karibu Tanzania! We have been operating Kilimanjaro climbs since 2000s and have a fantastic record of successfully and safely helping our clients to summit. Fundamental to our approach and what distinguishes us from nearly all companies offering Kilimanjaro climbs is that we are “operators” not “agents”. We do not simply take bookings and then sub-contract your climb. Instead we employ all our team directly, source all our equipment ourselves and control every aspect of your climb experience so that we can give you a cast iron commitment to quality.",
-  "ourTeamText3":"As part of that commitment to quality we adopt best practice in everything we do. We follow Tanzania Porters Association, Kilimanjaro Guides Associations and Kilimanjaro National Park regulations and continually work to ensure the best conditions for our crew. We support local entrepreneurs and we are committed fully to the principles of Leave no Trace For more about how we operate Climb with us: summit safely and have a life-changing experience.",
+  "ourTeamText2": "Our team welcomes you to explore the unparalleled natural beauty of East Africa. You'll see native traditional tribes, hidden waterfalls, dazzling white sands, volcanic craters, and ice-capped mountain peaks all within hours of each other. We are able to offer customized unique safari, trekking and beach paradise experiences specifically matched to your interests, time and budget. Our experienced team and crew are dedicated to planning the perfect Tanzania adventure for you. We warmly invite you to explore our beautiful country with us, Karibu Tanzania! We have been operating Kilimanjaro climbs since 2000s and have a fantastic record of successfully and safely helping our clients to summit. Fundamental to our approach and what distinguishes us from nearly all companies offering Kilimanjaro climbs is that we are “operators” not “agents”. We do not simply take bookings and then sub-contract your climb. Instead we employ all our team directly, source all our equipment ourselves and control every aspect of your climb experience so that we can give you a cast iron commitment to quality.",
+  "ourTeamText3": "As part of that commitment to quality we adopt best practice in everything we do. We follow Tanzania Porters Association, Kilimanjaro Guides Associations and Kilimanjaro National Park regulations and continually work to ensure the best conditions for our crew. We support local entrepreneurs and we are committed fully to the principles of Leave no Trace For more about how we operate Climb with us: summit safely and have a life-changing experience.",
 
   "history": "History",
   "historyText": "The words 'Mt. Kilimanjaro' conjure up romantic images of personal growth, challenge, defeat, and success. We have seen pictures and heard stories. The climbers of the first Mt.Kilimanjaro climb in 1889 had only their courage and passion pushing them on.",
-  "historyText1":"When asked, 'Who was the first to climb Mt. Kilimanjaro?', the most common reply is Hans Meyer of Germany. Hans Meyer is credited with the vision behind the expedition, but who was his guide? Yohani KinyalaLauwo was only eighteen years old when he led Hans Meyer and Ludwig Purtscheller to the highest point of Africa on October 5th,1889. His selection by the Mangi (Chagga chief) to be Hans Meyer's guide was accidental, but it forever changed his life. Kinyala (as he was called) was born and lived his entire life in the village of Marangu, nestled on the slopes of Mt. Kilimanjaro.",
-  "historyText2":"Before Europeans came to East Africa, many of the Lauwo clan of the Chagga tribe hunted the forest elephants for ivory and sold it to the Swahili traders from the coast. The forest also supplied them with honey, timber, medicine and Colobus monkey hides. By the time Hans Meyer arrived in Chaggaland, KinyalaLauwo was a tall teenager who knew the forest like the back of his hand. By then, colonialism had started in Kinyala's homeland and young men were being forced to construct roads. Kinyala tried to dodge the 'draft', but was caught. As a result, he was summoned for trial at Mangi Marealli's palace. Coincidentally,Hans Meyer had just arrived at the palace asking for permission to climb the mountain and guides and porters. The Mangi's wachili (advisors) spotted Kinyala, knew that he was of the Lauwo clan, and asked him to guide the expedition.",
-  "historyText3":"The event led Kinyala (later called MzeeLauwo) to guide Mt. Kilimanjaro climbs for more than seventy years! For his first climb, he was only wrapped in blankets. Over the years, he obtained appropriate clothing and hiking gear. Here he lived with his two wives until his death on May 10th, 1996, after a grand life of a one-hundred twenty-five years! Then the following month (June) the same year Peter Mlay was born, and he is now guiding tourists to the roof of Africa.",
-
+  "historyText1": "When asked, 'Who was the first to climb Mt. Kilimanjaro?', the most common reply is Hans Meyer of Germany. Hans Meyer is credited with the vision behind the expedition, but who was his guide? Yohani KinyalaLauwo was only eighteen years old when he led Hans Meyer and Ludwig Purtscheller to the highest point of Africa on October 5th,1889. His selection by the Mangi (Chagga chief) to be Hans Meyer's guide was accidental, but it forever changed his life. Kinyala (as he was called) was born and lived his entire life in the village of Marangu, nestled on the slopes of Mt. Kilimanjaro.",
+  "historyText2": "Before Europeans came to East Africa, many of the Lauwo clan of the Chagga tribe hunted the forest elephants for ivory and sold it to the Swahili traders from the coast. The forest also supplied them with honey, timber, medicine and Colobus monkey hides. By the time Hans Meyer arrived in Chaggaland, KinyalaLauwo was a tall teenager who knew the forest like the back of his hand. By then, colonialism had started in Kinyala's homeland and young men were being forced to construct roads. Kinyala tried to dodge the 'draft', but was caught. As a result, he was summoned for trial at Mangi Marealli's palace. Coincidentally,Hans Meyer had just arrived at the palace asking for permission to climb the mountain and guides and porters. The Mangi's wachili (advisors) spotted Kinyala, knew that he was of the Lauwo clan, and asked him to guide the expedition.",
+  "historyText3": "The event led Kinyala (later called MzeeLauwo) to guide Mt. Kilimanjaro climbs for more than seventy years! For his first climb, he was only wrapped in blankets. Over the years, he obtained appropriate clothing and hiking gear. Here he lived with his two wives until his death on May 10th, 1996, after a grand life of a one-hundred twenty-five years! Then the following month (June) the same year Peter Mlay was born, and he is now guiding tourists to the roof of Africa.",
 
   "//comment12": "Gallery page ",
   "photo": "Photo ",
   "gallery2": "Gallery",
 
-  
-
   "//comment13": "FAQ",
-  "questionOne" : "What is included in your Safari Package?",
-  "answersOne" : [
+  "questionOne": "What is included in your Safari Package?",
+  "answersOne": [
     {
-      "answer1" :"1. Accommodation as specified in the itinerary."
-  }    ,
-  {
-   "answer1":"2. All meals at lodges and tented camps."
-  },
-  {
-    "answer1" :  "3. Unlimited kms, Toyota Land cruiser 4x4 Safari vehicle with pop up roof, 6 window seats, power adapters, and refrigerator."
-
-  },
-  {
-    "answer1" :"4. Experienced English speaking guide."
-
-  },
-  {
-    "answer1" :"5. Drinking water."
-
-  },
-  {
-    "answer1" : "6. All park entry fees and 18% VAT."
-
-  }
-],
-  "questionTwo":"What are the items that are not included?",
-  "answersTwo" : [
-     {
-      "answer2":"1. International Flights."
-     },
-     {
-      "answer2":"2. Visa."
-     },
-     {
-      "answer2":"3. Medications."
-     },  
-     {
-      "answer2":"4. Medical / Travel Insurance."
-     },
-       {
-      "answer2":"5. Hot Air Balloon Ride in Serengeti $ 650 per person."
-     }, 
-      {
-      "answer2":"6. Alcoholic and soft drinks."
-     },
-     {
-      "answer2":"7. Tip for Your Driver."
-     }
+      "answer1": "1. Accommodation as specified in the itinerary."
+    },
+    {
+      "answer1": "2. All meals at lodges and tented camps."
+    },
+    {
+      "answer1": "3. Unlimited kms, Toyota Land cruiser 4x4 Safari vehicle with pop up roof, 6 window seats, power adapters, and refrigerator."
+    },
+    {
+      "answer1": "4. Experienced English speaking guide."
+    },
+    {
+      "answer1": "5. Drinking water."
+    },
+    {
+      "answer1": "6. All park entry fees and 18% VAT."
+    }
   ],
-  "questionThree":"What are the items that are included?",
-  "answersThree" : [
-     {
-      "answer3":"1. Quality, waterproof, four-season private mountain sleeping tents."
-     },
-     {
-      "answer3":"2. Professional, experienced, mountain guides."
-     },
-     {
-      "answer3":"3. All Park fees."
-     },  
-     {
-      "answer3":"4. Rescue fees."
-     },
-       {
-      "answer3":"5. All meals while on the Mountain."
-     }, 
-      {
-      "answer3":"6. Guides, Porters, cook salaries and park fees."
-     },
-     {
-      "answer3":"7. Quality Mess tents with table and chairs"
-     },
-     {
-     "answer3":"8. Large portions of fresh, healthy nutritious food."
-     }, 
-     {
-    "answer3":"9. Clean, purified drinking water."
-     },
-     {
-     "answer3":"10. Crisis management and safety procedures."
-     },
-     {
-    "answer3":"11. Fair and ethical treatment of porters."
-   }
+  "questionTwo": "What are the items that are not included?",
+  "answersTwo": [
+    {
+      "answer2": "1. International Flights."
+    },
+    {
+      "answer2": "2. Visa."
+    },
+    {
+      "answer2": "3. Medications."
+    },
+    {
+      "answer2": "4. Medical / Travel Insurance."
+    },
+    {
+      "answer2": "5. Hot Air Balloon Ride in Serengeti $ 650 per person."
+    },
+    {
+      "answer2": "6. Alcoholic and soft drinks."
+    },
+    {
+      "answer2": "7. Tip for Your Driver."
+    }
   ],
-  "questionFour":"What is the items are not included?",
-  "answersFour" : [
-     {
-      "answer4":"1. Tanzania Visa."
-     },
-     {
-      "answer4":"2. Personal Expenses (e.g. laundry, telephone, beverages, etc.)."
-     },
-     {
-      "answer4":"3. Meals not listed above."
-     },  
-     {
-      "answer4":"4. Optional Tours (short safari after your climb e.t.c)."
-     }
-    ],
-    "questionFive":"What is required for trip ?",
-    "answersFive" : [
-       {
-        "answer5":"1. Duffel Bag (51L-100L, No Wheels or Handles)."
-       },
-       {
-        "answer5":"2. Pack Rain Cover."
-       },
-       {
-        "answer5":"3. Rain Pants (Lightweight, Waterproof, Breathable)."
-       },
-       {
-        "answer5":"4. Insulated Jacket."
-       },
-         {
-        "answer5":"5. Fleece/Wool Jacket or Sweater."
-       },
-        {
-        "answer5":"6. Long Underwear Tops and Bottoms (Middleweight, Synthetic)."
-       },
-       {
-        "answer5":"7. Long Sleeve Shirts (Synthetic, Lightweight)."
-       },
-       {
-       "answer5":"8. Hiking Pants (Convertible, Quick-Dry, Lightweight)."
-       },
-       {
-      "answer5":"9. Hiking Socks (Synthetic or Wool)."
-       },
-       {
-       "answer5":"10. Waterproof Hiking Boots."
-       },
-       {
-      "answer5":"11. Fleece/Wool Hat."
-       },
-       {
-        "answer5":"12. Sun Hat."
-       },
-       {
-        "answer5":"13. Headlamp with Fresh Batteries."
-       },
-       {
-        "answer5":"14. Sunglasses and Accessories."
-       },
-       {
-        "answer5":"15. Sun Block and Lip Balm."
-       },
-         {
-        "answer5":"16. Long Underwear Tops and Bottoms (Heavyweight, Synthetic)."
-       },
-        {
-        "answer5":"17. Bandana for Sun Protection."
-       },
-       {
-        "answer5":"18. Day Pack (21L-35L)."
-       },
-       {
-       "answer5":"19. Rain Jacket (Hooded, Lightweight, Waterproof, Breathable)."
-       },
-       {
-      "answer5":"20. Water Bottles (Three 1-Quart) or Hydration System + two 1-quart water bottles."
-       },
-       {
-       "answer5":"21. Gloves (Waterproof and Insulating)."
-       },
-       {
-      "answer5":"22. Sleeping Bag (1°-14°, Lightweight, Compressible)."
-     }
-    ],
-    "questionSix":"What Is Recommended For The Trip?",
-    "answersSix" : [
-       {
-        "answer6":" 1. Luggage (1 Piece)."
-       },
-       {
-        "answer6":" 2. Luggage Tags and Locks (2)."
-       },
-       {
-        "answer6":" 3. Passport/Money Belt or Pouch."
-       },
-       {
-        "answer6":" 4. Casual Clothing for Travel and Town Wear (Lightweight, Easily Washable)."
-       },
-         {
-        "answer6":" 5. Hiking Shorts (Longer, Quick-Dry, Lightweight)."
-       },
-        {
-        "answer6":" 6. Liner Socks (Synthetic)."
-       },
-       {
-        "answer6":" 7. Casual Shoes for Travel and Free Time."
-       },
-       {
-       "answer6":" 8. Trekking Poles."
-       },
-       {
-      "answer6":" 9. Hand and Toe Warmers."
-       },
-       {
-       "answer6":" 10. Energy Snacks and Drink Mixes."
-       },
-       {
-      "answer6":" 11. Toiletries."
-     },
-       {
-        "answer6":" 12. Camp Towel."
-       },
-       {
-        "answer6":" 13. Personal Bathroom Kit: Toilet Paper, Ziplock Bags, Personal Wipes, Hand Cleaner."
-       },
-       {
-        "answer6":" 14. Gaiters (Tall)."
-       },
-       {
-        "answer6":" 15. Tee Shirts (Cotton and Synthetic)."
-       },
-         {
-        "answer6":" 16. Balaclava (Synthetic or Wool)."
-       },
-        {
-        "answer6":" 17. Energy Snacks and Drink Mixes."
-       },
-       {
-        "answer6":" 18. Fleece Pants."
-       },
-       {
-       "answer6":" 19. Ear Plugs."
-       },
-       {
-      "answer6":" 20. Rain Poncho."
-       },
-       {
-       "answer6":" 21. Fleece/Wool Gloves."
-       },
-       {
-      "answer6":" 22. Insect Repellant (DEET)."
-     },
-     {
-    "answer6":" 23. Glove Liners (Synthetic)."
-   }
-    ], 
-    "GearList" : "Gear list?",
-    "GearListAnswer" : "The key to staying comfortable while on an active trip is layering. To get maximum comfort with minimum weight, you need versatile layers that mix and match to create the right amount of insulation, ventilation and weather protection. Try to bring only what is necessary — this will help you and the field staff.!",
-    "RentalsQuestion": "Rentals ?",
-    "RentalsAnswer": "Why buy gears that you will only use them once? We will facilitate all necessary gear at 80% cheaper than purchasing. We will make sure you are outfitted for the summit and make your trip relaxing.",
-    "FrequentlyAskedQuestions" : "Frequently Asked Questions" 
- 
-
+  "questionThree": "What are the items that are included?",
+  "answersThree": [
+    {
+      "answer3": "1. Quality, waterproof, four-season private mountain sleeping tents."
+    },
+    {
+      "answer3": "2. Professional, experienced, mountain guides."
+    },
+    {
+      "answer3": "3. All Park fees."
+    },
+    {
+      "answer3": "4. Rescue fees."
+    },
+    {
+      "answer3": "5. All meals while on the Mountain."
+    },
+    {
+      "answer3": "6. Guides, Porters, cook salaries and park fees."
+    },
+    {
+      "answer3": "7. Quality Mess tents with table and chairs"
+    },
+    {
+      "answer3": "8. Large portions of fresh, healthy nutritious food."
+    },
+    {
+      "answer3": "9. Clean, purified drinking water."
+    },
+    {
+      "answer3": "10. Crisis management and safety procedures."
+    },
+    {
+      "answer3": "11. Fair and ethical treatment of porters."
+    }
+  ],
+  "questionFour": "What is the items are not included?",
+  "answersFour": [
+    {
+      "answer4": "1. Tanzania Visa."
+    },
+    {
+      "answer4": "2. Personal Expenses (e.g. laundry, telephone, beverages, etc.)."
+    },
+    {
+      "answer4": "3. Meals not listed above."
+    },
+    {
+      "answer4": "4. Optional Tours (short safari after your climb e.t.c)."
+    }
+  ],
+  "questionFive": "What is required for trip ?",
+  "answersFive": [
+    {
+      "answer5": "1. Duffel Bag (51L-100L, No Wheels or Handles)."
+    },
+    {
+      "answer5": "2. Pack Rain Cover."
+    },
+    {
+      "answer5": "3. Rain Pants (Lightweight, Waterproof, Breathable)."
+    },
+    {
+      "answer5": "4. Insulated Jacket."
+    },
+    {
+      "answer5": "5. Fleece/Wool Jacket or Sweater."
+    },
+    {
+      "answer5": "6. Long Underwear Tops and Bottoms (Middleweight, Synthetic)."
+    },
+    {
+      "answer5": "7. Long Sleeve Shirts (Synthetic, Lightweight)."
+    },
+    {
+      "answer5": "8. Hiking Pants (Convertible, Quick-Dry, Lightweight)."
+    },
+    {
+      "answer5": "9. Hiking Socks (Synthetic or Wool)."
+    },
+    {
+      "answer5": "10. Waterproof Hiking Boots."
+    },
+    {
+      "answer5": "11. Fleece/Wool Hat."
+    },
+    {
+      "answer5": "12. Sun Hat."
+    },
+    {
+      "answer5": "13. Headlamp with Fresh Batteries."
+    },
+    {
+      "answer5": "14. Sunglasses and Accessories."
+    },
+    {
+      "answer5": "15. Sun Block and Lip Balm."
+    },
+    {
+      "answer5": "16. Long Underwear Tops and Bottoms (Heavyweight, Synthetic)."
+    },
+    {
+      "answer5": "17. Bandana for Sun Protection."
+    },
+    {
+      "answer5": "18. Day Pack (21L-35L)."
+    },
+    {
+      "answer5": "19. Rain Jacket (Hooded, Lightweight, Waterproof, Breathable)."
+    },
+    {
+      "answer5": "20. Water Bottles (Three 1-Quart) or Hydration System + two 1-quart water bottles."
+    },
+    {
+      "answer5": "21. Gloves (Waterproof and Insulating)."
+    },
+    {
+      "answer5": "22. Sleeping Bag (1°-14°, Lightweight, Compressible)."
+    }
+  ],
+  "questionSix": "What Is Recommended For The Trip?",
+  "answersSix": [
+    {
+      "answer6": " 1. Luggage (1 Piece)."
+    },
+    {
+      "answer6": " 2. Luggage Tags and Locks (2)."
+    },
+    {
+      "answer6": " 3. Passport/Money Belt or Pouch."
+    },
+    {
+      "answer6": " 4. Casual Clothing for Travel and Town Wear (Lightweight, Easily Washable)."
+    },
+    {
+      "answer6": " 5. Hiking Shorts (Longer, Quick-Dry, Lightweight)."
+    },
+    {
+      "answer6": " 6. Liner Socks (Synthetic)."
+    },
+    {
+      "answer6": " 7. Casual Shoes for Travel and Free Time."
+    },
+    {
+      "answer6": " 8. Trekking Poles."
+    },
+    {
+      "answer6": " 9. Hand and Toe Warmers."
+    },
+    {
+      "answer6": " 10. Energy Snacks and Drink Mixes."
+    },
+    {
+      "answer6": " 11. Toiletries."
+    },
+    {
+      "answer6": " 12. Camp Towel."
+    },
+    {
+      "answer6": " 13. Personal Bathroom Kit: Toilet Paper, Ziplock Bags, Personal Wipes, Hand Cleaner."
+    },
+    {
+      "answer6": " 14. Gaiters (Tall)."
+    },
+    {
+      "answer6": " 15. Tee Shirts (Cotton and Synthetic)."
+    },
+    {
+      "answer6": " 16. Balaclava (Synthetic or Wool)."
+    },
+    {
+      "answer6": " 17. Energy Snacks and Drink Mixes."
+    },
+    {
+      "answer6": " 18. Fleece Pants."
+    },
+    {
+      "answer6": " 19. Ear Plugs."
+    },
+    {
+      "answer6": " 20. Rain Poncho."
+    },
+    {
+      "answer6": " 21. Fleece/Wool Gloves."
+    },
+    {
+      "answer6": " 22. Insect Repellant (DEET)."
+    },
+    {
+      "answer6": " 23. Glove Liners (Synthetic)."
+    }
+  ],
+  "GearList": "Gear list?",
+  "GearListAnswer": "The key to staying comfortable while on an active trip is layering. To get maximum comfort with minimum weight, you need versatile layers that mix and match to create the right amount of insulation, ventilation and weather protection. Try to bring only what is necessary — this will help you and the field staff.!",
+  "RentalsQuestion": "Rentals ?",
+  "RentalsAnswer": "Why buy gears that you will only use them once? We will facilitate all necessary gear at 80% cheaper than purchasing. We will make sure you are outfitted for the summit and make your trip relaxing.",
+  "FrequentlyAskedQuestions": "Frequently Asked Questions"
 }

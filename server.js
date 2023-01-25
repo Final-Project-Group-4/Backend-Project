@@ -5,6 +5,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import tourRouter from './routes/tourRouter.js';
 import adminRouter from './routes/adminRouter.js';
+import galleryRouter from './routes/galleryRouter.js';
 import AppError from './utils/appError.js';
 import { globalErrorHandler } from './middleware/errorHandler.js';
 import path from 'path';
@@ -36,7 +37,7 @@ if (process.env.NODE_ENV === 'development') {
 // ROUTES:
 app.use('/api/tours', tourRouter);
 app.use('/api/admin', adminRouter);
-//app.use('/api/gallery', galleryRouter);
+app.use('/api/gallery', galleryRouter);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './client/build/index.html'));

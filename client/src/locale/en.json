@@ -91,7 +91,7 @@
   "gallery2": "Gallery",
 
   "//comment13": "FAQ",
-  "questionOne": "What is included in your Safari Package?",
+  "questionOne": "What is included in Safari Package?",
   "answersOne": [
     {
       "answer1": "1. Accommodation as specified in the itinerary."
@@ -112,7 +112,7 @@
       "answer1": "6. All park entry fees and 18% VAT."
     }
   ],
-  "questionTwo": "What are the items that are not included?",
+  "questionTwo": "What is excluded in Safari Package?",
   "answersTwo": [
     {
       "answer2": "1. International Flights."
@@ -127,7 +127,7 @@
       "answer2": "4. Medical / Travel Insurance."
     },
     {
-      "answer2": "5. Hot Air Balloon Ride in Serengeti $ 650 per person."
+      "answer2": "5. Hot Air Balloon Ride in Serengeti $650 per person."
     },
     {
       "answer2": "6. Alcoholic and soft drinks."
@@ -136,7 +136,7 @@
       "answer2": "7. Tip for Your Driver."
     }
   ],
-  "questionThree": "What are the items that are included?",
+  "questionThree": "Which items are included in hiking tours?",
   "answersThree": [
     {
       "answer3": "1. Quality, waterproof, four-season private mountain sleeping tents."
@@ -172,7 +172,7 @@
       "answer3": "11. Fair and ethical treatment of porters."
     }
   ],
-  "questionFour": "What is the items are not included?",
+  "questionFour": "Which items are not included in hiking tours?",
   "answersFour": [
     {
       "answer4": "1. Tanzania Visa."
@@ -187,7 +187,7 @@
       "answer4": "4. Optional Tours (short safari after your climb e.t.c)."
     }
   ],
-  "questionFive": "What is required for trip ?",
+  "questionFive": "What is required for trip?",
   "answersFive": [
     {
       "answer5": "1. Duffel Bag (51L-100L, No Wheels or Handles)."
@@ -256,7 +256,7 @@
       "answer5": "22. Sleeping Bag (1°-14°, Lightweight, Compressible)."
     }
   ],
-  "questionSix": "What Is Recommended For The Trip?",
+  "questionSix": "What is recommended for the trip?",
   "answersSix": [
     {
       "answer6": " 1. Luggage (1 Piece)."
@@ -329,8 +329,8 @@
     }
   ],
   "GearList": "Gear list?",
-  "GearListAnswer": "The key to staying comfortable while on an active trip is layering. To get maximum comfort with minimum weight, you need versatile layers that mix and match to create the right amount of insulation, ventilation and weather protection. Try to bring only what is necessary — this will help you and the field staff.!",
-  "RentalsQuestion": "Rentals ?",
+  "GearListAnswer": "The key to staying comfortable while on an active trip is layering. To get maximum comfort with minimum weight, you need versatile layers that mix and match to create the right amount of insulation, ventilation and weather protection. Try to bring only what is necessary — this will help you and the field staff!",
+  "RentalsQuestion": "Rentals?",
   "RentalsAnswer": "Why buy gears that you will only use them once? We will facilitate all necessary gear at 80% cheaper than purchasing. We will make sure you are outfitted for the summit and make your trip relaxing.",
   "FrequentlyAskedQuestions": "Frequently Asked Questions"
 }

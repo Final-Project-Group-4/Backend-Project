@@ -5,52 +5,40 @@
   "aboutUs": "Über uns",
   "planTrip": "Reise planen",
 
-
-
   "//comment2": "Welcoming landing page",
   "welcomeTo": "-WILLKOMMEN BEI-",
   "ourGoal": "Unser Ziel ist es, jedem ein einzigartiges Abenteuer zu bieten.",
   "ourTours": "UNSERE TOUREN",
 
-
-
   "//comment3": "MainUp page",
   "whatWeOffer": "Wir bieten an",
   "weOffer": "Mlay Tours führt Touristen zu unglaublichen Abenteuern in Tansania. Führende Wanderungen zum Mt. Kilimanjaro Mt. Meru, Tansanias Wildparks und kulturelle Touren.All diese Aktivitäten werden Ihre Reise unvergesslich machen.",
 
-
-
   "//comment4": "MainUp cards",
-    
-      "CustomTrip": "Individuelle Reise",
-      "CustomTripText": "Wir bieten das Beste von Tansania-Abenteuern: Kilimandscharo-Trekking, Meru-Trekking, Tageswanderung, Safaris zu verschiedenen tansanischen Parks.",
-    
-      "localTrip": "Lokal, Kaffee",
-      "localTripText": "Wir machen Kaffee auf traditionelle Weise von einem Kaffeesamen zu einer Tasse Kaffee, während wir diesen Prozess machen, singen und tanzen wir auch.",
-    
-      "safariTrip": "Safari",
-      "safariTripText": "Wir bieten das Beste von Tansania Safari: Great Migration, Ngorongoro-Krater, Tarangire-Nationalpark und andere tansanische Parks.",
-    
-      "transportation": "Transport",
-      "transportationText": "Wir nutzen Land Cruiser mit Allradantrieb für Safaris und Minibusse für den Transfer vom Flughafen zum Hotel.",
 
-    
+  "CustomTrip": "Individuelle Reise",
+  "CustomTripText": "Wir bieten das Beste von Tansania-Abenteuern: Kilimandscharo-Trekking, Meru-Trekking, Tageswanderung, Safaris zu verschiedenen tansanischen Parks.",
+
+  "localTrip": "Lokal, Kaffee",
+  "localTripText": "Wir machen Kaffee auf traditionelle Weise von einem Kaffeesamen zu einer Tasse Kaffee, während wir diesen Prozess machen, singen und tanzen wir auch.",
+
+  "safariTrip": "Safari",
+  "safariTripText": "Wir bieten das Beste von Tansania Safari: Great Migration, Ngorongoro-Krater, Tarangire-Nationalpark und andere tansanische Parks.",
+
+  "transportation": "Transport",
+  "transportationText": "Wir nutzen Land Cruiser mit Allradantrieb für Safaris und Minibusse für den Transfer vom Flughafen zum Hotel.",
 
   "//comment5": "PeterCards",
   "peter": "Hallo, ich bin Peter",
   "petersExperience": "Einer der erfahrensten Guides, die man finden kann. Über 8 Jahre Erfahrung im technischen Klettern und Wandern habe ich viele Male den Kilimandscharo bestiegen. Darüber hinaus bin ich zertifizierter CPR und Bergretter.",
 
-
-
   "//comment6": "MainDown cards",
-  "chooseTripText":"WÄHLEN SIE UNTEN EINE KATEGORIE AUS FÜR IHRE REISE",
+  "chooseTripText": "WÄHLEN SIE UNTEN EINE KATEGORIE AUS FÜR IHRE REISE",
   "Hiking": "Wandern",
   "Safari": "Safari",
   "Coffee": "Kaffee",
   "CustomTour": "Custom Tour",
   "WhyTravelWithUs": "WARUM MIT UNS REISEN?",
-
-
 
   "//comment7": "Plan trip",
   "readyForAdventure": "Bereit für Abenteuer!",
@@ -68,8 +56,6 @@
   "call": "Anruf:",
   "yourMessage": "Deine Nachricht",
 
-
-
   "//comment8": "Tours page",
   "ourToursText": "Wählen Sie aus einer der folgenden erstaunlichen Wanderungen und Treks in Afrika. Bevorzugen Sie kürzere Spaziergänge oder längere Wanderungen? Gemütliche Spaziergänge oder die Eroberung der höchsten Gipfel? Oder vielleicht möchten Sie eine maßgeschneiderte Tour entwerfen, ich lade Sie ein, sich unsere maßgeschneiderten Optionen anzusehen und von dort aus zu entscheiden",
 
@@ -78,286 +64,273 @@
   "safariToursText": "Lassen Sie sich von Afrikas Tierwelt und dem Safari-Lebensstil zeigen, worum es auf diesem magischen Kontinent geht. Sobald Sie Ihre erste Safari-Reise unternehmen, entwickeln Sie eine tiefe Sehnsucht, auf diesen magischen Kontinent zurückzukehren. Beginnen Sie jetzt und werfen Sie einen Blick auf unser Angebot, genießen Sie Ihren nächsten afrikanischen Safari-Urlaub an der Seite unserer erfahrenen Guides für ein unvergessliches Erlebnis.",
 
   "localTours": "LOKALE TOUREN",
-  "localToursText": "Diese eintägige Tour führt Sie zu verschiedenen Natur- und Kulturstätten auf den umliegenden Hängen. Zu den Highlights gehören: Wasserfälle  Springen Sie in das Bergwasser des Kilimanjaro und genießen Sie die atemberaubende Aussicht auf die umliegenden Täler. Chagga Museum Die Kultur und Geschichte der Chagga kann durch einen Besuch im Museum erkundet werden. Es gibt mehrere Ausstellungen, darunter ein rekonstruiertes strohgedecktes Chagga-Haus. Unterirdische Chagga-Tunnel - Diese wurden von den Chagga-Leuten benutzt, um sich während Clankriegen vor den Feinden zu verstecken. Kaffee- und Bananenfarmen - Besuchen Sie Kaffeefarmen und ein lokales Zuhause, wo Sie lokale Gerichte genießen und den traditionellen Prozess der Kaffeezubereitung von der Bohne bis zur Tasse lernen können. Besuchen Sie lokale Chagga-Bars und trinken Sie das traditionelle Bier.",
-
-
+  "localToursText": "Diese eintägige Tour führt Sie zu verschiedenen Natur- und Kulturstätten auf den umliegenden Hängen. Zu den Höhepunkten gehören: Wasserfälle, Chagga-Museum, unterirdische Chagga-Tunnel, Kaffee- und Bananenfarmen sowie ein Besuch der Kaffeefarmen und eines lokalen Hauses, wo Sie lokale Gerichte genießen und den traditionellen Prozess der Kaffeezubereitung von der Bohne bis zur Tasse lernen können. Besuchen Sie lokale Chagga-Bars und trinken Sie das traditionelle Bier.",
 
   "//comment9": "Contact US page",
   "ContactUs": "Kontaktiere uns",
   "needHelp": "Benötigen Sie Starthilfe? Bitte kontaktieren Sie uns, wir helfen Ihnen gerne bei der Planung Ihrer großartigen Reise",
   "Submit": "einreichen",
 
-
-
   "//comment10": "Footer page",
   "anyQuestions": "Wenn Sie weitere Fragen haben, zögern Sie bitte nicht, uns zu kontaktieren!",
-  
-
-
 
   "//comment11": "About us page",
   "ourTeam": "Unser Team",
   "ourTeamText": "Wir sind ein voll lizenziertes und versichertes Unternehmen in lokalem Besitz mit jahrelanger Erfahrung und Expertise, das maßgeschneiderte Safaris und Kilimanjaro-Besteigungen anbietet, die zu Ihrer Zeit, Ihren Interessen und Ihrem Budget passen. Es ist nicht nur kostengünstiger für Sie, bei einem Betreiber vor Ort zu buchen, Sie unterstützen auch die lokale Wirtschaft und Geschäftsinhaber. Im Gegensatz zu vielen anderen Betreibern können wir sicherstellen, dass Sie von unseren Mitarbeitern umfassend betreut werden, da wir unsere Kunden niemals auslagern an andere Unternehmen. Wir setzen uns voll und ganz für verantwortungsvollen Tourismus ein und sind stolz darauf, eines der wenigen Unternehmen zu sein, das 100% zertifizierte ethische Kilimandscharo-Besteigungen anbietet, um die faire und angemessene Behandlung der fleißigen Bergmannschaft zu gewährleisten.",
-  "ourTeamText2":"Unser Team heißt Sie herzlich willkommen, um die unvergleichliche natürliche Schönheit Ostafrikas zu erkunden. Sie werden einheimische traditionelle Stämme, versteckte Wasserfälle, blendend weiße Sandstrände, Vulkankrater und eisbedeckte Berggipfel innerhalb weniger Stunden sehen. Wir sind in der Lage, maßgeschneiderte, einzigartige Safari-, Trekking- und Strandparadieserlebnisse anzubieten, die speziell auf Ihre Interessen, Zeit und Ihr Budget abgestimmt sind. Unser erfahrenes Team und unsere Crew sind bestrebt, das perfekte Tansania-Abenteuer für Sie zu planen. Wir laden Sie herzlich ein, mit uns unser wunderschönes Land Karibu Tansania zu erkunden! Wir betreiben Kilimandscharo-Besteigungen seit den 2000er Jahren und haben eine fantastische Bilanz darin, unseren Kunden erfolgreich und sicher zum Gipfel zu verhelfen. Grundlegend für unseren Ansatz und was uns von fast allen Unternehmen unterscheidet, die Kilimandscharo-Besteigungen anbieten, ist, dass wir „Veranstalter“ und keine „Vermittler“ sind. Wir nehmen nicht einfach Buchungen entgegen und vergeben dann Ihren Aufstieg an Unterauftragnehmer. Stattdessen beschäftigen wir unser gesamtes Team direkt, beschaffen unsere gesamte Ausrüstung selbst und kontrollieren jeden Aspekt Ihres Klettererlebnisses, damit wir Ihnen eine gusseiserne Verpflichtung zur Qualität geben können.",
-  "ourTeamText3":"Als Teil dieser Verpflichtung zur Qualität wenden wir bei allem, was wir tun, die besten Praktiken an. Wir befolgen die Vorschriften der Tanzania Porters Association, der Kilimanjaro Guides Associations und des Kilimanjaro National Park und arbeiten ständig daran, die besten Bedingungen für unsere Crew zu gewährleisten. Wir unterstützen lokale Unternehmer und haben uns den Grundsätzen von Leave no Trace verschrieben. Mehr darüber, wie wir arbeiten Klettern Sie mit uns: Erklimmen Sie sicher den Gipfel und machen Sie eine lebensverändernde Erfahrung.",
+  "ourTeamText2": "Unser Team heißt Sie herzlich willkommen, um die unvergleichliche natürliche Schönheit Ostafrikas zu erkunden. Sie werden einheimische traditionelle Stämme, versteckte Wasserfälle, blendend weiße Sandstrände, Vulkankrater und eisbedeckte Berggipfel innerhalb weniger Stunden sehen. Wir sind in der Lage, maßgeschneiderte, einzigartige Safari-, Trekking- und Strandparadieserlebnisse anzubieten, die speziell auf Ihre Interessen, Zeit und Ihr Budget abgestimmt sind. Unser erfahrenes Team und unsere Crew sind bestrebt, das perfekte Tansania-Abenteuer für Sie zu planen. Wir laden Sie herzlich ein, mit uns unser wunderschönes Land Karibu Tansania zu erkunden! Wir betreiben Kilimandscharo-Besteigungen seit den 2000er Jahren und haben eine fantastische Bilanz darin, unseren Kunden erfolgreich und sicher zum Gipfel zu verhelfen. Grundlegend für unseren Ansatz und was uns von fast allen Unternehmen unterscheidet, die Kilimandscharo-Besteigungen anbieten, ist, dass wir „Veranstalter“ und keine „Vermittler“ sind. Wir nehmen nicht einfach Buchungen entgegen und vergeben dann Ihren Aufstieg an Unterauftragnehmer. Stattdessen beschäftigen wir unser gesamtes Team direkt, beschaffen unsere gesamte Ausrüstung selbst und kontrollieren jeden Aspekt Ihres Klettererlebnisses, damit wir Ihnen eine gusseiserne Verpflichtung zur Qualität geben können.",
+  "ourTeamText3": "Als Teil dieser Verpflichtung zur Qualität wenden wir bei allem, was wir tun, die besten Praktiken an. Wir befolgen die Vorschriften der Tanzania Porters Association, der Kilimanjaro Guides Associations und des Kilimanjaro National Park und arbeiten ständig daran, die besten Bedingungen für unsere Crew zu gewährleisten. Wir unterstützen lokale Unternehmer und haben uns den Grundsätzen von Leave no Trace verschrieben. Mehr darüber, wie wir arbeiten Klettern Sie mit uns: Erklimmen Sie sicher den Gipfel und machen Sie eine lebensverändernde Erfahrung.",
 
   "history": "Geschichte",
   "historyText": "Die Worte „Mt. Kilimanjaro“ beschwören romantische Bilder von persönlichem Wachstum, Herausforderung, Niederlage und Erfolg herauf. Wir haben Bilder gesehen und Geschichten gehört. Die Bergsteiger der ersten Mt. Kilimanjaro-Besteigung im Jahr 1889 hatten nur ihren Mut und ihre Leidenschaft, die sie vorantrieben.",
-"historyText1":"Auf die Frage „Wer war der Erste, der den Kilimandscharo bestieg?“ ist die häufigste Antwort Hans Meyer aus Deutschland. Hans Meyer wird die Vision hinter der Expedition zugeschrieben, aber wer war sein Führer? Yohani Kinyala Lauwo war erst 18 Jahre alt, als er am 5. Oktober 1889 Hans Meyer und Ludwig Purtscheller zum höchsten Punkt Afrikas führte. Seine Wahl durch den Mangi (Chagga-Häuptling) zum Führer von Hans Meyer war zufällig, aber es hat sein Leben für immer verändert. Kinyala (wie er genannt wurde) wurde geboren und lebte sein ganzes Leben im Dorf Marangu, eingebettet an den Hängen des Kilimandscharo.",
-"historyText2":"Bevor die Europäer nach Ostafrika kamen, jagten viele Mitglieder des Lauwo-Clans des Chagga-Stammes die Waldelefanten für Elfenbein und verkauften es an Swahili-Händler von der Küste. Der Wald versorgte sie auch mit Honig, Holz, Medizin und Häuten von Colobus-Affen. Als Hans Meyer in Chaggaland ankam, war Kinyala Lauwo ein hochgewachsener Teenager, der den Wald wie seine Westentasche kannte. Zu diesem Zeitpunkt hatte der Kolonialismus in Kinyalas Heimatland begonnen und junge Männer wurden gezwungen, Straßen zu bauen. Kinyala versuchte, dem „Luftzug“ auszuweichen, wurde aber erwischt. Daraufhin wurde er zum Prozess in Mangi Mareallis Palast vorgeladen. Zufälligerweise war Hans Meyer gerade im Schloss angekommen und hatte um die Erlaubnis gebeten, den Berg zu besteigen, und um Führer und Träger. Die Wachili (Berater) der Mangi entdeckten Kinyala, wussten, dass er zum Lauwo-Clan gehörte, und baten ihn, die Expedition zu leiten.",
-"historyText3":"Die Veranstaltung führte dazu, dass Kinyala (später MzeeLauwo genannt) mehr als siebzig Jahre lang die Besteigung des Kilimandscharo leitete! Bei seiner ersten Besteigung war er nur in Decken gehüllt. Im Laufe der Jahre besorgte er sich entsprechende Kleidung und Wanderausrüstung. Hier lebte er mit seinen beiden Frauen bis zu seinem Tod am 10. Mai 1996 nach einem großartigen Leben von 125 Jahren! dann im folgenden Monat (Juni) desselben Jahres wurde Peter Mlay geboren, und er führt jetzt Touristen zum Dach Afrikas.",
-
+  "historyText1": "Auf die Frage „Wer war der Erste, der den Kilimandscharo bestieg?“ ist die häufigste Antwort Hans Meyer aus Deutschland. Hans Meyer wird die Vision hinter der Expedition zugeschrieben, aber wer war sein Führer? Yohani Kinyala Lauwo war erst 18 Jahre alt, als er am 5. Oktober 1889 Hans Meyer und Ludwig Purtscheller zum höchsten Punkt Afrikas führte. Seine Wahl durch den Mangi (Chagga-Häuptling) zum Führer von Hans Meyer war zufällig, aber es hat sein Leben für immer verändert. Kinyala (wie er genannt wurde) wurde geboren und lebte sein ganzes Leben im Dorf Marangu, eingebettet an den Hängen des Kilimandscharo.",
+  "historyText2": "Bevor die Europäer nach Ostafrika kamen, jagten viele Mitglieder des Lauwo-Clans des Chagga-Stammes die Waldelefanten für Elfenbein und verkauften es an Swahili-Händler von der Küste. Der Wald versorgte sie auch mit Honig, Holz, Medizin und Häuten von Colobus-Affen. Als Hans Meyer in Chaggaland ankam, war Kinyala Lauwo ein hochgewachsener Teenager, der den Wald wie seine Westentasche kannte. Zu diesem Zeitpunkt hatte der Kolonialismus in Kinyalas Heimatland begonnen und junge Männer wurden gezwungen, Straßen zu bauen. Kinyala versuchte, dem „Luftzug“ auszuweichen, wurde aber erwischt. Daraufhin wurde er zum Prozess in Mangi Mareallis Palast vorgeladen. Zufälligerweise war Hans Meyer gerade im Schloss angekommen und hatte um die Erlaubnis gebeten, den Berg zu besteigen, und um Führer und Träger. Die Wachili (Berater) der Mangi entdeckten Kinyala, wussten, dass er zum Lauwo-Clan gehörte, und baten ihn, die Expedition zu leiten.",
+  "historyText3": "Die Veranstaltung führte dazu, dass Kinyala (später MzeeLauwo genannt) mehr als siebzig Jahre lang die Besteigung des Kilimandscharo leitete! Bei seiner ersten Besteigung war er nur in Decken gehüllt. Im Laufe der Jahre besorgte er sich entsprechende Kleidung und Wanderausrüstung. Hier lebte er mit seinen beiden Frauen bis zu seinem Tod am 10. Mai 1996 nach einem großartigen Leben von 125 Jahren! dann im folgenden Monat (Juni) desselben Jahres wurde Peter Mlay geboren, und er führt jetzt Touristen zum Dach Afrikas.",
 
   "//comment12": "Gallery page ",
   "photo": "Foto",
   "gallery2": "gallerie",
 
-
-
   "//comment13": "FAQ",
-  "questionOne": "Was ist in Ihrem Safari-Paket enthalten?",
-  "answersOne" : [
+  "questionOne": "Was ist im Safari-Paket enthalten?",
+  "answersOne": [
     {
-      "answer1" :"1. Unterkunft wie im Reiseverlauf angegeben."
-  } ,
-  {
-   "answer1": "2. Alle Mahlzeiten in Lodges und Zeltcamps."
-  },
-  {
-    "answer1": "3. Unbegrenzte Kilometer, Toyota Landcruiser 4x4 Safari-Fahrzeug mit Aufstelldach, 6 Fensterplätzen, Netzteilen und Kühlschrank."
-
-  },
-  {
-    "answer1" :"Erfahrener englischsprachiger Guide."
-
-  },
-  {
-    "answer1" :"Trinkwasser."
-
-  },
-  {
-    "answer1": "Alle Parkeintrittsgebühren und 18 % Mehrwertsteuer."
-
-  }],
-  "questionTwo":"Von Ihrem Safari-Paket ausgeschlossen?",
-   "answersTwo" : [
-     {
-      "answer2": "1. Internationale Flüge."
-     },
-     {
-      "answer2": "2. Visum."
-     },
-     {
-      "answer2": "3. Medikamente."
-     },
-     {
-      "answer2":"4. Kranken-/Reiseversicherung."
-     },
-       {
-      "answer2":"5. Heißluftballonfahrt in der Serengeti 650 $ pro Person."
-     },
-      {
-      "answer2":"6. Alkoholische und alkoholfreie Getränke."
-     },
-     {
-      "answer2": "7. Tipp für Ihren Fahrer."
-     }
+      "answer1": "1. Unterkunft wie im Reiseverlauf angegeben."
+    },
+    {
+      "answer1": "2. Alle Mahlzeiten in Lodges und Zeltcamps."
+    },
+    {
+      "answer1": "3. Unbegrenzte Kilometer, Toyota Landcruiser 4x4 Safari-Fahrzeug mit Aufstelldach, 6 Fensterplätzen, Netzteilen und Kühlschrank."
+    },
+    {
+      "answer1": "Erfahrener englischsprachiger Guide."
+    },
+    {
+      "answer1": "Trinkwasser."
+    },
+    {
+      "answer1": "Alle Parkeintrittsgebühren und 18 % Mehrwertsteuer."
+    }
   ],
-  "questionThree":"Welche Gegenstände sind enthalten?",
-   "answersThree" : [
-      {
-       "answer3": "1. Hochwertige, wasserdichte, private Bergschlafzelte für vier Jahreszeiten."
-      },
-      {
-       "answer3": "2. Professionelle, erfahrene Bergführer."
-      },
-      {
-       "answer3": "3. Alle Parkgebühren."
-      },
-      {
-       "answer3": "4. Rettungsgebühren."
-      },
-        {
-       "answer3": "5. Alle Mahlzeiten auf dem Berg."
-      },
-       {
-       "answer3": "6. Führer, Gepäckträger, Kochgehälter und Parkgebühren."
-      },
-      {
-       "answer3": "7. Hochwertige Messezelte mit Tisch und Stühlen."
-      },
-      {
+  "questionTwo": "Was ist im Safari-Paket ausgeschlossen?",
+  "answersTwo": [
+    {
+      "answer2": "1. Internationale Flüge."
+    },
+    {
+      "answer2": "2. Visum."
+    },
+    {
+      "answer2": "3. Medikamente."
+    },
+    {
+      "answer2": "4. Kranken-/Reiseversicherung."
+    },
+    {
+      "answer2": "5. Heißluftballonfahrt in der Serengeti 650 $ pro Person."
+    },
+    {
+      "answer2": "6. Alkoholische und alkoholfreie Getränke."
+    },
+    {
+      "answer2": "7. Tipp für Ihren Fahrer."
+    }
+  ],
+  "questionThree": "Welche Artikel sind in Hiking-Tours enthalten?",
+  "answersThree": [
+    {
+      "answer3": "1. Hochwertige, wasserdichte, private Bergschlafzelte für vier Jahreszeiten."
+    },
+    {
+      "answer3": "2. Professionelle, erfahrene Bergführer."
+    },
+    {
+      "answer3": "3. Alle Parkgebühren."
+    },
+    {
+      "answer3": "4. Rettungsgebühren."
+    },
+    {
+      "answer3": "5. Alle Mahlzeiten auf dem Berg."
+    },
+    {
+      "answer3": "6. Führer, Gepäckträger, Kochgehälter und Parkgebühren."
+    },
+    {
+      "answer3": "7. Hochwertige Messezelte mit Tisch und Stühlen."
+    },
+    {
       "answer3": "8. Große Portionen frischer, gesunder und nahrhafter Lebensmittel."
-      },
-      {
-     "answer3": "9. Sauberes, gereinigtes Trinkwasser."
-      },
-      {
+    },
+    {
+      "answer3": "9. Sauberes, gereinigtes Trinkwasser."
+    },
+    {
       "answer3": "10. Krisenmanagement und Sicherheitsverfahren."
-      },
-      {
-     "answer3":"11. Faire und ethische Behandlung von Trägern."
+    },
+    {
+      "answer3": "11. Faire und ethische Behandlung von Trägern."
     }
-   ],
-   "questionFour":"Welche Artikel sind nicht enthalten?",
-   "answersFour" : [
-      {
-       "answer4":"1. Visum für Tansania."
-      },
-      {
-       "answer4": "2. Persönliche Ausgaben (z. B. Wäsche, Telefon, Getränke usw.)."
-      },
-      {
-       "answer4": "3. Mahlzeiten, die oben nicht aufgeführt sind."
-      },
-      {
-       "answer4": "4. Optionale Touren (kurze Safari nach dem Aufstieg usw.)."
-      }
-     ],
-     "questionFive":"Was wird für die Reise benötigt?",
-     "answersFive" : [
-        {
-         "answer5":"1. Seesack (51L-100L, keine Räder oder Griffe)."
-        },
-        {
-         "answer5": "2. Regenschutz einpacken."
-        },
-        {
-         "answer5":"3. Regenhose (leicht, wasserdicht, atmungsaktiv)."
-        },
-        {
-         "answer5": "4. Isolierte Jacke."
-        },
-          {
-         "answer5": "5. Fleece-/Wolljacke oder Pullover."
-        },
-         {
-         "answer5": "6. Lange Unterwäscheoberteile und -unterteile (mittelschwer, synthetisch)."
-        },
-        {
-         "answer5":"7. Langarmshirts (Synthetik, leicht)."
-        },
-        {
-        "answer5": "8. Wanderhose (wandelbar, schnell trocknend, leicht)."
-        },
-        {
-       "answer5": "9. Wandersocken (Synthetik oder Wolle)."
-        },
-        {
-        "answer5":"10. Wasserdichte Wanderschuhe."
-        },
-        {
-       "answer5":"11. Fleece-/Wollmütze."
-      },
-        {
-         "answer5": "12. Sonnenhut."
-        },
-        {
-         "answer5": "13. Stirnlampe mit frischen Batterien."
-        },
-        {
-         "answer5": "14. Sonnenbrillen und Accessoires."
-        },
-        {
-         "answer5": "15. Sonnencreme und Lippenbalsam."
-        },
-          {
-         "answer5": "16. Lange Unterwäscheoberteile und -unterteile (Schwergewicht, Synthetik)."
-        },
-         {
-         "answer5": "17. Bandana als Sonnenschutz."
-        },
-        {
-         "answer5":"18. Tagesrucksack (21L-35L)."
-        },
-        {
-        "answer5": "19. Regenjacke (mit Kapuze, leicht, wasserdicht, atmungsaktiv)."
-        },
-        {
-       "answer5": "20. Wasserflaschen (drei 1-Liter) oder Trinksystem + zwei 1-Liter-Wasserflaschen."
-        },
-        {
-        "answer5": "21. Handschuhe (wasserdicht und isolierend)."
-        },
-        {
-       "answer5": "22. Schlafsack (1°-14°, leicht, komprimierbar)."
-      }
-     ],
-     "questionSix":"Was wird für die Reise empfohlen?",
-     "answersSix": [
-        {
-         "answer6": " 1. Gepäck (1 Stück)."
-        },
-        {
-         "answer6": " 2. Gepäckanhänger und Schlösser (2)."
-        },
-        {
-         "answer6": " 3. Reisepass/Geldgürtel oder Beutel."
-        },
-        {
-         "answer6":" 4. Freizeitkleidung für Reisen und Stadtkleidung (leicht, leicht waschbar)."
-        },
-          {
-         "answer6": " 5. Wandershorts (länger, schnell trocknend, leicht)."
-        },
-         {
-         "answer6": " 6. Zwischensocken (Synthetik)."
-        },
-        {
-         "answer6":" 7. Freizeitschuhe für Reise und Freizeit."
-        },
-        {
-        "answer6": " 8. Wanderstöcke."
-        },
-        {
-       "answer6": " 9. Hand- und Zehenwärmer."
-        },
-        {
-        "answer6":" 10. Energy Snacks und Getränkemischungen."
-        },
-        {
-       "answer6":" 11. Toilettenartikel."
-      },
-        {
-         "answer6": " 12. Lagerhandtuch."
-        },
-        {
-         "answer6": " 13. Persönliches Badezimmer-Set: Toilettenpapier, Druckverschlussbeutel, persönliche Wischtücher, Handreiniger."
-        },
-        {
-         "answer6": " 14. Gamaschen (groß)."
-        },
-        {
-         "answer6": " 15. T-Shirts (Baumwolle und Synthetik)."
-        },
-          {
-         "answer6":" 16. Sturmhaube (Synthetik oder Wolle)."
-        },
-         {
-         "answer6": " 17. Energie-Snacks und Getränkemischungen."
-        },
-        {
-         "answer6":" 18. Fleecehose."
-        },
-        {
-        "answer6": " 19. Ohrstöpsel."
-        },
-        {
-       "answer6":" 20. Regenponcho."
-        },
-        {
-        "answer6":" 21. Fleece-/Wollhandschuhe."
-        },
-        {
-       "answer6":" 22. Insektenschutzmittel (DEET)."
-      },
-      {
-     "answer6":" 23. Handschuheinlagen (Synthetik)."
+  ],
+  "questionFour": "Welche Gegenstände sind bei Hiking-Tours nicht inkludiert?",
+  "answersFour": [
+    {
+      "answer4": "1. Visum für Tansania."
+    },
+    {
+      "answer4": "2. Persönliche Ausgaben (z. B. Wäsche, Telefon, Getränke usw.)."
+    },
+    {
+      "answer4": "3. Mahlzeiten, die oben nicht aufgeführt sind."
+    },
+    {
+      "answer4": "4. Optionale Touren (kurze Safari nach dem Aufstieg usw.)."
     }
-     ],
-     "GearList": "Ausrüstungsliste?",
-     "GearListAnswer" : "Der Schlüssel zum Komfort auf einer aktiven Reise ist das Schichten. Um maximalen Komfort bei minimalem Gewicht zu erzielen, benötigen Sie vielseitige Schichten, die sich kombinieren und kombinieren lassen, um die richtige Menge an Isolierung, Belüftung und Wetterschutz zu schaffen. Versuchen Sie es mitzubringen nur das Nötigste - das hilft Ihnen und dem Außendienst.!",
-     "RentalsQuestion":"Vermietungen ?",
-     "RentalsAnswer":"Warum Ausrüstung kaufen, die Sie nur einmal verwenden werden? Wir stellen Ihnen die gesamte benötigte Ausrüstung 80% günstiger zur Verfügung als beim Kauf. Wir sorgen dafür, dass Sie für den Gipfel ausgerüstet sind, und machen Ihre Reise entspannt.",
-     "FrequentlyAskedQuestions": "Häufig gestellte Fragen."
+  ],
+  "questionFive": "Was wird für die Reise benötigt?",
+  "answersFive": [
+    {
+      "answer5": "1. Seesack (51L-100L, keine Räder oder Griffe)."
+    },
+    {
+      "answer5": "2. Regenschutz einpacken."
+    },
+    {
+      "answer5": "3. Regenhose (leicht, wasserdicht, atmungsaktiv)."
+    },
+    {
+      "answer5": "4. Isolierte Jacke."
+    },
+    {
+      "answer5": "5. Fleece-/Wolljacke oder Pullover."
+    },
+    {
+      "answer5": "6. Lange Unterwäscheoberteile und -unterteile (mittelschwer, synthetisch)."
+    },
+    {
+      "answer5": "7. Langarmshirts (Synthetik, leicht)."
+    },
+    {
+      "answer5": "8. Wanderhose (wandelbar, schnell trocknend, leicht)."
+    },
+    {
+      "answer5": "9. Wandersocken (Synthetik oder Wolle)."
+    },
+    {
+      "answer5": "10. Wasserdichte Wanderschuhe."
+    },
+    {
+      "answer5": "11. Fleece-/Wollmütze."
+    },
+    {
+      "answer5": "12. Sonnenhut."
+    },
+    {
+      "answer5": "13. Stirnlampe mit frischen Batterien."
+    },
+    {
+      "answer5": "14. Sonnenbrillen und Accessoires."
+    },
+    {
+      "answer5": "15. Sonnencreme und Lippenbalsam."
+    },
+    {
+      "answer5": "16. Lange Unterwäscheoberteile und -unterteile (Schwergewicht, Synthetik)."
+    },
+    {
+      "answer5": "17. Bandana als Sonnenschutz."
+    },
+    {
+      "answer5": "18. Tagesrucksack (21L-35L)."
+    },
+    {
+      "answer5": "19. Regenjacke (mit Kapuze, leicht, wasserdicht, atmungsaktiv)."
+    },
+    {
+      "answer5": "20. Wasserflaschen (drei 1-Liter) oder Trinksystem + zwei 1-Liter-Wasserflaschen."
+    },
+    {
+      "answer5": "21. Handschuhe (wasserdicht und isolierend)."
+    },
+    {
+      "answer5": "22. Schlafsack (1°-14°, leicht, komprimierbar)."
+    }
+  ],
+  "questionSix": "Was wird für die Reise empfohlen?",
+  "answersSix": [
+    {
+      "answer6": " 1. Gepäck (1 Stück)."
+    },
+    {
+      "answer6": " 2. Gepäckanhänger und Schlösser (2)."
+    },
+    {
+      "answer6": " 3. Reisepass/Geldgürtel oder Beutel."
+    },
+    {
+      "answer6": " 4. Freizeitkleidung für Reisen und Stadtkleidung (leicht, leicht waschbar)."
+    },
+    {
+      "answer6": " 5. Wandershorts (länger, schnell trocknend, leicht)."
+    },
+    {
+      "answer6": " 6. Zwischensocken (Synthetik)."
+    },
+    {
+      "answer6": " 7. Freizeitschuhe für Reise und Freizeit."
+    },
+    {
+      "answer6": " 8. Wanderstöcke."
+    },
+    {
+      "answer6": " 9. Hand- und Zehenwärmer."
+    },
+    {
+      "answer6": " 10. Energy Snacks und Getränkemischungen."
+    },
+    {
+      "answer6": " 11. Toilettenartikel."
+    },
+    {
+      "answer6": " 12. Lagerhandtuch."
+    },
+    {
+      "answer6": " 13. Persönliches Badezimmer-Set: Toilettenpapier, Druckverschlussbeutel, persönliche Wischtücher, Handreiniger."
+    },
+    {
+      "answer6": " 14. Gamaschen (groß)."
+    },
+    {
+      "answer6": " 15. T-Shirts (Baumwolle und Synthetik)."
+    },
+    {
+      "answer6": " 16. Sturmhaube (Synthetik oder Wolle)."
+    },
+    {
+      "answer6": " 17. Energie-Snacks und Getränkemischungen."
+    },
+    {
+      "answer6": " 18. Fleecehose."
+    },
+    {
+      "answer6": " 19. Ohrstöpsel."
+    },
+    {
+      "answer6": " 20. Regenponcho."
+    },
+    {
+      "answer6": " 21. Fleece-/Wollhandschuhe."
+    },
+    {
+      "answer6": " 22. Insektenschutzmittel (DEET)."
+    },
+    {
+      "answer6": " 23. Handschuheinlagen (Synthetik)."
+    }
+  ],
+  "GearList": "Ausrüstungsliste?",
+  "GearListAnswer": "Der Schlüssel zum Komfort auf einer aktiven Reise ist das Schichten. Um maximalen Komfort bei minimalem Gewicht zu erzielen, benötigen Sie vielseitige Schichten, die sich kombinieren und kombinieren lassen, um die richtige Menge an Isolierung, Belüftung und Wetterschutz zu schaffen. Versuchen Sie es mitzubringen nur das Nötigste - das hilft Ihnen und dem Außendienst!",
+  "RentalsQuestion": "Vermietungen?",
+  "RentalsAnswer": "Warum Ausrüstung kaufen, die Sie nur einmal verwenden werden? Wir stellen Ihnen die gesamte benötigte Ausrüstung 80% günstiger zur Verfügung als beim Kauf. Wir sorgen dafür, dass Sie für den Gipfel ausgerüstet sind, und machen Ihre Reise entspannt.",
+  "FrequentlyAskedQuestions": "Häufig gestellte Fragen."
 }

@@ -19,7 +19,8 @@
   .peter-text {
     display: flex;
     flex-direction: column;
-    padding: $padding-small;
+    padding-left:1em;
+    padding-right: 1em; 
     width: 60%;
     justify-content: center;
     h3 {

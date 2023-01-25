@@ -1,7 +1,19 @@
 @import '../../../scss/_config.scss';
 
+
+.bg-Animalprints1{
+  
+  transform: rotate(70deg);
+
+
+}
+
+.bg-Animalprints{
+  opacity:0.4;
+}
+
 .mainup {
-  background-color: $main-light;
+  //background-color: $main-light;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -10,6 +22,8 @@
 }
 
 .mainup {
+  position:"relative"; 
+  z-index:"2";
   .first {
     padding: $padding-small;
     display: flex;
@@ -52,11 +66,15 @@
   .peter {
     
     .peter-text {
+      background-color: $main-light;
+      //background-color: rgba(39, 37, 37, 0.386);
       
       p {
         @include paragraph;
         font-size: calc(1rem + 0.390625vw);
         padding: $padding-small $padding-small 0;
+        color:black;
+        font-weight: 500;
       }
     }
   }

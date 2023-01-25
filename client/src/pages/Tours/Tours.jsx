@@ -88,10 +88,12 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
-        <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
-          <img src={require("../../assets/inkySpot.png")} style={{width:"20em",top:"-50px", right:"-40px", position:"relative"}}></img>
-           <img src={require("../../assets/inkySpot.png")} style={{position:"relative", width:"20em", bottom:"-35em", right:"-15em",position:"relative", zIndex:"-1"}}></img> 
-        </div>
+       {/*  <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
+          <img className='bg-Animalprints' src={require("../../assets/inkySpot.png")} style={{width:"10em",top:"-10em", right:"-40px", position:"relative"}}></img>
+           <img className='bg-Animalprints' src={require("../../assets/inky-spot-6.png")} style={{width:"23em", bottom:"-2em", right:"-15em",position:"relative", zIndex:"-1"}}></img>
+           <img className='bg-Animalprints' src={require("../../assets/inky-spot-animal.png")} style={{position:"relative", width:"50em", top:"1em", right:"5em", position:"relative", zIndex:"-1"}}></img> 
+   
+        </div> */}
           <Grid
           sx={{position:"relative", zIndex:"3"}}
             className="gridRight"

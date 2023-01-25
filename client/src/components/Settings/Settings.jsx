@@ -41,7 +41,7 @@ function Settings() {
 
     try {
       //make a patch request with user id
-      const updateRes = await axios.patch(`/api/admin/${user.id}`, {
+      await axios.patch(`/api/admin/${user.id}`, {
         email: newEmail,
       });
       //console.log(updateRes);
@@ -63,7 +63,7 @@ function Settings() {
 
     try {
       //make a patch request with user id
-      const updateRes = await axios.patch(`/api/admin/${user.id}/updatePassword`, {
+      await axios.patch(`/api/admin/${user.id}/updatePassword`, {
         passwordCurrent: passwordCurrent,
         password: password,
         passwordConfirm: passwordConfirm,

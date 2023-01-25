@@ -26,7 +26,7 @@ export default function TourForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`/api/tours`, tour, {
+      await axios.post(`/api/tours`, tour, {
         headers: {
           authorization: `Bearer ${user.token}`,
         },

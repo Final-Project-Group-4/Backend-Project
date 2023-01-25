@@ -1,14 +1,14 @@
-import nodemailer from 'nodemailer';
-import Handlebars from 'handlebars';
-import fs from 'fs';
-import * as path from 'path';
+import nodemailer from "nodemailer";
+import Handlebars from "handlebars";
+import fs from "fs";
+import * as path from "path";
 
 // Send email without the class:
 const sendEmail = async (options) => {
   try {
     const __dirname = path.resolve();
     const filePath = path.join(__dirname, `/utils/resetEmail.html`);
-    const source = fs.readFileSync(filePath, 'utf-8').toString();
+    const source = fs.readFileSync(filePath, "utf-8").toString();
     const template = Handlebars.compile(source);
     const replacements = {
       username: options.name,
@@ -29,7 +29,7 @@ const sendEmail = async (options) => {
 
     // TRANSPORTER FOR SENDGRID(REAL EMAILS)
     const transporter = nodemailer.createTransport({
-      service: 'SendGrid',
+      service: "SendGrid",
       auth: {
         user: process.env.SENDGRID_USERNAME,
         pass: process.env.SENDGRID_PASSWORD,

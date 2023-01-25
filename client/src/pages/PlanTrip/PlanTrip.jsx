@@ -179,7 +179,7 @@ export default function PlanTrip() {
             <strong>{t('peterName')}</strong> Peter Mlay
           </p>
           <p>
-            <strong>{t('call')}</strong> +24656877893
+            <strong>{t('call')}</strong> +255766034379
           </p>
           <p>
             <strong>Email:</strong> mlaypeter019@gmail.com

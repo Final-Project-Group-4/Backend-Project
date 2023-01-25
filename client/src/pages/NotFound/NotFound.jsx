@@ -1,5 +1,5 @@
-import './_NotFound.scss';
-import error404 from '../../assets/error-404.jpg';
+import "./_NotFound.scss";
+import error404 from "../../assets/error-404.jpg";
 
 export default function NotFound() {
   return (

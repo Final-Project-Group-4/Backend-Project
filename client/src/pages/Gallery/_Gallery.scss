@@ -1,4 +1,4 @@
-@import '../../../scss/_config.scss';
+@import "../../../scss/_config.scss";
 
 .gallery {
   background-color: $main-grey1;
@@ -23,6 +23,24 @@
     position: relative;
     top: 5em;
     margin-bottom: 5em;
+
+    .gallery-delete-btn {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      font-weight: 700;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
     @include m {
       -webkit-column-count: 3;

@@ -1,18 +1,17 @@
-import { useContext, useEffect } from 'react';
-import './_Gallery.scss';
-import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext, useEffect } from "react";
+import "./_Gallery.scss";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleChevronLeft,
   faCircleChevronRight,
   faCircleXmark,
-} from '@fortawesome/free-solid-svg-icons';
-import { Contacts } from '../../components/export';
-import UploadImage from './UploadImage';
-import axios from 'axios';
-import { useTranslation } from 'react-i18next';
-import { Context } from '../../context/Context';
-
+} from "@fortawesome/free-solid-svg-icons";
+import { Contacts } from "../../components/export";
+import UploadImage from "./UploadImage";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
+import { Context } from "../../context/Context";
 
 export default function Gallery() {
   const { t } = useTranslation();
@@ -23,7 +22,9 @@ export default function Gallery() {
 
   const removeImage = async (public_id) => {
     await axios.delete(`/api/gallery/${public_id}`);
-    setGallery((oldState) => oldState.filter((item) => item.public_id !== public_id));
+    setGallery((oldState) =>
+      oldState.filter((item) => item.public_id !== public_id)
+    );
   };
 
   const getGallery = async () => {
@@ -33,7 +34,7 @@ export default function Gallery() {
     if (allImages.status === 200) {
       setGallery(allImages.data);
     } else {
-      console.error('Something went wrong');
+      console.error("Something went wrong");
     }
   };
 
@@ -53,11 +54,15 @@ export default function Gallery() {
   };
   // Previous image
   const prevSlide = () => {
-    slideNumber === 0 ? setSlideNumber(gallery.length - 1) : setSlideNumber(slideNumber - 1);
+    slideNumber === 0
+      ? setSlideNumber(gallery.length - 1)
+      : setSlideNumber(slideNumber - 1);
   };
   // Next image
   const nextSlide = () => {
-    slideNumber + 1 === gallery.length ? setSlideNumber(0) : setSlideNumber(slideNumber + 1);
+    slideNumber + 1 === gallery.length
+      ? setSlideNumber(0)
+      : setSlideNumber(slideNumber + 1);
   };
 
   return (
@@ -76,7 +81,7 @@ export default function Gallery() {
                   {user && (
                     <button
                       onClick={() => removeImage(slide.public_id)}
-                      style={{ height: '30px', width: '30px' }}
+                      className="gallery-delete-btn"
                     >
                       x
                     </button>
@@ -94,9 +99,21 @@ export default function Gallery() {
 
         {openModal && (
           <div className="sliderWrap">
-            <FontAwesomeIcon icon={faCircleXmark} className="btnClose" onClick={handleCloseModal} />
-            <FontAwesomeIcon icon={faCircleChevronLeft} className="btnPrev" onClick={prevSlide} />
-            <FontAwesomeIcon icon={faCircleChevronRight} className="btnNext" onClick={nextSlide} />
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className="btnClose"
+              onClick={handleCloseModal}
+            />
+            <FontAwesomeIcon
+              icon={faCircleChevronLeft}
+              className="btnPrev"
+              onClick={prevSlide}
+            />
+            <FontAwesomeIcon
+              icon={faCircleChevronRight}
+              className="btnNext"
+              onClick={nextSlide}
+            />
             <div className="fullScreenImage">
               <img src={gallery[slideNumber].secure_url} alt="safari" />
             </div>

@@ -13,12 +13,19 @@ function ManageTours() {
   const { user } = useContext(Context);
 
   const loadToursData = async () => {
-    const allTours = await axios.get(`/api/tours`);
-    if (allTours.status === 200) {
+    try {
+      const allTours = await axios.get(`/api/tours`);
       setTourData(allTours.data.data);
-    } else {
-      console.error('Something went wrong');
+    } catch (error) {
+      //console.log(error.response.data.message);
+      toast.error(error.response.data.message);
     }
+    // const allTours = await axios.get(`/api/tours`);
+    // if (allTours.status === 200) {
+    //   setTourData(allTours.data.data);
+    // } else {
+    //   console.error('Something went wrong');
+    // }
   };
 
   const handleEdit = (tourId) => {};
@@ -29,19 +36,38 @@ function ManageTours() {
 
   const handleClose = async (answer) => {
     if (answer === 'yes') {
-      await axios.delete(`/api/tours/${open}`, {
-        headers: {
-          authorization: `Bearer ${user.token}`,
-        },
-      });
-      toast.success('Tour is deleted!');
-      const allTours = await axios.get(`/api/tours`);
-      if (allTours.status === 200) {
-        setTourData(allTours.data.data);
-      } else {
-        console.error('Something went wrong');
+      try {
+        await axios.delete(`/api/tours/${open}`, {
+          headers: {
+            authorization: `Bearer ${user.token}`,
+          },
+        });
+        toast.success('Tour is deleted!');
+        const allTours = await axios.get(`/api/tours`);
+        if (allTours.status === 200) {
+          setTourData(allTours.data.data);
+        } else {
+          console.error('Something went wrong');
+        }
+        setOpen(false);
+      } catch (err) {
+        setOpen(false);
+        toast.error(err.response.data.message);
       }
-      setOpen(false);
+
+      //   await axios.delete(`/api/tours/${open}`, {
+      //     headers: {
+      //       authorization: `Bearer ${user.token}`,
+      //     },
+      //   });
+      //   toast.success('Tour is deleted!');
+      //   const allTours = await axios.get(`/api/tours`);
+      //   if (allTours.status === 200) {
+      //     setTourData(allTours.data.data);
+      //   } else {
+      //     console.error('Something went wrong');
+      //   }
+      //   setOpen(false);
     } else {
       setOpen(false);
     }

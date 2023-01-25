@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Contacts } from '../../components/export';
 import mapboxgl from 'mapbox-gl';
 import './_SingleTour.scss';
+import { toast } from 'react-toastify';
 
 export default function SingleTour() {
   const [tour, setTour] = useState('');
@@ -49,15 +50,6 @@ export default function SingleTour() {
         )
         .addTo(map);
 
-      //Add popup
-      // new mapboxgl.Popup({
-      //   offset: 20,
-      //   focusAfterOpen: false,
-      // })
-      //   .setLngLat(loc?.coordinates)
-      //   .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
-      //   .addTo(map);
-
       // Extend map bounds to include current location
       bounds.extend(loc?.coordinates);
     });
@@ -73,12 +65,17 @@ export default function SingleTour() {
   };
 
   const getSingleTour = async () => {
-    const response = await axios.get(`/api/tours/${id}`);
-    setTour(response.data);
-    setDays(response.data.days);
-    setInfo(response.data.days[0]);
-    setLocs(response.data.locations);
-    setImages(response.data.otherImages);
+    try {
+      const response = await axios.get(`/api/tours/${id}`);
+      setTour(response.data.tour);
+      setDays(response.data.tour.days);
+      setInfo(response.data.tour.days[0]);
+      setLocs(response.data.tour.locations);
+      setImages(response.data.tour.otherImages);
+    } catch (err) {
+      console.log(err);
+      toast.error(err.response.data.message);
+    }
   };
 
   useEffect(() => {

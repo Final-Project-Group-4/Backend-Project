@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 function ResetPassword() {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
-  const [error, setError] = useState(false);
   const navigate = useNavigate();
   const { token } = useParams();
 
@@ -16,19 +15,18 @@ function ResetPassword() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (password !== passwordConfirm) {
+      return toast.error('Password and confirm password must be same!');
+    }
     try {
-      const res = await axios.patch(`/api/admin/resetPassword/${token}`, {
+      await axios.patch(`/api/admin/resetPassword/${token}`, {
         password,
         passwordConfirm,
       });
-      //console.log(res.data);
-      if (res.data) {
-        toast.success('Password reset');
-        navigate('/login');
-      }
+      toast.success('Password reset');
+      navigate('/login');
     } catch (err) {
-      setError(true);
-      console.log(err);
+      toast.error(err.response.data.message);
     }
   };
   return (
@@ -58,7 +56,6 @@ function ResetPassword() {
             <div className="form-group">
               <button className="btn-primary btn-login">Reset</button>
             </div>
-            {error && <p className="forgot-error">Something went wrong!</p>}
           </form>
         </section>
       </div>

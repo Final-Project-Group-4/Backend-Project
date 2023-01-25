@@ -56,7 +56,7 @@
       {
         "number": 2,
         "title": "Mandara Huts - Horombo Huts",
-        "description": "After a good nights sleep and a hearty breakfast, we emerge from the rain forest and continue on an ascending path, through heathland, looking for giant lobelias and groundsels. Continue up into open moorlands where small shrubs are the main vegetation. Stop halfway for lunch, to enjoy  amazing views of Mawenzi. Arrive at the Horombo Huts late afternoon beneath the spectacular Kibo Summit viewpoint. Temperatures begin to drop.",
+        "description": "After a good night's sleep and a hearty breakfast, we emerge from the rain forest and continue on an ascending path, through heathland, looking for giant lobelias and groundsels. Continue up into open moorlands where small shrubs are the main vegetation. Stop halfway for lunch, to enjoy  amazing views of Mawenzi. Arrive at the Horombo Huts late afternoon beneath the spectacular Kibo Summit viewpoint. Temperatures begin to drop.",
         "elevation": "2723m/8934ft to 3721m/12,208ft",
         "altitudeGained": "998m",
         "_id": "63b287d3066f59368ebabb81"
@@ -78,7 +78,7 @@
       {
         "number": 5,
         "title": "Kibo Huts - Summit, Horombo Huts - Capped Summit",
-        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit in a switchback formation through trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion, we ascend through heavy scree and possibly snow towards Gillman's Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit in a switchback formation through trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion, we ascend through heavy scree and possibly snow towards Gillman's Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Kibo hut, stopping at Kibo Hut for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Horombo Hut.",
         "elevation": "4714m/15,466ft to 5895m/19,341ft",
         "altitudeGained": "1181m",
         "altitudeLost": "2174m",
@@ -94,8 +94,7 @@
         "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar.",
         "_id": "63b287d3066f59368ebabb85"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Machame Route",
@@ -167,7 +166,7 @@
       {
         "number": 1,
         "title": "Machame Gate - Machame Camp",
-        "description": "Departing :from Moshi a 45-minute drive will take you through the Village of Machame to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
+        "description": "Departing : from Moshi a 45-minute drive will take you through the Village of Machame to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful rainforest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
         "elevation": "1811m/5942ft to 3021m/9911ft",
         "altitudeGained": "1210m",
         "_id": "63b28801066f59368ebabb90"
@@ -183,7 +182,7 @@
       {
         "number": 3,
         "title": "Shira Camp - Lava Tower",
-        "description": "Although you end the day around the same elevation as when you began, this day is very important for acclimatization. From Shira Plateau we continue east up a ridge, passing the junction towards the Kibo peak before we then continue, South East towards the Lava Tower, called the “Shark’s Tooth” (elev. 4650m/15,250ft). Shortly after the tower, we come to a second junction, which leads to the Arrow Glacier. We then continue to descend to overnight at Barranco Camp.",
+        "description": "Although you end the day around the same elevation as when you began, this day is very important for acclimatization. From Shira Plateau we continue east up a ridge, passing the junction towards the Kibo peak before we then continue, South East towards the Lava Tower, called the “Shark's Tooth” (elev. 4650m/15,250ft). Shortly after the tower, we come to a second junction, which leads to the Arrow Glacier. We then continue to descend to overnight at Barranco Camp.",
         "elevation": "3839m/12,595ft to 3986m/13,077ft",
         "altitudeGained": "147m",
         "_id": "63b28801066f59368ebabb92"
@@ -223,8 +222,7 @@
         "note": "Overnight Nakara hotel B&B before being transferred to your journey home, safari or a relaxing trip to Zanzibar.",
         "_id": "63b28801066f59368ebabb96"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Lemosho Route",
@@ -247,42 +245,42 @@
         "coordinates": [37.175, -2.9968],
         "description": "Mti Mkubwa Camp",
         "day": 1,
-        "_id": "63b28816066f59368ebabb9a"
+        "_id": "63d057deea374c48ce2e907d"
       },
       {
         "type": "Point",
         "coordinates": [37.2293, -3.013],
         "description": "Shira One Camp",
         "day": 2,
-        "_id": "63b28816066f59368ebabb9b"
+        "_id": "63d057deea374c48ce2e907e"
       },
       {
         "type": "Point",
         "coordinates": [37.3452, -3.0667],
         "description": "Lava Tower",
         "day": 3,
-        "_id": "63b28816066f59368ebabb9c"
+        "_id": "63d057deea374c48ce2e907f"
       },
       {
         "type": "Point",
         "coordinates": [37.3287, -3.0942],
         "description": "Barranco Camp",
         "day": 5,
-        "_id": "63b28801066f59368ebabb8b"
+        "_id": "63d057deea374c48ce2e9080"
       },
       {
         "type": "Point",
         "coordinates": [37.3545, -3.1122],
         "description": "Karanga Camp",
         "day": 6,
-        "_id": "63b28801066f59368ebabb8c"
+        "_id": "63d057deea374c48ce2e9081"
       },
       {
         "type": "Point",
         "coordinates": [37.378, -3.0993],
         "description": "Barafu Camp",
         "day": 7,
-        "_id": "63b28801066f59368ebabb8d"
+        "_id": "63d057deea374c48ce2e9082"
       }
     ],
     "days": [
@@ -292,7 +290,7 @@
         "description": "Departing from Hotel several hours drive will take you through welcoming mountainside villages to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead. Enjoy the beautiful rain forest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations, the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here.",
         "elevation": "2389m/7838ft to 2785m/9137ft",
         "altitudeGained": "396m",
-        "_id": "63b28816066f59368ebabb9d"
+        "_id": "63d057deea374c48ce2e9083"
       },
       {
         "number": 2,
@@ -300,7 +298,7 @@
         "description": "After a good nights sleep and a hearty breakfast, we emerge from the rain forest and continue on an ascending path, we leave the forest behind now, the trail climbs steadily with wide views to reach the rim of the Shira Plateau. Temperatures begin to drop.",
         "elevation": "2785m/9137ft to 3504m/11,496ft",
         "altitudeGained": "719m",
-        "_id": "63b28816066f59368ebabb9e"
+        "_id": "63d057deea374c48ce2e9084"
       },
       {
         "number": 3,
@@ -308,7 +306,7 @@
         "description": "We explore the Shira plateau for a full day. It is a gentle walk east toward Kibo's glaciered peak, across the plateau which leads to Shira 2 camp on moorland meadows by a stream. Then we continue to Moir Hut, a little-used site on the base of Lent Hills. A variety of walks are available on Lent Hills making this an excellent acclimatization opportunity. Shira is one of the highest plateaus on earth.",
         "elevation": "3504m/11,496ft to 3895m/12,779ft",
         "altitudeGained": "391m",
-        "_id": "63b28816066f59368ebabb9f"
+        "_id": "63d057deea374c48ce2e9085"
       },
       {
         "number": 4,
@@ -316,7 +314,7 @@
         "description": "Although you end the day around the same elevation as when you began, this day is very important for acclimatization. From Shira Plateau we continue east up a ridge, passing the junction towards the Kibo peak before we then continue, South East towards the Lava Tower, called the “Shark's Tooth” (elev. 4650m/15,250ft). Shortly after the tower, we come to a second junction, which leads to the Arrow Glacier. We then continue to descend to overnight at Barranco Camp.",
         "elevation": "3895m/12,779ft to 3986m/13,077ft",
         "altitudeGained": "91m",
-        "_id": "63b28816066f59368ebabba0"
+        "_id": "63d057deea374c48ce2e9086"
       },
       {
         "number": 5,
@@ -324,7 +322,7 @@
         "description": "After breakfast, we continue on a steep ridge up to the adventurous Barranco. Wall to the Karanga Valley and the junction, which connects, with the Mweka Trail. This is one of the most impressive days to see the power, agility, and strength of your crew zip over this wall with what appears such ease. Overnight at Karanga Camp.",
         "elevation": "3986m/13,077ft to 4034m/13,235ft",
         "altitudeGained": "48m",
-        "_id": "63b28816066f59368ebabba1"
+        "_id": "63d057deea374c48ce2e9087"
       },
       {
         "number": 6,
@@ -332,28 +330,27 @@
         "description": "We continue up toward Barafu Camp, and once reached you have now completed the South Circuit, which offers a variety of breathtaking views of the summit from many different angles. An early dinner and rest as we prepare for summit night. Overnight at Barafu Camp.",
         "elevation": "4034m/13,235ft to 4662m/15,295ft",
         "altitudeGained": "628m",
-        "_id": "63b28816066f59368ebabba2"
+        "_id": "63d057deea374c48ce2e9088"
       },
       {
         "number": 7,
         "title": "Barafu Camp - Summit",
-        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek.We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way.Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa!After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused on the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way.Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa!After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
         "elevation": "4662m/15,295ft to 5895m/19,341ft",
         "altitudeGained": "1233m",
         "altitudeLost": "2789m",
         "descentTo": "3106m/10,190ft",
-        "_id": "63b28816066f59368ebabba3"
+        "_id": "63d057deea374c48ce2e9089"
       },
       {
         "number": 8,
         "title": "Mweka Camp - Mweka Gate - Moshi",
-        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it's time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel in (about 1 hour ). Enjoy a long overdue hot shower, dinner and celebrations!",
+        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew, it's time to say goodbye. We continue the descent down to the Mweka Park Gate to receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you at Mweka village to drive you back to your hotel (in about an hour). Enjoy a long overdue hot shower, dinner and celebrations!",
         "elevation": "3106m/10,190ft to 1633m/5358ft",
         "altitudeLost": "1473m",
-        "_id": "63b28816066f59368ebabba4"
+        "_id": "63d057deea374c48ce2e908a"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Rongai Route",
@@ -425,7 +422,7 @@
       {
         "number": 1,
         "title": "Nale Muru Gate - Simba Camp",
-        "description": "Departing from Moshi a 4-5 hour drive will take you through the coffee plantations and Village of Nale Muru to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful wooded scenery, and windy trails while your guide tells you about the local flora and fauna and natural wildlife you are likely to see. Simba camp sits near the first cave at the edge of the moorland zone with spectacular views of the plains of Kenya.",
+        "description": "Departing from Moshi a 4-5 hour drive will take you through the coffee plantations and village of Nale Muru to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead Enjoy the beautiful wooded scenery, and windy trails while your guide tells you about the local flora and fauna and natural wildlife you are likely to see. Simba camp sits near the first cave at the edge of the moorland zone with spectacular views of the plains of Kenya.",
         "elevation": "1997m/6552ft to 2635m/8645ft",
         "altitudeGained": "638m",
         "_id": "63b28827066f59368ebabbaf"
@@ -457,7 +454,7 @@
       {
         "number": 5,
         "title": "Kibo Huts - Summit",
-        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused of the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m.. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused of the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Gilman's Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Horombo Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Horombo camp.",
         "elevation": "5174m/16975ft to 5895m/19,341ft",
         "altitudeGained": "721m",
         "altitudeLost": "2174m",
@@ -467,14 +464,13 @@
       {
         "number": 6,
         "title": "Horombo Huts - Marangu Gate",
-        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew it's time to say goodbye. We continue the descent down stopping at the Mandara Huts for lunch. Remember to tip your guides, cooks, and porters, since you will be leaving them here. You return back to the Marangu Park Gate and receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you to drive you back to your hotel in Marangu (about 10 minutes). Enjoy a long over due hot shower, dinner and celebrations!!",
+        "description": "After breakfast and a heartfelt ceremony of appreciation and team bonding with your crew it's time to say goodbye. We continue the descent down stopping at the Mandara Huts for lunch. Remember to tip your guides, cooks, and porters, since you will be leaving them here. You return back to the Marangu Park Gate and receive your summit certificates. As the weather is drastically warmer, the terrain is wet, muddy and steep and we highly recommend Gaiters and trekking poles. From the gate, a vehicle will meet you to drive you back to your hotel in Marangu (about 10 minutes). Enjoy a long over due hot shower, dinner and celebrations!",
         "elevation": "3721m/12,208ft to 1905m/6250ft",
         "altitudeLost": "1816m",
         "note": "Overnight Nakara hotel B&B. before being transferred to your journey home, safari or relaxing trip to Zanzibar.",
         "_id": "63b28827066f59368ebabbb4"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Umbwe Route",
@@ -546,7 +542,7 @@
       {
         "number": 1,
         "title": "Umbwe Gate - Umbwe Cave",
-        "description": "Departing from Moshi driving to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead.Enjoy the beautiful rain forest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here. The path follows a ridge between two deep valleys up through the dense montane forest. The camp is perched between huge trees and thick undergrowth.",
+        "description": "Departing from Moshi driving to the Kilimanjaro National Park Gate. We will patiently wait for our permits to be issued while watching the hustle and bustle of operations as many crews prepare for the journey ahead. Enjoy the beautiful rain forest scenery and windy trails while your guide tells you about the local flora and fauna and natural wildlife. At these lower elevations the trail can be muddy and quite slippery. We highly recommend gaiters and trekking poles here. The path follows a ridge between two deep valleys up through the dense montane forest. The camp is perched between huge trees and thick undergrowth.",
         "elevation": "1651m/5417ft to 2944m/9659ft",
         "altitudeGained": "1293m",
         "_id": "63b2883c066f59368ebabbbf"
@@ -554,7 +550,7 @@
       {
         "number": 2,
         "title": "Umbwe Cave - Barranco Camp",
-        "description": "After a good nights sleep and a hearty breakfast we emerge from the rain forest and continue on a steep ascending path, along the Umbwe ridge as it descends slightly to Barranco camp situated in the valley. Temperatures begin to drop.",
+        "description": "After a good night's sleep and a hearty breakfast we emerge from the rain forest and continue on a steep ascending path, along the Umbwe ridge as it descends slightly to Barranco camp situated in the valley. Temperatures begin to drop.",
         "elevation": "2944m/9659ft to 3986m/13,077ft",
         "altitudeGained": "1042m",
         "_id": "63b2883c066f59368ebabbc0"
@@ -578,7 +574,7 @@
       {
         "number": 5,
         "title": "Barafu Camp - Summit",
-        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused of the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
+        "description": "Excitement is building as morning comes with an early start between midnight and 2 a.m.. This is the most mentally and physically challenging portion of the trek. We continue our way to the summit between the Rebmann and Ratzel glaciers trying to stay warm and focused of the amazing sense of accomplishment that lies ahead. With a switchback motion in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. You will be rewarded with the most magnificent sunrise during your short rest here. Faster hikers may view the sunrise from the summit. From here on your remaining 1 hour ascent to Uhuru Peak, you are likely to encounter snow all the way. Congratulations, one step at a time you have now reached Uhuru Peak the highest point on Mount Kilimanjaro and the entire continent of Africa! After photos, celebrations and maybe a few tears of joy we take a few moments to enjoy this incredible accomplishment. We begin our steep descent down to Mweka Camp, stopping at Barafu for lunch and a very brief rest. We strongly recommend gaiters and trekking poles for uncooperative loose gravel and volcano ash terrain. Well-deserved rest awaits you to enjoy your last evening on the mountain. Overnight Mweka Camp.",
         "elevation": "4662m/15,295ft to 5895m/19,341ft",
         "altitudeGained": "1233m",
         "altitudeLost": "2789m",
@@ -594,14 +590,13 @@
         "note": "Overnight Nakara hotel B&B. before being transferred to your journey home, safari or relaxing trip to Zanzibar.",
         "_id": "63b2883c066f59368ebabbc4"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Shira Route",
     "duration": "6 - 8 days",
     "difficulty": "difficult",
-    "description": "Very similar to Lemosho route, however it starts at 3,600 meters and is therefore not ideal for trekkers who have little or no experience of high altitude trekking.On the first day you begin at Shira Gate to Simba Camp before joining the Lemosho Route on day two at Shira Camp 2. The high starting point is however a major negative for this route as many experience altitude sickness from day one without enough time to acclimatize.The route over the Shira Plateau has several possible variations.After Shira Camp 2 the route joins the Machame Route via Lava Tower, and then descends to the Barranco Camp via the Southern Circuit. Ascent to Uhuru Peak is made via Barafu Camp and up the southern slopes of Kibo. The route is seldom used by other trekkers and so your initial two days on the mountain are less crowded than on most other routes.",
+    "description": "Very similar to Lemosho route, however it starts at 3,600 meters and is therefore not ideal for trekkers who have little or no experience of high altitude trekking. On the first day you begin at Shira Gate to Simba Camp before joining the Lemosho Route on day two at Shira Camp 2. The high starting point is however a major negative for this route as many experience altitude sickness from day one without enough time to acclimatize. The route over the Shira Plateau has several possible variations. After Shira Camp 2 the route joins the Machame Route via Lava Tower, and then descends to the Barranco Camp via the Southern Circuit. Ascent to Uhuru Peak is made via Barafu Camp and up the southern slopes of Kibo. The route is seldom used by other trekkers and so your initial two days on the mountain are less crowded than on most other routes.",
     "subtitle": "Climbing Mount Kilimanjaro via The Shira Route",
     "imgCover": "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350623/shira-tour2_v1pfis.jpg",
     "otherImages": [
@@ -698,7 +693,7 @@
       {
         "number": 5,
         "title": "Barafu Camp - Summit - Mweka Camp",
-        "description": "Very early in the morning (midnight to 2 am), we continue our way to the summit between the Rebmann and Ratzel glaciers. You head in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. This is the most mentally and physically challenging portion of the trek. At Stella Point you will stop for a short rest and will be rewarded with the most magnificent sunrise you are ever likely to see. Faster hikers may view the sunrise from the summit. From Stella Point, you may encounter snow all the way on your 1-hour ascent to the summit. Once at Uhuru Peak you have reached the highest point on Mount Kilimanjaro and the continent of Africa! From the summit we begin our descent by continuing straight down to the Mweka Camp, stopping at Barafu for lunch. You may want gaiters and trekking poles for the loose gravel going down. We arrive at Mweka Camp and enjoy our last evening on the mountain. An overnight at Mweka Camp.",
+        "description": "Very early in the morning (midnight to 2 a.m.), we continue our way to the summit between the Rebmann and Ratzel glaciers. You head in a northwesterly direction and ascend through heavy scree towards Stella Point on the crater rim. This is the most mentally and physically challenging portion of the trek. At Stella Point you will stop for a short rest and will be rewarded with the most magnificent sunrise you are ever likely to see. Faster hikers may view the sunrise from the summit. From Stella Point, you may encounter snow all the way on your 1-hour ascent to the summit. Once at Uhuru Peak you have reached the highest point on Mount Kilimanjaro and the continent of Africa! From the summit we begin our descent by continuing straight down to the Mweka Camp, stopping at Barafu for lunch. You may want gaiters and trekking poles for the loose gravel going down. We arrive at Mweka Camp and enjoy our last evening on the mountain. An overnight at Mweka Camp.",
         "elevation": "4700m/15,350ft to 5895m/19,340ft",
         "hikingTime": "5-6 hours up, 5-6 hours down",
         "_id": "63b28852066f59368ebabbd3"
@@ -711,15 +706,14 @@
         "hikingTime": "3-4 hours",
         "_id": "63b28852066f59368ebabbd4"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Safari Tour",
-    "duration": "5 days / 4 nights",
+    "duration": "5 days",
     "difficulty": "easy",
     "description": "Tanzania is the most impressive African Safari destination with typical wilderness in its national parks that can easily be located in their respective circuits; the Northern circuit, southern circuit, and the western circuit which you can explore while on your Tanzania safari. There are 17 national parks that occupy about a third of the total area within the geographical territories. The Northern circuit comprises of Serengeti national park, Ngorongoro Conservation Area, Lake Manyara National park, Tarangire national park, and Arusha national park. The southern circuit has Ruaha national park, Mikumi national park, and Selous game reserve and Mahale mountains national park and Katavi national park in the western circuit. National parks in the Northern circuit offer numerous views of the game especially the wildebeest which also attracts a number of predators including lions, leopards, and others.",
-    "subtitle": "Safari Tour with the route of different national parks",
+    "subtitle": "Safari Tour with the route of different national parks.",
     "imgCover": "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350626/Safari2_pfnyt9.jpg",
     "otherImages": [
       "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350623/Safari5_icrjmd.jpg",
@@ -768,13 +762,13 @@
       {
         "number": 2,
         "title": "Lake Manyara National Park - Full Day",
-        "description": "After breakfast you will meet your tour guide for morning game drive searching for the wildlife and birdlife that you didn't manage to see the previous day. In the afternoon you will have your hot lunch at the lodge and have a short rest before proceeding with the afternoon game drive. Later in the afternoon you will be driving to Ngorongoro Conservation Area for your preparation for descending to the Ngorongoro crater the next morning. You will therefore retire to the lodge upon your arrival for hot shower, dinner and overnight.",
+        "description": "After breakfast you will meet your tour guide for morning game drive searching for the wildlife and birdlife that you didn't manage to see the previous day. In the afternoon you will have your hot lunch at the lodge and have a short rest before proceeding with the afternoon game drive. Later in the afternoon you will be driving to Ngorongoro Conservation Area for your preparation for descending to the Ngorongoro crater the next morning. You will therefore return to the lodge upon your arrival for hot shower, dinner and overnight.",
         "_id": "63b28863066f59368ebabbdd"
       },
       {
         "number": 3,
         "title": "Ngorongoro Crater - Full Day",
-        "description": "In the morning after breakfast you will meet your driver guide and been transfer to the crater gate with your picnic lunch ready for a full day crater tour, explore the crater which is famous for its great concentration of wildlife and birdlife. This is probably the most enjoyable day as you can witness how wildlife wakes up and start their daily activities. If you're lucky enough you can see a predator hunting a prey or any adventure of your life time that Ngorongoro crater has for you. Ngorongoro crater is famous for its different attraction which includes alkaline lakes, forest, and different vegetation, hot springs, different kinds of wildlife and birdlife and its landscape. Among the common wildlife in the crater includes; lion, leopard, zebra, elephant, African buffalo, warthog, hyena, wild dogs, the rare black rhino, wildebeest and varieties of migratory and resident birdlife whereby more than 350 different species have been recorded. In the afternoon you will ascend the crater floor and been transferred to Ngorongoro sopa lodge/Ngorongoro serena lodge for hot shower, dinner and overnight.",
+        "description": "In the morning after breakfast you will meet your driver guide and been transfer to the crater gate with your picnic lunch ready for a full day crater tour, explore the crater which is famous for its great concentration of wildlife and birdlife. This is probably the most enjoyable day as you can witness how wildlife wakes up and start their daily activities. If you're lucky enough you can see a predator hunting a prey or any adventure of your life time that Ngorongoro crater has for you. Ngorongoro crater is famous for its different attraction which includes alkaline lakes, forest, and different vegetation, hot springs, different kinds of wildlife and birdlife and its landscape. Among the common wildlife in the crater includes: lion, leopard, zebra, elephant, African buffalo, warthog, hyena, wild dogs, the rare black rhino, wildebeest and varieties of migratory and resident birdlife whereby more than 350 different species have been recorded. In the afternoon you will ascend the crater floor and been transferred to Ngorongoro sopa lodge/Ngorongoro serena lodge for hot shower, dinner and overnight.",
         "_id": "63b28863066f59368ebabbde"
       },
       {
@@ -789,14 +783,13 @@
         "description": "After breakfast walking Safari at the parks boundary with your packed lunch, you will then drive back to Arusha as you are doing game drive to the Tarangire National Park and exit. You will reach Arusha late afternoon for preparation to be transferred to Kilimanjaro International Airport for your flight back home.",
         "_id": "63b28863066f59368ebabbe0"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Mountain Meru",
     "duration": "4 days",
     "difficulty": "medium",
-    "description": "Located to the east of Arusha town, about 20 kilometers drive from Arusha; Mount Meru is the second highest mountain in Tanzania. The mountain stands at an altitude of 4566 meters above sea level inside the Arusha National Park. Meru has one route to the top and can be attempted for three days but we highly recommend doing for four days for acclimatization. Most alpines uses Meru for acclimatization before the Kilimanjaro climb. The mountain has less snow formed at the volcano eruption.Unlike Kilimanjaro when you are climbing the Mount Meru you have to be escorted by an armed ranger(s) as you pass through the Arusha National Park. It is at this time when you will enjoy the walking safari as you pass the groups of African buffaloes, Zebras, Black andwhite colobus monkey just little wildlife to mention. The Momela and Ngurdoto Lakes are rich in birdlife as you trek to the mountain; birds like Pelicans and Flamingo are closely seen.",
+    "description": "Located to the east of Arusha town, about 20 kilometers drive from Arusha; Mount Meru is the second highest mountain in Tanzania. The mountain stands at an altitude of 4566 meters above sea level inside the Arusha National Park. Meru has one route to the top and can be attempted for three days but we highly recommend doing for four days for acclimatization. Most alpines uses Meru for acclimatization before the Kilimanjaro climb. The mountain has less snow formed at the volcano eruption. Unlike Kilimanjaro when you are climbing the Mount Meru you have to be escorted by an armed ranger(s) as you pass through the Arusha National Park. It is at this time when you will enjoy the walking safari as you pass the groups of African buffaloes, Zebras, Black andwhite colobus monkey just little wildlife to mention. The Momela and Ngurdoto Lakes are rich in birdlife as you trek to the mountain; birds like Pelicans and Flamingo are closely seen.",
     "subNote": "Upon arrival at Kilimanjaro International Airport, you will be met and transferred for overnight accommodation at Nakara hotel B&B. Your head guide will meet you for your briefing, gear check and arrange for you to hire any equipment you may need.",
     "subtitle": "Climbing Mountain Meru",
     "imgCover": "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673352241/mount-meru2_wv8uas.jpg",
@@ -841,7 +834,7 @@
       {
         "number": 1,
         "title": "Momela Gate - Miriakamba Huts",
-        "description": "After breakfast depart Moshi about 8:30 a.m drive to Momella gate. Make payment and start the climb with picnic lunch to the first hut called Miriakamba hut. Dinner and overnight - Miriakamba hut (3 ½ hrs).",
+        "description": "After breakfast depart Moshi about 8:30 a.m. drive to Momella gate. Make payment and start the climb with picnic lunch to the first hut called Miriakamba hut. Dinner and overnight - Miriakamba hut (3 ½ hrs).",
         "elevation": "1597m/5240ft to 2503m/8212ft",
         "altitudeGained": "906m",
         "_id": "63b28879066f59368ebabbe8"
@@ -872,8 +865,7 @@
         "note": "Overnight nakara hotel B&B. before being transferred to your journey home, safari or relaxing trip to Zanzibar.",
         "_id": "63b28879066f59368ebabbeb"
       }
-    ],
-    "__v": 0
+    ]
   },
   {
     "name": "Local Tour",
@@ -887,7 +879,7 @@
       "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350631/marangu-coffee-route4_y1tdrk.jpg",
       "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350630/marangu-coffee-route6_il6has.jpg"
     ],
-    "type": "coffee",
+    "type": "local",
     "scenery": "excellent",
     "locations": [
       {
@@ -898,7 +890,6 @@
         "_id": "63b2888c066f59368ebabbef"
       }
     ],
-    "days": [],
-    "__v": 0
+    "days": []
   }
 ]

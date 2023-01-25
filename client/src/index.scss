@@ -1,5 +1,5 @@
-@import '../scss/_config.scss';
-@import '../scss/_buttons.scss';
+@import "../scss/_config.scss";
+@import "../scss/_buttons.scss";
 
 * {
   margin: 0;
@@ -12,7 +12,8 @@ body {
 }
 
 .container {
-  min-height: 100vh;
+  // min-height: 100vh;
+  min-height: 70vh;
   width: 80%;
   padding: 0.5rem;
   font-size: calc(12px + 0.390625vw);

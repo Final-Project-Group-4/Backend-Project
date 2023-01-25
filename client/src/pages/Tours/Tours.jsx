@@ -7,7 +7,6 @@ import axios from 'axios';
 import { useTranslation } from 'react-i18next';
 import { CardActionArea } from '@mui/material';
 
-
 export default function Tours() {
   const { t } = useTranslation();
   const [tourData, setTourData] = useState([]);
@@ -28,7 +27,7 @@ export default function Tours() {
   const loadToursDataByType = async () => {
     const filteredToursByType = await axios.get(`/api/tours/category/${type}`);
     if (filteredToursByType.status === 200) {
-      setTourData(filteredToursByType.data);
+      setTourData(filteredToursByType.data.tour);
     } else {
       console.error('Something went wrong');
     }
@@ -55,7 +54,7 @@ export default function Tours() {
             type === 'safari' ? 'img-safari' : ''
           } ${type === 'local' ? 'img-coffee' : ''}`}
         >
-          <div className="insideLeft" >
+          <div className="insideLeft">
             <div className="tourPara">
               {!type && (
                 <div className="overlay moreOpaque">
@@ -88,14 +87,30 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
-        <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
-          <img className='bg-Animalprints' src={require("../../assets/inkySpot.png")} style={{width:"10em",top:"-10em", right:"-40px", position:"relative"}}></img>
-           <img className='bg-Animalprints' src={require("../../assets/inky-spot-6.png")} style={{width:"23em", bottom:"-2em", right:"-15em",position:"relative", zIndex:"-1"}}></img>
-           <img className='bg-Animalprints cropped-img' src={require("../../assets/inky-spot-animal.png")} style={{position:"relative", width:"50em", top:"1em", right:"5em", position:"relative", zIndex:"-7"}}></img> 
-  
-        </div> 
+
+          <div
+            className="background-Squiggly"
+            style={{ position: 'absolute', left: '50%', height: '100vh', width: '50%' }}
+          >
+            <img
+              src={require('../../assets/inkySpot.png')}
+              style={{ width: '20em', top: '-50px', right: '-40px', position: 'relative' }}
+              alt=""
+            ></img>
+            <img
+              src={require('../../assets/inkySpot.png')}
+              style={{
+                position: 'relative',
+                width: '20em',
+                bottom: '-35em',
+                right: '-15em',
+                zIndex: '-1',
+              }}
+              alt=""
+            ></img>
+          </div>
           <Grid
-          sx={{position:"relative", zIndex:"0"}}
+            sx={{ position: 'relative', zIndex: '3' }}
             className="gridRight"
             container
             spacing={1}
@@ -106,6 +121,7 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
+
                 <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
                 style={{position:"relative", zIndex:"-1"}}
                 ><CardActionArea>
@@ -122,12 +138,12 @@ export default function Tours() {
                       duration={tour.duration}
                       type={tour.type}
                     />
-                </CardActionArea>
+                  </CardActionArea>
                 </Grid>
               );
             })}
           </Grid>
-         </Container> 
+        </Container>
       </div>
       <Contacts />
     </div>

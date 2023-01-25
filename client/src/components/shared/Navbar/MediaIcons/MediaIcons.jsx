@@ -1,30 +1,30 @@
-import './MediaIcons.scss';
-import {  } from 'react-icons/fa';
-import { useTranslation } from 'react-i18next';
-import { FaInstagram, FaPowerOff,FaFacebook } from 'react-icons/fa';
-import { useContext } from 'react';
-import { Context } from '../../../../context/Context';
-import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { toast } from 'react-toastify';
+import "./MediaIcons.scss";
+import {} from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { FaInstagram, FaPowerOff, FaFacebook } from "react-icons/fa";
+import { useContext } from "react";
+import { Context } from "../../../../context/Context";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 function MediaIcons() {
-  const [t, i18n] = useTranslation();
+  const [i18n] = useTranslation();
   const { user, dispatch } = useContext(Context);
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    dispatch({ type: 'LOGOUT' });
+    dispatch({ type: "LOGOUT" });
 
     try {
       const res = await axios.post(`/api/admin/logout`);
       console.log(res.data);
       if (res.data) {
-        toast.error('You logged out');
-        navigate('/');
+        toast.error("You logged out");
+        navigate("/");
       }
     } catch (err) {
-      toast.error(err);
+      toast.error(err.response.data.message);
     }
   };
 
@@ -41,7 +41,11 @@ function MediaIcons() {
           </a>
         </li>
         <li className="app__flex p-text">
-          <a href={`https://instagram.com/mlay_tours?r=nametag`} rel="noreferrer" target="_blank">
+          <a
+            href={`https://instagram.com/mlay_tours?r=nametag`}
+            rel="noreferrer"
+            target="_blank"
+          >
             <FaInstagram size={20} />
           </a>
         </li>
@@ -52,7 +56,7 @@ function MediaIcons() {
           <p
             className="a"
             onClick={() => {
-              i18n.changeLanguage('de');
+              i18n.changeLanguage("de");
             }}
           >
             DE
@@ -65,7 +69,7 @@ function MediaIcons() {
           <p
             className="a"
             onClick={() => {
-              i18n.changeLanguage('fr');
+              i18n.changeLanguage("fr");
             }}
           >
             FR
@@ -78,7 +82,7 @@ function MediaIcons() {
           <p
             className="a"
             onClick={() => {
-              i18n.changeLanguage('en');
+              i18n.changeLanguage("en");
             }}
           >
             EN
@@ -90,7 +94,7 @@ function MediaIcons() {
         <>
           <ul className="app__navbar_langauge">
             <li className="app__flex p-text">
-              <Link to={'/admin'}>Admin</Link>
+              <Link to={"/admin"}>Admin</Link>
             </li>
           </ul>
           <ul className="app__navbar_langauge">

@@ -1,4 +1,4 @@
-@import '../../../scss/_config.scss';
+@import "../../../scss/_config.scss";
 
 .gallery {
   background-color: $main-grey1;
@@ -19,22 +19,33 @@
     -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
-    // -webkit-column-width: 20%;
-    // -moz-column-width: 20%;
-    // column-width: 20%;
     padding: 0.8em 0.8em;
-    //this is what I added
     position: relative;
-    top:5em;
+    top: 5em;
     margin-bottom: 5em;
+
+    .gallery-delete-btn {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      z-index: 2;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      font-weight: 700;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
     @include m {
       -webkit-column-count: 3;
       -moz-column-count: 3;
       column-count: 3;
-      // -webkit-column-width: 33%;
-      // -moz-column-width: 33%;
-      // column-width: 33%;
       padding: 0.8em 0.8em;
     }
 
@@ -42,9 +53,6 @@
       -webkit-column-count: 5;
       -moz-column-count: 5;
       column-count: 5;
-      // -webkit-column-width: 20%;
-      // -moz-column-width: 20%;
-      // column-width: 20%;
       padding: 0.8em 0.8em;
     }
 
@@ -52,16 +60,13 @@
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1;
-      // -webkit-column-width: 100%;
-      // -moz-column-width: 100%;
-      // column-width: 100%;
       padding: 0 0.8rem;
     }
 
     .single {
-      -webkit-transition:all 350ms ease;
-      transition:all 350ms ease;
-      cursor:pointer;
+      -webkit-transition: all 350ms ease;
+      transition: all 350ms ease;
+      cursor: pointer;
       margin-bottom: 0 12px;
 
       img {
@@ -103,12 +108,12 @@
       }
 
       img {
-         max-width: 100%;
-         max-height: 100%;
-         pointer-events: none;
-         -webkit-user-select: none; /* Safari */
-         -ms-user-select: none; /* IE 10 and IE 11 */
-          user-select: none; /* Standard syntax */
+        max-width: 100%;
+        max-height: 100%;
+        pointer-events: none;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
       }
     }
     .btnClose {

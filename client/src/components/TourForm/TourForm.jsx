@@ -9,12 +9,6 @@ import './_TourForm.scss';
 
 export default function TourForm() {
   const { tour, title, page, setPage } = useFormContext();
-  //tour es el componente que se va a enviar al backend
-  //title es el titulo de cada pagina
-  //page es el numero de pagina
-  //setPage es la funcion que cambia el numero de pagina
-
-  //const {display, setDisplay} = useState(0);
   const { user } = useContext(Context);
   const navigate = useNavigate();
   //console.log('CURRENT TOUR', tour);
@@ -32,17 +26,15 @@ export default function TourForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`/api/tours`, tour, {
+      await axios.post(`/api/tours`, tour, {
         headers: {
           authorization: `Bearer ${user.token}`,
         },
       });
-      if (res.data) {
-        toast.success('Tour created!');
-        navigate('/admin/manageTours');
-      }
-    } catch (error) {
-      toast.error(error);
+      toast.success('Tour created!');
+      navigate('/admin/manageTours');
+    } catch (err) {
+      toast.error(err.response.data.message);
     }
   };
 

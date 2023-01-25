@@ -1,13 +1,13 @@
-import { TextField } from '@mui/material';
-import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import axios from 'axios';
-import './_ResetPassword.scss';
-import { toast } from 'react-toastify';
+import { TextField } from "@mui/material";
+import { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import axios from "axios";
+import "./_ResetPassword.scss";
+import { toast } from "react-toastify";
 
 function ResetPassword() {
-  const [password, setPassword] = useState('');
-  const [passwordConfirm, setPasswordConfirm] = useState('');
+  const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
   const navigate = useNavigate();
   const { token } = useParams();
 
@@ -16,15 +16,15 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== passwordConfirm) {
-      return toast.error('Password and confirm password must be same!');
+      return toast.error("Password and confirm password must be same!");
     }
     try {
       await axios.patch(`/api/admin/resetPassword/${token}`, {
         password,
         passwordConfirm,
       });
-      toast.success('Password reset');
-      navigate('/login');
+      toast.success("Password reset");
+      navigate("/login");
     } catch (err) {
       toast.error(err.response.data.message);
     }

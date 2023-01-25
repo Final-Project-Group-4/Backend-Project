@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import axios from 'axios';
+import { useState } from "react";
+import axios from "axios";
 //import { Cloudinary } from '@cloudinary/url-gen';
 
 export default function UploadImage() {
@@ -11,7 +11,9 @@ export default function UploadImage() {
     axios
       .delete(`/api/gallery/${imgObj.public_id}`)
       .then(() => {
-        setImages((prev) => prev.filter((image) => image.public_id !== imgObj.public_id));
+        setImages((prev) =>
+          prev.filter((image) => image.public_id !== imgObj.public_id)
+        );
       })
       .catch((err) => console.log(err));
   };
@@ -19,11 +21,11 @@ export default function UploadImage() {
   const handleOpenWidget = () => {
     let myWidget = window.cloudinary.createUploadWidget(
       {
-        cloudName: 'dkwpmwrlr',
-        uploadPreset: 'ml_default',
+        cloudName: "dkwpmwrlr",
+        uploadPreset: "ml_default",
       },
       (error, result) => {
-        if (!error && result && result.event === 'success') {
+        if (!error && result && result.event === "success") {
           // console.log('Done! Here is the image info: ', result.info);
           // setImages((prev) => [
           //   ...prev,
@@ -40,7 +42,11 @@ export default function UploadImage() {
 
   return (
     <div>
-      <button id="upload-widget" className="cloudinary-button" onClick={() => handleOpenWidget()}>
+      <button
+        id="upload-widget"
+        className="cloudinary-button"
+        onClick={() => handleOpenWidget()}
+      >
         Upload pictures
       </button>
       <div className="images-preview-container">

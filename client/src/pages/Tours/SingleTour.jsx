@@ -1,15 +1,15 @@
-import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Contacts } from '../../components/export';
-import mapboxgl from 'mapbox-gl';
-import './_SingleTour.scss';
-import { toast } from 'react-toastify';
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { Contacts } from "../../components/export";
+import mapboxgl from "mapbox-gl";
+import "./_SingleTour.scss";
+import { toast } from "react-toastify";
 
 export default function SingleTour() {
-  const [tour, setTour] = useState('');
+  const [tour, setTour] = useState("");
   const [days, setDays] = useState([]);
-  const [info, setInfo] = useState('');
+  const [info, setInfo] = useState("");
   const [locs, setLocs] = useState([]);
   const [images, setImages] = useState([]);
 
@@ -20,11 +20,11 @@ export default function SingleTour() {
       return;
     }
     mapboxgl.accessToken =
-      'pk.eyJ1IjoiYWRhbnVyayIsImEiOiJjbGFoYmd0eDcwNnUxM3VueXV2cGoyd3V0In0.WjdfQXZW6I4SykjLM6t8YA';
+      "pk.eyJ1IjoiYWRhbnVyayIsImEiOiJjbGFoYmd0eDcwNnUxM3VueXV2cGoyd3V0In0.WjdfQXZW6I4SykjLM6t8YA";
 
     const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: 'mapbox://styles/adanurk/clbtyl9tq007614n5oqgrbq46',
+      container: "map", // container ID
+      style: "mapbox://styles/adanurk/clbtyl9tq007614n5oqgrbq46",
       scrollZoom: true,
     });
 
@@ -32,13 +32,13 @@ export default function SingleTour() {
 
     locs.forEach((loc) => {
       // Create marker
-      const el = document.createElement('div');
-      el.className = 'marker';
+      const el = document.createElement("div");
+      el.className = "marker";
 
       // Add marker
       new mapboxgl.Marker({
         element: el,
-        anchor: 'bottom',
+        anchor: "bottom",
       })
         .setLngLat(loc?.coordinates)
         //Add popup
@@ -46,7 +46,9 @@ export default function SingleTour() {
           new mapboxgl.Popup({
             offset: 20,
             focusAfterOpen: false,
-          }).setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
+          }).setHTML(
+            `<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`
+          )
         )
         .addTo(map);
 
@@ -124,8 +126,12 @@ export default function SingleTour() {
                 <div className="day-details">
                   <h3>{info && info.title}</h3>
                   {info.elevation && <h5>Elevation: {info.elevation}</h5>}
-                  {info.altitudeGained && <h5>Altitude Gained: {info.altitudeGained}</h5>}
-                  {info.altitudeLost && <h5>Altitude Lost: {info.altitudeLost}</h5>}
+                  {info.altitudeGained && (
+                    <h5>Altitude Gained: {info.altitudeGained}</h5>
+                  )}
+                  {info.altitudeLost && (
+                    <h5>Altitude Lost: {info.altitudeLost}</h5>
+                  )}
                   <p>{info.description}</p>
                   {info.note && <h6>{info.note}</h6>}
                 </div>
@@ -143,7 +149,11 @@ export default function SingleTour() {
             <img src={images[0]} alt="img" className="middle-img2" />
           </div>
         )}
-        <div className="map-container" id="map" style={{ height: '50vh' }}></div>
+        <div
+          className="map-container"
+          id="map"
+          style={{ height: "50vh" }}
+        ></div>
       </div>
       <Contacts />
     </>

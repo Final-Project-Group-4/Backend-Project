@@ -1,4 +1,4 @@
-@import '../../../scss/_config.scss';
+@import "../../../scss/_config.scss";
 
 .single-tour {
   margin: auto;
@@ -7,7 +7,7 @@
   h1 {
     text-align: center;
     padding: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: calc(40px + 0.390625vw);
     font-weight: 500;
   }
@@ -72,7 +72,7 @@
           text-align: center;
           padding: 1rem;
           border-bottom: 1px solid $main-yellow;
-          font-family: 'Raleway', sans-serif;
+          font-family: "Raleway", sans-serif;
           font-weight: 500;
           font-size: calc(16px + 0.390625vw);
           cursor: pointer;
@@ -107,14 +107,14 @@
         h3 {
           padding: 0.3rem;
           font-weight: 500;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: calc(18px + 0.390625vw);
           padding-left: 0.5em;
           text-align: left;
         }
         h5 {
           font-weight: 400;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: calc(12px + 0.390625vw);
           padding: 0.3rem;
           font-style: italic;
@@ -160,7 +160,7 @@
   }
 
   .marker {
-    background-image: url('./../../assets/mapbox-icon.png');
+    background-image: url("./../../assets/mapbox-icon.png");
     background-size: cover;
     width: 30px;
     height: 30px;
@@ -171,7 +171,7 @@
   .mapboxgl-popup-content {
     p {
       text-align: center;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       font-size: 1rem;
       margin-right: 10px;
     }

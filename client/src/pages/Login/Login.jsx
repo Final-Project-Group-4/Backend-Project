@@ -1,33 +1,33 @@
-import { TextField } from '@mui/material';
-import { useContext } from 'react';
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Context } from '../../context/Context';
-import { toast } from 'react-toastify';
-import axios from 'axios';
-import './_Login.scss';
+import { TextField } from "@mui/material";
+import { useContext } from "react";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Context } from "../../context/Context";
+import { toast } from "react-toastify";
+import axios from "axios";
+import "./_Login.scss";
 
 export default function Login() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const { dispatch, isLoading } = useContext(Context);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    dispatch({ type: 'LOGIN_START' });
+    dispatch({ type: "LOGIN_START" });
     try {
       //API call
       const res = await axios.post(`/api/admin/login`, {
         email: email,
         password: password,
       });
-      dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
-      toast.success('Login successful');
-      navigate('/');
+      dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+      toast.success("Login successful");
+      navigate("/");
     } catch (err) {
-      dispatch({ type: 'LOGIN_FAILURE' });
+      dispatch({ type: "LOGIN_FAILURE" });
       toast.error(err.response.data.message);
     }
   };

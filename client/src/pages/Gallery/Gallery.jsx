@@ -12,6 +12,8 @@ import UploadImage from "./UploadImage";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import { Context } from "../../context/Context";
+import { Button, Dialog, DialogActions, DialogTitle } from "@mui/material";
+import { toast } from "react-toastify";
 
 export default function Gallery() {
   const { t } = useTranslation();
@@ -19,13 +21,45 @@ export default function Gallery() {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
   const { user } = useContext(Context);
+  const [open, setOpen] = useState(false);
 
-  const removeImage = async (public_id) => {
-    await axios.delete(`/api/gallery/${public_id}`);
-    setGallery((oldState) =>
-      oldState.filter((item) => item.public_id !== public_id)
-    );
+  const handleDelete = async (public_id) => {
+    setOpen(public_id);
   };
+
+  const handleClose = async (answer) => {
+    if (answer === "yes") {
+      try {
+        await axios.delete(`/api/gallery/${open}`);
+        setGallery((oldState) =>
+          oldState.filter((item) => item.public_id !== open)
+        );
+
+        toast.success("Image is deleted!");
+        const allImages = await axios.get(`/api/gallery`);
+
+        //console.log(allImages);
+        if (allImages.status === 200) {
+          setGallery(allImages.data);
+        } else {
+          console.error("Something went wrong");
+        }
+        setOpen(false);
+      } catch (err) {
+        setOpen(false);
+        toast.error("Something went wrong!");
+      }
+    } else {
+      setOpen(false);
+    }
+  };
+
+  // const removeImage = async (public_id) => {
+  //   await axios.delete(`/api/gallery/${public_id}`);
+  //   setGallery((oldState) =>
+  //     oldState.filter((item) => item.public_id !== public_id)
+  //   );
+  // };
 
   const getGallery = async () => {
     const allImages = await axios.get(`/api/gallery`);
@@ -80,7 +114,7 @@ export default function Gallery() {
                 <div className="single" key={index}>
                   {user && (
                     <button
-                      onClick={() => removeImage(slide.public_id)}
+                      onClick={() => handleDelete(slide.public_id)}
                       className="gallery-delete-btn"
                     >
                       x
@@ -126,6 +160,34 @@ export default function Gallery() {
           </div>
         )}
       </div>
+      {/*---------------CONFIRM WINDOW FOR DELETE FUNCTION---------- */}
+      <Dialog
+        open={open ? true : false}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">
+          {"Delete this image?"}
+        </DialogTitle>
+        <DialogActions>
+          <Button
+            onClick={() => {
+              handleClose("no");
+            }}
+          >
+            No
+          </Button>
+          <Button
+            onClick={() => {
+              handleClose("yes");
+            }}
+            autoFocus
+          >
+            Yes
+          </Button>
+        </DialogActions>
+      </Dialog>
 
       <Contacts />
     </>

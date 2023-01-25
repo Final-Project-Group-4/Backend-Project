@@ -1,11 +1,11 @@
-import { Contacts, TourCard } from '../../components/export';
-import { Grid, Container } from '@mui/material';
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import './_Tours.scss';
-import axios from 'axios';
-import { useTranslation } from 'react-i18next';
-import { CardActionArea } from '@mui/material';
+import { Contacts, TourCard } from "../../components/export";
+import { Grid, Container } from "@mui/material";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./_Tours.scss";
+import axios from "axios";
+import { useTranslation } from "react-i18next";
+import { CardActionArea } from "@mui/material";
 
 export default function Tours() {
   const { t } = useTranslation();
@@ -19,7 +19,7 @@ export default function Tours() {
     if (allTours.status === 200) {
       setTourData(allTours.data.data);
     } else {
-      console.error('Something went wrong');
+      console.error("Something went wrong");
     }
   };
 
@@ -29,7 +29,7 @@ export default function Tours() {
     if (filteredToursByType.status === 200) {
       setTourData(filteredToursByType.data.tour);
     } else {
-      console.error('Something went wrong');
+      console.error("Something went wrong");
     }
   };
 
@@ -47,40 +47,39 @@ export default function Tours() {
 
   return (
     <div className="container1">
-      
-      <div className="container2" style={{overflow:"hidden"}}>
-        <div  
-          className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
-            type === 'safari' ? 'img-safari' : ''
-          } ${type === 'local' ? 'img-coffee' : ''}`}
+      <div className="container2" style={{ overflow: "hidden" }}>
+        <div
+          className={`leftSide ${type === "hiking" ? "img-hiking" : ""} ${
+            type === "safari" ? "img-safari" : ""
+          } ${type === "local" ? "img-coffee" : ""}`}
         >
           <div className="insideLeft">
             <div className="tourPara">
               {!type && (
                 <div className="overlay moreOpaque">
-                  <h2>{t('ourTours')}</h2>
-                  <p className="conditionalText">{t('ourToursText')}</p>
+                  <h2>{t("ourTours")}</h2>
+                  <p className="conditionalText">{t("ourToursText")}</p>
                 </div>
               )}
 
-              {type === 'hiking' && (
+              {type === "hiking" && (
                 <div className="overlay moreOpaque">
-                  <h2>{t('hikingTours')}</h2>
-                  <p className="conditionalText">{t('ourToursText')}</p>
+                  <h2>{t("hikingTours")}</h2>
+                  <p className="conditionalText">{t("ourToursText")}</p>
                 </div>
               )}
 
-              {type === 'safari' && (
+              {type === "safari" && (
                 <div className="overlay">
-                  <h2>{t('safariTours')}</h2>
-                  <p className="conditionalText">{t('safariToursText')}</p>
+                  <h2>{t("safariTours")}</h2>
+                  <p className="conditionalText">{t("safariToursText")}</p>
                 </div>
               )}
 
-              {type === 'local' && (
+              {type === "local" && (
                 <div className="overlay moreOpaque2">
-                  <h2>{t('localTours')}</h2>
-                  <p className="conditionalText">{t('localToursText')}</p>
+                  <h2>{t("localTours")}</h2>
+                  <p className="conditionalText">{t("localToursText")}</p>
                 </div>
               )}
             </div>
@@ -90,27 +89,37 @@ export default function Tours() {
 {/* 
           <div
             className="background-Squiggly"
-            style={{ position: 'absolute', left: '50%', height: '100vh', width: '50%' }}
+            style={{
+              position: "absolute",
+              left: "50%",
+              height: "100vh",
+              width: "50%",
+            }}
           >
             <img
-              src={require('../../assets/inkySpot.png')}
-              style={{ width: '20em', top: '-50px', right: '-40px', position: 'relative' }}
+              src={require("../../assets/inkySpot.png")}
+              style={{
+                width: "20em",
+                top: "-50px",
+                right: "-40px",
+                position: "relative",
+              }}
               alt=""
             ></img>
             <img
-              src={require('../../assets/inkySpot.png')}
+              src={require("../../assets/inkySpot.png")}
               style={{
-                position: 'relative',
-                width: '20em',
-                bottom: '-35em',
-                right: '-15em',
-                zIndex: '-1',
+                position: "relative",
+                width: "20em",
+                bottom: "-35em",
+                right: "-15em",
+                zIndex: "-1",
               }}
               alt=""
             ></img>
           </div> */}
           <Grid
-            sx={{ position: 'relative', zIndex: '0' }}
+            sx={{ position: "relative", zIndex: "3" }}
             className="gridRight"
             container
             spacing={1}
@@ -121,11 +130,17 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
-
-                <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
-                style={{position:"relative", zIndex:"1"}}
-                ><CardActionArea>
-                  
+                <Grid
+                  item
+                  xs={12}
+                  sm={7}
+                  md={5.5}
+                  lg={5.5}
+                  margin="0.2em"
+                  key={tour._id}
+                  style={{ position: "relative", zIndex: "-1" }}
+                >
+                  <CardActionArea>
                     <TourCard
                       mainImg={tour.imgCover}
                       days={tour.days}

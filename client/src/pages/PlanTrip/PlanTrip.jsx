@@ -1,13 +1,13 @@
-import { useRef } from 'react';
-import { useFormik } from 'formik';
-import './_PlanTrip.scss';
-import { planTripSchema } from './schema/PlanTripSchema';
-import peter from './../../assets/peter1.png';
-import emailjs from '@emailjs/browser';
-import { useTranslation } from 'react-i18next';
-import { toast } from 'react-toastify';
-import { TextField } from '@mui/material';
-import { useEffect } from 'react';
+import { useRef } from "react";
+import { useFormik } from "formik";
+import "./_PlanTrip.scss";
+import { planTripSchema } from "./schema/PlanTripSchema";
+import peter from "./../../assets/peter1.png";
+import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
+import { TextField } from "@mui/material";
+import { useEffect } from "react";
 
 export default function PlanTrip() {
   const { t } = useTranslation();
@@ -21,31 +21,45 @@ export default function PlanTrip() {
   };
   //Send Email
   const sendEmail = () => {
-    emailjs.sendForm('service_vhsqlog', 'template_av8kbnq', form.current, 'qRUwiJCe6auC3a9U0').then(
-      (response) => {
-        toast.success(`${t('requestSentLabel')}`);
-      },
-      (error) => {
-        toast.error(`${error.text}`);
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_vhsqlog",
+        "template_av8kbnq",
+        form.current,
+        "qRUwiJCe6auC3a9U0"
+      )
+      .then(
+        (response) => {
+          toast.success(`${t("requestSentLabel")}`);
+        },
+        (error) => {
+          toast.error(`${error.text}`);
+        }
+      );
   };
 
-  const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } =
-    useFormik({
-      initialValues: {
-        name: '',
-        email: '',
-        contact: '',
-        routeName: '',
-        startDate: '',
-        days: '',
-        size: '',
-        message: '',
-      },
-      validationSchema: planTripSchema,
-      onSubmit,
-    });
+  const {
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit,
+  } = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      contact: "",
+      routeName: "",
+      startDate: "",
+      days: "",
+      size: "",
+      message: "",
+    },
+    validationSchema: planTripSchema,
+    onSubmit,
+  });
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,12 +68,17 @@ export default function PlanTrip() {
   return (
     <div>
       <div className="plan-trip-banner">
-        <p>{t('readyForAdventure')}</p>
+        <p>{t("readyForAdventure")}</p>
       </div>
       <div className="planTrip container">
         <div>
-          <form ref={form} onSubmit={handleSubmit} autoComplete="off" className="PlanTripForm">
-            <p>{t('readyForAdventureText')}</p>
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
+            autoComplete="off"
+            className="PlanTripForm"
+          >
+            <p>{t("readyForAdventureText")}</p>
             <TextField
               fullWidth
               required
@@ -67,7 +86,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="name"
               id="name"
-              label={t('nameLabel')}
+              label={t("nameLabel")}
               type="text"
               margin="dense"
               onChange={handleChange}
@@ -80,7 +99,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="email"
               id="name"
-              label={t('emailLabel')}
+              label={t("emailLabel")}
               type="email"
               margin="dense"
               onChange={handleChange}
@@ -93,7 +112,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="contact"
               id="contact"
-              label={t('contactLabel')}
+              label={t("contactLabel")}
               type="phone"
               margin="dense"
               onChange={handleChange}
@@ -106,7 +125,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="routeName"
               id="routeName"
-              label={t('destinationLabel')}
+              label={t("destinationLabel")}
               type="text"
               margin="dense"
               onChange={handleChange}
@@ -119,21 +138,21 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="startDate"
               id="startDate"
-              label={t('dateLabel')}
+              label={t("dateLabel")}
               type="date"
               margin="dense"
               onChange={handleChange}
               error={touched.startDate && Boolean(errors.startDate)}
             />
             <TextField
-              className={errors.name && touched.name ? 'input-error' : ''}
+              className={errors.name && touched.name ? "input-error" : ""}
               fullWidth
               required
               value={values.days}
               onBlur={handleBlur}
               name="days"
               id="days"
-              label={t('durationLabel')}
+              label={t("durationLabel")}
               type="number"
               margin="dense"
               onChange={handleChange}
@@ -146,7 +165,7 @@ export default function PlanTrip() {
               onBlur={handleBlur}
               name="size"
               id="size"
-              label={t('groupSizeLabel')}
+              label={t("groupSizeLabel")}
               type="number"
               margin="dense"
               onChange={handleChange}
@@ -155,7 +174,7 @@ export default function PlanTrip() {
             <textarea
               name="message"
               id="message"
-              placeholder={t('yourMessage')}
+              placeholder={t("yourMessage")}
               onChange={handleChange}
               value={values.message}
               onBlur={handleBlur}
@@ -167,7 +186,7 @@ export default function PlanTrip() {
                 type="submit"
                 className="/* plan-submit-btn */ btn-secondary"
               >
-                {t('freeQuoteLabel')}
+                {t("freeQuoteLabel")}
               </button>
             </div>
           </form>
@@ -175,10 +194,10 @@ export default function PlanTrip() {
         <div className="peter">
           <img src={peter} alt="Peter" />
           <p>
-            <strong>{t('peterName')}</strong> Peter Mlay
+            <strong>{t("peterName")}</strong> Peter Mlay
           </p>
           <p>
-            <strong>{t('call')}</strong> +255766034379
+            <strong>{t("call")}</strong> +255766034379
           </p>
           <p>
             <strong>Email:</strong> mlaypeter019@gmail.com

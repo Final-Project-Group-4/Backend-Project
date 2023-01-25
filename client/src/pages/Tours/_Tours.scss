@@ -1,4 +1,4 @@
-@import '../../../scss/_config.scss';
+@import "../../../scss/_config.scss";
 
 .container1 {
   width: 100vw;
@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
-  background-image: url('../../assets/hiking_tours.jpg');
+  background-image: url("../../assets/hiking_tours.jpg");
   width: 100%;
   .insideLeft {
     h2 {
@@ -62,13 +62,13 @@
   }
 }
 .img-hiking {
-  background-image: url('../../assets/hiking_tours.jpg');
+  background-image: url("../../assets/hiking_tours.jpg");
 }
 .img-safari {
-  background-image: url('../../assets/safari_unsplash.jpg');
+  background-image: url("../../assets/safari_unsplash.jpg");
 }
 .img-coffee {
-  background-image: url('../../assets/cofeeMarangu_cover.jpg');
+  background-image: url("../../assets/cofeeMarangu_cover.jpg");
 }
 .coverImg {
   width: calc(100% - 80px);
@@ -103,8 +103,8 @@
   cursor: pointer;
   transform: scale(1.01);
   transition: all 0.3s ease-in-out;
-  }
-  
+}
+
 .cropped-img {
   width: 20px;
   height: 620px;
@@ -138,8 +138,8 @@
   .rightSide {
     width: 100%;
     & > .MuiGrid-root {
-      overflow-y: 'unset';
-      background-color: 'purple';
+      overflow-y: "unset";
+      background-color: "purple";
     }
   }
 }
@@ -158,8 +158,8 @@
       width: 100%;
       & > .MuiGrid-root {
         min-height: 60vh;
-        overflow-y: 'unset';
-        background-color: 'purple';
+        overflow-y: "unset";
+        background-color: "purple";
       }
     }
   }

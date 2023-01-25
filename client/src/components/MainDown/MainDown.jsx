@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function MainDown() {
   const { t } = useTranslation();
   return (
-    <div className="container mainDown">
+    <div className="container mainDown" style={{overflow:"hidden" }}>
       <h3>{t('chooseTripText')}</h3>
       <div className="tours">
         <Link to="/tours/category/hiking">

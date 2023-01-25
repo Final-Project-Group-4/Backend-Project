@@ -1,17 +1,21 @@
 @use '../../../scss/_config.scss' as *;
 
 .mainDown {
-  background-color: $main-light;
+  //background-color: $main-light;
   margin: auto;
   padding-bottom: 1rem;
   padding-top: 1rem;
 
   h3{
     font-family: $font-paragraph;
-    font-size:2rem;
-    font-weight: 400;
+    font-size:2.5rem;
+    font-weight: 600;
     margin-top: 30px;
     margin-bottom: 30px;
+   // background-color: $main-light;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
   }
 
 
@@ -24,7 +28,7 @@
   margin:0 auto;
   justify-content: space-around;
   width: 100%;
-  background-color: $main-light;
+ // background-color: $main-light;
 }
 .hiking,
 .safari,
@@ -94,14 +98,15 @@ a {
 
 
 .videos {
-  background-color: $main-light;
+  //background-color: $main-light;
   padding-bottom: 0.5rem;
   width: 90%;
   margin: auto;
   font-family: $font-heading;
+  
 
   .videoTitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding: 1rem;
     margin: 0;
@@ -130,8 +135,17 @@ a {
 
 //media queries 
 
+@include s{
+  .mainDown {
+  
 
-@include s {
+  h3{
+    
+    font-size:2rem;
+    
+
+  }
+
   .hiking,
   .safari,
   .coffee,
@@ -148,7 +162,19 @@ a {
     
   }
 
-    }
+
+  
+
+}
+
+}
+
+
+
+    
+
+
+
 
 
 

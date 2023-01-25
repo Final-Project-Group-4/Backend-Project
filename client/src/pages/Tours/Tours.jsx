@@ -47,9 +47,9 @@ export default function Tours() {
 
   return (
     <div className="container1">
-      <div className="container2" style={{ overflow: 'hidden' }}>
-        <div
-          style={{ position: 'relative', zIndex: '2' }}
+      
+      <div className="container2" style={{overflow:"hidden"}}>
+        <div  
           className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
             type === 'safari' ? 'img-safari' : ''
           } ${type === 'local' ? 'img-coffee' : ''}`}
@@ -87,6 +87,7 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
+
           <div
             className="background-Squiggly"
             style={{ position: 'absolute', left: '50%', height: '100vh', width: '50%' }}
@@ -120,8 +121,11 @@ export default function Tours() {
           >
             {tourData.map((tour) => {
               return (
-                <Grid item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}>
-                  <CardActionArea>
+
+                <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
+                style={{position:"relative", zIndex:"-1"}}
+                ><CardActionArea>
+                  
                     <TourCard
                       mainImg={tour.imgCover}
                       days={tour.days}
@@ -131,6 +135,8 @@ export default function Tours() {
                       difficulty={tour.difficulty}
                       scenery={tour.scenery}
                       id={tour._id}
+                      duration={tour.duration}
+                      type={tour.type}
                     />
                   </CardActionArea>
                 </Grid>

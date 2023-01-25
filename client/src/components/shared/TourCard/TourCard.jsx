@@ -4,16 +4,12 @@ import Box from '@mui/material/Box';
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { Link } from 'react-router-dom';
-import { FaPen, FaSearch, FaTrash, FaArrowRight } from 'react-icons/fa';
+import { FaBinoculars, FaSearch, FaTrash, FaArrowRight, FaFeatherAlt, FaWalking } from 'react-icons/fa';
 import { borderRadius } from '@mui/system';
 import { Card } from '@mui/material';
 function TourCard(props) {
-  
-    
-
-
-
   const {
+    type,
     tour,
     difficulty,
     days,
@@ -27,34 +23,46 @@ function TourCard(props) {
     height,
   } = props;
 
-  return (
-    <Card className="card"
-      elevation={3}
-      sx={{ height: { height }, textAlign: 'center', justifyContent: 'space-between', borderRadius:"16px"}}
-    >
-      
+  const isDays = days.length > 0 ? true : false;
+  //this is true when the days array has at least one day and false when it is empty
 
+  console.log(isDays);
+
+  return (
+    <Card
+      className="card"
+      elevation={3}
+      sx={{
+        height: { height },
+        textAlign: 'center',
+        justifyContent: 'space-between',
+        borderRadius: '16px',
+      }}
+    >
       <img src={mainImg} alt="mainImage" className="img" />
       <Box paddingX={1}>
         <Typography variant="subtitle1" component="h2" className="nameOfRoute">
           {tour}
+          {type === 'safari' && <span  className="typeIcons"><FaBinoculars size={30}/></span>}
+          {type === 'hiking' && <span className="typeIcons"><FaWalking size={30}/></span>}
+          {type === 'local' && <span className="typeIcons"><FaFeatherAlt size={30}/></span>}
         </Typography>
       </Box>
-      {/* <Divider component="li" className="li-divider" /> */}
+
       <Box paddingX={2}>
+      
         <Typography
           component="h2"
           variant="subtitle1"
           className="CardBodyText"
           sx={{ fontFamily: 'raleway', fontSize: '1rem', fontWeight: '400' }}
           textAlign="left"
-        >
+        > 
           <b className="subtitlesTop">{subtitle}</b>
           <span />
-          
         </Typography>
       </Box>
-      {/* <Divider component="li" className="li-divider" /> */}
+      
       {!inAdmin && (
         <>
           <Box paddingX={2}>
@@ -64,19 +72,29 @@ function TourCard(props) {
               className="CardBodyText"
               textAlign="left"
             >
-              {days.length}
-              <b className="subtitles">
-                <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} /> Days /
-              </b>
-              <span />
-              {days.length - 1}
-              <b className="subtitles">
-                <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} /> Nights
-              </b>
-              <span />
+              {!isDays && (
+                <b className="subtitles">
+                  <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} /> 1 Day
+                  <span />
+                </b>
+              )}
+
+              {isDays && (
+                <>
+                  <b className="subtitles">
+                    <WbSunnyIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} />
+                    {days.length} Days /
+                  </b>
+                  <b className="subtitles">
+                    <DarkModeIcon sx={{ width: 20.5, position: 'relative', top: '6px' }} />
+                    {days.length - 1} Nights
+                  </b>
+                  <span />
+                </>
+              )}
             </Typography>
           </Box>
-          {/* <Divider component="li" className="li-divider" /> */}
+          
 
           <Box paddingX={2}>
             <Typography
@@ -90,7 +108,7 @@ function TourCard(props) {
               {difficulty}
             </Typography>
           </Box>
-          {/* <Divider component="li" className="li-divider" /> */}
+          
           <Box paddingX={2}>
             <Typography
               component="h2"
@@ -112,9 +130,7 @@ function TourCard(props) {
               <FaSearch size={30} />
             </Link>
           </Button>
-          {/* <Button className="btn-edit" onClick={handleEdit}>
-            <FaPen size={30} />
-          </Button> */}
+         
           <Button className="btn-delete" onClick={handleDelete}>
             <FaTrash size={30} />
           </Button>
@@ -125,12 +141,15 @@ function TourCard(props) {
         <Box sx={{ alignContent: 'center' }}>
           <Button className="visitBtn">
             <Link to={`/tours/${id}`} className="card-link">
-              DETAILS <FaArrowRight size={30} style={{marginLeft:"10px",position: 'relative', top: '8px' }}/>
+              DETAILS{' '}
+              <FaArrowRight
+                size={30}
+                style={{ marginLeft: '10px', position: 'relative', top: '8px' }}
+              />
             </Link>
           </Button>
         </Box>
       )}
-       
     </Card>
   );
 }

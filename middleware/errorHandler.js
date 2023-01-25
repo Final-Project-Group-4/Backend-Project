@@ -1,18 +1,5 @@
 import AppError from '../utils/appError.js';
 
-// const ErrorHandler = (error, req, res, next) => {
-//   console.log('inside ErrorHandler');
-
-//   error.statusCode = error.statusCode || 500;
-//   error.status = error.status || 'error';
-
-//   res.status(error.statusCode).json({
-//     status: error.status,
-//     message: error.message,
-//   });
-// };
-// export default ErrorHandler;
-
 const handleCastErrorDB = (err) => {
   const message = `Invalid ${err.path}: ${err.value}`;
   return new AppError(message, 400);

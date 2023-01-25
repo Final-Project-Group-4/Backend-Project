@@ -879,7 +879,7 @@
       "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350631/marangu-coffee-route4_y1tdrk.jpg",
       "https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673350630/marangu-coffee-route6_il6has.jpg"
     ],
-    "type": "coffee",
+    "type": "local",
     "scenery": "excellent",
     "locations": [
       {

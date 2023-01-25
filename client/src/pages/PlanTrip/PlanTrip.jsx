@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { useFormik } from 'formik';
 import './_PlanTrip.scss';
 import { planTripSchema } from './schema/PlanTripSchema';
@@ -12,7 +12,6 @@ import { useEffect } from 'react';
 export default function PlanTrip() {
   const { t } = useTranslation();
   const form = useRef();
-  /* window.scrollTo(0, 0); */
 
   //handleSubmit function for clearing the form after submit and sending the details through email
   const onSubmit = async (values, actions) => {

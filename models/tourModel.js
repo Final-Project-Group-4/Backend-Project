@@ -46,7 +46,7 @@ const tourSchema = new mongoose.Schema({
     type: String,
     required: [true, 'A tour must have a type'],
     enum: {
-      values: ['coffee', 'safari', 'hiking'],
+      values: ['local', 'safari', 'hiking'],
       message: 'Type value is not valid',
     },
   },

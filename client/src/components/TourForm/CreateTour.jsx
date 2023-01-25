@@ -195,7 +195,7 @@ export default function CreateTour() {
           margin="dense"
           onChange={handleChange}
         >
-          <MenuItem value={'coffee'}>Coffee</MenuItem>
+          <MenuItem value={'local'}>Local</MenuItem>
           <MenuItem value={'safari'}>Safari</MenuItem>
           <MenuItem value={'hiking'}>Hiking</MenuItem>
         </Select>

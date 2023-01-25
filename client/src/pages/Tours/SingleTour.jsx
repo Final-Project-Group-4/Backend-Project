@@ -50,15 +50,6 @@ export default function SingleTour() {
         )
         .addTo(map);
 
-      //Add popup
-      // new mapboxgl.Popup({
-      //   offset: 20,
-      //   focusAfterOpen: false,
-      // })
-      //   .setLngLat(loc?.coordinates)
-      //   .setHTML(`<p className:"map-day-info">Day ${loc?.day}: ${loc?.description}</p>`)
-      //   .addTo(map);
-
       // Extend map bounds to include current location
       bounds.extend(loc?.coordinates);
     });

@@ -26,7 +26,7 @@ function MainDown() {
           </div>
         </Link>
 
-        <Link to="/tours/category/coffee">
+        <Link to="/tours/category/local">
           <div className="coffee" id="coffee">
             <img
               src="https://media.istockphoto.com/id/924702024/photo/ground-coffee-in-spoon-coffee-beans.jpg?s=612x612&w=0&k=20&c=dvNz-rl2D8B1DFGDFAHqmWKAOtyMJi9oy2IbOEMIkH0="

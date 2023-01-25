@@ -2,7 +2,6 @@ import { ValueCard, Peter } from '../export';
 import './_MainUp.scss';
 import { useTranslation } from 'react-i18next';
 //import { FaCoffee, FaBinoculars, FaCarSide } from 'react-icons/fa';
-import mainUp from './../../assets/lp-img-mainup.jpg';
 //import { HiScissors } from 'react-icons/hi';
 import cut from './../../assets/icons8-cut-400.png';
 import coffee from './../../assets/icons8-cafe-400.png';
@@ -16,24 +15,24 @@ function MainUp() {
     <div className="container mainup" style={{overflow:"hidden"}} >
 
 
-      <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
+      <div className='background-Squiggly' style={{position:"absolute",left:"-30%",top:"90em", height:"50vh", width:"50%"}} >
            {/* <img className='bg-Animalprints' src={require("../../assets/inkySpot.png")} style={{width:"60em",top:"-70px", right:"-40px", position:"relative", zIndex:"-3"}}></img>  */}
 
-          
-
-           <img className='bg-Animalprints' src={require("../../assets/pattern_Jiraffe.png")} style={{position:"relative", width:"40em", top:"45em", right:"50em", position:"relative", zIndex:"-4"}}></img>  
+           <img className='bg-Animalprints' src={require("../../assets/animal23_circle.png")} style={{  position:"relative", zIndex:"-4"}}></img>  
            
 
         </div>
       <div className="first" >
 
-      <img className='bg-Animalprints' src={require("../../assets/animal23_circle.png")} style={{width:"25em", bottom:"1em", right:"-10em",position:"relative", zIndex:"-4"}}></img> 
+      
 
-        <div className="text">
-          <h2>{t('whatWeOffer')}</h2>
+        <div className="text" >
+        
+          <h2 >{t('whatWeOffer')}</h2>
           <p>{t('weOffer')}</p>
         </div>
-        <img src={mainUp} alt="kilimanjaro" />
+        <img style={{borderRadius:"20px"}} src="https://res.cloudinary.com/dkwpmwrlr/image/upload/v1673440165/kilimanjaro-peak4_zwr71r.jpg"
+                  alt="our team"/>
       </div>
       <div className="values-container">
         <ValueCard

@@ -50,10 +50,10 @@ export default function Tours() {
     <div className="container1">
       
       <div className="container2" style={{overflow:"hidden"}}>
-        <div  style={{position:"relative", zIndex:"2"}} 
+        <div  
           className={`leftSide ${type === 'hiking' ? 'img-hiking' : ''} ${
             type === 'safari' ? 'img-safari' : ''
-          } ${type === 'coffee' ? 'img-coffee' : ''}`}
+          } ${type === 'local' ? 'img-coffee' : ''}`}
         >
           <div className="insideLeft" >
             <div className="tourPara">
@@ -78,7 +78,7 @@ export default function Tours() {
                 </div>
               )}
 
-              {type === 'coffee' && (
+              {type === 'local' && (
                 <div className="overlay moreOpaque2">
                   <h2>{t('localTours')}</h2>
                   <p className="conditionalText">{t('localToursText')}</p>
@@ -88,14 +88,14 @@ export default function Tours() {
           </div>
         </div>
         <Container className="rightSide rightSideTours">
-       {/*  <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
+        <div className='background-Squiggly' style={{position:"absolute",left:"50%", height:"100vh", width:"50%"}} >
           <img className='bg-Animalprints' src={require("../../assets/inkySpot.png")} style={{width:"10em",top:"-10em", right:"-40px", position:"relative"}}></img>
            <img className='bg-Animalprints' src={require("../../assets/inky-spot-6.png")} style={{width:"23em", bottom:"-2em", right:"-15em",position:"relative", zIndex:"-1"}}></img>
-           <img className='bg-Animalprints' src={require("../../assets/inky-spot-animal.png")} style={{position:"relative", width:"50em", top:"1em", right:"5em", position:"relative", zIndex:"-1"}}></img> 
-   
-        </div> */}
+           <img className='bg-Animalprints cropped-img' src={require("../../assets/inky-spot-animal.png")} style={{position:"relative", width:"50em", top:"1em", right:"5em", position:"relative", zIndex:"-7"}}></img> 
+  
+        </div> 
           <Grid
-          sx={{position:"relative", zIndex:"3"}}
+          sx={{position:"relative", zIndex:"0"}}
             className="gridRight"
             container
             spacing={1}
@@ -107,6 +107,7 @@ export default function Tours() {
             {tourData.map((tour) => {
               return (
                 <Grid  item xs={12} sm={7} md={5.5} lg={5.5} margin="0.2em" key={tour._id}
+                style={{position:"relative", zIndex:"-1"}}
                 ><CardActionArea>
                   
                     <TourCard
@@ -118,6 +119,8 @@ export default function Tours() {
                       difficulty={tour.difficulty}
                       scenery={tour.scenery}
                       id={tour._id}
+                      duration={tour.duration}
+                      type={tour.type}
                     />
                 </CardActionArea>
                 </Grid>

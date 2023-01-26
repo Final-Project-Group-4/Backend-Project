@@ -11,7 +11,7 @@ import Menu from "@mui/material/Menu";
 import { Button, MenuItem } from "@mui/material";
 
 function MediaIcons() {
-  const [t, i18n] = useTranslation();
+  const {i18n} = useTranslation();
   const { user, dispatch } = useContext(Context);
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);

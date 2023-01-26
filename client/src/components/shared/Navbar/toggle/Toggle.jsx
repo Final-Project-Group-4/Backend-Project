@@ -34,7 +34,7 @@ function Toggle(props) {
       <HiMenuAlt4 onClick={() => props.setToggle(true)} />
       {props.toggle && (
         <motion.div
-          whileInView={{ x: [300, 0] }}
+          whileInView={{ x: [275, 0] }}
           transition={{ duration: 0.85 }}
         >
           {/* when the use toggle the function setToggle useState gonna be false so it can disappear */}

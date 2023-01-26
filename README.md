@@ -1,6 +1,6 @@
 # MLAY EXCURSSIONS FULLSTACK PROJECT
 
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Mlay_versionBlack.png"  />
 ## Table of Contents
 
 * [Backend Project](#Backend-Project)

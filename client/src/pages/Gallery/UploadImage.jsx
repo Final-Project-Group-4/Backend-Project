@@ -50,8 +50,8 @@ export default function UploadImage() {
         Upload pictures
       </button>
       <div className="images-preview-container">
-        {images.map((image) => (
-          <div className="image-preview">
+        {images.map((image, index) => (
+          <div className="image-preview" key={index}>
             <img src={image.url} alt={image.title} />
             {imageToRemove !== image.public_id && (
               <i

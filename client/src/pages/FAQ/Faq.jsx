@@ -1,89 +1,101 @@
-import { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Contacts } from '../../components/export';
-import FaqQuestions from './FaqQuestion';
-import './_FAQ.scss';
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Contacts } from "../../components/export";
+import FaqQuestions from "./FaqQuestion";
+import "./_FAQ.scss";
 const FAQ = () => {
   const { t } = useTranslation();
   const [faqs, setFaqs] = useState([]);
   useEffect(() => {
     setFaqs([
       {
-        question: t('questionOne'),
+        question: t("questionOne"),
         answer: [
           <ul>
-            {t('answersOne', { returnObjects: true }).map(({ answer1 }) => (
-              <li>{answer1}</li>
-            ))}
+            {t("answersOne", { returnObjects: true }).map(
+              ({ answer1 }, index) => (
+                <li key={`f-${index}`}>{answer1}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
       {
-        question: t('questionTwo'),
+        question: t("questionTwo"),
         answer: [
           <ul>
-            {t('answersTwo', { returnObjects: true }).map(({ answer2 }) => (
-              <li>{answer2}</li>
-            ))}
+            {t("answersTwo", { returnObjects: true }).map(
+              ({ answer2 }, index) => (
+                <li key={`f-${index}`}>{answer2}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
       {
-        question: t('questionThree'),
+        question: t("questionThree"),
         answer: [
           <ul>
-            {t('answersThree', { returnObjects: true }).map(({ answer3 }) => (
-              <li>{answer3}</li>
-            ))}
+            {t("answersThree", { returnObjects: true }).map(
+              ({ answer3 }, index) => (
+                <li key={`f-${index}`}>{answer3}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
       {
-        question: t('questionFour'),
+        question: t("questionFour"),
         answer: [
           <ul>
-            {t('answersFour', { returnObjects: true }).map(({ answer4 }) => (
-              <li>{answer4}</li>
-            ))}
+            {t("answersFour", { returnObjects: true }).map(
+              ({ answer4 }, index) => (
+                <li key={`f-${index}`}>{answer4}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
       {
-        question: t('questionFive'),
+        question: t("questionFive"),
         answer: [
           <ul>
-            {t('answersFive', { returnObjects: true }).map(({ answer5 }) => (
-              <li>{answer5}</li>
-            ))}
+            {t("answersFive", { returnObjects: true }).map(
+              ({ answer5 }, index) => (
+                <li key={`f-${index}`}>{answer5}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
 
       {
-        question: t('questionSix'),
+        question: t("questionSix"),
         answer: [
           <ul>
-            {t('answersSix', { returnObjects: true }).map(({ answer6 }) => (
-              <li>{answer6}</li>
-            ))}
+            {t("answersSix", { returnObjects: true }).map(
+              ({ answer6 }, index) => (
+                <li key={`f-${index}`}>{answer6}</li>
+              )
+            )}
           </ul>,
         ],
         open: false,
       },
 
       {
-        question: t('GearList'),
-        answer: t('GearListAnswer'),
+        question: t("GearList"),
+        answer: t("GearListAnswer"),
         open: false,
       },
       {
-        question: t('RentalsQuestion'),
-        answer: t('RentalsAnswer'),
+        question: t("RentalsQuestion"),
+        answer: t("RentalsAnswer"),
         open: false,
       },
     ]);
@@ -108,10 +120,9 @@ const FAQ = () => {
     <>
       <div id="faq" className="biggest faq-big">
         <div className="container faqs">
-          <h2>{t('FrequentlyAskedQuestions')}</h2>
-
+          <h2>{t("FrequentlyAskedQuestions")}</h2>
           {faqs.map((faq, i) => (
-            <FaqQuestions faq={faq} index={i} toggleFAQ={toggleFAQ} />
+            <FaqQuestions faq={faq} key={i} index={i} toggleFAQ={toggleFAQ} />
           ))}
         </div>
       </div>

@@ -9,7 +9,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 function MediaIcons() {
-  const [i18n] = useTranslation();
+  const {i18n} = useTranslation();
   const { user, dispatch } = useContext(Context);
   const navigate = useNavigate();
 

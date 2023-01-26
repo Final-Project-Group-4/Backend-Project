@@ -19,7 +19,7 @@
 </div>
 
 ## Project Description 
-A website for Mlay Tours, a company based in Tanzania, offering a variety of trips  in the Region. It allows the client to show his offers with detailed information about the tours. Enables the CEO to manage his own content.
+This Website is a MERN Stack project for Mlay Tours, a company based in Tanzania, offering a variety of trips  in the Region. It allows the client to show his offers with detailed information about the tours. Enables the CEO to manage his own content.
 
 ## Key features 
 * Server Side Programming

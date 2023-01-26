@@ -137,7 +137,7 @@ export default function SingleTour() {
                 </div>
               )}
             </div>
-            <img src={images[0]} alt="img" className="middle-img" />
+            <img src={images[0]} alt="img" className="middle-img2" />
           </div>
         )}
         {days.length <= 0 && (

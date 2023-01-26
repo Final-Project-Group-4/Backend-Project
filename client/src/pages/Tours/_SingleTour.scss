@@ -188,13 +188,14 @@
   .single-tour {
     .main-middle {
       height: auto;
+      //padding: 0.5rem;
       .middle-img-small {
         display: none;
       }
       .middle-multiple-img {
         display: none;
       }
-      .middle-img {
+      .middle-img2 {
         width: 100%;
         object-fit: cover;
       }

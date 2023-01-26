@@ -1,17 +1,22 @@
 import "./MediaIcons.scss";
-import {} from "react-icons/fa";
+import { FaLanguage } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { FaInstagram, FaPowerOff, FaFacebook } from "react-icons/fa";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Context } from "../../../../context/Context";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
+import Menu from "@mui/material/Menu";
+import { Button, MenuItem } from "@mui/material";
 
 function MediaIcons() {
   const {i18n} = useTranslation();
   const { user, dispatch } = useContext(Context);
   const navigate = useNavigate();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const menuId = "primary-search-account-menu";
+  const isMenuOpen = Boolean(anchorEl);
 
   const handleLogout = async () => {
     dispatch({ type: "LOGOUT" });
@@ -28,8 +33,58 @@ function MediaIcons() {
     }
   };
 
+  const handleMenuClose = (value) => {
+    if (value === "en") {
+      i18n.changeLanguage("en");
+    } else if (value === "fr") {
+      i18n.changeLanguage("fr");
+    } else if (value === "de") {
+      i18n.changeLanguage("de");
+    }
+    setAnchorEl(null);
+  };
+
+  const handleLanguageMenuOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const renderMenu = (
+    <Menu
+      anchorEl={anchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={menuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    >
+      <MenuItem onClick={() => handleMenuClose("de")} className="menu-item">
+        DE
+      </MenuItem>
+      <MenuItem onClick={() => handleMenuClose("fr")} className="menu-item">
+        FR
+      </MenuItem>
+      <MenuItem onClick={() => handleMenuClose("en")} className="menu-item">
+        EN
+      </MenuItem>
+    </Menu>
+  );
+
   return (
     <div className="app__navbar__right">
+      <Button
+        aria-label="language selection"
+        // aria-controls={menuId}
+        onClick={handleLanguageMenuOpen}
+      >
+        <FaLanguage size={40} style={{ color: "white" }} />
+      </Button>
       <ul className="app__navbar__icons">
         <li className="app__flex p-text">
           <a
@@ -51,7 +106,7 @@ function MediaIcons() {
         </li>
       </ul>
 
-      <ul className="app__navbar_langauge">
+      {/* <ul className="app__navbar_langauge">
         <li className="app__flex p-text">
           <p
             className="a"
@@ -88,7 +143,7 @@ function MediaIcons() {
             EN
           </p>
         </li>
-      </ul>
+      </ul> */}
 
       {user && (
         <>
@@ -106,6 +161,7 @@ function MediaIcons() {
           </ul>
         </>
       )}
+      {renderMenu}
     </div>
   );
 }

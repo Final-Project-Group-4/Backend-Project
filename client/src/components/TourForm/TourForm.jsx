@@ -1,11 +1,11 @@
-import axios from 'axios';
-import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import { Context } from '../../context/Context';
-import { useFormContext } from '../../hooks/useFormContext';
-import FormInputs from './FormInputs';
-import './_TourForm.scss';
+import axios from "axios";
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { Context } from "../../context/Context";
+import { useFormContext } from "../../hooks/useFormContext";
+import FormInputs from "./FormInputs";
+import "./_TourForm.scss";
 
 export default function TourForm() {
   const { tour, title, page, setPage } = useFormContext();
@@ -31,8 +31,8 @@ export default function TourForm() {
           authorization: `Bearer ${user.token}`,
         },
       });
-      toast.success('Tour created!');
-      navigate('/admin/manageTours');
+      toast.success("Tour created!");
+      navigate("/admin/manageTours");
     } catch (err) {
       toast.error(err.response.data.message);
     }
@@ -52,15 +52,15 @@ export default function TourForm() {
           <h2>{title[page]}</h2>
           <div className="buttonDiv">
             <div className="buttonNextPrev">
-              <button className="button btn-secondary" type="button" onClick={handlePrev}>
+              <button className="button" type="button" onClick={handlePrev}>
                 Prev
               </button>
-              <button className="button btn-secondary" type="button" onClick={handleNext}>
+              <button className="button" type="button" onClick={handleNext}>
                 Next
               </button>
             </div>
             <div className="btnSub">
-              <button className="btn-secondary button" type="submit">
+              <button className="button" type="submit">
                 Submit
               </button>
             </div>

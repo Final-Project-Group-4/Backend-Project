@@ -6,13 +6,14 @@
   align-items: center;
   list-style: none;
   height: 50px;
+
   li {
     display: flex;
     font-size: 1rem;
     color: white;
     cursor: pointer;
     margin: 0 0.25rem;
-    height: fit-content;
+    //height: fit-content;
     display: inline-block;
 
     a {
@@ -23,6 +24,7 @@
       text-transform: uppercase;
       font-weight: 500;
       transition: all 0.3s ease-in-out;
+      display: inline-block;
       &:hover {
         color: $main-yellow;
       }

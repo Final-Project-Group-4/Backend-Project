@@ -1,6 +1,6 @@
 # MLAY EXCURSSIONS FULLSTACK PROJECT
 
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Mlay_versionBlack.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlayexcurssions.png"  />
 ## Table of Contents
 
 * [Backend Project](#Backend-Project)
@@ -14,7 +14,8 @@
 
 ## Logo
 
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Mlay_ versionBlack.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Mlay_versionBlack.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Mlay_versionWhite.png"  />
 
 ## Project Description 
 A website for Mlay Tours, a company based in Tanzania, offering a variety of trips  in the Region. It allows the client to show his offers with detailed information about the tours. Enables the CEO to manage his own content.

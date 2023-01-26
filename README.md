@@ -1,18 +1,6 @@
-
-
 # MLAY EXCURSSIONS FULLSTACK PROJECT
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
-
-
-# MLAY EXCURSSIONS FULLSTACK PROJECT
-
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
-
-# MLAY EXCURSSIONS FULLSTACK PROJECT
-
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/mlay excurssions.png"  />
- 
 ## Table of Contents
 
 * [Backend Project](#Backend-Project)
@@ -69,5 +57,5 @@ The wireframes for mobile and desktop version where created in Figma. Please fin
 Heres a look at the final result.
 
 <img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Desktop_versionMlay.png"  />
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/ToursDesktop_VersionMlay.png.png"  />
-<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Login_DesktopVersionMlay.png.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/ToursDesktop_VersionMlay.png"  />
+<img alignContent="center" alt="companyBanner" width="80%" height="auto" style="display: block; margin: 0 auto" src="./client/src/assets/Login_DesktopVersionMlay.png"  />

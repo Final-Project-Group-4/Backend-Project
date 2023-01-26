@@ -31,14 +31,16 @@
       width: 35px;
       height: 35px;
       border-radius: 50%;
-      z-index: 2;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       font-weight: 700;
       display: flex;
       text-align: center;
       justify-content: center;
+      transition: all ease-in 0.15s;
       &:hover {
         cursor: pointer;
+        color: $main-yellow;
+        transform: scale(1.2);
       }
     }
 
